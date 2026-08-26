@@ -1,41 +1,185 @@
 {
-  "_provenance": { "writtenBy": "stardust:replica", "writtenAt": "2026-08-26T18:20:00Z" },
+  "_provenance": {
+    "writtenBy": "stardust:replica",
+    "writtenAt": "2026-08-26T18:20:00Z"
+  },
   "pageType": "landing",
   "archetype": "index",
   "instrumentFixes": [
-    { "script": "scripts/replica/stitch-shot.mjs", "fix": "pause videos at t=0 + clear JS timers after settle (CSS freeze does not stop <video> or slick autoplay)", "invalidates": ["1440 iter1 video-zone numbers"] },
-    { "script": "scripts/replica/stitch-shot.mjs", "fix": "--fullpage mode: chunked capture reproducibly corrupted the last chunk on rwe.com (scroll-morph header baked into seam + 720px horizontal wrap); fullpage + force entrance-animation final state ([class*=-animation]{opacity:1;animation:none}) + iframe height lock (euroland embed grew +125px on fullPage viewport resize)", "invalidates": ["1440 iter2 footer band", "1440 iter3 anim-blank bands"] },
-    { "note": "1440 iter5 first run measured a foreign page: port 8791 was held by another project's stale server (Centene); prototype server moved to :8797", "invalidates": ["1440 iter5 first numbers"] }
-  ],
-  "breakpoints": {
-    "1440": {
-      "iterations": 3,
-      "liveHits": { "stitch": 4, "contentDiff": 2, "visualDiff": 1, "anchor": 2 },
-      "result": { "structuralRed": 0, "structuralRedJustified": 10, "visualFlags": "none", "pixelPct": 1.69, "heightDelta": 1, "pass": true },
-      "justified": [
-        { "probe": "content", "flag": "9x MISSING CTA with @media style-prefix text", "why": "live wraps an inline <style> with per-load random data-image-id inside card links; fragments concatenate into matched build EXTRAs with identical hrefs (#87 confirm-justify); nondeterministic per load", "permanent": true },
-        { "probe": "content", "flag": "MISSING EYEBROW 'Chapters' + ~100 yellow MISSING BODY", "why": "video.js player-internal hidden UI strings (caption-settings dialog); mirroring the whole vjs DOM is class-level absurd", "permanent": true }
-      ],
-      "residuals": [
-        { "band": "y 4000-4500", "pct": 4.7, "cause": "card image rendition scaling + video frame decode differences", "flaggedFor": "delivery" },
-        { "band": "y 7500-7885", "pct": 4.2, "cause": "footer icon-row metrics + endorsement svg omitted (tiny partner logo)", "flaggedFor": "delivery" },
-        { "band": "hero", "pct": 0.8, "cause": "hero carousel slide identity nondeterministic per live capture (autoplay); freeze policy = slide 1 at t=0; final capture caught slide 1", "permanent": true },
-        { "band": "grey bands", "pct": 1.0, "cause": "loosefield decorations have randomized inline positions per live page load", "permanent": true },
-        { "band": "share box", "pct": 0.5, "cause": "euroland ticker iframe carries live market data; both sides load the live embed so deltas are timing-only", "permanent": true }
-      ],
-      "captureState": [ { "what": "strategy film video poster state (video.js, preload none)", "where": "quote-band" } ]
+    {
+      "script": "scripts/replica/stitch-shot.mjs",
+      "fix": "pause videos at t=0 + clear JS timers after settle (CSS freeze does not stop <video> or slick autoplay)",
+      "invalidates": [
+        "1440 iter1 video-zone numbers"
+      ]
     },
-    "360": {
-      "iterations": 3,
-      "liveHits": { "stitch": 3, "contentDiff": 1, "visualDiff": 1, "anchor": 2 },
-      "result": { "structuralRed": 0, "structuralRedJustified": 10, "visualFlags": "none", "pixelPct": 8.01, "heightDelta": 0, "pass": true },
-      "justified": [ { "probe": "content", "flag": "same 10 reds as 1440", "why": "same classes (vjs UI + nondeterministic style-prefix pairs)", "permanent": true } ],
-      "residuals": [
-        { "band": "y 7000-7500", "pct": 16.5, "cause": "~8px vertical offset ghost through the image-heavy career-card stack (jobs-teaser caption wrap trade-off)", "flaggedFor": "delivery" },
-        { "band": "y 4500-5500", "pct": 13.0, "cause": "energy-card image crops at mobile rendition + small offsets", "flaggedFor": "delivery" },
-        { "band": "y 9500-10500", "pct": 11.0, "cause": "footer internal metrics (-15px: talk-to-us row, legal nav pitch)", "flaggedFor": "delivery" },
-        { "band": "spotlight", "pct": 3.0, "cause": "ticker window slide identity nondeterministic per capture", "permanent": true }
+    {
+      "script": "scripts/replica/stitch-shot.mjs",
+      "fix": "--fullpage mode: chunked capture reproducibly corrupted the last chunk on rwe.com (scroll-morph header baked into seam + 720px horizontal wrap); fullpage + force entrance-animation final state ([class*=-animation]{opacity:1;animation:none}) + iframe height lock (euroland embed grew +125px on fullPage viewport resize)",
+      "invalidates": [
+        "1440 iter2 footer band",
+        "1440 iter3 anim-blank bands"
+      ]
+    },
+    {
+      "note": "1440 iter5 first run measured a foreign page: port 8791 was held by another project's stale server (Centene); prototype server moved to :8797",
+      "invalidates": [
+        "1440 iter5 first numbers"
       ]
     }
+  ],
+  "breakpoints": {
+    "360": {
+      "iterations": 3,
+      "liveHits": {
+        "stitch": 3,
+        "contentDiff": 1,
+        "visualDiff": 1,
+        "anchor": 2
+      },
+      "result": {
+        "structuralRed": 0,
+        "structuralRedJustified": 10,
+        "visualFlags": "none",
+        "pixelPct": 8.01,
+        "heightDelta": 0,
+        "pass": true
+      },
+      "justified": [
+        {
+          "probe": "content",
+          "flag": "same 10 reds as 1440",
+          "why": "same classes (vjs UI + nondeterministic style-prefix pairs)",
+          "permanent": true
+        }
+      ],
+      "residuals": [
+        {
+          "band": "y 7000-7500",
+          "pct": 16.5,
+          "cause": "~8px vertical offset ghost through the image-heavy career-card stack (jobs-teaser caption wrap trade-off)",
+          "flaggedFor": "delivery"
+        },
+        {
+          "band": "y 4500-5500",
+          "pct": 13,
+          "cause": "energy-card image crops at mobile rendition + small offsets",
+          "flaggedFor": "delivery"
+        },
+        {
+          "band": "y 9500-10500",
+          "pct": 11,
+          "cause": "footer internal metrics (-15px: talk-to-us row, legal nav pitch)",
+          "flaggedFor": "delivery"
+        },
+        {
+          "band": "spotlight",
+          "pct": 3,
+          "cause": "ticker window slide identity nondeterministic per capture",
+          "permanent": true
+        }
+      ]
+    },
+    "1440": {
+      "iterations": 3,
+      "liveHits": {
+        "stitch": 4,
+        "contentDiff": 2,
+        "visualDiff": 1,
+        "anchor": 2
+      },
+      "result": {
+        "structuralRed": 0,
+        "structuralRedJustified": 10,
+        "visualFlags": "none",
+        "pixelPct": 1.69,
+        "heightDelta": 1,
+        "pass": true
+      },
+      "justified": [
+        {
+          "probe": "content",
+          "flag": "9x MISSING CTA with @media style-prefix text",
+          "why": "live wraps an inline <style> with per-load random data-image-id inside card links; fragments concatenate into matched build EXTRAs with identical hrefs (#87 confirm-justify); nondeterministic per load",
+          "permanent": true
+        },
+        {
+          "probe": "content",
+          "flag": "MISSING EYEBROW 'Chapters' + ~100 yellow MISSING BODY",
+          "why": "video.js player-internal hidden UI strings (caption-settings dialog); mirroring the whole vjs DOM is class-level absurd",
+          "permanent": true
+        }
+      ],
+      "residuals": [
+        {
+          "band": "y 4000-4500",
+          "pct": 4.7,
+          "cause": "card image rendition scaling + video frame decode differences",
+          "flaggedFor": "delivery"
+        },
+        {
+          "band": "y 7500-7885",
+          "pct": 4.2,
+          "cause": "footer icon-row metrics + endorsement svg omitted (tiny partner logo)",
+          "flaggedFor": "delivery"
+        },
+        {
+          "band": "hero",
+          "pct": 0.8,
+          "cause": "hero carousel slide identity nondeterministic per live capture (autoplay); freeze policy = slide 1 at t=0; final capture caught slide 1",
+          "permanent": true
+        },
+        {
+          "band": "grey bands",
+          "pct": 1,
+          "cause": "loosefield decorations have randomized inline positions per live page load",
+          "permanent": true
+        },
+        {
+          "band": "share box",
+          "pct": 0.5,
+          "cause": "euroland ticker iframe carries live market data; both sides load the live embed so deltas are timing-only",
+          "permanent": true
+        }
+      ],
+      "captureState": [
+        {
+          "what": "strategy film video poster state (video.js, preload none)",
+          "where": "quote-band"
+        }
+      ]
+    }
+  },
+  "publishedOrigin": {
+    "360": {
+      "pixelPct": 9.86,
+      "heightDelta": 2,
+      "pass": true,
+      "iterations": 5,
+      "note": "cap exceeded by 2 documented rounds: one excluded as a no-op instrument round (16px pad rule matched existing value), final round was a single-line wrap-parity fix"
+    },
+    "1440": {
+      "pixelPct": 2.64,
+      "heightDelta": 8,
+      "pass": true,
+      "iterations": 3
+    },
+    "url": "https://main--rwe--paolomoz.aem.page/ (+ aem.live)",
+    "gatedAt": "2026-08-26T19:37:03.284Z",
+    "contentDiffAdvisory": {
+      "reds": 23,
+      "verdict": "all justified by eye: 9 nondeterministic style-prefix ids (permanent), 1+~100 video.js internal UI strings (permanent), 13 whitespace-join classifier keys from JS-built DOM (links verified present in delivered DOM + plain.html)"
+    },
+    "cls": 0.0004,
+    "plainHtml": {
+      "h1": 1,
+      "aboutError": 0,
+      "imgs": 19
+    },
+    "computedStyleGuard": "all grids/flex compute, 0 pageerrors, 0 broken imgs, blocks loaded",
+    "instrumentFixesRound2": [
+      "fullpage: force-decode imgs (rule-4 gray placeholder trap on authored <img>)",
+      "fullpage: slick first-dot click for carousel t=0 determinism (symmetric)"
+    ]
   }
 }

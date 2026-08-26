@@ -15,10 +15,10 @@
       "slug": "index",
       "url": "https://www.rwe.com/en/",
       "type": "landing",
-      "status": "approved",
+      "status": "migrated",
       "currentStatePath": "stardust/current/pages/index.json",
       "prototypePath": "stardust/prototypes/index-proposed.html",
-      "migratedPath": null,
+      "migratedPath": "content/index.html",
       "history": [
         {
           "status": "extracted",
@@ -43,6 +43,15 @@
               "heightDelta": 1,
               "structuralRed": 0
             }
+          }
+        },
+        {
+          "status": "migrated",
+          "at": "2026-08-26T19:37:03.286Z",
+          "deployed": "https://main--rwe--paolomoz.aem.live/",
+          "publishedGate": {
+            "360": 9.86,
+            "1440": 2.64
           }
         }
       ]
