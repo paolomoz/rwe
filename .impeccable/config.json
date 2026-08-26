@@ -1,0 +1,26 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "design-system-color",
+        "value": "#52555c",
+        "createdAt": "2026-08-26T16:22:57.394Z",
+        "reason": "stardust:replica — lifted verbatim from rwe.com nkStyles slider-arrow text-shadow; replica forbids palette changes"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "#c2c2c2",
+        "createdAt": "2026-08-26T16:22:57.434Z",
+        "reason": "stardust:replica — lifted verbatim from rwe.com image-container placeholder background; replica forbids palette changes"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "rgba(15, 114, 139, 0.9)",
+        "createdAt": "2026-08-26T16:56:40.042Z",
+        "reason": "stardust:replica — lifted verbatim from rwe.com media-container::before scrim gradient (probed computed style); replica forbids palette changes"
+      }
+    ]
+  }
+}

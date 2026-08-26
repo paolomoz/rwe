@@ -1,27 +1,219 @@
-.cards > ul {
+/* cards — RWE teaser cards (variants: color / media [grey] / contact) */
+
+.cards .card-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -12px;
+  padding: 16px 0 0;
   list-style: none;
-  margin: 0;
-  padding: 0;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(257px, 1fr));
-  gap: 24px;
 }
 
-.cards > ul > li {
-  border: 1px solid #dadada;
-  background-color: var(--background-color);
+.cards .cell {
+  width: 33.333%;
+  padding: 0 12px;
 }
 
-.cards .cards-card-body {
-  margin: 16px;
+/* --- color variant: 6-up text cards, 12px cell padding all around --- */
+.cards.color .card-list {
+  padding: 16px 0;
 }
 
-.cards .cards-card-image {
-  line-height: 0;
+.cards.color .cell {
+  padding: 12px;
 }
 
-.cards > ul > li img {
+.cards.color .card {
+  background: #fff;
+  height: 0;
+  padding-top: 66.66%;
+  position: relative;
+}
+
+.cards.color .card > a {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cards.color header {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.cards.color h3.headline {
+  color: var(--navy);
+  margin-bottom: 24px;
+}
+
+.cards.color p {
+  margin-bottom: 16px;
+}
+
+.cards.color .affordance {
+  margin: 0 24px 24px;
+}
+
+/* --- media variant: image top + body --- */
+.cards.media .card > a {
+  display: flex;
+  flex-direction: column;
+}
+
+.cards.media .card-media {
+  aspect-ratio: 3 / 2;
+  background-color: #c2c2c2;
+  overflow: hidden;
+}
+
+.cards.media .card-media picture,
+.cards.media .card-media img {
   width: 100%;
-  aspect-ratio: 4 / 3;
+  height: 100%;
   object-fit: cover;
+}
+
+.cards.media .card-body {
+  padding: 24px;
+  height: 251px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  background: #fff;
+}
+
+.cards.media.grey .card-body {
+  background: var(--surface);
+}
+
+.cards.media h3.headline {
+  color: var(--navy);
+}
+
+.cards.media p {
+  margin-bottom: 24px;
+}
+
+.cards.media .card-cta {
+  display: inline-block;
+  border: 2px solid var(--teal);
+  border-radius: 5px;
+  padding: 8px 24px;
+  font-family: var(--medium-font-family);
+  font-size: 18px;
+  line-height: 22px;
+  color: var(--teal);
+  text-align: center;
+}
+
+.cards.media .card > a:hover .card-cta {
+  background: var(--teal);
+  color: #fff;
+  transition: background-color 0.2s ease;
+}
+
+/* --- contact variant: icon cards, centered --- */
+.cards.contact .card-list {
+  padding: 32px 0 0;
+}
+
+.cards.contact .card {
+  text-align: center;
+}
+
+.cards.contact .icon-img {
+  width: 220px;
+  height: 220px;
+  margin: 0 auto 24px;
+}
+
+.cards.contact .icon-img picture,
+.cards.contact .icon-img img {
+  width: 220px;
+  height: 220px;
+  object-fit: contain;
+}
+
+.cards.contact h2.headline {
+  color: var(--navy);
+}
+
+.cards.contact p {
+  margin-bottom: 24px;
+}
+
+.cards.contact .affordance {
+  justify-content: center;
+  width: 100%;
+}
+
+@media (width <= 767px) {
+  .cards .card-list {
+    display: block;
+    margin: 0;
+    padding: 8px 16px 0;
+  }
+
+  .cards .cell {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 16px;
+  }
+
+  .cards .cell:last-child {
+    margin-bottom: 0;
+  }
+
+  .cards.color .cell {
+    padding: 0;
+  }
+
+  .cards.color header {
+    padding: 16px;
+  }
+
+  .cards.color h3.headline {
+    margin-bottom: 16px;
+  }
+
+  .cards.color .affordance {
+    margin: 0 16px 16px;
+  }
+
+  .cards.media .card-body {
+    padding: 16px;
+    height: auto;
+  }
+
+  .cards.media p {
+    margin-bottom: 16px;
+  }
+
+  .cards.media .card-cta {
+    font-size: 15px;
+    line-height: 18px;
+    padding: 8px 16px;
+  }
+
+  .cards.contact .card-list {
+    padding: 16px 16px 0;
+  }
+
+  .cards.contact .icon-img,
+  .cards.contact .icon-img picture,
+  .cards.contact .icon-img img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .cards.contact .icon-img {
+    margin-bottom: 16px;
+  }
+
+  .cards.contact p {
+    margin-bottom: 32px;
+  }
 }

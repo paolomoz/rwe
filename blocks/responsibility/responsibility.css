@@ -1,0 +1,140 @@
+/* responsibility — video teaser + info sidebar */
+
+.responsibility .teaser-row {
+  display: flex;
+  margin: 0 -12px;
+  padding-bottom: 16px;
+}
+
+.responsibility .teaser-col-main {
+  width: calc(100% - 299px);
+  padding: 0 12px;
+}
+
+.responsibility .teaser-col-side {
+  width: 299px;
+  padding: 0 12px;
+}
+
+.responsibility .resp-video-teaser {
+  position: relative;
+  height: 581px;
+  overflow: hidden;
+  display: block;
+}
+
+.responsibility .resp-video-teaser video {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 581px;
+  object-fit: contain;
+}
+
+.responsibility .teaser-caption {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 24px;
+  color: #fff;
+}
+
+.responsibility .teaser-caption h3.headline {
+  color: #fff;
+  margin-bottom: 24px;
+  max-width: 650px;
+}
+
+.responsibility .teaser-caption p {
+  color: #fff;
+  max-width: 650px;
+}
+
+.responsibility .teaser-caption .affordance {
+  margin: 24px 0 0;
+}
+
+.responsibility .info-for {
+  background: var(--teal);
+  color: #fff;
+  padding: 24px;
+  height: 581px;
+}
+
+.responsibility .info-for h3.headline {
+  color: #fff;
+  margin-bottom: 24px;
+}
+
+.responsibility .info-for ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.responsibility .info-for ul li a {
+  display: block;
+  font-family: var(--medium-font-family);
+  font-size: 18px;
+  line-height: 22px;
+  color: #fff;
+  padding: 8px 0;
+}
+
+.responsibility .info-for ul li:first-child a {
+  padding-top: 0;
+}
+
+.responsibility .info-for ul li:last-child a {
+  padding-bottom: 0;
+}
+
+@media (width <= 767px) {
+  .responsibility .teaser-row {
+    display: block;
+    margin: 0;
+    padding: 0 16px 8px;
+  }
+
+  .responsibility .teaser-col-main,
+  .responsibility .teaser-col-side {
+    width: 100%;
+    padding: 0;
+  }
+
+  .responsibility .teaser-col-main {
+    margin-bottom: 16px;
+  }
+
+  .responsibility .resp-video-teaser {
+    height: auto;
+    aspect-ratio: 296 / 197;
+  }
+
+  .responsibility .resp-video-teaser video {
+    position: static;
+    transform: none;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .responsibility .teaser-caption {
+    padding: 16px;
+  }
+
+  .responsibility .teaser-caption .affordance {
+    margin-top: 8px;
+  }
+
+  .responsibility .info-for {
+    height: auto;
+    padding: 16px;
+  }
+
+  .responsibility .info-for ul li a {
+    font-size: 15px;
+  }
+}

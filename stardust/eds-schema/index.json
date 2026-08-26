@@ -1,0 +1,742 @@
+{
+ "source": "http://localhost:8797/index-proposed.html",
+ "width": 1280,
+ "profile": "eds",
+ "sections": [
+  {
+   "section": "hero",
+   "items": [
+    {
+     "role": "body",
+     "order": 0,
+     "text": "Energy for the Future"
+    },
+    {
+     "role": "heading",
+     "order": 1,
+     "text": "RWE invests billions of euros for profitable portfolio expansion"
+    },
+    {
+     "role": "cta",
+     "order": 2,
+     "text": "Find out more",
+     "href": "/en/the-group/purpose-and-strategy/"
+    },
+    {
+     "role": "body",
+     "order": 3,
+     "text": "Statements & Positions"
+    },
+    {
+     "role": "heading",
+     "order": 4,
+     "text": "Immerse yourself in exciting perspectives and approaches from RWE on key topics in the energy industry"
+    },
+    {
+     "role": "cta",
+     "order": 5,
+     "text": "Find out more",
+     "href": "/en/press/statements-and-positions/"
+    },
+    {
+     "role": "body",
+     "order": 6,
+     "text": "Events & Financial Publications"
+    },
+    {
+     "role": "heading",
+     "order": 7,
+     "text": "All events and publications for investors and interested parties"
+    },
+    {
+     "role": "cta",
+     "order": 8,
+     "text": "Find out more",
+     "href": "/en/investor-relations/financial-calendar-and-publications/"
+    },
+    {
+     "role": "body",
+     "order": 9,
+     "text": "From here, you can"
+    },
+    {
+     "role": "body",
+     "order": 10,
+     "text": "kick-start your career."
+    },
+    {
+     "role": "heading",
+     "order": 11,
+     "text": "Apply now for an exciting job at RWE!"
+    },
+    {
+     "role": "cta",
+     "order": 12,
+     "text": "To the Jobs",
+     "href": "/en/rwe-careers-portal/job-offers/"
+    },
+    {
+     "role": "body",
+     "order": 13,
+     "text": "1"
+    },
+    {
+     "role": "body",
+     "order": 14,
+     "text": "2"
+    },
+    {
+     "role": "body",
+     "order": 15,
+     "text": "3"
+    },
+    {
+     "role": "body",
+     "order": 16,
+     "text": "4"
+    }
+   ],
+   "imgCount": 0,
+   "repeats": [
+    {
+     "unitSelector": "DIV.slider-slide",
+     "count": 4,
+     "unit": {
+      "headings": 2,
+      "ctas": 1,
+      "imgs": 0,
+      "textRuns": 3
+     },
+     "uniform": false
+    },
+    {
+     "unitSelector": "LI.",
+     "count": 3,
+     "unit": {
+      "headings": 0,
+      "ctas": 0,
+      "imgs": 0,
+      "textRuns": 1
+     },
+     "uniform": true
+    }
+   ]
+  },
+  {
+   "section": "spotlight",
+   "items": [
+    {
+     "role": "heading",
+     "order": 0,
+     "text": "Spotlight @ RWE.com"
+    },
+    {
+     "role": "body",
+     "order": 1,
+     "text": "Thursday, November 13, 2025"
+    },
+    {
+     "role": "heading",
+     "order": 2,
+     "text": "Only five DAX companies on track for Paris climate targets"
+    },
+    {
+     "role": "body",
+     "order": 3,
+     "text": "The latest “whatif?” report by right° confirms that RWE is among the few DAX companies with climate strategies aligned with the Paris Agreement. This recognition encourages to continue its path to climate neutrality by 2040. Earlier this year, RWE’s strategy was certified by the Science Based Targets initiative."
+    },
+    {
+     "role": "cta",
+     "order": 4,
+     "text": "More on climate protection",
+     "href": "/en/responsibility-and-sustainability/environmental-protection/climate/"
+    },
+    {
+     "role": "body",
+     "order": 5,
+     "text": "Friday, March 6, 2026"
+    },
+    {
+     "role": "heading",
+     "order": 6,
+     "text": "What happens to dismantled wind turbines and decommissioned power stations?"
+    },
+    {
+     "role": "body",
+     "order": 7,
+     "text": "The circular economy is an essential aspect of planning modern energy facilities. Recycling and re-use concepts ensure that valuable resources are preserved, and raw materials are fed back into the production cycle."
+    },
+    {
+     "role": "cta",
+     "order": 8,
+     "text": "Read more",
+     "href": "https://links.rwe.com/transition-start"
+    },
+    {
+     "role": "body",
+     "order": 9,
+     "text": "Friday, March 6, 2026"
+    },
+    {
+     "role": "heading",
+     "order": 10,
+     "text": "Why Resilience Is the Decade’s Defining Challenge"
+    },
+    {
+     "role": "body",
+     "order": 11,
+     "text": "Markus Krebber highlights the urgency of a robust energy system."
+    },
+    {
+     "role": "cta",
+     "order": 12,
+     "text": "To the statement",
+     "href": "/en/press/statements-and-positions/why-resilience-is-the-decades-defining-challenge/"
+    },
+    {
+     "role": "body",
+     "order": 13,
+     "text": "Wednesday, January 7, 2026"
+    },
+    {
+     "role": "heading",
+     "order": 14,
+     "text": "Powering the Future"
+    },
+    {
+     "role": "body",
+     "order": 15,
+     "text": "Rising demand, strategic investments, and the path to growth in 2026. Markus Krebber outlines the main trends shaping the energy sector in 2026 – from surging demand driven by electrification and AI to the urgent need for stable investment frameworks and a strategy for sustainable, affordable energy."
+    },
+    {
+     "role": "cta",
+     "order": 16,
+     "text": "Read more",
+     "href": "/en/press/statements-and-positions/powering-the-future/"
+    },
+    {
+     "role": "body",
+     "order": 17,
+     "text": "Thursday, November 13, 2025"
+    },
+    {
+     "role": "heading",
+     "order": 18,
+     "text": "Only five DAX companies on track for Paris climate targets"
+    },
+    {
+     "role": "body",
+     "order": 19,
+     "text": "The latest “whatif?” report by right° confirms that RWE is among the few DAX companies with climate strategies aligned with the Paris Agreement. This recognition encourages to continue its path to climate neutrality by 2040. Earlier this year, RWE’s strategy was certified by the Science Based Targets initiative."
+    },
+    {
+     "role": "cta",
+     "order": 20,
+     "text": "More on climate protection",
+     "href": "/en/responsibility-and-sustainability/environmental-protection/climate/"
+    },
+    {
+     "role": "body",
+     "order": 21,
+     "text": "Friday, March 6, 2026"
+    },
+    {
+     "role": "heading",
+     "order": 22,
+     "text": "What happens to dismantled wind turbines and decommissioned power stations?"
+    },
+    {
+     "role": "body",
+     "order": 23,
+     "text": "The circular economy is an essential aspect of planning modern energy facilities. Recycling and re-use concepts ensure that valuable resources are preserved, and raw materials are fed back into the production cycle."
+    },
+    {
+     "role": "cta",
+     "order": 24,
+     "text": "Read more",
+     "href": "https://links.rwe.com/transition-start"
+    },
+    {
+     "role": "body",
+     "order": 25,
+     "text": "Friday, March 6, 2026"
+    },
+    {
+     "role": "heading",
+     "order": 26,
+     "text": "Why Resilience Is the Decade’s Defining Challenge"
+    },
+    {
+     "role": "body",
+     "order": 27,
+     "text": "Markus Krebber highlights the urgency of a robust energy system."
+    },
+    {
+     "role": "cta",
+     "order": 28,
+     "text": "To the statement",
+     "href": "/en/press/statements-and-positions/why-resilience-is-the-decades-defining-challenge/"
+    },
+    {
+     "role": "body",
+     "order": 29,
+     "text": "Wednesday, January 7, 2026"
+    },
+    {
+     "role": "heading",
+     "order": 30,
+     "text": "Powering the Future"
+    },
+    {
+     "role": "body",
+     "order": 31,
+     "text": "Rising demand, strategic investments, and the path to growth in 2026. Markus Krebber outlines the main trends shaping the energy sector in 2026 – from surging demand driven by electrification and AI to the urgent need for stable investment frameworks and a strategy for sustainable, affordable energy."
+    },
+    {
+     "role": "cta",
+     "order": 32,
+     "text": "Read more",
+     "href": "/en/press/statements-and-positions/powering-the-future/"
+    },
+    {
+     "role": "body",
+     "order": 33,
+     "text": "Thursday, November 13, 2025"
+    },
+    {
+     "role": "heading",
+     "order": 34,
+     "text": "Only five DAX companies on track for Paris climate targets"
+    },
+    {
+     "role": "body",
+     "order": 35,
+     "text": "The latest “whatif?” report by right° confirms that RWE is among the few DAX companies with climate strategies aligned with the Paris Agreement. This recognition encourages to continue its path to climate neutrality by 2040. Earlier this year, RWE’s strategy was certified by the Science Based Targets initiative."
+    },
+    {
+     "role": "cta",
+     "order": 36,
+     "text": "More on climate protection",
+     "href": "/en/responsibility-and-sustainability/environmental-protection/climate/"
+    }
+   ],
+   "imgCount": 1,
+   "repeats": [
+    {
+     "unitSelector": "DIV.slider-element",
+     "count": 9,
+     "unit": {
+      "headings": 1,
+      "ctas": 1,
+      "imgs": 0,
+      "textRuns": 4
+     },
+     "uniform": true
+    }
+   ]
+  },
+  {
+   "section": "band",
+   "items": [
+    {
+     "role": "body",
+     "order": 0,
+     "text": "\"The best energy company we can be!\""
+    },
+    {
+     "role": "body",
+     "order": 1,
+     "text": "With more than 125 years of successful history behind us, RWE has undergone fundamental change and is now a leading supplier of renewables worldwide. With wind farms, solar power and battery storage facilities in many countries. Even today, most of our core business is green electricity."
+    },
+    {
+     "role": "body",
+     "order": 2,
+     "text": "And we want to get better and better, investing billions of euros in renewables and entering the promising hydrogen technology at full speed. Together, we have achieved a lot and we will continue on our path: For a sustainable future, for achieving net zero emissions by 2040 - for the best energy company we can be!"
+    },
+    {
+     "role": "cta",
+     "order": 3,
+     "text": "Our strategy at a glance",
+     "href": "/en/the-group/purpose-and-strategy/"
+    },
+    {
+     "role": "body",
+     "order": 4,
+     "text": "Play Video"
+    }
+   ],
+   "imgCount": 2,
+   "repeats": [
+    {
+     "unitSelector": "DIV.col",
+     "count": 2,
+     "unit": {
+      "headings": 0,
+      "ctas": 1,
+      "imgs": 0,
+      "textRuns": 3
+     },
+     "uniform": false
+    }
+   ]
+  },
+  {
+   "section": "text-band",
+   "items": [
+    {
+     "role": "heading",
+     "order": 0,
+     "text": "Our energy for a sustainable life"
+    },
+    {
+     "role": "body",
+     "order": 1,
+     "text": "RWE has reliably supplied people and companies with electricity for more than 125 years – night and day. Many of us take electricity for granted. As well as the fact that it comes out of our sockets at any time. And we can, because power generators like RWE make sure that it does. Decarbonisation and sustainability are key components of our corporate strategy. And we have a clear objective: climate-neutral by 2040."
+    }
+   ],
+   "imgCount": 0,
+   "repeats": []
+  },
+  {
+   "section": "band",
+   "items": [
+    {
+     "role": "cta",
+     "order": 0,
+     "text": "Responsibility & sustainability How we take responsibility and act sustainably Read more",
+     "href": "/en/responsibility-and-sustainability/"
+    },
+    {
+     "role": "heading",
+     "order": 1,
+     "text": "Information for…"
+    },
+    {
+     "role": "cta",
+     "order": 2,
+     "text": "Future employees",
+     "href": "/en/rwe-careers-portal/"
+    },
+    {
+     "role": "cta",
+     "order": 3,
+     "text": "Neighbours",
+     "href": "/en/our-neighbourhood/"
+    },
+    {
+     "role": "cta",
+     "order": 4,
+     "text": "Trading partners",
+     "href": "/en/products-and-services/energy-transition-investments/"
+    },
+    {
+     "role": "cta",
+     "order": 5,
+     "text": "Investors + analysts",
+     "href": "/en/investor-relations/"
+    },
+    {
+     "role": "cta",
+     "order": 6,
+     "text": "Procurement",
+     "href": "/en/products-and-services/supplier-portal/"
+    },
+    {
+     "role": "cta",
+     "order": 7,
+     "text": "Press",
+     "href": "/en/press/"
+    },
+    {
+     "role": "cta",
+     "order": 8,
+     "text": "RWE @ Social Media LinkedIn, Instagram & Co.: Follow our accounts for all latest news. Read more",
+     "href": "/en/press/#rwe-at-social-media"
+    },
+    {
+     "role": "cta",
+     "order": 9,
+     "text": "Research & Development Shaping the energy world of the future through innovation. Read more",
+     "href": "/en/research-and-development/"
+    },
+    {
+     "role": "cta",
+     "order": 10,
+     "text": "Environmental protection Environmental protection is an integral part of RWE's sustainability policy. Read more",
+     "href": "/en/responsibility-and-sustainability/environmental-protection/"
+    },
+    {
+     "role": "cta",
+     "order": 11,
+     "text": "Our locations An overview of our international locations. Read more",
+     "href": "/en/the-group/countries-and-locations/"
+    },
+    {
+     "role": "cta",
+     "order": 12,
+     "text": "Hydrogen The key to the success of the energy transition. Read more",
+     "href": "/en/research-and-development/hydrogen-projects/"
+    },
+    {
+     "role": "cta",
+     "order": 13,
+     "text": "Diversity We take our responsibility for Diversity, Equity and Inclusion seriously and it's embedded in our ways of working. Read more",
+     "href": "/en/the-group/diversity-at-rwe/"
+    },
+    {
+     "role": "heading",
+     "order": 14,
+     "text": "Our expertise – opening up new ways to save electricity"
+    },
+    {
+     "role": "body",
+     "order": 15,
+     "text": "RWE is a trusted partner for electricity generation, building storage systems and energy trading. Together with our partners we develop innovative solutions and drive technological progress for our customers. In these times of transition, we all have the unique opportunity to help re-shape the energy supply for future generations. RWE is changing, its renewables business is expanding massively and is adapting to meet the new challenges posed within the existing business."
+    }
+   ],
+   "imgCount": 2,
+   "repeats": [
+    {
+     "unitSelector": "LI.",
+     "count": 6,
+     "unit": {
+      "headings": 0,
+      "ctas": 1,
+      "imgs": 0,
+      "textRuns": 1
+     },
+     "uniform": true
+    },
+    {
+     "unitSelector": "DIV.cell",
+     "count": 6,
+     "unit": {
+      "headings": 1,
+      "ctas": 1,
+      "imgs": 0,
+      "textRuns": 3
+     },
+     "uniform": true
+    }
+   ]
+  },
+  {
+   "section": "full",
+   "items": [
+    {
+     "role": "cta",
+     "order": 0,
+     "text": "Obtaining energy and trading it globally Energy knows no boundaries – nor does our enthusiasm for producing it or for operating on trading markets. Read more",
+     "href": "/en/products-and-services/"
+    }
+   ],
+   "imgCount": 0,
+   "repeats": []
+  },
+  {
+   "section": "band",
+   "items": [
+    {
+     "role": "cta",
+     "order": 0,
+     "text": "Our Energy Ranging from conventional to renewable energies. Discover all energy sources of RWE. Read more",
+     "href": "/en/our-energy/"
+    },
+    {
+     "role": "cta",
+     "order": 1,
+     "text": "Products and Services RWE – a strong global partner. Read more",
+     "href": "/en/products-and-services/"
+    },
+    {
+     "role": "cta",
+     "order": 2,
+     "text": "Our projects A selection of our international project highlights. Read more",
+     "href": "/en/products-and-services/project-references/"
+    }
+   ],
+   "imgCount": 2,
+   "repeats": [
+    {
+     "unitSelector": "DIV.cell",
+     "count": 3,
+     "unit": {
+      "headings": 1,
+      "ctas": 1,
+      "imgs": 0,
+      "textRuns": 3
+     },
+     "uniform": true
+    }
+   ]
+  },
+  {
+   "section": "working",
+   "items": [
+    {
+     "role": "heading",
+     "order": 0,
+     "text": "International, open, diverse – working at RWE"
+    },
+    {
+     "role": "body",
+     "order": 1,
+     "text": "Interested in joining RWE? As an employee you have countless opportunities to become part of our global #TeamRWE. Regardless of where you come from or your academic background, from here, we are shaping the future of the energy transition."
+    },
+    {
+     "role": "body",
+     "order": 2,
+     "text": "Our employees see challenges as opportunities. They are guided by our set of core values: trust, passion, and performance – in a corporate culture that creates space for creative ideas and curiosity to explore."
+    },
+    {
+     "role": "body",
+     "order": 3,
+     "text": "Your energy has impact. Use it for good. Find out more and apply now!"
+    },
+    {
+     "role": "cta",
+     "order": 4,
+     "text": "RWE's career world Professionally experienced, graduate, student or pupil? Discover opportunities",
+     "href": "/en/rwe-careers-portal/"
+    },
+    {
+     "role": "cta",
+     "order": 5,
+     "text": "RWE as an employer Fulfilling tasks, esteeming benefits, colleagues being there for you: That is what sets us apart. So why RWE?",
+     "href": "/en/rwe-careers-portal/why-work-here/"
+    },
+    {
+     "role": "cta",
+     "order": 6,
+     "text": "Meet #TeamRWE Get to know your future colleagues – with videos, podcasts and stories that show what working at RWE is really like. Explore stories",
+     "href": "/en/rwe-careers-portal/teamrwe/"
+    }
+   ],
+   "imgCount": 1,
+   "repeats": [
+    {
+     "unitSelector": "P.",
+     "count": 3,
+     "unit": {
+      "headings": 0,
+      "ctas": 0,
+      "imgs": 0,
+      "textRuns": 0
+     },
+     "uniform": false
+    },
+    {
+     "unitSelector": "DIV.cell",
+     "count": 3,
+     "unit": {
+      "headings": 1,
+      "ctas": 1,
+      "imgs": 0,
+      "textRuns": 3
+     },
+     "uniform": true
+    }
+   ]
+  },
+  {
+   "section": "band",
+   "items": [
+    {
+     "role": "heading",
+     "order": 0,
+     "text": "Media and share price"
+    },
+    {
+     "role": "body",
+     "order": 1,
+     "text": "RWE is set to grow. Our clearly structured portfolio is built on a solid financial base. We provide shareholders, investors and journalists with daily press releases and information about the share price."
+    },
+    {
+     "role": "heading",
+     "order": 2,
+     "text": "Press releases"
+    },
+    {
+     "role": "cta",
+     "order": 3,
+     "text": "View all",
+     "href": "/en/press/"
+    },
+    {
+     "role": "cta",
+     "order": 4,
+     "text": "13 August RWE delivers strong first-half results Continue",
+     "href": "https://www.rwe.com/en/press/rwe-ag/2026-08-13-rwe-delivers-strong-first-half-results/"
+    },
+    {
+     "role": "cta",
+     "order": 5,
+     "text": "11 August Construction complete at RWE’s Enoch Hill onshore wind farm in East Ayrshire Continue",
+     "href": "https://www.rwe.com/en/press/rwe-renewables-europe-australia/2026-08-11-construction-complete-at-rwes-enoch-hill-onshore-wind-farm/"
+    },
+    {
+     "role": "cta",
+     "order": 6,
+     "text": "6 August RWE U.S. Offshore reaches settlement agreement with U.S. Department of Interior on offshore wind leases Continue",
+     "href": "https://www.rwe.com/en/press/rwe-americas/2026-08-06-rwe-us-offshore-reaches-settlement-with-doi-on-offshore-wind-leases/"
+    }
+   ],
+   "imgCount": 2,
+   "repeats": [
+    {
+     "unitSelector": "LI.",
+     "count": 3,
+     "unit": {
+      "headings": 1,
+      "ctas": 1,
+      "imgs": 0,
+      "textRuns": 4
+     },
+     "uniform": true
+    }
+   ]
+  },
+  {
+   "section": "contact-band",
+   "items": [
+    {
+     "role": "body",
+     "order": 0,
+     "text": "If you have any questions, we will be happy to help"
+    },
+    {
+     "role": "cta",
+     "order": 1,
+     "text": "Contact and services Find the right contact partner. Find out more",
+     "href": "/en/contact-services/"
+    },
+    {
+     "role": "cta",
+     "order": 2,
+     "text": "RWE in your area Our sites at a glance. Find out more",
+     "href": "/en/the-group/countries-and-locations/?locationType=0b515186-8541-45fa-8de3-50a449c731cc#map"
+    },
+    {
+     "role": "cta",
+     "order": 3,
+     "text": "Documents Publications in downloadable PDF format. Find out more",
+     "href": "/en/contact-services/download-centre/"
+    }
+   ],
+   "imgCount": 0,
+   "repeats": [
+    {
+     "unitSelector": "DIV.cell",
+     "count": 3,
+     "unit": {
+      "headings": 1,
+      "ctas": 1,
+      "imgs": 0,
+      "textRuns": 3
+     },
+     "uniform": true
+    }
+   ]
+  }
+ ]
+}

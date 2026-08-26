@@ -1,37 +1,246 @@
-.hero-container .hero-wrapper {
-  max-width: unset;
+/* hero — RWE stage carousel (values lifted from rwe.com, see stardust/replica/lift-1440.json) */
+
+main .hero-container > div {
+  max-width: none;
   padding: 0;
 }
 
 .hero {
   position: relative;
-  padding: 40px 24px;
-  min-height: 300px;
+  height: 900px;
 }
 
-.hero h1 {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  color: var(--background-color);
-}
-
-.hero picture {
-  position: absolute;
-  z-index: -1;
-  inset: 0;
-  object-fit: cover;
-  box-sizing: border-box;
-}
-
-.hero img {
-  object-fit: cover;
-  width: 100%;
+.hero .slick-list {
+  overflow: hidden;
   height: 100%;
 }
 
-@media (width >= 900px) {
+.hero .hero-track {
+  position: relative;
+  height: 100%;
+}
+
+.hero .slider-slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  z-index: 1;
+  transition: opacity 0.5s ease;
+}
+
+.hero .slider-slide.active {
+  opacity: 1;
+  z-index: 2;
+}
+
+.hero .stage {
+  position: absolute;
+  inset: 0;
+  background-image: var(--grad);
+  display: flex;
+}
+
+.hero .stage-image {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+
+.hero .stage-image picture,
+.hero .stage-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero .teaser-width {
+  position: relative;
+  max-width: var(--container);
+  margin: 0 auto;
+  width: 100%;
+  padding: 130px 0 110px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.hero header.stage-box {
+  padding: 24px;
+  border-radius: 6px;
+  margin-bottom: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.hero header.stage-box--light {
+  background-color: rgb(255 255 255 / 70%);
+}
+
+.hero header.stage-box--gradient {
+  background-image: linear-gradient(45deg, rgb(29 68 119 / 90%) 22%, rgb(0 161 159 / 75%));
+}
+
+.hero h1.headline,
+.hero h2.headline {
+  font-size: var(--heading-font-size-xxl);
+  line-height: var(--heading-line-height-xxl);
+  color: #fff;
+  margin: 0;
+}
+
+.hero .headline .hl-navy {
+  color: var(--navy);
+  display: block;
+  margin-bottom: 8px;
+}
+
+.hero .headline .hl-white {
+  color: #fff;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.hero .subheadline {
+  font-family: var(--heading-font-family);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  margin: 0 0 24px;
+  color: #fff;
+}
+
+.hero .subheadline--navy {
+  color: var(--navy);
+}
+
+.hero .buttons-container {
+  display: flex;
+}
+
+.hero .buttons-container .button {
+  margin-right: 8px;
+}
+
+.hero .stage-box--gradient a.button.secondary {
+  color: #fff;
+}
+
+/* arrows */
+.hero .slider-arrow {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  width: 60px;
+  height: 60px;
+  background: none;
+  border: 0;
+  cursor: pointer;
+  z-index: 3;
+  padding: 1px 6px;
+}
+
+.hero .slider-arrow::before {
+  display: block;
+  font-size: 42px;
+  font-family: RWE_Icon_Font, sans-serif;
+  font-weight: 800;
+  color: #fff;
+  text-shadow: 0 0 6px #52555c;
+}
+
+.hero .slider-prev { left: 9px; }
+.hero .slider-prev::before { content: '\e911'; }
+.hero .slider-next { right: 9px; }
+.hero .slider-next::before { content: '\e918'; }
+
+.hero .slider-prev:hover::before { transform: translateX(-15%); transition: 0.2s ease-in-out; }
+.hero .slider-next:hover::before { transform: translateX(15%); transition: 0.2s ease-in-out; }
+
+/* dots */
+.hero .slick-dots {
+  position: absolute;
+  bottom: 32px;
+  left: 0;
+  right: 0;
+  padding-left: 5px;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  z-index: 3;
+}
+
+.hero .slick-dots li {
+  margin: 0 5px;
+  width: 20px;
+  height: 20px;
+  position: relative;
+}
+
+.hero .slick-dots button {
+  display: block;
+  width: 16px;
+  height: 16px;
+  padding: 0;
+  margin: 2px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  background: transparent;
+  color: transparent;
+  font-size: 0;
+  cursor: pointer;
+}
+
+.hero .slick-dots li.slick-active button {
+  background-color: #fff;
+}
+
+@media (width <= 767px) {
   .hero {
-    padding: 40px 32px;
+    height: 562px;
+  }
+
+  .hero .stage-image {
+    bottom: auto;
+    height: 180px;
+  }
+
+  .hero header.stage-box,
+  .hero header.stage-box--light,
+  .hero header.stage-box--gradient {
+    background: none;
+    border-radius: 0;
+    padding: 16px;
+    margin: 0;
+    width: 100%;
+  }
+
+  .hero .teaser-width {
+    padding: 172px 8px 110px;
+    justify-content: flex-start;
+  }
+
+  .hero .headline .hl-navy {
+    color: #fff;
+  }
+
+  .hero .headline .hl-navy,
+  .hero .headline .hl-white {
+    margin-bottom: 4px;
+  }
+
+  .hero .subheadline,
+  .hero .subheadline--navy {
+    font-size: 15px;
+    line-height: 22px;
+    margin-bottom: 16px;
+    color: #fff;
+  }
+
+  .hero .slider-arrow {
+    display: none;
   }
 }

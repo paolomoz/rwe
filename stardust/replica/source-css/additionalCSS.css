@@ -1,0 +1,74 @@
+[data-tpl*=form] .form-control__btns {
+	padding: 0 0 0 0;
+}
+
+[data-tpl="jrc01"] [data-tpl="tic01"] a.color-cta-4.btn {
+    background-color: #00a19f !important;
+    border-color: #00a19f !important;
+}
+
+[data-tpl="jrc01"] [data-tpl="tic01"] a.color-cta-4.btn:hover {
+    background-color: #3ed8c3 !important;
+    border-color: #3ed8c3 !important;
+}
+
+@media (min-width: 800px) {
+    .header-container.navigation--active .header-navigation .logo svg {
+        fill: #fff !important;
+    }
+}
+
+@media (min-width: 1280px) {
+    .header-container.navigation--active .header-navigation .logo svg {
+        fill: #fff !important;
+    }
+}
+
+[data-tpl="las01r"] a {
+    color: #1d4477 !important;
+}
+
+@media (max-width: 799px) {
+    .hotspot-component .hotspot-legend-container {
+		position: relative;
+		margin-top: 8px;
+		margin-bottom: 16px;
+    }
+	.hotspot-component .hotspot-legend-container.position-top {	
+		margin-top: 8px;	
+	}
+	.hotspot-component .hotspot-legend-container.position-bottom {	
+		margin-top: 8px;	
+		margin-bottom: 0;		
+	}	
+	.hotspot-component .hotspot-legend-container ul li button {
+		text-align: left;
+		display: block;
+	}
+	.hotspot-component .hotspot-tooltip[aria-label][data-balloon-pos]:after {
+		z-index: 1000;
+	}
+	.hotspot-component .hotspot-legend-container details summary {
+		user-select: none;
+	}
+}
+
+.zindex1
+{
+	z-index:1;
+}
+
+.zindex2
+{
+	z-index:2;
+}
+
+.rwe-frontend-wrapper .calendar-icon {
+  -webkit-mask-image: url('/-/media/RWE/icons-svg/positive/RWE_calender.svg');
+  mask-image: url('/-/media/RWE/icons-svg/positive/RWE_calender.svg');
+}
+
+[data-tpl=bookable-capacities]
+{
+	width:fit-content;
+}

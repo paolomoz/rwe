@@ -1,0 +1,5 @@
+{"event":"phase-start","skill":"stardust:replica","phase":"extract","at":"2026-08-26T15:50:00Z"}
+{"event":"phase-end","skill":"stardust:replica","phase":"extract","at":"2026-08-26T16:05:00Z","note":"index captured headed-chrome-stealth (Cloudflare challenge); consent text-match fix; settled ground truth via stitch-shot"}
+{"event":"phase-start","skill":"stardust:replica","phase":"preserve-direction","at":"2026-08-26T16:15:00Z"}
+{"event":"phase-end","skill":"stardust:replica","phase":"preserve-direction","at":"2026-08-26T16:04:52.669Z","note":"bounded-single synthesis; empty register (pure replica)"}
+{"event":"phase-end","skill":"stardust:replica","phase":"recreate+gate","at":"2026-08-26T18:09:21.927Z","note":"index archetype gated: 1440 1.68%/D1 0red, 360 8.02%/D0 0red; interaction parity implemented"}

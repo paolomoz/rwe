@@ -1,0 +1,51 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:replica",
+    "writtenAt": "2026-08-26T16:04:52.668Z"
+  },
+  "site": {
+    "originUrl": "https://www.rwe.com/en/",
+    "extractedAt": "2026-08-26T15:58:00Z",
+    "pageCap": 1,
+    "totalDiscovered": 1,
+    "crawled": 1
+  },
+  "pages": [
+    {
+      "slug": "index",
+      "url": "https://www.rwe.com/en/",
+      "type": "landing",
+      "status": "approved",
+      "currentStatePath": "stardust/current/pages/index.json",
+      "prototypePath": "stardust/prototypes/index-proposed.html",
+      "migratedPath": null,
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-08-26T15:58:00Z"
+        },
+        {
+          "status": "prototyped",
+          "at": "2026-08-26T18:05:25.779Z"
+        },
+        {
+          "status": "approved",
+          "at": "2026-08-26T18:09:21.926Z",
+          "approvedBy": "hands-off",
+          "gate": {
+            "360": {
+              "pixelPct": 8.02,
+              "heightDelta": 0,
+              "structuralRed": 0
+            },
+            "1440": {
+              "pixelPct": 1.68,
+              "heightDelta": 1,
+              "structuralRed": 0
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

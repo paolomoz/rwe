@@ -1,7 +1,5 @@
-.*
+stardust/
+content/
+qa/
+fonts/LICENSING.md
 *.md
-karma.config.js
-LICENSE
-package.json
-package-lock.json
-test/*

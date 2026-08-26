@@ -1,0 +1,14 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "design-system-color",
+        "value": "#000",
+        "createdAt": "2026-08-26T18:25:02.654Z",
+        "reason": "stardust:replica — video element letterbox ground behind poster, mirrors the live video.js player's black stage"
+      }
+    ]
+  }
+}

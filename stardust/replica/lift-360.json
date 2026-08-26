@@ -1,0 +1,611 @@
+{
+  "rendering": {
+    "text-rendering": "auto",
+    "-webkit-font-smoothing": "auto",
+    "font-synthesis": "weight style small-caps",
+    "font-variant-numeric": "normal",
+    "font-kerning": "auto",
+    "font-family": "regular, \"Trebuchet MS\", Tahoma, \"sans-serif\"",
+    "font-size": "15px",
+    "line-height": "normal",
+    "color": "rgb(29, 68, 119)",
+    "background-color": "rgb(255, 255, 255)"
+  },
+  "rootVars": {
+    "--swiper-theme-color": "#007aff",
+    "--swiper-navigation-size": "44px",
+    "--balloon-border-radius": "2px",
+    "--balloon-color": "rgba(16,16,16,0.95)",
+    "--balloon-text-color": "#fff",
+    "--balloon-font-size": "12px",
+    "--balloon-move": "4px"
+  },
+  "type": {
+    "h1": {
+      "rect": {
+        "top": 204,
+        "left": 24,
+        "w": 312,
+        "h": 80
+      },
+      "font-family": "bold",
+      "font-size": "32px",
+      "font-weight": "700",
+      "line-height": "36px",
+      "letter-spacing": "normal",
+      "text-transform": "none",
+      "color": "rgb(255, 255, 255)",
+      "margin-top": "0px",
+      "margin-bottom": "0px"
+    },
+    "h2": {
+      "rect": {
+        "top": 578,
+        "left": 60,
+        "w": 284,
+        "h": 28
+      },
+      "font-family": "bold",
+      "font-size": "24px",
+      "font-weight": "700",
+      "line-height": "28px",
+      "letter-spacing": "normal",
+      "text-transform": "none",
+      "color": "rgb(0, 161, 159)",
+      "margin-top": "0px",
+      "margin-bottom": "0px"
+    },
+    "h3": {
+      "rect": {
+        "top": 284,
+        "left": 24,
+        "w": 312,
+        "h": 44
+      },
+      "font-family": "bold",
+      "font-size": "15px",
+      "font-weight": "700",
+      "line-height": "22px",
+      "letter-spacing": "normal",
+      "text-transform": "none",
+      "color": "rgb(255, 255, 255)",
+      "margin-top": "0px",
+      "margin-bottom": "16px"
+    },
+    "h4": {
+      "rect": {
+        "top": 209,
+        "left": 62,
+        "w": 281,
+        "h": 44
+      },
+      "font-family": "regular, \"Trebuchet MS\", Tahoma, \"sans-serif\"",
+      "font-size": "15px",
+      "font-weight": "700",
+      "line-height": "22px",
+      "letter-spacing": "normal",
+      "text-transform": "none",
+      "color": "rgb(29, 68, 119)",
+      "margin-top": "0px",
+      "margin-bottom": "0px"
+    },
+    "p": {
+      "rect": {
+        "top": 253,
+        "left": 62,
+        "w": 249,
+        "h": 220
+      },
+      "font-family": "regular",
+      "font-size": "15px",
+      "font-weight": "400",
+      "line-height": "22px",
+      "letter-spacing": "normal",
+      "text-transform": "none",
+      "color": "rgb(29, 68, 119)",
+      "margin-top": "0px",
+      "margin-bottom": "0px"
+    },
+    "a": {
+      "rect": {
+        "top": 24,
+        "left": 139,
+        "w": 83,
+        "h": 24
+      },
+      "font-family": "medium",
+      "font-size": "15px",
+      "font-weight": "400",
+      "line-height": "22px",
+      "letter-spacing": "normal",
+      "text-transform": "none",
+      "color": "rgb(29, 68, 119)",
+      "margin-top": "0px",
+      "margin-bottom": "0px"
+    }
+  },
+  "buttons": [
+    {
+      "cls": "btn search-button",
+      "text": "",
+      "rect": {
+        "top": 425,
+        "left": 305,
+        "w": 35,
+        "h": 35
+      },
+      "font-family": "medium",
+      "font-size": "1px",
+      "font-weight": "400",
+      "line-height": "1px",
+      "letter-spacing": "-1px",
+      "text-transform": "none",
+      "color": "rgb(29, 68, 119)",
+      "margin-top": "0px",
+      "margin-bottom": "0px",
+      "padding": "0px",
+      "border": "0px none rgb(29, 68, 119)",
+      "border-radius": "0px",
+      "background-color": "rgba(0, 0, 0, 0)",
+      "box-shadow": "none",
+      "display": "inline-block",
+      "text-decoration": "none"
+    },
+    {
+      "cls": "color-cta--gradient-green btn",
+      "text": "Find out more",
+      "rect": {
+        "top": 344,
+        "left": 24,
+        "w": 135,
+        "h": 38
+      },
+      "font-family": "medium",
+      "font-size": "15px",
+      "font-weight": "400",
+      "line-height": "18px",
+      "letter-spacing": "normal",
+      "text-transform": "none",
+      "color": "rgb(255, 255, 255)",
+      "margin-top": "0px",
+      "margin-bottom": "0px",
+      "padding": "8px 16px",
+      "border": "2px solid rgb(0, 161, 159)",
+      "border-radius": "5px",
+      "background-color": "rgb(0, 161, 159)",
+      "box-shadow": "none",
+      "display": "block",
+      "text-decoration": "none"
+    },
+    {
+      "cls": "color-cta--gradient-green-reverse btn",
+      "text": "Find out more",
+      "rect": {
+        "top": 366,
+        "left": 24,
+        "w": 135,
+        "h": 38
+      },
+      "font-family": "medium",
+      "font-size": "15px",
+      "font-weight": "400",
+      "line-height": "18px",
+      "letter-spacing": "normal",
+      "text-transform": "none",
+      "color": "rgb(255, 255, 255)",
+      "margin-top": "0px",
+      "margin-bottom": "0px",
+      "padding": "8px 16px",
+      "border": "2px solid rgb(0, 161, 159)",
+      "border-radius": "5px",
+      "background-color": "rgba(0, 0, 0, 0)",
+      "box-shadow": "none",
+      "display": "block",
+      "text-decoration": "none"
+    },
+    {
+      "cls": "color-affordance--gradient-green affordance btn button-component__button button-component__button--link slider-element__content--button",
+      "text": "More on climate protection",
+      "rect": {
+        "top": 489,
+        "left": 62,
+        "w": 222,
+        "h": 23
+      },
+      "font-family": "medium",
+      "font-size": "15px",
+      "font-weight": "400",
+      "line-height": "22px",
+      "letter-spacing": "normal",
+      "text-transform": "none",
+      "color": "rgb(0, 161, 159)",
+      "margin-top": "0px",
+      "margin-bottom": "0px",
+      "padding": "0px",
+      "border": "0px none rgb(0, 161, 159)",
+      "border-radius": "5px",
+      "background-color": "rgba(0, 0, 0, 0)",
+      "box-shadow": "none",
+      "display": "block",
+      "text-decoration": "none"
+    },
+    {
+      "cls": "vjs-big-play-button",
+      "text": "Play Video",
+      "rect": {
+        "top": 1422,
+        "left": 150,
+        "w": 60,
+        "h": 60
+      },
+      "font-family": "Arial, Helvetica, sans-serif",
+      "font-size": "31.5px",
+      "font-weight": "400",
+      "line-height": "47.25px",
+      "letter-spacing": "normal",
+      "text-transform": "none",
+      "color": "rgb(255, 255, 255)",
+      "margin-top": "0px",
+      "margin-bottom": "0px",
+      "padding": "0px",
+      "border": "0px none rgb(255, 255, 255)",
+      "border-radius": "9.45px",
+      "background-color": "rgba(0, 0, 0, 0)",
+      "box-shadow": "none",
+      "display": "block",
+      "text-decoration": "none"
+    },
+    {
+      "cls": "accordion-item__button",
+      "text": "Start pages",
+      "rect": {
+        "top": 10220,
+        "left": 16,
+        "w": 328,
+        "h": 22
+      },
+      "font-family": "medium",
+      "font-size": "15px",
+      "font-weight": "700",
+      "line-height": "22px",
+      "letter-spacing": "normal",
+      "text-transform": "none",
+      "color": "rgb(255, 255, 255)",
+      "margin-top": "0px",
+      "margin-bottom": "0px",
+      "padding": "0px",
+      "border": "0px none rgb(255, 255, 255)",
+      "border-radius": "0px",
+      "background-color": "rgba(0, 0, 0, 0)",
+      "box-shadow": "none",
+      "display": "flex",
+      "text-decoration": "none"
+    }
+  ],
+  "containers": [
+    {
+      "cls": "container",
+      "maxWidth": "1170px",
+      "marginLeft": "0px",
+      "marginRight": "0px",
+      "paddingLeft": "16px",
+      "paddingRight": "16px",
+      "w": 360
+    }
+  ],
+  "sections": [
+    {
+      "cls": "app-drawer",
+      "top": 0,
+      "h": 900,
+      "background-color": "rgba(0, 0, 0, 0)",
+      "background-image": "none",
+      "padding-top": "0px",
+      "padding-bottom": "0px"
+    },
+    {
+      "cls": " ",
+      "top": 0,
+      "h": 562,
+      "background-color": "rgba(0, 0, 0, 0)",
+      "background-image": "none",
+      "padding-top": "0px",
+      "padding-bottom": "0px",
+      "heading": {
+        "text": "Energy for the Future",
+        "tag": "H1",
+        "font-family": "bold",
+        "font-size": "32px",
+        "font-weight": "700",
+        "line-height": "36px",
+        "letter-spacing": "normal",
+        "text-transform": "none",
+        "color": "rgb(255, 255, 255)",
+        "margin-top": "0px",
+        "margin-bottom": "0px"
+      }
+    },
+    {
+      "cls": " ",
+      "top": 562,
+      "h": 265,
+      "background-color": "rgba(0, 0, 0, 0)",
+      "background-image": "none",
+      "padding-top": "0px",
+      "padding-bottom": "0px",
+      "heading": {
+        "text": "Spotlight @ RWE.com",
+        "tag": "H2",
+        "font-family": "bold",
+        "font-size": "24px",
+        "font-weight": "700",
+        "line-height": "28px",
+        "letter-spacing": "normal",
+        "text-transform": "none",
+        "color": "rgb(0, 161, 159)",
+        "margin-top": "0px",
+        "margin-bottom": "0px"
+      }
+    },
+    {
+      "cls": "color-background-2  energy-waves-grid",
+      "top": 827,
+      "h": 739,
+      "background-color": "rgb(232, 232, 228)",
+      "background-image": "none",
+      "padding-top": "0px",
+      "padding-bottom": "0px",
+      "heading": {
+        "text": "\"The best energy company we can be!\"",
+        "tag": "H2",
+        "font-family": "bold",
+        "font-size": "24px",
+        "font-weight": "700",
+        "line-height": "28px",
+        "letter-spacing": "normal",
+        "text-transform": "none",
+        "color": "rgb(29, 68, 119)",
+        "margin-top": "0px",
+        "margin-bottom": "0px"
+      }
+    },
+    {
+      "cls": " ",
+      "top": 1566,
+      "h": 324,
+      "background-color": "rgba(0, 0, 0, 0)",
+      "background-image": "none",
+      "padding-top": "0px",
+      "padding-bottom": "0px",
+      "heading": {
+        "text": "Our energy for a sustainable life",
+        "tag": "H2",
+        "font-family": "bold",
+        "font-size": "24px",
+        "font-weight": "700",
+        "line-height": "28px",
+        "letter-spacing": "normal",
+        "text-transform": "none",
+        "color": "rgb(29, 68, 119)",
+        "margin-top": "0px",
+        "margin-bottom": "16px"
+      }
+    },
+    {
+      "cls": "color-background-2  energy-waves-grid",
+      "top": 1890,
+      "h": 2194,
+      "background-color": "rgb(232, 232, 228)",
+      "background-image": "none",
+      "padding-top": "0px",
+      "padding-bottom": "0px",
+      "heading": {
+        "text": "Responsibility & sustainability",
+        "tag": "H3",
+        "font-family": "bold",
+        "font-size": "18px",
+        "font-weight": "700",
+        "line-height": "24px",
+        "letter-spacing": "normal",
+        "text-transform": "none",
+        "color": "rgb(255, 255, 255)",
+        "margin-top": "0px",
+        "margin-bottom": "16px"
+      }
+    },
+    {
+      "cls": "teaser-grid--full-width",
+      "top": 4085,
+      "h": 388,
+      "background-color": "rgba(0, 0, 0, 0)",
+      "background-image": "none",
+      "padding-top": "16px",
+      "padding-bottom": "16px",
+      "heading": {
+        "text": "Obtaining energy and trading it globally",
+        "tag": "H3",
+        "font-family": "bold",
+        "font-size": "18px",
+        "font-weight": "700",
+        "line-height": "24px",
+        "letter-spacing": "normal",
+        "text-transform": "none",
+        "color": "rgb(255, 255, 255)",
+        "margin-top": "0px",
+        "margin-bottom": "16px"
+      }
+    },
+    {
+      "cls": "color-background-2  energy-waves-grid",
+      "top": 4472,
+      "h": 1230,
+      "background-color": "rgb(232, 232, 228)",
+      "background-image": "none",
+      "padding-top": "0px",
+      "padding-bottom": "0px",
+      "heading": {
+        "text": "Our Energy",
+        "tag": "H3",
+        "font-family": "bold",
+        "font-size": "18px",
+        "font-weight": "700",
+        "line-height": "24px",
+        "letter-spacing": "normal",
+        "text-transform": "none",
+        "color": "rgb(29, 68, 119)",
+        "margin-top": "0px",
+        "margin-bottom": "16px"
+      }
+    },
+    {
+      "cls": " ",
+      "top": 5702,
+      "h": 2048,
+      "background-color": "rgba(0, 0, 0, 0)",
+      "background-image": "none",
+      "padding-top": "0px",
+      "padding-bottom": "0px",
+      "heading": {
+        "text": "International, open, diverse – working at RWE",
+        "tag": "H2",
+        "font-family": "bold",
+        "font-size": "24px",
+        "font-weight": "700",
+        "line-height": "28px",
+        "letter-spacing": "normal",
+        "text-transform": "none",
+        "color": "rgb(29, 68, 119)",
+        "margin-top": "0px",
+        "margin-bottom": "16px"
+      }
+    },
+    {
+      "cls": "color-background-2  energy-waves-grid",
+      "top": 7751,
+      "h": 960,
+      "background-color": "rgb(232, 232, 228)",
+      "background-image": "none",
+      "padding-top": "0px",
+      "padding-bottom": "0px",
+      "heading": {
+        "text": "Media and share price",
+        "tag": "H2",
+        "font-family": "bold",
+        "font-size": "24px",
+        "font-weight": "700",
+        "line-height": "28px",
+        "letter-spacing": "normal",
+        "text-transform": "none",
+        "color": "rgb(29, 68, 119)",
+        "margin-top": "0px",
+        "margin-bottom": "16px"
+      }
+    },
+    {
+      "cls": "wobble-animation-trigger three-wobble animate",
+      "top": 8782,
+      "h": 906,
+      "background-color": "rgba(0, 0, 0, 0)",
+      "background-image": "none",
+      "padding-top": "0px",
+      "padding-bottom": "0px",
+      "heading": {
+        "text": "Contact and services",
+        "tag": "H2",
+        "font-family": "bold",
+        "font-size": "24px",
+        "font-weight": "700",
+        "line-height": "28px",
+        "letter-spacing": "normal",
+        "text-transform": "none",
+        "color": "rgb(29, 68, 119)",
+        "margin-top": "0px",
+        "margin-bottom": "16px"
+      }
+    }
+  ],
+  "header": {
+    "rect": {
+      "top": 0,
+      "left": 0,
+      "w": 360,
+      "h": 72
+    },
+    "max-width": "none",
+    "width": "360px",
+    "padding": "0px",
+    "margin": "0px",
+    "background-color": "rgba(0, 0, 0, 0)",
+    "background-image": "none",
+    "border-radius": "0px",
+    "box-shadow": "none",
+    "border": "0px none rgb(29, 68, 119)",
+    "display": "block",
+    "gap": "normal",
+    "grid-template-columns": "none",
+    "flex-wrap": "nowrap",
+    "justify-content": "normal",
+    "align-items": "normal",
+    "position": "absolute",
+    "height": "72px",
+    "min-height": "0px",
+    "overflow": "visible",
+    "z-index": "10000",
+    "top": "0px"
+  },
+  "footer": {
+    "rect": {
+      "top": 9758,
+      "left": 0,
+      "w": 360,
+      "h": 1612
+    },
+    "max-width": "none",
+    "width": "360px",
+    "padding": "0px",
+    "margin": "0px",
+    "background-color": "rgba(0, 0, 0, 0)",
+    "background-image": "linear-gradient(45deg, rgb(29, 68, 119) 22%, rgb(0, 161, 159))",
+    "border-radius": "0px",
+    "box-shadow": "none",
+    "border": "",
+    "display": "block",
+    "gap": "normal",
+    "grid-template-columns": "none",
+    "flex-wrap": "nowrap",
+    "justify-content": "normal",
+    "align-items": "normal",
+    "position": "static",
+    "height": "1612px",
+    "min-height": "1px",
+    "overflow": "visible"
+  },
+  "stylesheets": [
+    "https://www.rwe.com/css/nkStyles.20260811.5.min.css",
+    "https://www.rwe.com/uikit/css/uikit.20260811.5.min.css",
+    "https://www.rwe.com/vendor/vendor.20260811.5.min.css",
+    "https://www.rwe.com/layouts/system/VisitorIdentificationCSS.aspx?tstamp=1787760132486",
+    "https://www.rwe.com/css/print.css",
+    "https://www.rwe.com/-/media/Files/additionalCSS.css?css.version=c6db6a16-631f-4f17-8c4f-0a95ee316fa6"
+  ],
+  "fontFaces": [
+    "@font-face { font-family: light; src: url(\"/fonts/RWESans-Light.woff2\") format(\"woff2\"), url(\"/fonts/RWESans-Light.woff\") format(\"woff\"); font-weight: 400; font-style: normal; }",
+    "@font-face { font-family: regular; src: url(\"/fonts/RWESans-Regular.woff2\") format(\"woff2\"), url(\"/fonts/RWESans-Regular.woff\") format(\"woff\"); font-weight: 400; font-style: normal; }",
+    "@font-face { font-family: medium; src: url(\"/fonts/RWESans-Medium.woff2\") format(\"woff2\"), url(\"/fonts/RWESans-Medium.woff\") format(\"woff\"); font-weight: 700; font-style: normal; }",
+    "@font-face { font-family: bold; src: url(\"/fonts/RWESans-Bold.woff2\") format(\"woff2\"), url(\"/fonts/RWESans-Bold.woff\") format(\"woff\"); font-weight: 700; font-style: normal; }",
+    "@font-face { font-family: rwe-iconfont; src: url(\"/fonts/rwe-iconfont.woff?v=3.13.0\") format(\"woff\"), url(\"/fonts/rwe-iconfont.ttf?v=3.13.0\") format(\"truetype\"); font-weight: 400; font-style: normal; }",
+    "@font-face { font-family: RWE_Icon_Font; src: url(\"/fonts/RWE_Icon_Font.ttf?v=1.1\") format(\"truetype\"), url(\"/fonts/RWE_Icon_Font.woff?v=1.1\") format(\"woff\"); font-weight: 400; font-style: normal; }",
+    "@font-face { font-family: \"RWE Sans Bold\"; src: url(\"/fonts/RWESans-Bold.woff2\") format(\"woff2\"); font-weight: bold; font-style: normal; }",
+    "@font-face { font-family: swiper-icons; src: url(\"data:application/font-woff;charset=utf-8;base64, d09GRgABAAAAAAZgABAAAAAADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABGRlRNAAAGRAAAABoAAAAci6qHkUdERUYAAAWgAAAAIwAAACQAYABXR1BPUwAABhQAAAAuAAAANuAY7+xHU1VCAAAFxAAAAFAAAABm2fPczU9TLzIAAAHcAAAASgAAAGBP9V5RY21hcAAAA",
+    "@font-face { font-family: slick; font-weight: normal; font-style: normal; src: url(\"./fonts/slick.woff\") format(\"woff\"), url(\"./fonts/slick.ttf\") format(\"truetype\"); }",
+    "@font-face { font-family: VideoJS; src: url(\"data:application/font-woff;charset=utf-8;base64,d09GRgABAAAAABTsAAsAAAAAIpAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAABHU1VCAAABCAAAADsAAABUIIslek9TLzIAAAFEAAAAPgAAAFZRiV32Y21hcAAAAYQAAAEJAAAD5p42+VxnbHlmAAACkAAADtIAABckI4l972hlYWQAABFkAAAAKwAAADYsvIjpaGhlYQAAEZAAAAA"
+  ],
+  "scrollHeight": 11370,
+  "_provenance": {
+    "writtenBy": "stardust:replica lift.mjs",
+    "url": "https://www.rwe.com/en/",
+    "width": 360,
+    "fetchedAt": "2026-08-26T16:02:17.912Z"
+  },
+  "savedFonts": []
+}

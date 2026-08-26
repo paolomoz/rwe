@@ -1,0 +1,185 @@
+/* banner — full-width video teasers (trading / jobs) */
+
+/* trading: full-bleed */
+main .banner-container > div:has(.banner.trading) {
+  max-width: none;
+  padding: 0;
+}
+
+.banner .banner-teaser {
+  position: relative;
+  display: block;
+  overflow: hidden;
+}
+
+.banner .banner-teaser video {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.banner.trading .banner-teaser {
+  height: 600px;
+}
+
+.banner.trading .banner-teaser video {
+  height: 614px;
+}
+
+.banner.trading .banner-teaser::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background-image: linear-gradient(90deg, rgb(29 68 119 / 26%), rgb(15 114 139 / 90%) 78%, rgb(0 161 159 / 90%));
+}
+
+.banner.trading .header-wrapper {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: var(--container);
+  z-index: 2;
+}
+
+.banner.trading .caption {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  color: #fff;
+}
+
+.banner .caption h3.headline {
+  color: #fff;
+}
+
+.banner .caption p {
+  color: #fff;
+  margin-bottom: 24px;
+}
+
+.banner .banner-cta {
+  display: inline-block;
+  border: 2px solid var(--teal);
+  border-radius: 5px;
+  padding: 8px 24px;
+  font-family: var(--medium-font-family);
+  font-size: 18px;
+  line-height: 22px;
+  color: #fff;
+  text-align: center;
+}
+
+.banner .banner-teaser:hover .banner-cta {
+  background: var(--teal);
+  transition: background-color 0.2s ease;
+}
+
+/* jobs: contained, gradient caption panel over right side */
+.banner.jobs .banner-teaser {
+  height: 424px;
+}
+
+.banner.jobs .banner-teaser video {
+  width: 80%;
+  height: 424px;
+  object-fit: contain;
+  object-position: left;
+}
+
+.banner.jobs .header-wrapper {
+  position: absolute;
+  inset: 0;
+}
+
+.banner.jobs .caption {
+  position: absolute;
+  right: -1px;
+  top: 85px;
+  width: 410px;
+  height: 256px;
+  background-image: var(--grad);
+  color: #fff;
+  padding: 24px 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  overflow: hidden;
+}
+
+.banner.jobs .imprint {
+  position: absolute;
+  top: 95px;
+  right: -20px;
+  width: 127px;
+}
+
+@media (width <= 767px) {
+  .banner.trading .banner-teaser,
+  .banner.jobs .banner-teaser {
+    height: auto;
+  }
+
+  .banner.trading .banner-teaser video,
+  .banner.jobs .banner-teaser video {
+    width: 100%;
+    height: auto;
+    object-fit: fill;
+  }
+
+  .banner.trading .banner-teaser::before {
+    display: none;
+  }
+
+  .banner.trading .header-wrapper,
+  .banner.jobs .header-wrapper {
+    position: static;
+    transform: none;
+    width: 100%;
+  }
+
+  .banner.trading .caption,
+  .banner.jobs .caption {
+    position: static;
+    width: 100%;
+    height: auto;
+    padding: 16px;
+  }
+
+  .banner.trading .caption {
+    background-image: url('/img/combined-energy.png'), var(--grad);
+    background-position: 100% 100%, 0 0;
+    background-size: 240px 200px, auto;
+    background-repeat: no-repeat, repeat;
+  }
+
+  .banner.jobs .caption {
+    background-image: var(--grad);
+  }
+
+  .banner .caption p {
+    margin-bottom: 16px;
+  }
+
+  .banner .banner-cta {
+    font-size: 15px;
+    line-height: 18px;
+    padding: 8px 16px;
+  }
+
+  .banner.jobs .imprint {
+    display: none;
+  }
+
+  .banner.jobs {
+    padding: 0;
+  }
+}

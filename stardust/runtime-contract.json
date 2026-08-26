@@ -1,0 +1,10 @@
+{
+  "runtime": "vanilla-eds",
+  "blockWrapperClass": "block",
+  "buttonClasses": ".button / .button.primary / .button.secondary / .button.accent, in p.button-wrapper",
+  "buttonization": "formatted-only",
+  "fragmentScriptPolicy": "inert-innerHTML",
+  "emptySectionCollapse": true,
+  "probedAt": "2026-08-26",
+  "notes": "current adobe/aem-boilerplate main (repo created 2026-08-26 from template); wrapTextNodes present in aem.js decorateBlock"
+}

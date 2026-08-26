@@ -1,0 +1,341 @@
+@font-face {
+    font-family: 'rwe_icon';
+    src: url('rwe_icon/rwe-iconfont.eot');
+    src: url('rwe_icon/rwe-iconfont.eot') format('embedded-opentype'),
+        url('rwe_icon/rwe-iconfont.woff2') format('woff2'),
+        url('rwe_icon/rwe-iconfont.woff') format('woff'),
+        url('rwe_icon/rwe-iconfont.ttf') format('truetype'),
+        url('rwe_icon/rwe-iconfont.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: d-rwe-font;
+    font-weight: 700;
+    src:
+        /*url("fonts/Bold.svg") format("svg"),*/
+        url("fonts/Bold.woff") format("woff"),
+        url("fonts/Bold.woff2") format("woff2"),
+        url("fonts/Bold.woff2") format("eot"),
+        url("fonts/Bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: d-rwe-font;
+    font-weight: 500;
+    src:
+        /*url("fonts/Regular.svg") format("svg"),*/
+        url("fonts/Medium.woff") format("woff"),
+        url("fonts/Medium.woff2") format("woff2"),
+        url("fonts/Medium.woff2") format("eot"),
+        url("fonts/Medium.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: d-rwe-font;
+    font-weight: 400;
+    src:
+        /*url("fonts/Regular.svg") format("svg"),*/
+        url("fonts/Regular.woff") format("woff"),
+        url("fonts/Regular.woff2") format("woff2"),
+        url("fonts/Regular.woff2") format("eot"),
+        url("fonts/Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: d-rwe-font;
+    font-weight: 300;
+    src:
+        /*url("fonts/Regular.svg") format("svg"),*/
+        url("fonts/Light.woff") format("woff"),
+        url("fonts/Light.woff2") format("woff2"),
+        url("fonts/Light.woff2") format("eot"),
+        url("fonts/Light.ttf") format("truetype");
+}
+
+body {
+    font-size: 16px;
+    font-family: d-rwe-font, Helvetica;
+    margin: 0;
+}
+
+.Main {
+    /*background: linear-gradient(45deg, rgba(29, 68, 119, 1) 0%, rgba(0, 161, 159, 1) 120%);*/
+    background:transparent;
+    color: #ffffff;
+    width: 100%;
+    max-width: 100%;
+    margin: 0px auto;
+    font-size: 16px;
+    font-family: d-rwe-font, Helvetica;
+}
+
+.Top::after {
+    content: '';
+    display: block;
+    width: 90%;
+    height: 1px;
+    z-index: 0;
+    margin: 14px;
+    background: #6ba2c9;
+}
+
+.BBottom {
+    display: inline-block;
+    width: 100%;
+}
+
+.Label1 {
+    width: 51%;
+    display: inline-block;
+    color: #fff;
+    font-weight: 300;
+    margin-bottom: 0.6em;
+    vertical-align: top;
+}
+
+.Data {
+    width: 49%;
+    display: inline-block;
+    font-weight: 500;
+}
+
+.Last {
+    font-weight: bold;
+    font-size: 33px;
+}
+
+.larger {
+    font-size: 33px;
+}
+
+.Center {
+    line-height: 26px;
+}
+
+.negative_change {
+    padding-left: 17px;
+    color: red;
+}
+
+.positive_change {
+    padding-left: 17px;
+    color: #3ed8c3;
+}
+
+.negative_changePer {
+    color: red;
+}
+
+.positive_changePer {
+    color: #3ed8c3;
+}
+
+.paddings {
+    padding-left: 1em;
+    padding-top: 0em;
+    padding-right: 1em;
+}
+
+.topPadding {
+    padding-top: 1em;
+    line-height: normal !important;
+}
+
+.bottomPadding {
+    padding-bottom: 1em;
+}
+
+.Info {
+    padding-bottom: 0.8em;
+    font-weight: 300;
+    margin-top: 0.3em;
+}
+
+.Last {
+    padding-top: 0.16em;
+}
+
+.Heading {
+    font-size: 23px;
+    font-weight: 500;
+    padding-left: 14px;
+    line-height: 33.5px;
+    padding-right: 15px;
+    padding-top: 14px;
+}
+
+.Change span.change.positive.positive_change:before {
+    content: "\02197";
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 0.35em;
+    font-weight: bold;
+    left: 0px;
+    margin-top: -0.35em;
+}
+
+span.change.positive.positive_change {
+    position: relative;
+    display: inline-block;
+    top: 0;
+    left: 0;
+}
+
+.BBottom {
+    margin-bottom: 25px !important;
+}
+
+.Change span.change.negative.negative_change:before {
+    content: "\EA0B";
+    font-family: 'rwe_icon';
+    width: 10px;
+    height: 10px;
+    font-size: 7px;
+    position: absolute;
+    top: 22%;
+    transform: rotate(313deg);
+    right: 90px;
+}
+
+.Change span.change.negative.negative_change:after {
+    content: "";
+    background: #FF0055;
+    width: 1px;
+    height: 13px;
+    position: absolute;
+    top: 5.3px;
+    transform: rotate(312deg);
+    right: 90px;
+}
+
+span.change.negative.negative_change {
+    position: relative;
+    display: inline-block;
+    top: 0;
+    left: 0;
+}
+
+/*.Label1 {
+    width: 50%;
+    display: inline-block;
+    font-weight: bold;
+    color: #ffffff;
+}*/
+
+.Data1 {
+    width: 50%;
+    display: inline-block;
+    text-align: left;
+    color: #ffffff !important;
+}
+
+/*.Data1 span.change.positive.positive_change {
+    color: #fff!important;
+}
+.Data1 span.change.positive.positive_change:before {
+   opacity: 0!important; content: "\02197";
+
+    left: 0px;
+
+}
+.Data1 span.change.negative.negative_change {
+    color: #fff!important;
+}
+.Data1 span.change.negative.negative_change:before {
+    color: #fff!important;
+    opacity: 0!important;
+}
+.Data1 span.changePer.positive.positive_changePer {
+    color: #fff!important;
+}
+
+.Data1 span.changePer.negative.negative_changePer {
+    color: #fff!important;
+}*/
+.Center1 {
+    padding-top: 1em;
+}
+
+.Data1 .positive_change {
+    padding-left: 0px;
+
+}
+
+.Data1 .negative_change {
+    padding-left: 0px;
+}
+
+.Info {
+    padding-left: 14px;
+}
+
+span.last {
+    padding-left: 14px;
+}
+
+.Change {
+    padding-left: 14px;
+    margin-top: 0.6em;
+    font-weight: 500;
+    margin-bottom: 0.8em;
+}
+
+.BBOttom {
+    padding-left: 14px;
+    padding-right: 14px;
+    padding-bottom: 9px;
+}
+
+.Change2 span.change.negative.negative_change {
+    color: white;
+}
+
+.Change2 span.change.positive.positive_change {
+    color: white;
+}
+
+.Change2 span.changePer.negative.negative_changePer {
+    color: white;
+}
+
+.Change2 span.changePer.positive.positive_changePer {
+    color: white;
+}
+
+.Change2 {
+    width: 65%;
+    display: block;
+    float: right;
+}
+
+.Center1 {
+    width: 100%;
+    display: inline-block;
+}
+
+.Label2.larger {
+    font-size: 16px;
+    font-weight: bold;
+    width: 35%;
+    display: block;
+    float: left;
+}
+
+.Center1 {
+    padding-bottom: 19px;
+}
+
+.Center {
+    padding-bottom: 10px;
+}
+
+.Info.topPadding {
+    border-top: 1px solid #6ba2c9;
+}
+
+.Info.topPadding {
+    padding-bottom: 0px;
+}

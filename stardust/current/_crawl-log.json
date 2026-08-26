@@ -1,0 +1,21 @@
+{
+  "discovery": {
+    "fetchTechnique": "headed-chrome-stealth",
+    "count": 1,
+    "concurrency": 4,
+    "botBlock": "challenge"
+  },
+  "consent": {
+    "method": "auto"
+  },
+  "crawl": {
+    "failures": []
+  },
+  "visionCheck": [
+    {
+      "slug": "index",
+      "verdict": "recaptured",
+      "notes": "run1: custom CMP dialog over hero (missed by selector list) — fixed with text-match fallback, recaptured clean. run2: 1957-3383px band blank in screenshot; live probe confirms Responsibility/Social-Media sections with scroll-triggered video teasers exist there — content JSON complete, screenshot under-rendered; ground truth for that band comes from replica stitch-shot (settled)."
+    }
+  ]
+}

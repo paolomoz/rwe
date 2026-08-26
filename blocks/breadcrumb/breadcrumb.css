@@ -1,0 +1,36 @@
+/* breadcrumb — navy trail bar above the footer */
+
+main .breadcrumb-container {
+  background: var(--navy);
+  padding: 0 16px;
+}
+
+main .breadcrumb-container > div {
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 0;
+}
+
+.breadcrumb .breadcrumb-list {
+  list-style: none;
+  margin: 0;
+  padding: 16px 0;
+}
+
+.breadcrumb .breadcrumb-list li {
+  display: inline;
+  font-family: var(--heading-font-family);
+  font-size: 16px;
+  line-height: 27px;
+  color: #fff;
+}
+
+.breadcrumb .breadcrumb-list li a {
+  color: #fff;
+}
+
+@media (width <= 767px) {
+  .breadcrumb .breadcrumb-list li {
+    line-height: 22px;
+  }
+}
