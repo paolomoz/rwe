@@ -26,8 +26,7 @@
 .responsibility .resp-video-teaser video {
   position: absolute;
   top: 0;
-  left: 50%;
-  transform: translateX(-50%);
+  left: -161px;
   height: 581px;
   object-fit: contain;
 }

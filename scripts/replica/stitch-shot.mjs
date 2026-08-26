@@ -279,6 +279,14 @@ async function main() {
           if (h > 0) { f.style.setProperty('height', `${h}px`, 'important'); f.style.setProperty('max-height', `${h}px`, 'important'); }
         });
       });
+      // Rule-4 trap mitigation for fullpage: force-decode every <img> so the
+      // beyond-viewport re-render can't paint lazy images as gray placeholders.
+      await page.evaluate(async () => {
+        await Promise.all([...document.querySelectorAll('img')].map((i) => {
+          i.loading = 'eager';
+          return i.decode ? i.decode().catch(() => {}) : null;
+        }));
+      });
       await page.evaluate(() => window.scrollTo(0, 0));
       await page.waitForTimeout(400);
       const buf = await page.screenshot({ fullPage: true });

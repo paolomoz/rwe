@@ -57,6 +57,10 @@
 }
 
 /* --- media variant: image top + body --- */
+.cards.media:not(.grey) .card-list {
+  padding-top: 0;
+}
+
 .cards.media .card > a {
   display: flex;
   flex-direction: column;
