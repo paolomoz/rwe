@@ -279,6 +279,17 @@ async function main() {
           if (h > 0) { f.style.setProperty('height', `${h}px`, 'important'); f.style.setProperty('max-height', `${h}px`, 'important'); }
         });
       });
+      // Carousel t=0 determinism: autoplay carousels advance during the
+      // settle window, so each capture lands on an arbitrary slide (the
+      // replica freeze policy is slide 1 at t=0). Clicking the first
+      // slick-convention dot resets BOTH sides to slide 1 (transition is
+      // already frozen, so the reset is instant). Symmetric + generic.
+      await page.evaluate(() => {
+        const dot = document.querySelector('.slick-dots li:first-child button');
+        if (dot) dot.click();
+      });
+      await page.waitForTimeout(600);
+      await page.mouse.move(10, opts.vh - 10);
       // Rule-4 trap mitigation for fullpage: force-decode every <img> so the
       // beyond-viewport re-render can't paint lazy images as gray placeholders.
       await page.evaluate(async () => {

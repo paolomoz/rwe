@@ -391,3 +391,17 @@ main .columns,
 main .responsibility {
   text-align: left;
 }
+
+/* band rhythm parity with the live page (published-origin gate round 2) */
+main .section.grey.columns-container .default-content-wrapper h2 {
+  margin-bottom: 16px;
+}
+
+main .section.grey > .default-content-wrapper:not(:first-child) {
+  padding-top: 16px;
+}
+
+main .section.centered .banner-wrapper {
+  margin-top: 32px;
+  margin-bottom: 16px;
+}
