@@ -409,7 +409,7 @@ main .section.centered .banner-wrapper {
 /* mobile: grey-band prose is nested-container width (296) on the live site */
 @media (width <= 767px) {
   main .section.grey > .default-content-wrapper {
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 32px;
+    padding-right: 32px;
   }
 }
