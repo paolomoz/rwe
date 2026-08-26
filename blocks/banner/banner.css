@@ -193,6 +193,6 @@ main .banner-container > div:has(.banner.trading) {
 
 @media (width <= 767px) {
   .banner.jobs .caption p {
-    padding-right: 30px;
+    max-width: 240px;
   }
 }
