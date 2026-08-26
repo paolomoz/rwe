@@ -413,3 +413,14 @@ main .section.centered .banner-wrapper {
     padding-right: 32px;
   }
 }
+
+/* mobile rhythm round 4 (published 360 anchors) */
+@media (width <= 767px) {
+  main .section.grey.columns-container .default-content-wrapper h2 {
+    margin-bottom: 8px;
+  }
+
+  main .section.grey > .default-content-wrapper:not(:first-child) {
+    padding-top: 8px;
+  }
+}

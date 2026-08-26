@@ -190,3 +190,9 @@ main .banner-container > div:has(.banner.trading) {
     padding: 16px;
   }
 }
+
+@media (width <= 767px) {
+  .banner.jobs .caption p {
+    padding-right: 30px;
+  }
+}

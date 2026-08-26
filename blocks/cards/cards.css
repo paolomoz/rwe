@@ -236,3 +236,13 @@
     padding: 16px 0 0;
   }
 }
+
+@media (width <= 767px) {
+  .cards.media:not(.grey) .card-list {
+    padding: 0;
+  }
+
+  .cards.contact .card-list {
+    padding: 0;
+  }
+}
