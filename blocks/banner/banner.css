@@ -183,3 +183,10 @@ main .banner-container > div:has(.banner.trading) {
     padding: 0;
   }
 }
+
+/* mobile containment: live trading banner is inset 16px, not full-bleed */
+@media (width <= 767px) {
+  main .banner-container > div:has(.banner.trading) {
+    padding: 16px;
+  }
+}

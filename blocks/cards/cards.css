@@ -221,3 +221,18 @@
     margin-bottom: 32px;
   }
 }
+
+/* mobile card widths (live: color 296, energy 328, career 296, contact 328) */
+@media (width <= 767px) {
+  .cards.color .card-list {
+    padding: 8px 16px;
+  }
+
+  .cards.media:not(.grey) .card-list {
+    padding: 8px 0 0;
+  }
+
+  .cards.contact .card-list {
+    padding: 16px 0 0;
+  }
+}
