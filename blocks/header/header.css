@@ -1,7 +1,7 @@
 /* header — RWE transparent overlay chrome (lifted) */
 
 /* overlay: floats over the hero, never displaces content */
-header {
+body > header {
   position: absolute;
   top: 0;
   left: 0;
