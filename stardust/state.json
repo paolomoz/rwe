@@ -66,6 +66,23 @@
           }
         }
       ]
+    },
+    {
+      "slug": "press-article",
+      "url": "https://www.rwe.com/en/press/rwe-ag/2026-08-13-rwe-delivers-strong-first-half-results/",
+      "type": "article-detail",
+      "status": "prototyped",
+      "prototypePath": "stardust/prototypes/article-proposed.html",
+      "history": [
+        {
+          "status": "prototyped",
+          "at": "2026-08-27T13:53:19.284Z",
+          "gate": {
+            "360": 5.84,
+            "1440": 3.92
+          }
+        }
+      ]
     }
   ]
 }

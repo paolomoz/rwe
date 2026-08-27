@@ -1,0 +1,11 @@
+import { chromium } from 'playwright';
+const b = await chromium.launch({ headless: false, channel: 'chrome' });
+const p = await (await b.newContext({ viewport: { width: 1440, height: 900 } })).newPage();
+await p.goto('https://www.rwe.com/en/press/rwe-ag/2026-08-13-rwe-delivers-strong-first-half-results/', { waitUntil: 'domcontentloaded', timeout: 60000 });
+await p.waitForTimeout(2500);
+await p.evaluate(() => { const h=[...document.querySelectorAll('button,a')].find(x=>/^\s*accept all\s*$/i.test(x.textContent||'')); if(h)h.click(); });
+await p.evaluate(() => window.scrollTo(0, 3600));
+await p.waitForTimeout(1500);
+const urls = await p.evaluate(() => [...document.querySelectorAll('.partial .image > div')].map((d) => getComputedStyle(d).backgroundImage));
+console.log(JSON.stringify(urls, null, 1));
+await b.close();

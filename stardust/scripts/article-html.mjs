@@ -1,0 +1,22 @@
+import { chromium } from 'playwright';
+import fs from 'node:fs';
+const b = await chromium.launch({ headless: false, channel: 'chrome' });
+const p = await (await b.newContext({ viewport: { width: 1440, height: 900 }, locale: 'en-US' })).newPage();
+await p.goto('https://www.rwe.com/en/press/rwe-ag/2026-08-13-rwe-delivers-strong-first-half-results/', { waitUntil: 'domcontentloaded', timeout: 60000 });
+await p.waitForTimeout(2500);
+await p.evaluate(() => { const h=[...document.querySelectorAll('button,a')].find(x=>/^\s*accept all\s*$/i.test(x.textContent||'')); if(h)h.click(); });
+await p.waitForTimeout(600);
+const out = await p.evaluate(() => {
+  const clean = (html) => html.replace(/\s+data-[a-z-]+="[^"]*"/g, '').replace(/\s+id="[^"]*"/g, '');
+  const r = {};
+  const stage = document.querySelector('main').previousElementSibling || document.querySelector('[data-tpl*="detail"] > header');
+  const stageEl = document.querySelector('div > header section .container');
+  r.stage = stageEl ? clean(stageEl.innerHTML).slice(0, 3000) : null;
+  const ticks = [...document.querySelectorAll('main .col-md-9 .rwe-tick01, main .col-md-9 > section > .container > .row > .grid-content > div')];
+  r.mainBlocks = [...document.querySelectorAll('main section.col-md-9 .grid-content > *')].map((el) => clean(el.outerHTML));
+  r.aside = [...document.querySelectorAll('main aside .grid-content > *')].map((el) => clean(el.outerHTML).slice(0, 4000));
+  return r;
+});
+fs.writeFileSync('stardust/replica/article-html.json', JSON.stringify(out, null, 1));
+console.log('stage:', (out.stage || '').length, 'mainBlocks:', out.mainBlocks.length, 'aside:', out.aside.length, 'total bytes:', JSON.stringify(out).length);
+await b.close();

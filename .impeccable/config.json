@@ -20,6 +20,12 @@
         "value": "rgba(15, 114, 139, 0.9)",
         "createdAt": "2026-08-26T16:56:40.042Z",
         "reason": "stardust:replica — lifted verbatim from rwe.com media-container::before scrim gradient (probed computed style); replica forbids palette changes"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "#adafb1",
+        "createdAt": "2026-08-27T12:31:21.357Z",
+        "reason": "stardust:replica — lifted verbatim from rwe.com image-component zoom button / caption grey (rgb(173,175,177)); replica forbids palette changes"
       }
     ]
   }

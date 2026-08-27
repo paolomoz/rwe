@@ -181,5 +181,52 @@
       "fullpage: force-decode imgs (rule-4 gray placeholder trap on authored <img>)",
       "fullpage: slick first-dot click for carousel t=0 determinism (symmetric)"
     ]
+  },
+  "archetypes": {
+    "article-detail": {
+      "360": {
+        "pixelPct": 5.84,
+        "heightDelta": 2,
+        "iterations": 7,
+        "pass": true,
+        "note": "rounds 4-7 were build-side offset-map micro-rounds (live captured twice: accept-consent then deny-consent reference)"
+      },
+      "1440": {
+        "pixelPct": 3.92,
+        "heightDelta": 0,
+        "iterations": 3,
+        "pass": true
+      },
+      "representative": "/en/press/rwe-ag/2026-08-13-rwe-delivers-strong-first-half-results/",
+      "prototype": "stardust/prototypes/article-proposed.html",
+      "gatedAt": "2026-08-27T13:53:19.282Z",
+      "contentDiff": {
+        "reds": 4,
+        "verdict": "all justified: 3 nondeterministic style-prefix related-card ids (matched EXTRAs by href), 1 h2-span role artifact (mirrored)"
+      },
+      "visualDiff": "no flags",
+      "captureState": [
+        {
+          "what": "social wall (LinkedIn feed) renders only after consent accept; gate reference frozen in DENY-consent state (matches pre-consent/EDS render); placeholder text replicated verbatim",
+          "where": "aside"
+        },
+        {
+          "what": "NBSP in figures/amounts is load-bearing for line wraps — content extraction must preserve \\u00a0 (added to the extractor)",
+          "where": "body copy"
+        }
+      ],
+      "residuals": [
+        {
+          "band": "360 y4500-6500 ~10-20%",
+          "cause": "aside contact photo mobile rendition crop + related-card internal ±8px gaps",
+          "flaggedFor": "delivery"
+        },
+        {
+          "band": "1440 y500-1500 8-9%",
+          "cause": "text antialias + aside photo rendition",
+          "flaggedFor": "delivery"
+        }
+      ]
+    }
   }
 }

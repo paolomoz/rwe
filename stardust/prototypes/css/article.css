@@ -1,0 +1,547 @@
+/* article.css — A1 article-detail archetype (press release). New modules only;
+   canon.css + index.css carry chrome/tokens. Values lifted from
+   stardust/replica/article-outline-1440.txt / source-css. */
+
+/* solid gradient chrome variant (non-hero pages) */
+.site-header--solid {
+  position: static;
+  display: flow-root;
+  height: 130px;
+  background-image: var(--grad);
+}
+
+/* ---- stage: back link + eyebrow + h1 (130-357, h 227) ---- */
+.article-stage .container {
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 32px 0;
+}
+
+.back-nav {
+  margin: 0 0 32px;
+}
+
+.back-link {
+  font-family: medium;
+  font-size: 18px;
+  line-height: 18px;
+  color: var(--teal);
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.back-link::before {
+  content: '\e913';
+  font-family: RWE_Icon_Font;
+  font-size: 15px;
+  font-weight: 900;
+  margin-right: 8px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.back-link:hover::before {
+  transform: translate3d(-10px, 0, 0);
+}
+
+.article-stage .stage header .subheadline {
+  font-family: bold;
+  font-size: 18px;
+  line-height: 27px;
+  color: var(--navy);
+  margin: 0 0 8px;
+}
+
+.article-stage .stage h1.headline {
+  font-size: 42px;
+  line-height: 56px;
+  margin: 0;
+  color: var(--navy);
+}
+
+/* ---- marginal layout: main 872 + aside 275 ---- */
+.article-body .marginal-container {
+  max-width: var(--container);
+  margin: 0 auto;
+}
+
+.article-body .cols {
+  display: flex;
+  margin: 0 -12px;
+}
+
+.article-body .col-main {
+  width: calc(100% - 299px);
+  padding: 32px 12px;
+}
+
+.article-body .col-aside {
+  width: 299px;
+  padding: 32px 12px;
+}
+
+/* main column content */
+.col-main .tick {
+  margin: 0 0 32px;
+}
+
+.col-main .summary ul {
+  list-style: disc;
+  padding-left: 40px;
+  margin: 0;
+}
+
+.col-main .summary li {
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.col-main .summary strong {
+  font-family: bold;
+  font-weight: 700;
+}
+
+.col-main h3 {
+  font-family: bold;
+  font-size: 24px;
+  line-height: 32px;
+  color: var(--navy);
+  margin: 0 0 24px;
+}
+
+.col-main .body-copy > h3:first-child {
+  font-size: 18px;
+  line-height: 27px;
+  margin: 8px 0 16px;
+}
+
+.col-main h2 {
+  font-family: bold;
+  font-size: 32px;
+  line-height: 38px;
+  color: var(--navy);
+  margin: 0 0 24px;
+}
+
+.col-main p {
+  font-size: 18px;
+  line-height: 27px;
+  margin: 0 0 24px;
+}
+
+.col-main p:last-child {
+  margin-bottom: 0;
+}
+
+.col-main p a,
+.col-main li a {
+  color: var(--sky);
+}
+
+.col-main strong {
+  font-family: bold;
+  font-weight: 700;
+}
+
+/* zoomable figure */
+.zoomable {
+  position: relative;
+}
+
+.zoomable figure {
+  margin: 0;
+}
+
+.zoomable img {
+  width: 100%;
+  display: block;
+}
+
+.zoom-btn {
+  position: absolute;
+  bottom: 32px;
+  right: 16px;
+  width: 64px;
+  height: 64px;
+  border: 0;
+  background-color: rgb(255 255 255 / 25%);
+  color: #adafb1;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.2s;
+  z-index: 11;
+}
+
+.zoomable:hover .zoom-btn {
+  opacity: 1;
+}
+
+.zoom-btn::before {
+  content: '\e916';
+  font-family: RWE_Icon_Font;
+  font-size: 32px;
+  position: absolute;
+  top: 20px;
+  left: 18px;
+}
+
+.zoom-note {
+  font-size: 14px;
+  line-height: 27px;
+  color: #adafb1;
+  margin-top: 16px;
+}
+
+/* downloads */
+.downloads h3 {
+  margin-bottom: 24px;
+}
+
+.downloads ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.downloads li a {
+  display: block;
+  font-family: medium;
+  font-size: 18px;
+  line-height: 22px;
+  color: var(--teal);
+  padding: 8px 0;
+}
+
+.downloads li:first-child a {
+  padding-top: 0;
+}
+
+.downloads li a.link-download::after {
+  content: '\e93d';
+  font-family: RWE_Icon_Font;
+  font-size: 16px;
+  font-weight: 700;
+  display: inline-block;
+  margin-left: 10px;
+}
+
+/* ---- aside: contact cards ---- */
+.contact-card {
+  margin: 0 0 16px;
+}
+
+.contact-card figure {
+  margin: 0 0 24px;
+}
+
+.contact-card img {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  display: block;
+}
+
+.contact-card h2.headline {
+  font-size: 32px;
+  line-height: 38px;
+  margin: 0 0 9px;
+}
+
+.contact-card h3.subheadline {
+  font-family: bold;
+  font-size: 18px;
+  line-height: 27px;
+  margin: 0 0 9px;
+}
+
+.contact-card .contact {
+  margin: 0 0 24px;
+}
+
+.contact-card .phone {
+  display: flex;
+  align-items: center;
+}
+
+.contact-card .phone img {
+  width: 20px;
+  height: 20px;
+  margin-right: 4px;
+}
+
+.contact-card .phone a {
+  color: var(--sky);
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.contact-card .cta {
+  margin-top: 12px;
+}
+
+.contact-card .btn-solid {
+  display: inline-block;
+  background: var(--teal);
+  color: #fff;
+  border: 2px solid var(--teal);
+  border-radius: 5px;
+  padding: 8px 24px;
+  font-family: medium;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+}
+
+.contact-card .btn-solid:hover {
+  background: var(--mint);
+  border-color: var(--mint);
+}
+
+.social-placeholder {
+  margin-top: 16px;
+}
+
+.social-placeholder .content {
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.social-placeholder a {
+  color: var(--sky);
+  cursor: pointer;
+}
+
+/* ---- related press cards ---- */
+.related .container {
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 32px 0;
+}
+
+.related .rel-cards {
+  display: flex;
+  margin: 0 -12px;
+}
+
+.related .cell {
+  width: 33.333%;
+  padding: 0 12px;
+}
+
+.related .rel-card a {
+  display: flex;
+  flex-direction: column;
+}
+
+.related .media {
+  aspect-ratio: 3 / 2;
+  background-size: cover;
+  background-position: 50% 50%;
+  margin-bottom: 24px;
+}
+
+.related header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+}
+
+.related h3.headline {
+  font-size: 24px;
+  line-height: 32px;
+  color: var(--navy);
+  margin: 0 0 24px;
+}
+
+.related .date {
+  font-size: 18px;
+  line-height: 27px;
+  margin: 0 0 24px;
+}
+
+.related .affordance {
+  margin-top: auto;
+}
+
+/* ================= mobile ================= */
+@media (width <= 767px) {
+  .site-header--solid {
+    height: 72px;
+  }
+
+  .article-stage .container {
+    padding: 16px;
+  }
+
+  .back-nav {
+    margin-bottom: 16px;
+  }
+
+  .back-link {
+    font-size: 15px;
+  }
+
+  .article-stage .stage header .subheadline {
+    font-size: 15px;
+    line-height: 22px;
+  }
+
+  .article-stage .stage h1.headline {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  .article-body .cols {
+    display: block;
+    margin: 0;
+  }
+
+  .article-body .col-main,
+  .article-body .col-aside {
+    width: 100%;
+    padding: 16px;
+  }
+
+  .col-main .summary li,
+  .col-main p {
+    font-size: 15px;
+    line-height: 22px;
+  }
+
+  .col-main h3 {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 16px;
+  }
+
+  .col-main .body-copy > h3:first-child {
+    font-size: 15px;
+    line-height: 22px;
+  }
+
+  .col-main h2 {
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 16px;
+  }
+
+  .col-main p {
+    margin-bottom: 16px;
+  }
+
+  .contact-card h2.headline {
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  .contact-card h3.subheadline,
+  .contact-card .phone a,
+  .social-placeholder .content {
+    font-size: 15px;
+    line-height: 22px;
+  }
+
+  .downloads li a {
+    font-size: 15px;
+  }
+
+  .related .container {
+    padding: 16px;
+  }
+
+  .related .rel-cards {
+    display: block;
+    margin: 0;
+  }
+
+  .related .cell {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 16px;
+  }
+
+  .related h3.headline {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 16px;
+  }
+
+  .related .date {
+    font-size: 15px;
+    line-height: 22px;
+    margin-bottom: 16px;
+  }
+}
+
+/* round 2 anchor fixes */
+.back-nav { display: flex; }
+.article-stage .stage header .subheadline { margin-bottom: 30px; }
+.related .cell { display: flex; }
+.related .rel-card { width: 100%; }
+.related .rel-card a { height: 100%; }
+.downloads li:last-child a { padding-bottom: 0; }
+
+/* round 3: live empty spacer p in card header (min-height), figure margin */
+.related header { min-height: 222px; }
+.zoomable figure { margin-bottom: 16px; }
+.zoom-note { margin-top: 0; }
+
+/* mobile round 2 (live: content col 328 wide, 2:1 contact photos, h1 32/36) */
+@media (width <= 767px) {
+  .article-body .cols { padding: 0; }
+
+  .article-body .col-main,
+  .article-body .col-aside {
+    padding: 16px 0;
+  }
+
+  .article-stage .stage h1.headline {
+    font-size: 32px;
+    line-height: 36px;
+  }
+
+  .contact-card img {
+    aspect-ratio: 2 / 1;
+  }
+
+  .related header {
+    min-height: 0;
+  }
+}
+
+/* mobile round 3: stage + aside rhythm trims (stitched-pair offsets) */
+@media (width <= 767px) {
+  .back-nav { margin-bottom: 16px; }
+
+  .article-stage .stage header .subheadline { margin-bottom: 12px; }
+
+  .contact-card figure { margin-bottom: 12px; }
+}
+
+/* mobile round 4: +16 stage, tick gaps 16 (offset-map driven) */
+@media (width <= 767px) {
+  .article-stage .stage header .subheadline { margin-bottom: 28px; }
+
+  .col-main .tick { margin-bottom: 16px; }
+}
+
+/* mobile round 5 (final): 2px global offset + aside boundary */
+@media (width <= 767px) {
+  .article-stage .container { padding-top: 18px; }
+
+  .article-body .col-aside { padding-top: 0; }
+}
+
+/* mobile: contact photo is a ~166px square, left-aligned (live render) */
+@media (width <= 767px) {
+  .contact-card img {
+    width: auto;
+    height: 166px;
+    aspect-ratio: 1;
+  }
+}
+
+@media (width <= 767px) {
+  .related .cell { margin-bottom: 24px; }
+}

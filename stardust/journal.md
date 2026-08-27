@@ -24,3 +24,10 @@
 - Dynamic blocks: 4 query-indexes authored (press, ir-publications, stories, locations) + Tier-2 metadata contracts; download centre recorded as Tier-3 static-first. helix-query.yaml written (config-service caveat flagged).
 - Integrations register: euroland IR widgets, jobs stack + CV matcher (Amplify), custom locations map, site search, Usercentrics consent, GTM/etracker, canto video, forms, /-/media PDF assets.
 - Open decisions for user: /en scope, press-archive volume policy, PDF rehosting, job-search wave-1 approach, online-report scope.
+
+## 2026-08-27 (later) — A1 article-detail archetype gated
+- Standalone prototype (article-proposed.html + css/article.css on home canon): gradient chrome variant, article stage (back-link/eyebrow/h1 42-56), marginal layout (872+275), rich body, zoomable figure, downloads, contact-card aside, social-consent placeholder, related press cards, full breadcrumb trail.
+- Gates: 1440 → 3.92% / Δ0 (3 rounds); 360 → 5.84% / Δ2 (7 rounds — offset-map cross-correlation drove the mobile convergence; six 500px bands at literally 0.0%).
+- Two capture-state rulings: gate reference = DENY-consent state (accept loads a LinkedIn wall, +543px nondeterministic); NBSP preservation in extraction is load-bearing for line wraps.
+- Two chrome bugs found that also improve home: right nav list is width-auto flush-right (not mirrored calc); solid header needs flow-root (margin collapse).
+- Next: A2 listing-hub (press hub) → A3 section-landing → A4 content-page; then A5/A6 after integration spikes.
