@@ -7,8 +7,19 @@
     "originUrl": "https://www.rwe.com/en/",
     "extractedAt": "2026-08-26T15:58:00Z",
     "pageCap": 1,
-    "totalDiscovered": 1,
-    "crawled": 1
+    "totalDiscovered": 2329,
+    "crawled": 1,
+    "discoveryScope": "/en/ (sitemap.xml 2026-08-27; 2697 German-locale URLs out of pilot scope)",
+    "urlRoster": "stardust/migration/urls.json",
+    "archetypes": {
+      "home": "gated+deployed",
+      "article-detail": 1807,
+      "listing-hub": 20,
+      "section-landing": 8,
+      "content-page": 490,
+      "locations-map": 1,
+      "job-search": 5
+    }
   },
   "pages": [
     {

@@ -1,15 +1,163 @@
 {
   "discovery": {
     "fetchTechnique": "headed-chrome-stealth",
-    "count": 1,
-    "concurrency": 4,
+    "count": 22,
+    "concurrency": 1,
     "botBlock": "challenge"
   },
   "consent": {
     "method": "auto"
   },
   "crawl": {
-    "failures": []
+    "failures": [
+      {
+        "url": "https://www.rwe.com/en/press",
+        "slug": "en-press",
+        "errorClass": "Error",
+        "message": "page.evaluate: Execution context was destroyed, most likely because of a navigation",
+        "at": "2026-08-27T10:51:39.993Z"
+      },
+      {
+        "url": "https://www.rwe.com/en/press/rwe-ag/2026-08-13-rwe-delivers-strong-first-half-results",
+        "slug": "en-press-rwe-ag-2026-08-13-rwe-delivers-strong-first-half-results",
+        "errorClass": "Error",
+        "message": "browserContext.newPage: Protocol error (Target.createTarget): Failed to open a new tab",
+        "at": "2026-08-27T10:51:40.020Z"
+      },
+      {
+        "url": "https://www.rwe.com/en/press/statements-and-positions",
+        "slug": "en-press-statements-and-positions",
+        "errorClass": "Error",
+        "message": "browserContext.newPage: Protocol error (Target.createTarget): Failed to open a new tab",
+        "at": "2026-08-27T10:51:40.027Z"
+      },
+      {
+        "url": "https://www.rwe.com/en/press/statements-and-positions/powering-the-future",
+        "slug": "en-press-statements-and-positions-powering-the-future",
+        "errorClass": "Error",
+        "message": "browserContext.newPage: Target page, context or browser has been closed\nBrowser logs:\n\n<launching> /Applications/Google Chrome.app/Contents/MacOS/Google Chrome --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-edgeupdater --disable-extensions --disable-features=AvoidUnnecessaryBeforeUnloadCheckSync,BoundaryEventDispatchTracksNodeRemoval,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,BlockOriginHeaderModificationOnRedirect,Translate,AutoDeElevate,OptimizationHints,msForceBrowserSignIn,msEdgeUpdateLaunchServicesPreferredVersion --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --disable-updater-scheduler --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --disable-infobars --disable-search-engine-choice-screen --disable-sync --enable-unsafe-swiftshader --no-sandbox --disable-blink-features=AutomationControlled --user-data-dir=/var/folders/w4/991rmymn68d9kd3xl7wgkh9r0000gp/T/playwright_chromiumdev_profile-Oq9Yz6 --remote-debugging-pipe --no-startup-window\n<launched> pid=62644\n[pid=62644][err] Trying to load the allocator multiple times. This is *not* supported.\n[pid=62644][err] [62644:7916698:0827/121339.073361:ERROR:google_apis/gcm/engine/registration_request.cc:291] Registration response error message: PHONE_REGISTRATION_ERROR\n[pid=62644][err] [62644:7916698:0827/121339.073508:ERROR:google_apis/gcm/engine/registration_request.cc:291] Registration response error message: PHONE_REGISTRATION_ERROR\n[pid=62644][err] [62644:7916698:0827/121339.096403:ERROR:google_apis/gcm/engine/registration_request.cc:291] Registration response error message: PHONE_REGISTRATION_ERROR\n[pid=62644][err] [62644:7916698:0827/121339.384502:ERROR:google_apis/gcm/engine/mcs_client.cc:702]   Error code: 401  Error message: Authentication Failed: wrong_secret\n[pid=62644][err] [62644:7916698:0827/121339.384514:ERROR:google_apis/gcm/engine/mcs_client.cc:704] Failed to log in to GCM, resetting connection.\n[pid=62644][err] [62644:7916698:0827/121403.831653:ERROR:google_apis/gcm/engine/registration_request.cc:291] Registration response error message: DEPRECATED_ENDPOINT\n[pid=62644][err] [62644:7916698:0827/121455.289899:ERROR:google_apis/gcm/engine/registration_request.cc:291] Registration response error message: DEPRECATED_ENDPOINT\n[pid=62644][err] [62644:7916698:0827/121621.231230:ERROR:google_apis/gcm/engine/registration_request.cc:291] Registration response error message: DEPRECATED_ENDPOINT\n[pid=62644][err] [62644:7916698:0827/122013.186845:ERROR:google_apis/gcm/engine/registration_request.cc:291] Registration response error message: DEPRECATED_ENDPOINT\n[pid=62644][err] [62644:7916698:0827/122448.457198:ERROR:google_apis/gcm/engine/connection_factory_impl.cc:484] ConnectionHandler failed with net error: -2\n[pid=62644][err] [62644:7916698:0827/122752.212191:ERROR:google_apis/gcm/engine/registration_request.cc:291] Registration response error message: DEPRECATED_ENDPOINT\n[pid=62644][err] [62644:7916698:0827/123533.813533:ERROR:google_apis/gcm/engine/connection_factory_impl.cc:484] ConnectionHandler failed with net error: -2\n[pid=62644][err] [62644:7916698:0827/124124.095096:ERROR:google_apis/gcm/engine/connection_factory_impl.cc:484] ConnectionHandler failed with net error: -2\n[pid=62644] <gracefully close start>",
+        "at": "2026-08-27T10:51:40.037Z"
+      },
+      {
+        "url": "https://www.rwe.com/en/investor-relations",
+        "slug": "en-investor-relations",
+        "errorClass": "Error",
+        "message": "browserContext.newPage: Target page, context or browser has been closed",
+        "at": "2026-08-27T10:51:40.037Z"
+      },
+      {
+        "url": "https://www.rwe.com/en/investor-relations/financial-calendar-and-publications",
+        "slug": "en-investor-relations-financial-calendar-and-publications",
+        "errorClass": "Error",
+        "message": "browserContext.newPage: Target page, context or browser has been closed",
+        "at": "2026-08-27T10:51:40.038Z"
+      },
+      {
+        "url": "https://www.rwe.com/en/investor-relations/financial-calendar-and-publications/news-and-ad-hoc-announcements/managers-transactions/managers-transactions-2024-09-20",
+        "slug": "en-investor-relations-financial-calendar-and-publications-news-and-ad-hoc-announcements-managers-transactions-managers-transactions-2024-09-20",
+        "errorClass": "Error",
+        "message": "browserContext.newPage: Target page, context or browser has been closed",
+        "at": "2026-08-27T10:51:40.038Z"
+      },
+      {
+        "url": "https://www.rwe.com/en/investor-relations/rwe-share",
+        "slug": "en-investor-relations-rwe-share",
+        "errorClass": "Error",
+        "message": "browserContext.newPage: Target page, context or browser has been closed",
+        "at": "2026-08-27T10:51:40.038Z"
+      },
+      {
+        "url": "https://www.rwe.com/en/the-group",
+        "slug": "en-the-group",
+        "errorClass": "Error",
+        "message": "browserContext.newPage: Target page, context or browser has been closed",
+        "at": "2026-08-27T10:51:40.038Z"
+      },
+      {
+        "url": "https://www.rwe.com/en/the-group/countries-and-locations",
+        "slug": "en-the-group-countries-and-locations",
+        "errorClass": "Error",
+        "message": "browserContext.newPage: Target page, context or browser has been closed",
+        "at": "2026-08-27T10:51:40.038Z"
+      },
+      {
+        "url": "https://www.rwe.com/en/the-group/countries-and-locations/biblis-gas-turbine-power-plant",
+        "slug": "en-the-group-countries-and-locations-biblis-gas-turbine-power-plant",
+        "errorClass": "Error",
+        "message": "browserContext.newPage: Target page, context or browser has been closed",
+        "at": "2026-08-27T10:51:40.038Z"
+      },
+      {
+        "url": "https://www.rwe.com/en/rwe-careers-portal",
+        "slug": "en-rwe-careers-portal",
+        "errorClass": "Error",
+        "message": "browserContext.newPage: Target page, context or browser has been closed",
+        "at": "2026-08-27T10:51:40.039Z"
+      },
+      {
+        "url": "https://www.rwe.com/en/rwe-careers-portal/job-offers",
+        "slug": "en-rwe-careers-portal-job-offers",
+        "errorClass": "Error",
+        "message": "browserContext.newPage: Target page, context or browser has been closed",
+        "at": "2026-08-27T10:51:40.039Z"
+      },
+      {
+        "url": "https://www.rwe.com/en/rwe-careers-portal/teamrwe",
+        "slug": "en-rwe-careers-portal-teamrwe",
+        "errorClass": "Error",
+        "message": "browserContext.newPage: Target page, context or browser has been closed",
+        "at": "2026-08-27T10:51:40.039Z"
+      },
+      {
+        "url": "https://www.rwe.com/en/rwe-careers-portal/teamrwe/reemt-general-manager-arkona",
+        "slug": "en-rwe-careers-portal-teamrwe-reemt-general-manager-arkona",
+        "errorClass": "Error",
+        "message": "browserContext.newPage: Target page, context or browser has been closed",
+        "at": "2026-08-27T10:51:40.039Z"
+      },
+      {
+        "url": "https://www.rwe.com/en/research-and-development",
+        "slug": "en-research-and-development",
+        "errorClass": "Error",
+        "message": "browserContext.newPage: Target page, context or browser has been closed",
+        "at": "2026-08-27T10:51:40.040Z"
+      },
+      {
+        "url": "https://www.rwe.com/en/our-energy",
+        "slug": "en-our-energy",
+        "errorClass": "Error",
+        "message": "browserContext.newPage: Target page, context or browser has been closed",
+        "at": "2026-08-27T10:51:40.040Z"
+      },
+      {
+        "url": "https://www.rwe.com/en/responsibility-and-sustainability/environmental-protection/climate",
+        "slug": "en-responsibility-and-sustainability-environmental-protection-climate",
+        "errorClass": "Error",
+        "message": "browserContext.newPage: Target page, context or browser has been closed",
+        "at": "2026-08-27T10:51:40.040Z"
+      },
+      {
+        "url": "https://www.rwe.com/en/contact-services",
+        "slug": "en-contact-services",
+        "errorClass": "Error",
+        "message": "browserContext.newPage: Target page, context or browser has been closed",
+        "at": "2026-08-27T10:51:40.040Z"
+      },
+      {
+        "url": "https://www.rwe.com/en/contact-services/download-centre",
+        "slug": "en-contact-services-download-centre",
+        "errorClass": "Error",
+        "message": "browserContext.newPage: Target page, context or browser has been closed",
+        "at": "2026-08-27T10:51:40.040Z"
+      },
+      {
+        "url": "https://www.rwe.com/en/imprint",
+        "slug": "en-imprint",
+        "errorClass": "Error",
+        "message": "browserContext.newPage: Target page, context or browser has been closed",
+        "at": "2026-08-27T10:51:40.041Z"
+      }
+    ]
   },
   "visionCheck": [
     {

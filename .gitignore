@@ -18,3 +18,4 @@ stardust/replica/gates/
 stardust/current/assets/screenshots/
 stardust/replica/*.png
 stardust/replica/live-dom-*.html
+stardust/migration/survey/

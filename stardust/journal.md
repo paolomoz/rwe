@@ -16,3 +16,11 @@
 - Field defect found: boilerplate's global `header{height:var(--nav-height)}` collapsed every block-internal <header> — scoped to `body > header`.
 - Published-origin gate vs live rwe.com: 1440 → 2.64% / Δ8 PASS (3 rounds); 360 → 9.86% / Δ2 PASS (5 rounds, documented). CLS 0.0004. Content-diff advisory reds all verified-by-eye classifier artifacts.
 - Live: https://main--rwe--paolomoz.aem.live/ · Preview: https://main--rwe--paolomoz.aem.page/ · Author: https://da.live/#/paolomoz/rwe
+
+## 2026-08-27 — Migration plan (site scope)
+- Discovery: sitemap.xml → 5,026 URLs; pilot scope = 2,329 /en/ pages (2,697 unprefixed German out of scope). Full roster: stardust/migration/urls.json.
+- Typed 21 representative pages via sequential headed survey (crawl.mjs stalled on Cloudflare 429s at concurrency; single-context pacing worked). Site's own data-tpl vocabulary grounded the typing.
+- 7 archetypes: home ✅, article-detail (78% of pages), listing-hub, section-landing, content-page, locations-map, job-search. Prototype order A1→A6 in stardust/migration/migration-plan.md.
+- Dynamic blocks: 4 query-indexes authored (press, ir-publications, stories, locations) + Tier-2 metadata contracts; download centre recorded as Tier-3 static-first. helix-query.yaml written (config-service caveat flagged).
+- Integrations register: euroland IR widgets, jobs stack + CV matcher (Amplify), custom locations map, site search, Usercentrics consent, GTM/etracker, canto video, forms, /-/media PDF assets.
+- Open decisions for user: /en scope, press-archive volume policy, PDF rehosting, job-search wave-1 approach, online-report scope.
