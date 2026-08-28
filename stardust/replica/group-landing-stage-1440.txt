@@ -1,0 +1,385 @@
+div#page-wrapper [0,0,1440,7340] {font-size:18px font-weight:400 line-height:27px font-family:regular, "Trebuchet MS", Tahoma, "sans-serif" color:rgb(29, 68, 119) background-color:rgb(173, 175, 177) text-align:start border:0px none rgb(29, 68, 119) display:flex object-fit:fill position:relative flex-direction:column max-width:100% width:1440px height:7340.12px overflow:hidden}
+ div[tpl=meta-navigation] [0,0,0,0] HIDDEN
+  nav[tpl=target-group-select]#target-group-select [0,0,0,0] {font-size:20px font-weight:400 line-height:20px font-family:regular, "Trebuchet MS", Tahoma, "sans-serif" color:rgb(255, 255, 255) text-align:start border:0px none rgb(255, 255, 255) display:block object-fit:fill position:relative height:100%}
+   ul#target-group-select-list [0,0,0,0] {font-size:20px font-weight:400 line-height:20px font-family:regular, "Trebuchet MS", Tahoma, "sans-serif" color:rgb(255, 255, 255) text-align:start border:0px none rgb(255, 255, 255) display:block object-fit:fill height:100%}
+    li [0,0,0,0] {font-size:20px font-weight:400 line-height:20px font-family:regular, "Trebuchet MS", Tahoma, "sans-serif" color:rgb(255, 255, 255) text-align:start border:0px none rgb(255, 255, 255) display:list-item object-fit:fill height:100%}
+     div[tpl=las01r] [0,0,0,0] {font-size:15px font-weight:400 line-height:15px font-family:regular, "Trebuchet MS", Tahoma, "sans-serif" color:rgb(255, 255, 255) text-align:start border:0px none rgb(255, 255, 255) display:block object-fit:fill position:relative height:100%}
+      button.trigger [0,0,0,0] {font-size:15px font-weight:400 line-height:15px font-family:medium color:rgb(255, 255, 255) background-color:rgb(239, 239, 239) padding:1px 6px text-align:center border:2px outset rgb(0, 0, 0) display:flex object-fit:fill align-items:center height:100%}
+       span [0,0,0,0] {font-size:15px font-weight:400 line-height:15px font-family:medium color:rgb(255, 255, 255) text-align:center border:0px none rgb(255, 255, 255) display:block object-fit:fill} "English"
+      ul [0,0,0,0] HIDDEN
+       li [0,0,0,0] HIDDEN
+        a.link [0,0,0,0] HIDDEN
+ div#off-screen-wrap [0,0,1440,7340] {font-size:18px font-weight:400 line-height:27px font-family:regular, "Trebuchet MS", Tahoma, "sans-serif" color:rgb(29, 68, 119) background-color:rgb(255, 255, 255) text-align:start border:0px none rgb(29, 68, 119) display:flex object-fit:fill position:relative flex-direction:column width:1440px height:7340.12px}
+  header.header-container.lightImage [0,0,1440,130] {font-size:18px font-weight:400 line-height:27px font-family:regular, "Trebuchet MS", Tahoma, "sans-serif" color:rgb(29, 68, 119) background-image:linear-gradient(45deg, rgb(29, 68, 119) 22%, rgb(0, 161, 159)) text-align:center border:0px none rgb(29, 68, 119) display:block object-fit:fill position:relative width:1440px height:130px z-index:10000}
+   div.teaser-width [0,0,1440,130] {font-size:18px font-weight:400 line-height:27px font-family:regular, "Trebuchet MS", Tahoma, "sans-serif" color:rgb(29, 68, 119) background-image:linear-gradient(45deg, rgb(29, 68, 119) 22%, rgb(0, 161, 159)) text-align:center border:0px none rgb(29, 68, 119) display:block object-fit:fill width:1440px height:130px z-index:1000}
+    nav.header-navigation.teaser-width[tpl=quick-navigation] [135,52,1170,27] {font-size:18px font-weight:400 line-height:27px font-family:regular, "Trebuchet MS", Tahoma, "sans-serif" color:rgb(255, 255, 255) margin:0px 135px text-align:center border:0px none rgb(255, 255, 255) display:flex object-fit:fill position:relative justify-content:space-between max-width:1170px width:1170px height:27px transform:matrix(1, 0, 0, 1, 0, -13.5) z-index:1000 top:65px bottom:-65px}
+     h3.aria-only#quick-navigation-left-label [0,0,0,0] HIDDEN
+     ul.navigation-list#quick-navigation-left-list [135,52,428,27] {font-size:18px font-weight:400 line-height:27px font-family:regular, "Trebuchet MS", Tahoma, "sans-serif" color:rgb(255, 255, 255) text-align:center border:0px none rgb(255, 255, 255) display:flex object-fit:fill align-items:center max-width:calc(50% - 57.5px) width:427.984px height:27px}
+      li.menu [135,52,70,27] {font-size:18px font-weight:400 line-height:27px font-family:regular, "Trebuchet MS", Tahoma, "sans-serif" color:rgb(255, 255, 255) margin:0px 50px 0px 0px text-align:center border:0px none rgb(255, 255, 255) display:flex object-fit:fill position:relative align-items:center width:69.6641px height:27px}
+       button#menu-open [135,52,70,27] {font-size:15px font-weight:400 line-height:27px font-family:medium color:rgb(255, 255, 255) text-align:center border:0px none rgb(255, 255, 255) display:flex object-fit:fill align-items:center width:69.6641px height:27px}
+        span [165,52,40,27] {font-size:15px font-weight:400 line-height:27px font-family:medium color:rgb(255, 255, 255) text-align:center border:0px none rgb(255, 255, 255) display:block object-fit:fill width:39.6641px height:27px} "Menu"
+      li [255,52,88,27] {font-size:18px font-weight:400 line-height:27px font-family:regular, "Trebuchet MS", Tahoma, "sans-serif" color:rgb(255, 255, 255) margin:0px 50px 0px 0px text-align:center border:0px none rgb(255, 255, 255) display:flex object-fit:fill position:relative align-items:center width:88.2344px height:27px}
+       a.link.icon-contact [255,52,88,27] {font-size:15px font-weight:400 line-height:27px font-family:medium color:rgb(255, 255, 255) text-align:left border:0px none rgb(255, 255, 255) display:flex object-fit:fill align-items:center width:88.2344px height:27px z-index:100} "Contact" HREF=/en/contact-services/
+      li [393,52,120,27] {font-size:18px font-weight:400 line-height:27px font-family:regular, "Trebuchet MS", Tahoma, "sans-serif" color:rgb(255, 255, 255) margin:0px 50px 0px 0px text-align:center border:0px none rgb(255, 255, 255) display:flex object-fit:fill position:relative align-items:center width:120.086px height:27px}
+       a.link.icon-add-app [393,52,120,27] {font-size:15px font-weight:400 line-height:27px font-family:medium color:rgb(255, 255, 255) text-align:left border:0px none rgb(255, 255, 255) display:flex object-fit:fill align-items:center width:120.086px height:27px z-index:100} "Apps & Tools" HREF=/en/contact-services/apps-and-tools/
+     a.logo.link [665,49,110,32] {font-size:15px font-weight:400 line-height:27px font-family:medium color:rgb(255, 255, 255) text-align:center border:0px none rgb(255, 255, 255) display:block object-fit:fill position:absolute align-items:center width:110.344px height:32px transform:matrix(1, 0, 0, 1, -55.1719, -16) top:13.5px left:585px right:474.656px bottom:-18.5px} HREF=/en/
+      div [665,49,110,32] {font-size:15px font-weight:400 line-height:27px font-family:medium color:rgb(255, 255, 255) text-align:center border:0px none rgb(255, 255, 255) display:block object-fit:fill width:110.344px height:32px}
+       svg.[object.SVGAnimatedString] [665,49,110,32] {font-size:15px font-weight:400 line-height:27px font-family:medium color:rgb(255, 255, 255) text-align:center border:0px none rgb(255, 255, 255) display:block object-fit:fill width:110.344px height:32px}
+        g.[object.SVGAnimatedString]#Layer_1 [665,49,110,32] {font-size:15px font-weight:400 line-height:27px font-family:medium color:rgb(255, 255, 255) text-align:center border:0px none rgb(255, 255, 255) display:inline object-fit:fill}
+         path.[object.SVGAnimatedString] [665,49,110,32] {font-size:15px font-weight:400 line-height:27px font-family:medium color:rgb(255, 255, 255) text-align:center border:0px none rgb(255, 255, 255) display:inline object-fit:fill}
+     h3.aria-only#quick-navigation-right-label [0,0,0,0] HIDDEN
+     ul.navigation-list#quick-navigation-right-list [951,52,354,27] {font-size:18px font-weight:400 line-height:27px font-family:regular, "Trebuchet MS", Tahoma, "sans-serif" color:rgb(255, 255, 255) text-align:center border:0px none rgb(255, 255, 255) display:flex object-fit:fill align-items:center max-width:calc(50% - 57.5px) width:353.75px height:27px}
+      li [951,52,114,27] {font-size:18px font-weight:400 line-height:27px font-family:regular, "Trebuchet MS", Tahoma, "sans-serif" color:rgb(255, 255, 255) margin:0px 40px 0px 0px text-align:center border:0px none rgb(255, 255, 255) display:flex object-fit:fill position:relative align-items:center width:113.68px height:27px}
+       a.link.icon-region [951,52,114,27] {font-size:15px font-weight:400 line-height:27px font-family:medium color:rgb(255, 255, 255) text-align:center border:0px none rgb(255, 255, 255) display:flex object-fit:fill align-items:center width:113.68px height:27px} "RWE Global" HREF=/en/the-group/countries-and-locations/
+      li.search [1105,52,80,27] {font-size:18px font-weight:400 line-height:27px font-family:regular, "Trebuchet MS", Tahoma, "sans-serif" color:rgb(255, 255, 255) margin:0px 40px 0px 0px text-align:center border:0px none rgb(255, 255, 255) display:flex object-fit:fill position:relative align-items:center width:80.4141px height:27px}
+       button [1105,52,80,27] {font-size:15px font-weight:400 line-height:27px font-family:medium color:rgb(255, 255, 255) text-align:center border:0px none rgb(255, 255, 255) display:flex object-fit:fill align-items:center width:80.4141px height:27px}
+        span [1105,52,50,27] {font-size:15px font-weight:400 line-height:27px font-family:medium color:rgb(255, 255, 255) margin:0px 10px 0px 0px text-align:center border:0px none rgb(255, 255, 255) display:block object-fit:fill width:50.4141px height:27px} "Search"
+      div[tpl=meta-navigation] [1225,52,80,27] {font-size:18px font-weight:400 line-height:27px font-family:regular, "Trebuchet MS", Tahoma, "sans-serif" color:rgb(255, 255, 255) text-align:center border:0px none rgb(255, 255, 255) display:block object-fit:fill position:relative width:79.6562px height:27px transform:matrix(1, 0, 0, 1, 0, 13.5) top:-13.5px bottom:13.5px}
+       nav[tpl=target-group-select]#target-group-select [1225,52,80,27] {font-size:20px font-weight:400 line-height:20px font-family:regular, "Trebuchet MS", Tahoma, "sans-serif" color:rgb(255, 255, 255) text-align:center border:0px none rgb(255, 255, 255) display:block object-fit:fill position:relative width:79.6562px height:27px}
+        ul#target-group-select-list [1225,52,80,27] {font-size:20px font-weight:400 line-height:20px font-family:regular, "Trebuchet MS", Tahoma, "sans-serif" color:rgb(255, 255, 255) text-align:center border:0px none rgb(255, 255, 255) display:inline-flex object-fit:fill align-items:center width:79.6562px height:27px}
+         li [1225,52,80,27] {font-size:20px font-weight:400 line-height:20px font-family:regular, "Trebuchet MS", Tahoma, "sans-serif" color:rgb(255, 255, 255) text-align:center border:0px none rgb(255, 255, 255) display:flex object-fit:fill position:relative align-items:center width:79.6562px height:27px}
+          div[tpl=las01r] [1225,52,80,27] {font-size:15px font-weight:400 line-height:15px font-family:regular, "Trebuchet MS", Tahoma, "sans-serif" color:rgb(255, 255, 255) text-align:center border:0px none rgb(255, 255, 255) display:block object-fit:fill position:relative width:79.6562px height:27px}
+           button.trigger [1225,52,80,27] {font-size:15px font-weight:400 line-height:15px font-family:medium color:rgb(255, 255, 255) text-align:center border:0px none rgb(255, 255, 255) display:flex object-fit:fill align-items:center width:79.6562px height:27px}
+            span [1225,58,52,15] {font-size:15px font-weight:400 line-height:15px font-family:medium color:rgb(255, 255, 255) text-align:center border:0px none rgb(255, 255, 255) display:block object-fit:fill width:51.6562px height:15px} "English"
+           ul [1198,92,100,75] HIDDEN
+   navigation.meme [0,0,0,0] HIDDEN
+    div.meme__wrapper [0,0,0,0] {font-size:18px font-weight:400 line-height:27px font-family:regular, "Trebuchet MS", Tahoma, "sans-serif" color:rgb(29, 68, 119) background-color:rgb(255, 255, 255) padding:56px 0px 64px margin:0px auto text-align:left border:0px none rgb(29, 68, 119) display:block object-fit:fill position:relative width:1170px height:100% overflow:hidden}
+     ul.meme__list [0,0,0,0] {font-size:18px font-weight:400 line-height:27px font-family:regular, "Trebuchet MS", Tahoma, "sans-serif" color:rgb(29, 68, 119) background-color:rgb(255, 255, 255) margin:8px 0px 0px text-align:left border:0px none rgb(29, 68, 119) display:block object-fit:fill width:250px height:100%}
+      li.meme__list-item [0,0,0,0] {font-size:18px font-weight:400 line-height:27px font-family:regular, "Trebuchet MS", Tahoma, "sans-serif" color:rgb(29, 68, 119) text-align:left border:0px none rgb(29, 68, 119) display:block object-fit:fill}
+       div.meme__link-wrapper [0,0,0,0] {font-size:18px font-weight:400 line-height:27px font-family:regular, "Trebuchet MS", Tahoma, "sans-serif" color:rgb(29, 68, 119) text-align:left border:0px none rgb(29, 68, 119) display:flex object-fit:fill justify-content:space-between}
+        a [0,0,0,0] {font-size:18px font-weight:400 line-height:27px font-family:bold color:rgb(29, 68, 119) background-color:rgb(255, 255, 255) padding:0px 24px margin:4px 3px 20px 24px text-align:right border:0px none rgb(29, 68, 119) display:block object-fit:fill width:100%} "The Group" HREF=/en/the-group/
+        span.meme__trigger.meme__trigger--first-lvl [0,0,0,0] HIDDEN
+       div.meme__lvl-wrapper.meme__lvl-wrapper--first-lvl [0,0,0,0] HIDDEN
+        div.meme__overview-wrapper [0,0,0,0] HIDDEN
+        ul.meme__list.meme__column-count--3.hasNewsbox [0,0,0,0] HIDDEN
+        a.meme__newsbox [0,0,0,0] HIDDEN
+      li.meme__list-item [0,0,0,0] {font-size:18px font-weight:400 line-height:27px font-family:regular, "Trebuchet MS", Tahoma, "sans-serif" color:rgb(29, 68, 119) text-align:left border:0px none rgb(29, 68, 119) display:block object-fit:fill}
+       div.meme__link-wrapper [0,0,0,0] {font-size:18px font-weight:400 line-height:27px font-family:regular, "Trebuchet MS", Tahoma, "sans-serif" color:rgb(29, 68, 119) text-align:left border:0px none rgb(29, 68, 119) display:flex object-fit:fill justify-content:space-between}
+        a [0,0,0,0] {font-size:18px font-weight:400 line-height:27px font-family:bold color:rgb(29, 68, 119) background-color:rgb(255, 255, 255) padding:0px 24px margin:4px 3px 20px 24px text-align:right border:0px none rgb(29, 68, 119) display:block object-fit:fill width:100%} "Our Energy" HREF=/en/our-energy/
+        span.meme__trigger.meme__trigger--first-lvl [0,0,0,0] HIDDEN
+       div.meme__lvl-wrapper.meme__lvl-wrapper--first-lvl [0,0,0,0] HIDDEN
+        div.meme__overview-wrapper [0,0,0,0] HIDDEN
+        ul.meme__list.meme__column-count--3 [0,0,0,0] HIDDEN
+      li.meme__list-item [0,0,0,0] {font-size:18px font-weight:400 line-height:27px font-family:regular, "Trebuchet MS", Tahoma, "sans-serif" color:rgb(29, 68, 119) text-align:left border:0px none rgb(29, 68, 119) display:block object-fit:fill}
+       div.meme__link-wrapper [0,0,0,0] {font-size:18px font-weight:400 line-height:27px font-family:regular, "Trebuchet MS", Tahoma, "sans-serif" color:rgb(29, 68, 119) text-align:left border:0px none rgb(29, 68, 119) display:flex object-fit:fill justify-content:space-between}
+        a [0,0,0,0] {font-size:18px font-weight:400 line-height:27px font-family:bold color:rgb(29, 68, 119) background-color:rgb(255, 255, 255) padding:0px 24px margin:4px 3px 20px 24px text-align:right border:0px none rgb(29, 68, 119) display:block object-fit:fill width:100%} "Products & Services" HREF=/en/products-and-services/
+        span.meme__trigger.meme__trigger--first-lvl [0,0,0,0] HIDDEN
+       div.meme__lvl-wrapper.meme__lvl-wrapper--first-lvl [0,0,0,0] HIDDEN
+        div.meme__overview-wrapper [0,0,0,0] HIDDEN
+        ul.meme__list.meme__column-count--3 [0,0,0,0] HIDDEN
+      li.meme__list-item [0,0,0,0] {font-size:18px font-weight:400 line-height:27px font-family:regular, "Trebuchet MS", Tahoma, "sans-serif" color:rgb(29, 68, 119) text-align:left border:0px none rgb(29, 68, 119) display:block object-fit:fill}
+       div.meme__link-wrapper [0,0,0,0] {font-size:18px font-weight:400 line-height:27px font-family:regular, "Trebuchet MS", Tahoma, "sans-serif" color:rgb(29, 68, 119) text-align:left border:0px none rgb(29, 68, 119) display:flex object-fit:fill justify-content:space-between}
+        a [0,0,0,0] {font-size:18px font-weight:400 line-height:27px font-family:bold color:rgb(29, 68, 119) background-color:rgb(255, 255, 255) padding:0px 24px margin:4px 3px 20px 24px text-align:right border:0px none rgb(29, 68, 119) display:block object-fit:fill width:100%} "Research & Development" HREF=/en/research-and-development/
+        span.meme__trigger.meme__trigger--first-lvl [0,0,0,0] HIDDEN
+       div.meme__lvl-wrapper.meme__lvl-wrapper--first-lvl [0,0,0,0] HIDDEN
+        div.meme__overview-wrapper [0,0,0,0] HIDDEN
+        ul.meme__list.meme__column-count--3 [0,0,0,0] HIDDEN
+      li.meme__list-item [0,0,0,0] {font-size:18px font-weight:400 line-height:27px font-family:regular, "Trebuchet MS", Tahoma, "sans-serif" color:rgb(29, 68, 119) text-align:left border:0px none rgb(29, 68, 119) display:block object-fit:fill}
+       div.meme__link-wrapper [0,0,0,0] {font-size:18px font-weight:400 line-height:27px font-family:regular, "Trebuchet MS", Tahoma, "sans-serif" color:rgb(29, 68, 119) text-align:left border:0px none rgb(29, 68, 119) display:flex object-fit:fill justify-content:space-between}
+        a [0,0,0,0] {font-size:18px font-weight:400 line-height:27px font-family:bold color:rgb(29, 68, 119) background-color:rgb(255, 255, 255) padding:0px 24px margin:4px 3px 20px 24px text-align:right border:0px none rgb(29, 68, 119) display:block object-fit:fill width:100%} "Responsibility & Sustainability" HREF=/en/responsibility-and-sustainability/
+        span.meme__trigger.meme__trigger--first-lvl [0,0,0,0] HIDDEN
+       div.meme__lvl-wrapper.meme__lvl-wrapper--first-lvl [0,0,0,0] HIDDEN
+        div.meme__overview-wrapper [0,0,0,0] HIDDEN
+        ul.meme__list.meme__column-count--3 [0,0,0,0] HIDDEN
+      li.meme__list-item [0,0,0,0] {font-size:18px font-weight:400 line-height:27px font-family:regular, "Trebuchet MS", Tahoma, "sans-serif" color:rgb(29, 68, 119) text-align:left border:0px none rgb(29, 68, 119) display:block object-fit:fill}
+       div.meme__link-wrapper [0,0,0,0] {font-size:18px font-weight:400 line-height:27px font-family:regular, "Trebuchet MS", Tahoma, "sans-serif" color:rgb(29, 68, 119) text-align:left border:0px none rgb(29, 68, 119) display:flex object-fit:fill justify-content:space-between}
+        a [0,0,0,0] {font-size:18px font-weight:400 line-height:27px font-family:bold color:rgb(29, 68, 119) background-color:rgb(255, 255, 255) padding:0px 24px margin:4px 3px 20px 24px text-align:right border:0px none rgb(29, 68, 119) display:block object-fit:fill width:100%} "Career" HREF=/en/rwe-careers-portal/
+        span.meme__trigger.meme__trigger--first-lvl [0,0,0,0] HIDDEN
+       div.meme__lvl-wrapper.meme__lvl-wrapper--first-lvl [0,0,0,0] HIDDEN
+        div.meme__overview-wrapper [0,0,0,0] HIDDEN
+        ul.meme__list.meme__column-count--3 [0,0,0,0] HIDDEN
+      li.meme__list-item [0,0,0,0] {font-size:18px font-weight:400 line-height:27px font-family:regular, "Trebuchet MS", Tahoma, "sans-serif" color:rgb(29, 68, 119) text-align:left border:0px none rgb(29, 68, 119) display:block object-fit:fill}
+       div.meme__link-wrapper [0,0,0,0] {font-size:18px font-weight:400 line-height:27px font-family:regular, "Trebuchet MS", Tahoma, "sans-serif" color:rgb(29, 68, 119) text-align:left border:0px none rgb(29, 68, 119) display:flex object-fit:fill justify-content:space-between}
+        a [0,0,0,0] {font-size:18px font-weight:400 line-height:27px font-family:bold color:rgb(29, 68, 119) background-color:rgb(255, 255, 255) padding:0px 24px margin:4px 3px 20px 24px text-align:right border:0px none rgb(29, 68, 119) display:block object-fit:fill width:100%} "Investor Relations" HREF=/en/investor-relations/
+        span.meme__trigger.meme__trigger--first-lvl [0,0,0,0] HIDDEN
+       div.meme__lvl-wrapper.meme__lvl-wrapper--first-lvl [0,0,0,0] HIDDEN
+        div.meme__overview-wrapper [0,0,0,0] HIDDEN
+        ul.meme__list.meme__column-count--3.hasNewsbox [0,0,0,0] HIDDEN
+        a.meme__newsbox [0,0,0,0] HIDDEN
+      li.meme__list-item [0,0,0,0] {font-size:18px font-weight:400 line-height:27px font-family:regular, "Trebuchet MS", Tahoma, "sans-serif" color:rgb(29, 68, 119) text-align:left border:0px none rgb(29, 68, 119) display:block object-fit:fill}
+       div.meme__link-wrapper [0,0,0,0] {font-size:18px font-weight:400 line-height:27px font-family:regular, "Trebuchet MS", Tahoma, "sans-serif" color:rgb(29, 68, 119) text-align:left border:0px none rgb(29, 68, 119) display:flex object-fit:fill justify-content:space-between}
+        a [0,0,0,0] {font-size:18px font-weight:400 line-height:27px font-family:bold color:rgb(29, 68, 119) background-color:rgb(255, 255, 255) padding:0px 24px margin:4px 3px 20px 24px text-align:right border:0px none rgb(29, 68, 119) display:block object-fit:fill width:100%} "Our Neighbourhood" HREF=/en/our-neighbourhood/
+        span.meme__trigger.meme__trigger--first-lvl [0,0,0,0] HIDDEN
+       div.meme__lvl-wrapper.meme__lvl-wrapper--first-lvl [0,0,0,0] HIDDEN
+        div.meme__overview-wrapper [0,0,0,0] HIDDEN
+        ul.meme__list.meme__column-count--3 [0,0,0,0] HIDDEN
+      li.meme__list-item [0,0,0,0] {font-size:18px font-weight:400 line-height:27px font-family:regular, "Trebuchet MS", Tahoma, "sans-serif" color:rgb(29, 68, 119) text-align:left border:0px none rgb(29, 68, 119) display:block object-fit:fill}
+       div.meme__link-wrapper [0,0,0,0] {font-size:18px font-weight:400 line-height:27px font-family:regular, "Trebuchet MS", Tahoma, "sans-serif" color:rgb(29, 68, 119) text-align:left border:0px none rgb(29, 68, 119) display:flex object-fit:fill justify-content:space-between}
+        a [0,0,0,0] {font-size:18px font-weight:400 line-height:27px font-family:bold color:rgb(29, 68, 119) background-color:rgb(255, 255, 255) padding:0px 24px margin:4px 3px 20px 24px text-align:right border:0px none rgb(29, 68, 119) display:block object-fit:fill width:100%} "Press & News" HREF=/en/press/
+        span.meme__trigger.meme__trigger--first-lvl [0,0,0,0] HIDDEN
+       div.meme__lvl-wrapper.meme__lvl-wrapper--first-lvl [0,0,0,0] HIDDEN
+        div.meme__overview-wrapper [0,0,0,0] HIDDEN
+        ul.meme__list.meme__column-count--3.hasNewsbox [0,0,0,0] HIDDEN
+        a.meme__newsbox [0,0,0,0] HIDDEN
+      li.meme__list-item [0,0,0,0] {font-size:18px font-weight:400 line-height:27px font-family:regular, "Trebuchet MS", Tahoma, "sans-serif" color:rgb(29, 68, 119) text-align:left border:0px none rgb(29, 68, 119) display:block object-fit:fill}
+       div.meme__link-wrapper [0,0,0,0] {font-size:18px font-weight:400 line-height:27px font-family:regular, "Trebuchet MS", Tahoma, "sans-serif" color:rgb(29, 68, 119) text-align:left border:0px none rgb(29, 68, 119) display:flex object-fit:fill justify-content:space-between}
+        a [0,0,0,0] {font-size:18px font-weight:400 line-height:27px font-family:bold color:rgb(29, 68, 119) background-color:rgb(255, 255, 255) padding:0px 24px margin:4px 3px 20px 24px text-align:right border:0px none rgb(29, 68, 119) display:block object-fit:fill width:100%} "Contact & Services" HREF=/en/contact-services/
+        span.meme__trigger.meme__trigger--first-lvl [0,0,0,0] HIDDEN
+       div.meme__lvl-wrapper.meme__lvl-wrapper--first-lvl [0,0,0,0] HIDDEN
+        div.meme__overview-wrapper [0,0,0,0] HIDDEN
+        ul.meme__list.meme__column-count--3 [0,0,0,0] HIDDEN
+  div.color-background-17.tag-bar--sticky[tpl=tag-bar-sticky] [0,0,0,0] HIDDEN
+   div [0,0,0,0] {font-size:18px font-weight:400 line-height:27px font-family:regular, "Trebuchet MS", Tahoma, "sans-serif" color:rgb(255, 255, 255) margin:0px auto text-align:start border:0px none rgb(255, 255, 255) display:block object-fit:fill max-width:1170px}
+  div#off-screen-app-drawer [0,0,1440,900] HIDDEN
+   div [0,0,1440,900] HIDDEN
+    section.app-drawer#search-drawer [0,0,1440,900] HIDDEN
+     div[tpl=ses01] [288,407,864,87] HIDDEN
+      div[tpl=form] [288,407,864,63] HIDDEN
+       form [288,407,864,63] HIDDEN
+        div.form-group.autocomplete [288,407,864,63] HIDDEN
+  div.navigation-wrapper [0,130,1440,0] {font-size:18px font-weight:400 line-height:27px font-family:regular, "Trebuchet MS", Tahoma, "sans-serif" color:rgb(29, 68, 119) text-align:start border:0px none rgb(29, 68, 119) display:block object-fit:fill width:1440px}
+   div.overlay [0,0,0,0] HIDDEN
+   nav#burger-menu [0,0,0,0] HIDDEN
+    div#burger-menu-controls [0,0,0,0] {font-size:18px font-weight:400 line-height:27px font-family:regular, "Trebuchet MS", Tahoma, "sans-serif" color:rgb(29, 68, 119) padding:0px 24px text-align:start display:flex object-fit:fill align-items:center height:99px z-index:15}
+     button.icon.icon-close#button-close [0,0,0,0] {font-size:28.6px font-weight:400 line-height:28.6px font-family:RWE_Icon_Font color:rgb(29, 68, 119) margin:0px 0px 0px auto text-align:center border:0px none rgb(29, 68, 119) display:flex object-fit:fill position:relative}
+     div.mobile-login-control [0,0,0,0] HIDDEN
+    ul [0,0,0,0] {font-size:18px font-weight:400 line-height:27px font-family:regular, "Trebuchet MS", Tahoma, "sans-serif" color:rgb(255, 255, 255) padding:0px 24px text-align:start border:0px none rgb(255, 255, 255) display:block object-fit:fill}
+     li.off-canvas-menu-item.active [0,0,0,0] {font-size:18px font-weight:400 line-height:27px font-family:regular color:rgb(255, 255, 255) text-align:start display:list-item object-fit:fill position:relative justify-content:space-between align-items:center}
+      div.entry [0,0,0,0] {font-size:18px font-weight:400 line-height:27px font-family:regular color:rgb(255, 255, 255) text-align:start border:0px none rgb(255, 255, 255) display:flex object-fit:fill align-items:center}
+       a.link [0,0,0,0] {font-size:18px font-weight:400 line-height:27px font-family:medium color:rgb(0, 161, 159) padding:24px 0px text-align:start border:0px none rgb(0, 161, 159) display:block object-fit:fill} "The Group" HREF=/en/the-group/
+       button.accordion-button [0,0,0,0] {font-size:11px font-weight:400 line-height:11px font-family:regular color:rgb(62, 216, 195) margin:0px 0px 0px auto text-align:center border:0px none rgb(62, 216, 195) display:flex object-fit:fill height:28.6px}
+      ul [0,0,0,0] HIDDEN
+       li.off-canvas-menu-item [0,0,0,0] HIDDEN
+        div.entry [0,0,0,0] HIDDEN
+        ul [0,0,0,0] HIDDEN
+       li.off-canvas-menu-item [0,0,0,0] HIDDEN
+        div.entry [0,0,0,0] HIDDEN
+        ul [0,0,0,0] HIDDEN
+       li.off-canvas-menu-item [0,0,0,0] HIDDEN
+        div.entry [0,0,0,0] HIDDEN
+        ul [0,0,0,0] HIDDEN
+       li.off-canvas-menu-item [0,0,0,0] HIDDEN
+        div.entry [0,0,0,0] HIDDEN
+       li.off-canvas-menu-item [0,0,0,0] HIDDEN
+        div.entry [0,0,0,0] HIDDEN
+       li.off-canvas-menu-item [0,0,0,0] HIDDEN
+        div.entry [0,0,0,0] HIDDEN
+        ul [0,0,0,0] HIDDEN
+       li.off-canvas-menu-item [0,0,0,0] HIDDEN
+        div.entry [0,0,0,0] HIDDEN
+       li.off-canvas-menu-item [0,0,0,0] HIDDEN
+        div.entry [0,0,0,0] HIDDEN
+     li.off-canvas-menu-item [0,0,0,0] {font-size:18px font-weight:400 line-height:27px font-family:regular color:rgb(255, 255, 255) text-align:start display:list-item object-fit:fill position:relative justify-content:space-between align-items:center}
+      div.entry [0,0,0,0] {font-size:18px font-weight:400 line-height:27px font-family:regular color:rgb(255, 255, 255) text-align:start border:0px none rgb(255, 255, 255) display:flex object-fit:fill align-items:center}
+       a.link [0,0,0,0] {font-size:18px font-weight:400 line-height:27px font-family:medium color:rgb(29, 68, 119) padding:24px 0px text-align:start border:0px none rgb(29, 68, 119) display:block object-fit:fill} "Our Energy" HREF=/en/our-energy/
+       button.accordion-button [0,0,0,0] {font-size:11px font-weight:400 line-height:11px font-family:regular color:rgb(62, 216, 195) margin:0px 0px 0px auto text-align:center border:0px none rgb(62, 216, 195) display:flex object-fit:fill height:28.6px}
+      ul [0,0,0,0] HIDDEN
+       li.off-canvas-menu-item [0,0,0,0] HIDDEN
+        div.entry [0,0,0,0] HIDDEN
+        ul [0,0,0,0] HIDDEN
+       li.off-canvas-menu-item [0,0,0,0] HIDDEN
+        div.entry [0,0,0,0] HIDDEN
+        ul [0,0,0,0] HIDDEN
+       li.off-canvas-menu-item [0,0,0,0] HIDDEN
+        div.entry [0,0,0,0] HIDDEN
+        ul [0,0,0,0] HIDDEN
+       li.off-canvas-menu-item [0,0,0,0] HIDDEN
+        div.entry [0,0,0,0] HIDDEN
+     li.off-canvas-menu-item [0,0,0,0] {font-size:18px font-weight:400 line-height:27px font-family:regular color:rgb(255, 255, 255) text-align:start display:list-item object-fit:fill position:relative justify-content:space-between align-items:center}
+      div.entry [0,0,0,0] {font-size:18px font-weight:400 line-height:27px font-family:regular color:rgb(255, 255, 255) text-align:start border:0px none rgb(255, 255, 255) display:flex object-fit:fill align-items:center}
+       a.link [0,0,0,0] {font-size:18px font-weight:400 line-height:27px font-family:medium color:rgb(29, 68, 119) padding:24px 0px text-align:start border:0px none rgb(29, 68, 119) display:block object-fit:fill} "Products & Services" HREF=/en/products-and-services/
+       button.accordion-button [0,0,0,0] {font-size:11px font-weight:400 line-height:11px font-family:regular color:rgb(62, 216, 195) margin:0px 0px 0px auto text-align:center border:0px none rgb(62, 216, 195) display:flex object-fit:fill height:28.6px}
+      ul [0,0,0,0] HIDDEN
+       li.off-canvas-menu-item [0,0,0,0] HIDDEN
+        div.entry [0,0,0,0] HIDDEN
+        ul [0,0,0,0] HIDDEN
+       li.off-canvas-menu-item [0,0,0,0] HIDDEN
+        div.entry [0,0,0,0] HIDDEN
+       li.off-canvas-menu-item [0,0,0,0] HIDDEN
+        div.entry [0,0,0,0] HIDDEN
+        ul [0,0,0,0] HIDDEN
+       li.off-canvas-menu-item [0,0,0,0] HIDDEN
+        div.entry [0,0,0,0] HIDDEN
+       li.off-canvas-menu-item [0,0,0,0] HIDDEN
+        div.entry [0,0,0,0] HIDDEN
+        ul [0,0,0,0] HIDDEN
+       li.off-canvas-menu-item [0,0,0,0] HIDDEN
+        div.entry [0,0,0,0] HIDDEN
+     li.off-canvas-menu-item [0,0,0,0] {font-size:18px font-weight:400 line-height:27px font-family:regular color:rgb(255, 255, 255) text-align:start display:list-item object-fit:fill position:relative justify-content:space-between align-items:center}
+      div.entry [0,0,0,0] {font-size:18px font-weight:400 line-height:27px font-family:regular color:rgb(255, 255, 255) text-align:start border:0px none rgb(255, 255, 255) display:flex object-fit:fill align-items:center}
+       a.link [0,0,0,0] {font-size:18px font-weight:400 line-height:27px font-family:medium color:rgb(29, 68, 119) padding:24px 0px text-align:start border:0px none rgb(29, 68, 119) display:block object-fit:fill} "Research & Development" HREF=/en/research-and-development/
+       button.accordion-button [0,0,0,0] {font-size:11px font-weight:400 line-height:11px font-family:regular color:rgb(62, 216, 195) margin:0px 0px 0px auto text-align:center border:0px none rgb(62, 216, 195) display:flex object-fit:fill height:28.6px}
+      ul [0,0,0,0] HIDDEN
+       li.off-canvas-menu-item [0,0,0,0] HIDDEN
+        div.entry [0,0,0,0] HIDDEN
+        ul [0,0,0,0] HIDDEN
+       li.off-canvas-menu-item [0,0,0,0] HIDDEN
+        div.entry [0,0,0,0] HIDDEN
+        ul [0,0,0,0] HIDDEN
+       li.off-canvas-menu-item [0,0,0,0] HIDDEN
+        div.entry [0,0,0,0] HIDDEN
+        ul [0,0,0,0] HIDDEN
+       li.off-canvas-menu-item [0,0,0,0] HIDDEN
+        div.entry [0,0,0,0] HIDDEN
+        ul [0,0,0,0] HIDDEN
+       li.off-canvas-menu-item [0,0,0,0] HIDDEN
+        div.entry [0,0,0,0] HIDDEN
+       li.off-canvas-menu-item [0,0,0,0] HIDDEN
+        div.entry [0,0,0,0] HIDDEN
+        ul [0,0,0,0] HIDDEN
+       li.off-canvas-menu-item [0,0,0,0] HIDDEN
+        div.entry [0,0,0,0] HIDDEN
+        ul [0,0,0,0] HIDDEN
+     li.off-canvas-menu-item [0,0,0,0] {font-size:18px font-weight:400 line-height:27px font-family:regular color:rgb(255, 255, 255) text-align:start display:list-item object-fit:fill position:relative justify-content:space-between align-items:center}
+      div.entry [0,0,0,0] {font-size:18px font-weight:400 line-height:27px font-family:regular color:rgb(255, 255, 255) text-align:start border:0px none rgb(255, 255, 255) display:flex object-fit:fill align-items:center}
+       a.link [0,0,0,0] {font-size:18px font-weight:400 line-height:27px font-family:medium color:rgb(29, 68, 119) padding:24px 0px text-align:start border:0px none rgb(29, 68, 119) display:block object-fit:fill} "Responsibility & Sustainability" HREF=/en/responsibility-and-sustainability/
+       button.accordion-button [0,0,0,0] {font-size:11px font-weight:400 line-height:11px font-family:regular color:rgb(62, 216, 195) margin:0px 0px 0px auto text-align:center border:0px none rgb(62, 216, 195) display:flex object-fit:fill height:28.6px}
+      ul [0,0,0,0] HIDDEN
+       li.off-canvas-menu-item [0,0,0,0] HIDDEN
+        div.entry [0,0,0,0] HIDDEN
+       li.off-canvas-menu-item [0,0,0,0] HIDDEN
+        div.entry [0,0,0,0] HIDDEN
+        ul [0,0,0,0] HIDDEN
+       li.off-canvas-menu-item [0,0,0,0] HIDDEN
+        div.entry [0,0,0,0] HIDDEN
+        ul [0,0,0,0] HIDDEN
+       li.off-canvas-menu-item [0,0,0,0] HIDDEN
+        div.entry [0,0,0,0] HIDDEN
+        ul [0,0,0,0] HIDDEN
+     li.off-canvas-menu-item [0,0,0,0] {font-size:18px font-weight:400 line-height:27px font-family:regular color:rgb(255, 255, 255) text-align:start display:list-item object-fit:fill position:relative justify-content:space-between align-items:center}
+      div.entry [0,0,0,0] {font-size:18px font-weight:400 line-height:27px font-family:regular color:rgb(255, 255, 255) text-align:start border:0px none rgb(255, 255, 255) display:flex object-fit:fill align-items:center}
+       a.link [0,0,0,0] {font-size:18px font-weight:400 line-height:27px font-family:medium color:rgb(29, 68, 119) padding:24px 0px text-align:start border:0px none rgb(29, 68, 119) display:block object-fit:fill} "Career" HREF=/en/rwe-careers-portal/
+       button.accordion-button [0,0,0,0] {font-size:11px font-weight:400 line-height:11px font-family:regular color:rgb(62, 216, 195) margin:0px 0px 0px auto text-align:center border:0px none rgb(62, 216, 195) display:flex object-fit:fill height:28.6px}
+      ul [0,0,0,0] HIDDEN
+       li.off-canvas-menu-item [0,0,0,0] HIDDEN
+        div.entry [0,0,0,0] HIDDEN
+       li.off-canvas-menu-item [0,0,0,0] HIDDEN
+        div.entry [0,0,0,0] HIDDEN
+        ul [0,0,0,0] HIDDEN
+       li.off-canvas-menu-item [0,0,0,0] HIDDEN
+        div.entry [0,0,0,0] HIDDEN
+        ul [0,0,0,0] HIDDEN
+       li.off-canvas-menu-item [0,0,0,0] HIDDEN
+        div.entry [0,0,0,0] HIDDEN
+       li.off-canvas-menu-item [0,0,0,0] HIDDEN
+        div.entry [0,0,0,0] HIDDEN
+        ul [0,0,0,0] HIDDEN
+       li.off-canvas-menu-item [0,0,0,0] HIDDEN
+        div.entry [0,0,0,0] HIDDEN
+        ul [0,0,0,0] HIDDEN
+       li.off-canvas-menu-item [0,0,0,0] HIDDEN
+        div.entry [0,0,0,0] HIDDEN
+       li.off-canvas-menu-item [0,0,0,0] HIDDEN
+        div.entry [0,0,0,0] HIDDEN
+       li.off-canvas-menu-item [0,0,0,0] HIDDEN
+        div.entry [0,0,0,0] HIDDEN
+        ul [0,0,0,0] HIDDEN
+     li.off-canvas-menu-item [0,0,0,0] {font-size:18px font-weight:400 line-height:27px font-family:regular color:rgb(255, 255, 255) text-align:start display:list-item object-fit:fill position:relative justify-content:space-between align-items:center}
+      div.entry [0,0,0,0] {font-size:18px font-weight:400 line-height:27px font-family:regular color:rgb(255, 255, 255) text-align:start border:0px none rgb(255, 255, 255) display:flex object-fit:fill align-items:center}
+       a.link [0,0,0,0] {font-size:18px font-weight:400 line-height:27px font-family:medium color:rgb(29, 68, 119) padding:24px 0px text-align:start border:0px none rgb(29, 68, 119) display:block object-fit:fill} "Investor Relations" HREF=/en/investor-relations/
+       button.accordion-button [0,0,0,0] {font-size:11px font-weight:400 line-height:11px font-family:regular color:rgb(62, 216, 195) margin:0px 0px 0px auto text-align:center border:0px none rgb(62, 216, 195) display:flex object-fit:fill height:28.6px}
+      ul [0,0,0,0] HIDDEN
+       li.off-canvas-menu-item [0,0,0,0] HIDDEN
+        div.entry [0,0,0,0] HIDDEN
+       li.off-canvas-menu-item [0,0,0,0] HIDDEN
+        div.entry [0,0,0,0] HIDDEN
+        ul [0,0,0,0] HIDDEN
+       li.off-canvas-menu-item [0,0,0,0] HIDDEN
+        div.entry [0,0,0,0] HIDDEN
+        ul [0,0,0,0] HIDDEN
+       li.off-canvas-menu-item [0,0,0,0] HIDDEN
+        div.entry [0,0,0,0] HIDDEN
+        ul [0,0,0,0] HIDDEN
+       li.off-canvas-menu-item [0,0,0,0] HIDDEN
+        div.entry [0,0,0,0] HIDDEN
+        ul [0,0,0,0] HIDDEN
+       li.off-canvas-menu-item [0,0,0,0] HIDDEN
+        div.entry [0,0,0,0] HIDDEN
+        ul [0,0,0,0] HIDDEN
+       li.off-canvas-menu-item [0,0,0,0] HIDDEN
+        div.entry [0,0,0,0] HIDDEN
+        ul [0,0,0,0] HIDDEN
+     li.off-canvas-menu-item [0,0,0,0] {font-size:18px font-weight:400 line-height:27px font-family:regular color:rgb(255, 255, 255) text-align:start display:list-item object-fit:fill position:relative justify-content:space-between align-items:center}
+      div.entry [0,0,0,0] {font-size:18px font-weight:400 line-height:27px font-family:regular color:rgb(255, 255, 255) text-align:start border:0px none rgb(255, 255, 255) display:flex object-fit:fill align-items:center}
+       a.link [0,0,0,0] {font-size:18px font-weight:400 line-height:27px font-family:medium color:rgb(29, 68, 119) padding:24px 0px text-align:start border:0px none rgb(29, 68, 119) display:block object-fit:fill} "Our Neighbourhood" HREF=/en/our-neighbourhood/
+       button.accordion-button [0,0,0,0] {font-size:11px font-weight:400 line-height:11px font-family:regular color:rgb(62, 216, 195) margin:0px 0px 0px auto text-align:center border:0px none rgb(62, 216, 195) display:flex object-fit:fill height:28.6px}
+      ul [0,0,0,0] HIDDEN
+       li.off-canvas-menu-item [0,0,0,0] HIDDEN
+        div.entry [0,0,0,0] HIDDEN
+        ul [0,0,0,0] HIDDEN
+       li.off-canvas-menu-item [0,0,0,0] HIDDEN
+        div.entry [0,0,0,0] HIDDEN
+     li.off-canvas-menu-item [0,0,0,0] {font-size:18px font-weight:400 line-height:27px font-family:regular color:rgb(255, 255, 255) text-align:start display:list-item object-fit:fill position:relative justify-content:space-between align-items:center}
+      div.entry [0,0,0,0] {font-size:18px font-weight:400 line-height:27px font-family:regular color:rgb(255, 255, 255) text-align:start border:0px none rgb(255, 255, 255) display:flex object-fit:fill align-items:center}
+       a.link [0,0,0,0] {font-size:18px font-weight:400 line-height:27px font-family:medium color:rgb(29, 68, 119) padding:24px 0px text-align:start border:0px none rgb(29, 68, 119) display:block object-fit:fill} "Press & News" HREF=/en/press/
+       button.accordion-button [0,0,0,0] {font-size:11px font-weight:400 line-height:11px font-family:regular color:rgb(62, 216, 195) margin:0px 0px 0px auto text-align:center border:0px none rgb(62, 216, 195) display:flex object-fit:fill height:28.6px}
+      ul [0,0,0,0] HIDDEN
+       li.off-canvas-menu-item [0,0,0,0] HIDDEN
+        div.entry [0,0,0,0] HIDDEN
+       li.off-canvas-menu-item [0,0,0,0] HIDDEN
+        div.entry [0,0,0,0] HIDDEN
+       li.off-canvas-menu-item [0,0,0,0] HIDDEN
+        div.entry [0,0,0,0] HIDDEN
+       li.off-canvas-menu-item [0,0,0,0] HIDDEN
+        div.entry [0,0,0,0] HIDDEN
+       li.off-canvas-menu-item [0,0,0,0] HIDDEN
+        div.entry [0,0,0,0] HIDDEN
+       li.off-canvas-menu-item [0,0,0,0] HIDDEN
+        div.entry [0,0,0,0] HIDDEN
+       li.off-canvas-menu-item [0,0,0,0] HIDDEN
+        div.entry [0,0,0,0] HIDDEN
+     li.off-canvas-menu-item [0,0,0,0] {font-size:18px font-weight:400 line-height:27px font-family:regular color:rgb(255, 255, 255) text-align:start border:0px none rgb(255, 255, 255) display:list-item object-fit:fill position:relative justify-content:space-between align-items:center}
+      div.entry [0,0,0,0] {font-size:18px font-weight:400 line-height:27px font-family:regular color:rgb(255, 255, 255) text-align:start border:0px none rgb(255, 255, 255) display:flex object-fit:fill align-items:center}
+       a.link [0,0,0,0] {font-size:18px font-weight:400 line-height:27px font-family:medium color:rgb(29, 68, 119) padding:24px 0px text-align:start border:0px none rgb(29, 68, 119) display:block object-fit:fill} "Contact & Services" HREF=/en/contact-services/
+       button.accordion-button [0,0,0,0] {font-size:11px font-weight:400 line-height:11px font-family:regular color:rgb(62, 216, 195) margin:0px 0px 0px auto text-align:center border:0px none rgb(62, 216, 195) display:flex object-fit:fill height:28.6px}
+      ul [0,0,0,0] HIDDEN
+       li.off-canvas-menu-item [0,0,0,0] HIDDEN
+        div.entry [0,0,0,0] HIDDEN
+       li.off-canvas-menu-item [0,0,0,0] HIDDEN
+        div.entry [0,0,0,0] HIDDEN
+    div#burger-menu-bottom-controls [0,0,0,0] HIDDEN
+    ul.quick-nav [0,0,0,0] {font-size:18px font-weight:400 line-height:27px font-family:regular, "Trebuchet MS", Tahoma, "sans-serif" color:rgb(255, 255, 255) padding:0px 24px text-align:start border:0px none rgb(255, 255, 255) display:block object-fit:fill}
+    ul.target-group-nav [0,0,0,0] {font-size:18px font-weight:400 line-height:27px font-family:regular, "Trebuchet MS", Tahoma, "sans-serif" color:rgb(255, 255, 255) padding:0px 24px text-align:start border:0px none rgb(255, 255, 255) display:block object-fit:fill}
+  div#off-screen-content [0,130,1440,7210] {font-size:18px font-weight:400 line-height:27px font-family:regular, "Trebuchet MS", Tahoma, "sans-serif" color:rgb(29, 68, 119) background-color:rgb(173, 175, 177) text-align:start border:0px none rgb(29, 68, 119) display:flex object-fit:fill flex-direction:column width:1440px height:7210.12px}
+   div[tpl=blanko-overview] [0,130,1440,6267] {font-size:18px font-weight:400 line-height:27px font-family:regular, "Trebuchet MS", Tahoma, "sans-serif" color:rgb(29, 68, 119) background-color:rgb(255, 255, 255) text-align:start border:0px none rgb(29, 68, 119) display:block object-fit:fill width:1440px height:6267.12px}
+    header [0,130,1440,861] {font-size:18px font-weight:400 line-height:27px font-family:regular, "Trebuchet MS", Tahoma, "sans-serif" color:rgb(29, 68, 119) text-align:start border:0px none rgb(29, 68, 119) display:block object-fit:fill width:1440px height:861px}
+     section[tpl=grid-bas-01] [0,130,1440,770] {font-size:18px font-weight:400 line-height:27px font-family:regular, "Trebuchet MS", Tahoma, "sans-serif" color:rgb(29, 68, 119) text-align:start border:0px none rgb(29, 68, 119) display:block object-fit:fill position:relative width:1440px height:770px}
+      div.container-fluid [0,130,1440,770] {font-size:18px font-weight:400 line-height:27px font-family:regular, "Trebuchet MS", Tahoma, "sans-serif" color:rgb(29, 68, 119) text-align:start border:0px none rgb(29, 68, 119) display:block object-fit:fill width:1440px height:770px}
+       div.row [0,130,1440,770] {font-size:18px font-weight:400 line-height:27px font-family:regular, "Trebuchet MS", Tahoma, "sans-serif" color:rgb(29, 68, 119) text-align:start border:0px none rgb(29, 68, 119) display:block object-fit:fill width:1440px height:770px}
+        div.sli01--stage-components.sli01--carousel.sli01--autoplay[tpl=sli01] [0,130,1440,770] {font-size:18px font-weight:400 line-height:27px font-family:regular, "Trebuchet MS", Tahoma, "sans-serif" color:rgb(29, 68, 119) text-align:start border:0px none rgb(29, 68, 119) display:block object-fit:fill position:relative max-width:100% width:1440px height:770px}
+         div.slider-container [0,130,1440,770] {font-size:18px font-weight:400 line-height:27px font-family:regular, "Trebuchet MS", Tahoma, "sans-serif" color:rgb(29, 68, 119) text-align:start border:0px none rgb(29, 68, 119) display:flex object-fit:fill position:relative justify-content:center flex-direction:column width:1440px height:770px overflow:hidden}
+          button.slider-prev.icon-arrow-left.slick-arrow [9,485,60,60] {font-size:18px font-weight:400 line-height:27px font-family:regular, "Trebuchet MS", Tahoma, "sans-serif" color:rgb(29, 68, 119) padding:1px 6px margin:355px 0px text-align:center border:0px none rgb(29, 68, 119) display:block object-fit:fill position:absolute justify-content:flex-end width:60px height:60px z-index:2 left:9px right:1371px}
+          div.scroll-down-btn [0,130,1440,0] {font-size:18px font-weight:400 line-height:27px font-family:regular, "Trebuchet MS", Tahoma, "sans-serif" color:rgb(29, 68, 119) text-align:start border:0px none rgb(29, 68, 119) display:block object-fit:fill width:1440px}
+          div.slider-wrapper.slick-initialized.slick-slider.slick-dotted [0,130,1440,770] {font-size:18px font-weight:400 line-height:27px font-family:regular, "Trebuchet MS", Tahoma, "sans-serif" color:rgb(29, 68, 119) text-align:start border:0px none rgb(29, 68, 119) display:block object-fit:fill position:relative width:1440px height:770px}
+           div.slick-list.draggable [0,130,1440,770] {font-size:18px font-weight:400 line-height:27px font-family:regular, "Trebuchet MS", Tahoma, "sans-serif" color:rgb(29, 68, 119) text-align:start border:0px none rgb(29, 68, 119) display:block object-fit:fill position:relative width:1440px height:770px overflow:hidden}
+            div.slick-track [0,130,2880,770] {font-size:18px font-weight:400 line-height:27px font-family:regular, "Trebuchet MS", Tahoma, "sans-serif" color:rgb(29, 68, 119) margin:0px -1440px 0px 0px text-align:start border:0px none rgb(29, 68, 119) display:flex object-fit:fill position:relative width:2880px height:770px}
+             div.slider-slide.slick-slide.slick-current.slick-active#slick-slide00 [0,130,1440,770] {font-size:18px font-weight:400 line-height:27px font-family:regular, "Trebuchet MS", Tahoma, "sans-serif" color:rgb(29, 68, 119) text-align:start border:0px none rgb(29, 68, 119) display:flex object-fit:fill position:relative flex-direction:column width:1440px height:770px z-index:999}
+              section[tpl=grid-bas-01] [0,130,1440,770] {font-size:18px font-weight:400 line-height:27px font-family:regular, "Trebuchet MS", Tahoma, "sans-serif" color:rgb(29, 68, 119) text-align:start border:0px none rgb(29, 68, 119) display:flex object-fit:fill position:relative width:1440px height:770px}
+             div.slider-slide.slick-slide#slick-slide01 [0,130,1440,770] {font-size:18px font-weight:400 line-height:27px font-family:regular, "Trebuchet MS", Tahoma, "sans-serif" color:rgb(29, 68, 119) text-align:start border:0px none rgb(29, 68, 119) display:flex object-fit:fill position:relative flex-direction:column width:1440px height:770px opacity:0 z-index:998 left:-1440px right:1440px}
+              section[tpl=grid-bas-01] [0,130,1440,770] {font-size:18px font-weight:400 line-height:27px font-family:regular, "Trebuchet MS", Tahoma, "sans-serif" color:rgb(29, 68, 119) text-align:start border:0px none rgb(29, 68, 119) display:flex object-fit:fill position:relative width:1440px height:770px}
+          button.slider-next.icon-arrow-right.slick-arrow [1371,485,60,60] {font-size:18px font-weight:400 line-height:27px font-family:regular, "Trebuchet MS", Tahoma, "sans-serif" color:rgb(29, 68, 119) padding:1px 6px margin:355px 0px text-align:center border:0px none rgb(29, 68, 119) display:block object-fit:fill position:absolute width:60px height:60px z-index:2 left:1371px right:9px}
+          div.slider-dots [0,900,1440,0] {font-size:18px font-weight:400 line-height:27px font-family:regular, "Trebuchet MS", Tahoma, "sans-serif" color:rgb(29, 68, 119) text-align:start border:0px none rgb(29, 68, 119) display:block object-fit:fill width:1440px}
+           ul.slick-dots [0,838,1440,30] {font-size:18px font-weight:400 line-height:27px font-family:regular, "Trebuchet MS", Tahoma, "sans-serif" color:rgb(29, 68, 119) padding:0px 0px 0px 5px text-align:center border:0px none rgb(29, 68, 119) display:block object-fit:fill position:absolute width:1440px height:30px top:708px bottom:32px}
+            li.slick-active [698,848,20,20] {font-size:18px font-weight:400 line-height:27px font-family:regular, "Trebuchet MS", Tahoma, "sans-serif" color:rgb(29, 68, 119) margin:0px 5px text-align:center border:0px none rgb(29, 68, 119) display:inline-block object-fit:fill position:relative width:20px height:20px}
+             button#slick-slide-control00 [698,848,20,20] {font-weight:400 font-family:regular, "Trebuchet MS", Tahoma, "sans-serif" padding:5px text-align:center border:0px none rgba(0, 0, 0, 0) display:block object-fit:fill width:20px height:20px} "1"
+            li [728,848,20,20] {font-size:18px font-weight:400 line-height:27px font-family:regular, "Trebuchet MS", Tahoma, "sans-serif" color:rgb(29, 68, 119) margin:0px 5px text-align:center border:0px none rgb(29, 68, 119) display:inline-block object-fit:fill position:relative width:20px height:20px}
+             button#slick-slide-control01 [728,848,20,20] {font-weight:400 font-family:regular, "Trebuchet MS", Tahoma, "sans-serif" padding:5px text-align:center border:0px none rgba(0, 0, 0, 0) display:block object-fit:fill width:20px height:20px} "2"
+     section[tpl=grid-bas-02] [0,900,1440,91] {font-size:18px font-weight:400 line-height:27px font-family:regular, "Trebuchet MS", Tahoma, "sans-serif" color:rgb(29, 68, 119) text-align:start border:0px none rgb(29, 68, 119) display:block object-fit:fill position:relative width:1440px height:91px}
+      div.container [135,900,1170,91] {font-size:18px font-weight:400 line-height:27px font-family:regular, "Trebuchet MS", Tahoma, "sans-serif" color:rgb(29, 68, 119) padding:32px 0px margin:0px 135px text-align:start border:0px none rgb(29, 68, 119) display:block object-fit:fill max-width:1170px width:1170px height:91px}
+       div.row [123,932,1194,27] {font-size:18px font-weight:400 line-height:27px font-family:regular, "Trebuchet MS", Tahoma, "sans-serif" color:rgb(29, 68, 119) margin:0px -12px text-align:start border:0px none rgb(29, 68, 119) display:block object-fit:fill width:1194px height:27px}
+        div.grid-content.col-sm-12 [123,932,1194,27] {font-size:18px font-weight:400 line-height:27px font-family:regular, "Trebuchet MS", Tahoma, "sans-serif" color:rgb(29, 68, 119) padding:0px 12px text-align:start border:0px none rgb(29, 68, 119) display:block object-fit:fill position:relative width:1194px height:27px}
+         nav[tpl=breadcrumb]#breadcrumb-top [135,932,1170,27] {font-size:18px font-weight:400 line-height:27px font-family:regular, "Trebuchet MS", Tahoma, "sans-serif" color:rgb(29, 68, 119) text-align:start border:0px none rgb(29, 68, 119) display:block object-fit:fill width:1170px height:27px}
+          ol.teaser-width#breadcrumb-list [135,932,1170,27] {font-size:18px font-weight:400 line-height:27px font-family:regular, "Trebuchet MS", Tahoma, "sans-serif" color:rgb(29, 68, 119) text-align:start border:0px none rgb(29, 68, 119) display:block object-fit:fill max-width:1170px width:1170px height:27px}
+           li [135,937,38,20] {font-size:16px font-weight:400 line-height:22px font-family:regular color:rgb(0, 161, 159) margin:0px 4px 0px 0px text-align:start border:0px none rgb(0, 161, 159) display:inline object-fit:fill}
+            a [135,937,35,20] {font-size:16px font-weight:400 line-height:22px font-family:regular color:rgb(0, 161, 159) text-align:start border:0px none rgb(0, 161, 159) display:inline object-fit:fill} "RWE" HREF=/en/
+           li.active [177,937,99,20] {font-size:16px font-weight:400 line-height:22px font-family:bold color:rgb(0, 161, 159) margin:0px 4px 0px 0px text-align:start border:0px none rgb(0, 161, 159) display:inline object-fit:fill}
+            a [195,937,81,20] {font-size:16px font-weight:400 line-height:22px font-family:bold color:rgb(0, 161, 159) text-align:start border:0px none rgb(0, 161, 159) display:inline object-fit:fill} "The Group" HREF=
+    MAIN
+   nav[tpl=breadcrumb]#breadcrumb-bottom [0,6397,1440,59] {font-size:18px font-weight:400 line-height:27px font-family:regular, "Trebuchet MS", Tahoma, "sans-serif" color:rgb(29, 68, 119) background-color:rgb(29, 68, 119) padding:0px 24px text-align:start border:0px none rgb(29, 68, 119) display:block object-fit:fill width:1440px height:59px}
+    ol.teaser-width#breadcrumb-list [135,6397,1170,59] {font-size:18px font-weight:400 line-height:27px font-family:regular, "Trebuchet MS", Tahoma, "sans-serif" color:rgb(29, 68, 119) padding:16px 0px margin:0px 111px text-align:start border:0px none rgb(29, 68, 119) display:block object-fit:fill max-width:1170px width:1170px height:59px}
+     li [135,6418,38,20] {font-size:16px font-weight:400 line-height:22px font-family:regular color:rgb(255, 255, 255) margin:0px 4px 0px 0px text-align:start border:0px none rgb(255, 255, 255) display:inline object-fit:fill}
+      a.link [135,6418,35,20] {font-size:16px font-weight:400 line-height:22px font-family:regular color:rgb(255, 255, 255) text-align:start border:0px none rgb(255, 255, 255) display:inline object-fit:fill} "RWE" HREF=/en/
+     li.active [177,6418,97,20] {font-size:16px font-weight:400 line-height:22px font-family:bold color:rgb(255, 255, 255) margin:0px 4px 0px 0px text-align:start border:0px none rgb(255, 255, 255) display:inline object-fit:fill}
+      a [193,6418,81,20] {font-size:16px font-weight:400 line-height:22px font-family:bold color:rgb(255, 255, 255) text-align:start border:0px none rgb(255, 255, 255) display:inline object-fit:fill} "The Group" HREF=
+   FOOTER
+  div#off-screen-overlay [0,0,1440,900] HIDDEN
+div#TextSnippetShare [0,7340,1440,0] {font-size:22px font-weight:400 font-family:regular, "Trebuchet MS", Tahoma, "sans-serif" color:rgb(29, 68, 119) text-align:start border:0px none rgb(29, 68, 119) display:block object-fit:fill width:1440px}
+div#BackToTop [0,7340,1440,0] {font-size:22px font-weight:400 font-family:regular, "Trebuchet MS", Tahoma, "sans-serif" color:rgb(29, 68, 119) text-align:start border:0px none rgb(29, 68, 119) display:block object-fit:fill width:1440px}
+ button.back-to-top [1373,833,43,43] HIDDEN
+  span.btn [1373,833,43,43] HIDDEN
+   i.rwe-icon.rwe-icon-chevron_up.color-icon-1 [1387,852,15,9] HIDDEN
+link [0,0,0,0] HIDDEN
+link [0,0,0,0] HIDDEN
+div [0,0,0,0] HIDDEN
+ img [0,0,0,0] HIDDEN
+div#usercentrics-root [0,7340,1440,0] {font-size:22px font-weight:400 font-family:regular, "Trebuchet MS", Tahoma, "sans-serif" color:rgb(29, 68, 119) text-align:start border:0px none rgb(29, 68, 119) display:block object-fit:fill width:1440px}

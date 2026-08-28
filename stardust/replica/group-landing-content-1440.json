@@ -1,0 +1,724 @@
+{
+ "title": "The Group | RWE",
+ "desc": "With its subsidiaries RWE Power, RWE Generation, RWE Supply & Trading, RWE Renewables Europe & Australia GmbH, RWE Offshore Wind and RWE Renewables Americas, the Group RWE is an important cornerstone of a sustainable energy supply worldwide. Learn more.",
+ "heads": [
+  {
+   "t": "H2",
+   "html": "We are key drivers of the energy transformation – working to achieve ambitious goals",
+   "vis": true
+  },
+  {
+   "t": "H3",
+   "html": "Our goal is clear: to be carbon-neutral by 2040.",
+   "vis": true
+  },
+  {
+   "t": "H2",
+   "html": "<span class=\"\">RWE introduces itself</span>",
+   "vis": true
+  },
+  {
+   "t": "H3",
+   "html": "Purpose &amp; Strategy",
+   "vis": true
+  },
+  {
+   "t": "H3",
+   "html": "Responsibility &amp; sustainability",
+   "vis": true
+  },
+  {
+   "t": "H3",
+   "html": "RWE global",
+   "vis": true
+  },
+  {
+   "t": "H3",
+   "html": "Compliance",
+   "vis": true
+  },
+  {
+   "t": "H3",
+   "html": "Diversity at RWE",
+   "vis": true
+  },
+  {
+   "t": "H3",
+   "html": "Dates and events",
+   "vis": true
+  },
+  {
+   "t": "H2",
+   "html": "Organisational structure",
+   "vis": true
+  },
+  {
+   "t": "H3",
+   "html": "All RWE companies at a glance",
+   "vis": true
+  },
+  {
+   "t": "H2",
+   "html": "<span class=\"color__font--rwe-blue\">RWE AG</span>",
+   "vis": true
+  },
+  {
+   "t": "H3",
+   "html": "Subsidiaries",
+   "vis": true
+  },
+  {
+   "t": "H2",
+   "html": "<span class=\"color__font--rwe-blue\">RWE Renewables Europe &amp; Australia GmbH</span>",
+   "vis": true
+  },
+  {
+   "t": "H3",
+   "html": "Subsidiaries",
+   "vis": true
+  },
+  {
+   "t": "H2",
+   "html": "<span class=\"color__font--rwe-blue\">RWE Offshore Wind GmbH</span>",
+   "vis": true
+  },
+  {
+   "t": "H3",
+   "html": "Subsidiaries",
+   "vis": true
+  },
+  {
+   "t": "H2",
+   "html": "<span class=\"color__font--rwe-blue\">RWE Americas, LLC</span>",
+   "vis": true
+  },
+  {
+   "t": "H3",
+   "html": "Subsidiaries",
+   "vis": true
+  },
+  {
+   "t": "H2",
+   "html": "<span class=\"color__font--rwe-blue\">RWE Supply &amp; Trading GmbH</span>",
+   "vis": true
+  },
+  {
+   "t": "H3",
+   "html": "Subsidiaries",
+   "vis": true
+  },
+  {
+   "t": "H2",
+   "html": "<span class=\"color__font--rwe-blue\">RWE Generation SE</span>",
+   "vis": true
+  },
+  {
+   "t": "H3",
+   "html": "Subsidiaries",
+   "vis": true
+  },
+  {
+   "t": "H2",
+   "html": "<span class=\"color__font--rwe-blue\">RWE Power AG</span>",
+   "vis": true
+  },
+  {
+   "t": "H2",
+   "html": "Decarbonisation and sustainability are key components of our corporate strategy - with a clear objective: we aim to be climate-neutral by 2040.",
+   "vis": true
+  },
+  {
+   "t": "H2",
+   "html": "Contact and service",
+   "vis": true
+  }
+ ],
+ "paras": [
+  {
+   "html": "Our current industrial and service-sector society has many lifelines: data networks, mobility, competitive industries and building infrastructure. The one thing these all have in common is the need for electricity – the key energy of our time. The more digitalisation and electrification progresses, the greater the need for secure, 24/7 supply. Our company faces the huge challenge of meeting the burgeoning demand for power while at the same time mitigating against climate change. RWE produces that much-needed electricity – clean and safe. Behind RWE’s commitment are around 20,000 employees worldwide who work every day to realise the vision of a secure and reliable electricity supply.&nbsp;We are investing heavily in the expansion of renewables and storage technologies. With our flexible power plant fleet, we underpin the nation’s security of supply.",
+   "vis": true
+  },
+  {
+   "html": "We are dedicated to enabling a sustainable life with secure, clean energy.",
+   "vis": true
+  },
+  {
+   "html": "Our contribution towards sustainable development and responsible operations.",
+   "vis": true
+  },
+  {
+   "html": "The international footprint of the RWE business.",
+   "vis": true
+  },
+  {
+   "html": "We do not tolerate corruption and tackle it at the source.",
+   "vis": true
+  },
+  {
+   "html": "We live an open and tolerant culture, because diversity drives our success.",
+   "vis": true
+  },
+  {
+   "html": "One calendar, all dates: RWE in the annual overview",
+   "vis": true
+  },
+  {
+   "html": "The RWE Group is a world leader in renewables with a clear growth focus. RWE keeps its finger firmly on the pulse and is proactively driving change towards the age of renewables. Change is part of the history of RWE. It is also the prerequisite to future-proofing our company. RWE leverages innovation and investment as the basis for a carbon-neutral future.",
+   "vis": true
+  },
+  {
+   "html": "<a href=\"/en/the-group/rwe-renewables-europe-australia/\" class=\"link link--internal\" data-link-type=\"Internal\" style=\"color:#00a19f;\"><strong>RWE Renewables Europe &amp; Australia GmbH</strong></a>&nbsp;",
+   "vis": true
+  },
+  {
+   "html": "<strong><a href=\"/en/the-group/rwe-offshore-wind/\" class=\"link link--internal\" data-link-type=\"Internal\" style=\"color:#00a19f;\">RWE Offshore Wind GmbH</a></strong>",
+   "vis": true
+  },
+  {
+   "html": "<strong><a href=\"/en/the-group/rwe-americas/\" class=\"link link--internal\" data-link-type=\"Internal\" style=\"color:#00a19f;\">RWE Americas, LLC</a></strong>",
+   "vis": true
+  },
+  {
+   "html": "<strong><strong><a href=\"/en/the-group/rwest/\" class=\"link link--internal\" data-link-type=\"Internal\" style=\"color: #00a19f;\">RWE Supply &amp; Trading GmbH</a></strong></strong>",
+   "vis": true
+  },
+  {
+   "html": "<strong><strong><a href=\"/en/the-group/rwe-generation/\" class=\"link link--internal\" data-link-type=\"Internal\" style=\"color: #00a19f;\">RWE Generation SE</a></strong></strong>",
+   "vis": true
+  },
+  {
+   "html": "<strong><strong><a href=\"/en/the-group/rwe-power/\" class=\"link link--internal\" data-link-type=\"Internal\" style=\"color: #00a19f;\">RWE Power AG</a></strong></strong>",
+   "vis": true
+  },
+  {
+   "html": "RWE Renewables Europe &amp; Australia, a wholly owned subsidiary of the RWE Group, is one of the world’s leading companies in the field of renewable energies.",
+   "vis": true
+  },
+  {
+   "html": "Tailwind for the energy transition: The company specialises in developing, constructing and operating onshore wind turbines, solar farms as well as battery storage systems. The focus regions are Europe and Australia.",
+   "vis": true
+  },
+  {
+   "html": "<strong><a rel=\"noopener noreferrer\" href=\"https://au.rwe.com/rwe-renewables-australia/\" class=\"link link--external\" target=\"_blank\" data-link-type=\"External\" style=\"color:#00a19f;\">RWE Renewables Australia Pty Ltd.</a></strong>",
+   "vis": true
+  },
+  {
+   "html": "<strong><a rel=\"noopener noreferrer\" href=\"https://benelux.rwe.com/en/rwe-renewables-benelux-b-v/\" class=\"link link--external\" target=\"_blank\" data-link-type=\"External\" style=\"color:#00a19f;\">RWE Renewables Benelux B.V.</a></strong>&nbsp;",
+   "vis": true
+  },
+  {
+   "html": "<strong><a href=\"/en/the-group/countries-and-locations/rwe-in-greece/\" class=\"link link--internal\" data-link-type=\"Internal\" style=\"color:#00a19f;\">RWE Renewables Hellas SMSA</a></strong>",
+   "vis": true
+  },
+  {
+   "html": "<strong><a rel=\"noopener noreferrer\" href=\"https://ie.rwe.com/rwe-renewables-ireland\" class=\"link link--external\" target=\"_blank\" data-link-type=\"External\" style=\"color:#00a19f;\">RWE Renewables Ireland Limited</a></strong>",
+   "vis": true
+  },
+  {
+   "html": "<strong><a rel=\"noopener noreferrer\" href=\"https://it.rwe.com/en/\" class=\"link link--external\" target=\"_blank\" data-link-type=\"External\" style=\"color:#00a19f;\">RWE Renewables Italia S.r.l.</a></strong>&nbsp;",
+   "vis": true
+  },
+  {
+   "html": "<strong><a rel=\"noopener noreferrer\" href=\"https://pl.rwe.com/en/rwe-renewables-poland\" class=\"link link--external\" target=\"_blank\" data-link-type=\"External\" style=\"color:#00a19f;\">RWE Renewables Poland Sp. z o.o.</a></strong>",
+   "vis": true
+  },
+  {
+   "html": "<strong><a rel=\"noopener noreferrer\" href=\"https://es.rwe.com/en/rwe-renewables-iberia/\" class=\"link link--internal\" data-link-type=\"Internal\" style=\"color:#00a19f;\" target=\"_blank\">RWE Renewables Iberia S.A.U.</a></strong>&nbsp;",
+   "vis": true
+  },
+  {
+   "html": "<strong><a rel=\"noopener noreferrer\" href=\"https://uk.rwe.com/rwe-renewables-uk\" class=\"link link--external\" target=\"_blank\" data-link-type=\"External\" style=\"color:#00a19f;\">RWE Renewables UK Limited</a></strong>&nbsp;",
+   "vis": true
+  },
+  {
+   "html": "<strong><a rel=\"noopener noreferrer\" href=\"https://fr.rwe.com/en\" class=\"link link--external\" target=\"_blank\" data-link-type=\"External\" style=\"color:#00a19f;\">RWE Renouvelables France</a></strong>",
+   "vis": true
+  },
+  {
+   "html": "RWE Offshore Wind is a global energy company for sustainable electricity generation based on offshore wind power. The company’s international focus is on Europe, USA and selected markets in Asia. Over the past 20 years, RWE has developed unique expertise in the offshore industry, as its 19 operating wind farms demonstrate. Moreover, this expertise covers the entire value chain from project conceptualisation and development, through to construction, operation and maintenance of offshore wind farms. RWE’s share of these power plants amounts to 3.3 gigawatts in total.&nbsp;RWE Offshore Wind operates as a direct subsidiary of RWE AG. The company emerged from the former RWE Renewables GmbH, which was founded in 2019 and later split up into separate companies for each of the renewable technologies.",
+   "vis": true
+  },
+  {
+   "html": "<strong><a rel=\"noopener noreferrer\" href=\"https://jp.rwe.com/en/rwe-renewables-japan\" class=\"link link--external\" target=\"_blank\" data-link-type=\"External\" style=\"color:#00a19f;\">RWE Renewables Japan G.K.</a></strong>",
+   "vis": true
+  },
+  {
+   "html": "<strong><a rel=\"noopener noreferrer\" href=\"https://www.rwe.com/en/the-group/countries-and-locations/rwe-renewables-in-korea\" class=\"link link--external\" target=\"_blank\" data-link-type=\"External\" style=\"color:#00a19f;\">RWE Renewables Korea LLC</a></strong>",
+   "vis": true
+  },
+  {
+   "html": "<strong><a rel=\"noopener noreferrer\" href=\"https://dk.rwe.com/en/\" class=\"link link--external\" target=\"_blank\" data-link-type=\"External\" style=\"color:#00a19f;\">RWE Renewables Denmark A/S</a></strong>",
+   "vis": true
+  },
+  {
+   "html": "RWE Americas, LLC, is a top tier renewable energy company in the United States. With more than 15 years in the U.S. renewables business the company has an outstanding track record in developing, constructing and operating renewable energy facilities. RWE Americas’s strong position in renewable energy is a result of combining RWE Renewables Americas with Con Edison Clean Energy Businesses, acquired by RWE in March 2023.&nbsp;",
+   "vis": true
+  },
+  {
+   "html": "<strong><a href=\"/en/the-group/countries-and-locations/rwe-in-chile/\" class=\"link link--internal\" data-link-type=\"Internal\" style=\"color:#00a19f;\">RWE Renewables Chile</a></strong>",
+   "vis": true
+  },
+  {
+   "html": "<strong><a href=\"/en/the-group/countries-and-locations/rwe-renewables-in-mexico/\" class=\"link link--internal\" data-link-type=\"Internal\" style=\"color:#00a19f;\">RWE Renewables Mexiko</a></strong>",
+   "vis": true
+  },
+  {
+   "html": "RWE Supply &amp; Trading is the interface between RWE and the energy markets around the world. Our employees trade electricity, gas, commodities, and CO<sub>2</sub> emission allowances. Accurate market analyses and a high degree of customer centricity enable them to create innovative energy supply solutions as well as risk management concepts for industrial operations. The trading entity also ensures the commercial optimisation of RWE’s power plant dispatch and markets electricity from RWE.",
+   "vis": true
+  },
+  {
+   "html": "<strong><a rel=\"noopener noreferrer\" href=\"https://uk.rwe.com/rwe-supply-and-trading\" class=\"link link--external\" target=\"_blank\" data-link-type=\"External\" style=\"color:#00a19f;\">RWE Supply &amp; Trading GmbH, Swindon</a></strong>",
+   "vis": true
+  },
+  {
+   "html": "<strong><a rel=\"noopener noreferrer\" href=\"https://uk.rwe.com/rwe-supply-and-trading\" class=\"link link--external\" target=\"_blank\" data-link-type=\"External\" style=\"color:#00a19f;\">RWE Supply &amp; Trading GmbH, London</a></strong>",
+   "vis": true
+  },
+  {
+   "html": "<strong><a rel=\"noopener noreferrer\" href=\"https://uk.rwe.com/rwe-supply-and-trading/edgware-energy-limited\" class=\"link link--external\" target=\"_blank\" data-link-type=\"External\" style=\"color:#00a19f;\">Edgware Energy Limited</a></strong>",
+   "vis": true
+  },
+  {
+   "html": "<strong><a rel=\"noopener noreferrer\" href=\"https://jp.rwe.com/en/rwest-japan\" class=\"link link--external\" target=\"_blank\" data-link-type=\"External\" style=\"color:#00a19f;\">RWE Supply &amp; Trading Japan Inc.</a></strong>",
+   "vis": true
+  },
+  {
+   "html": "<strong><a rel=\"noopener noreferrer\" href=\"https://www.rwe.asia/rwest-shanghai\" class=\"link link--external\" target=\"_blank\" data-link-type=\"External\" style=\"color:#00a19f;\">RWE Supply &amp; Trading (Shanghai) Co., Ltd. Shanghai</a></strong>",
+   "vis": true
+  },
+  {
+   "html": "<strong><a rel=\"noopener noreferrer\" href=\"https://www.rwe.asia/rwest-shanghai\" class=\"link link--external\" target=\"_blank\" data-link-type=\"External\" style=\"color:#00a19f;\">RWE Supply &amp; Trading (Shanghai) Co., Ltd. Peking</a></strong>",
+   "vis": true
+  },
+  {
+   "html": "<strong><a href=\"/en/the-group/countries-and-locations/singapore/\" class=\"link link--internal\" data-link-type=\"Internal\" style=\"color:#00a19f;\">RWE Supply &amp; Trading, Asia-Pacific Pte. Ltd.</a></strong>",
+   "vis": true
+  },
+  {
+   "html": "<strong><a href=\"/en/the-group/countries-and-locations/mumbai/\" class=\"link link--internal\" data-link-type=\"Internal\" style=\"color:#00a19f;\">RWE Supply &amp; Trading (India) Private Limited</a></strong>",
+   "vis": true
+  },
+  {
+   "html": "<strong><a href=\"/en/the-group/countries-and-locations/jakarta/\" class=\"link link--internal\" data-link-type=\"Internal\" style=\"color:#00a19f;\">PT Rheincoal Supply &amp; Trading Indonesia</a></strong>",
+   "vis": true
+  },
+  {
+   "html": "<strong><a rel=\"noopener noreferrer\" href=\"https://americas.rwe.com/rwe-trading-americas-inc\" class=\"link link--external\" target=\"_blank\" data-link-type=\"External\" style=\"color:#00a19f;\">RWE Trading Americas Inc.</a></strong>",
+   "vis": true
+  },
+  {
+   "html": "With power plants in Germany, the UK and the Netherlands, RWE Generation produces electricity primarily from gas, hydropower and biomass. These plants play an important role in balancing fluctuations in renewable energy generation, thereby ensuring the stability of the electricity grid. RWE Generation also bundles the Group’s hydrogen activities.",
+   "vis": true
+  },
+  {
+   "html": "<a rel=\"noopener noreferrer\" href=\"https://benelux.rwe.com/en/rwe-generation-nl/\" class=\"link link--external\" target=\"_blank\" data-link-type=\"External\" style=\"color:#00a19f;\"><strong>RWE Generation NL</strong></a>",
+   "vis": true
+  },
+  {
+   "html": "<strong><a rel=\"noopener noreferrer\" href=\"https://uk-ireland.rwe.com/rwe-generation-uk\" class=\"link link--external\" target=\"_blank\" data-link-type=\"External\" style=\"color:#00a19f;\">RWE Generation UK</a></strong>",
+   "vis": true
+  },
+  {
+   "html": "<strong><a href=\"/en/the-group/rwe-ti/\" class=\"link link--internal\" data-link-type=\"Internal\" style=\"color:#00a19f;\">RWE Technology International GmbH</a></strong>",
+   "vis": true
+  },
+  {
+   "html": "<strong><a rel=\"noopener noreferrer\" href=\"https://www.rwe-turcas.com/\" class=\"link link--external\" target=\"_blank\" data-link-type=\"External\" style=\"color:#00a19f;\">RWE &amp; Turcas Güney Elektrik Üretim A.Ş.</a></strong>",
+   "vis": true
+  },
+  {
+   "html": "<strong><a href=\"/en/the-group/countries-and-locations/rwe-generation-hydro-gmbh/\" class=\"link link--internal\" data-link-type=\"Internal\" style=\"color:#00a19f;\">RWE Generation Hydro GmbH</a></strong>",
+   "vis": true
+  },
+  {
+   "html": "RWE Power AG, with headquarters in Essen, Germany, is a company of the RWE Group. Its business is lignite-based power generation. The Company operates three opencast lignite mines in the Rhineland area. Lignite production is predominantly used for electricity generation in the Company’s own power stations with a capacity to supply 8 gigawatts of electricity. But is also processed to make solid fuels and filter materials. In addition, RWE Power manages the decommissioning and dismantling of RWE’s nuclear facilities.&nbsp;",
+   "vis": true
+  },
+  {
+   "html": "Find the right contact partner",
+   "vis": true
+  }
+ ],
+ "links": [
+  {
+   "t": "RWE introduces itself",
+   "h": "#this-is-rwe",
+   "vis": true
+  },
+  {
+   "t": "Organisational structure",
+   "h": "#organisational-structure",
+   "vis": true
+  },
+  {
+   "t": "RWE: Over 125 years of successful history",
+   "h": "/en/the-group/history/",
+   "vis": true
+  },
+  {
+   "t": "@media ( max-width: 479px ) { [data-image-id='ee531cf3af284a3eabc381bf",
+   "h": "/en/the-group/purpose-and-strategy/",
+   "vis": true
+  },
+  {
+   "t": "@media ( max-width: 479px ) { [data-image-id='9f9d0d83c8a6472eb3ebd8e0",
+   "h": "/en/responsibility-and-sustainability/",
+   "vis": true
+  },
+  {
+   "t": "@media ( max-width: 479px ) { [data-image-id='d1bc81e746fb4334a172a0c1",
+   "h": "/en/the-group/countries-and-locations/",
+   "vis": true
+  },
+  {
+   "t": "@media ( max-width: 479px ) { [data-image-id='2aaea0848fa543df925ca8aa",
+   "h": "/en/the-group/compliance/",
+   "vis": true
+  },
+  {
+   "t": "@media ( max-width: 479px ) { [data-image-id='f5c23de31e694b5c9b332836",
+   "h": "/en/the-group/diversity-at-rwe/",
+   "vis": true
+  },
+  {
+   "t": "@media ( max-width: 479px ) { [data-image-id='97c12bd6c8a0439cb03e98c4",
+   "h": "/en/the-group/dates-and-events/",
+   "vis": true
+  },
+  {
+   "t": "RWE at a glance: Key facts about the company",
+   "h": "/en/the-group/purpose-and-strategy/key-data/",
+   "vis": true
+  },
+  {
+   "t": "RWE presentations on financial and Group topics",
+   "h": "/en/investor-relations/financial-calendar-and-publications/presentations/",
+   "vis": true
+  },
+  {
+   "t": "RWE Renewables Europe & Australia GmbH",
+   "h": "/en/the-group/rwe-renewables-europe-australia/",
+   "vis": true
+  },
+  {
+   "t": "RWE Offshore Wind GmbH",
+   "h": "/en/the-group/rwe-offshore-wind/",
+   "vis": true
+  },
+  {
+   "t": "RWE Americas, LLC",
+   "h": "/en/the-group/rwe-americas/",
+   "vis": true
+  },
+  {
+   "t": "RWE Supply & Trading GmbH",
+   "h": "/en/the-group/rwest/",
+   "vis": true
+  },
+  {
+   "t": "RWE Generation SE",
+   "h": "/en/the-group/rwe-generation/",
+   "vis": true
+  },
+  {
+   "t": "RWE Power AG",
+   "h": "/en/the-group/rwe-power/",
+   "vis": true
+  },
+  {
+   "t": "More about the company",
+   "h": "/en/the-group/rwe-ag/",
+   "vis": true
+  },
+  {
+   "t": "RWE Renewables Australia Pty Ltd.",
+   "h": "https://au.rwe.com/rwe-renewables-australia/",
+   "vis": true
+  },
+  {
+   "t": "RWE Renewables Benelux B.V.",
+   "h": "https://benelux.rwe.com/en/rwe-renewables-benelux-b-v/",
+   "vis": true
+  },
+  {
+   "t": "RWE Renewables Hellas SMSA",
+   "h": "/en/the-group/countries-and-locations/rwe-in-greece/",
+   "vis": true
+  },
+  {
+   "t": "RWE Renewables Ireland Limited",
+   "h": "https://ie.rwe.com/rwe-renewables-ireland",
+   "vis": true
+  },
+  {
+   "t": "RWE Renewables Italia S.r.l.",
+   "h": "https://it.rwe.com/en/",
+   "vis": true
+  },
+  {
+   "t": "RWE Renewables Poland Sp. z o.o.",
+   "h": "https://pl.rwe.com/en/rwe-renewables-poland",
+   "vis": true
+  },
+  {
+   "t": "RWE Renewables Iberia S.A.U.",
+   "h": "https://es.rwe.com/en/rwe-renewables-iberia/",
+   "vis": true
+  },
+  {
+   "t": "RWE Renewables UK Limited",
+   "h": "https://uk.rwe.com/rwe-renewables-uk",
+   "vis": true
+  },
+  {
+   "t": "RWE Renouvelables France",
+   "h": "https://fr.rwe.com/en",
+   "vis": true
+  },
+  {
+   "t": "More about the company",
+   "h": "/en/the-group/rwe-renewables-europe-australia/",
+   "vis": true
+  },
+  {
+   "t": "RWE Renewables Japan G.K.",
+   "h": "https://jp.rwe.com/en/rwe-renewables-japan",
+   "vis": true
+  },
+  {
+   "t": "RWE Renewables Korea LLC",
+   "h": "https://www.rwe.com/en/the-group/countries-and-locations/rwe-renewables-in-korea",
+   "vis": true
+  },
+  {
+   "t": "RWE Renewables Denmark A/S",
+   "h": "https://dk.rwe.com/en/",
+   "vis": true
+  },
+  {
+   "t": "More about the company",
+   "h": "/en/the-group/rwe-offshore-wind/",
+   "vis": true
+  },
+  {
+   "t": "RWE Renewables Chile",
+   "h": "/en/the-group/countries-and-locations/rwe-in-chile/",
+   "vis": true
+  },
+  {
+   "t": "RWE Renewables Mexiko",
+   "h": "/en/the-group/countries-and-locations/rwe-renewables-in-mexico/",
+   "vis": true
+  },
+  {
+   "t": "More about the company",
+   "h": "/en/the-group/rwe-americas/",
+   "vis": true
+  },
+  {
+   "t": "RWE Supply & Trading GmbH, Swindon",
+   "h": "https://uk.rwe.com/rwe-supply-and-trading",
+   "vis": true
+  },
+  {
+   "t": "RWE Supply & Trading GmbH, London",
+   "h": "https://uk.rwe.com/rwe-supply-and-trading",
+   "vis": true
+  },
+  {
+   "t": "Edgware Energy Limited",
+   "h": "https://uk.rwe.com/rwe-supply-and-trading/edgware-energy-limited",
+   "vis": true
+  },
+  {
+   "t": "RWE Supply & Trading Japan Inc.",
+   "h": "https://jp.rwe.com/en/rwest-japan",
+   "vis": true
+  },
+  {
+   "t": "RWE Supply & Trading (Shanghai) Co., Ltd. Shanghai",
+   "h": "https://www.rwe.asia/rwest-shanghai",
+   "vis": true
+  },
+  {
+   "t": "RWE Supply & Trading (Shanghai) Co., Ltd. Peking",
+   "h": "https://www.rwe.asia/rwest-shanghai",
+   "vis": true
+  },
+  {
+   "t": "RWE Supply & Trading, Asia-Pacific Pte. Ltd.",
+   "h": "/en/the-group/countries-and-locations/singapore/",
+   "vis": true
+  },
+  {
+   "t": "RWE Supply & Trading (India) Private Limited",
+   "h": "/en/the-group/countries-and-locations/mumbai/",
+   "vis": true
+  },
+  {
+   "t": "PT Rheincoal Supply & Trading Indonesia",
+   "h": "/en/the-group/countries-and-locations/jakarta/",
+   "vis": true
+  },
+  {
+   "t": "RWE Trading Americas Inc.",
+   "h": "https://americas.rwe.com/rwe-trading-americas-inc",
+   "vis": true
+  },
+  {
+   "t": "More about the company",
+   "h": "/en/the-group/rwest/",
+   "vis": true
+  },
+  {
+   "t": "RWE Generation NL",
+   "h": "https://benelux.rwe.com/en/rwe-generation-nl/",
+   "vis": true
+  },
+  {
+   "t": "RWE Generation UK",
+   "h": "https://uk-ireland.rwe.com/rwe-generation-uk",
+   "vis": true
+  },
+  {
+   "t": "RWE Technology International GmbH",
+   "h": "/en/the-group/rwe-ti/",
+   "vis": true
+  },
+  {
+   "t": "RWE & Turcas Güney Elektrik Üretim A.Ş.",
+   "h": "https://www.rwe-turcas.com/",
+   "vis": true
+  },
+  {
+   "t": "RWE Generation Hydro GmbH",
+   "h": "/en/the-group/countries-and-locations/rwe-generation-hydro-gmbh/",
+   "vis": true
+  },
+  {
+   "t": "More about the company",
+   "h": "/en/the-group/rwe-generation/",
+   "vis": true
+  },
+  {
+   "t": "More about the company",
+   "h": "/en/the-group/rwe-power/",
+   "vis": true
+  },
+  {
+   "t": "@media ( max-width: 479px ) { [data-image-id='472aabeea2d94c6ebe0b7a82",
+   "h": "/en/contact-services/",
+   "vis": true
+  }
+ ],
+ "bgs": [
+  {
+   "sel": "DIV.",
+   "b": "url(\"https://www.rwe.com/-/media/RWE/images/brand-motive/TEA-purpose-strategie.jpg?db=web&mw=1280&hash=958CE9B37F5AA1DFB5A34CD4E0F6744A\")"
+  },
+  {
+   "sel": "HEADER.color-teaser-6.right-to-left-animation.animate",
+   "b": "url(\"https://www.rwe.com/Resources/combined-energy.png\"), linear-gradient(45deg, rgb(29, 68, 119) 22%, rgb(0, 161, 159))"
+  },
+  {
+   "sel": "DIV.",
+   "b": "url(\"https://www.rwe.com/-/media/RWE/images/09-verantwortung-und-nachhaltigkeit/home/TEA-verantwortung-und-nachhaltigkeit.jpg?db=web&mw=1280&hash=D996098B09BE478B7C9ADA45B7C752B3\")"
+  },
+  {
+   "sel": "DIV.",
+   "b": "url(\"https://www.rwe.com/-/media/RWE/images/01-der-konzern/laender-und-standorte/standorte-virtuell/TEA-standorte-virtuell.jpg?db=web&mw=1280&hash=CFCF0EC25B811CF259D5AB3D9DFA4181\")"
+  },
+  {
+   "sel": "HEADER.color-teaser-6.right-to-left-animation.animate",
+   "b": "url(\"https://www.rwe.com/Resources/combined-energy.png\"), linear-gradient(45deg, rgb(29, 68, 119) 22%, rgb(0, 161, 159))"
+  },
+  {
+   "sel": "DIV.",
+   "b": "url(\"https://www.rwe.com/-/media/RWE/images/01-der-konzern/compliance/TEA-compliance-bei-rwe.jpg?db=web&mw=1280&hash=E3BAAA6B392E24C252DFCF7A4D402B0E\")"
+  },
+  {
+   "sel": "DIV.",
+   "b": "url(\"https://www.rwe.com/-/media/RWE/images/01-der-konzern/diversity/TEA-diversity.jpg?db=web&mw=1280&hash=8078F55620ACDCED3CAF42127817DAA1\")"
+  },
+  {
+   "sel": "HEADER.color-teaser-6.right-to-left-animation.animate",
+   "b": "url(\"https://www.rwe.com/Resources/combined-energy.png\"), linear-gradient(45deg, rgb(29, 68, 119) 22%, rgb(0, 161, 159))"
+  },
+  {
+   "sel": "DIV.",
+   "b": "url(\"https://www.rwe.com/-/media/RWE/images/01-der-konzern/termine-und-veranstaltungen/TEA-termine-und-veranstaltungen-alt.jpg?db=web&mw=1280&hash=E716E16A2585EC865989CCC55231D264\")"
+  },
+  {
+   "sel": "DIV.",
+   "b": "url(\"https://www.rwe.com/-/media/RWE/images/homepage/TIC02-kontakt-und-service.png?db=web&mw=1280&hash=7BB6FACBF981E8F67A4747B395763438\")"
+  }
+ ],
+ "imgs": [
+  {
+   "src": "https://www.rwe.com/Resources/energy-field/loosefield2-p-500.png",
+   "srcset": "/Resources/energy-field/loosefield2-p-500.png 500w,\n             /Resources/energy-field/loosefield2-p-800.png 800w,\n             /Resources/energy-field/loosefield2-p-1080.png 1080w,\n             /Resources/energy-field/loosefield2-p-1600.png 1600w,\n             /Resources/energy-field/loosefield2.",
+   "w": 400,
+   "h": 433
+  },
+  {
+   "src": "https://www.rwe.com/Resources/energy-field/loosefield1-p-500.png",
+   "srcset": "/Resources/energy-field/loosefield1-p-500.png 500w,\n             /Resources/energy-field/loosefield1-p-800.png 800w,\n             /Resources/energy-field/loosefield1-p-1080.png 1080w,\n             /Resources/energy-field/loosefield1-p-1600.png 1600w,\n             /Resources/energy-field/loosefield1.",
+   "w": 400,
+   "h": 367
+  },
+  {
+   "src": "https://www.rwe.com/-/media/RWE/images/01-der-konzern/organisationsstruktur/TIC01-rwe-ag.jpg?db=web&mw=1280&w=1280&hash=966CE4459AB6AF27EDCD245A88B93A70",
+   "srcset": "",
+   "w": 374,
+   "h": 249
+  },
+  {
+   "src": "https://www.rwe.com/-/media/RWE/images/01-der-konzern/organisationsstruktur/rwe-renewables-europe-australia/home/TEA-renewables.jpg?db=web&mw=1280&w=1280&hash=9FAB4402E19EACF25B837527F40850E4",
+   "srcset": "",
+   "w": 374,
+   "h": 249
+  },
+  {
+   "src": "https://www.rwe.com/-/media/RWE/images/01-der-konzern/organisationsstruktur/rwe-offshore-wind-gmbh/TEA-rwe-offshore-wind-gmbh.jpg?db=web&mw=1280&w=1280&hash=5A8178CB99C1D68C10C323ADDFDA3E10",
+   "srcset": "",
+   "w": 374,
+   "h": 249
+  },
+  {
+   "src": "https://www.rwe.com/-/media/RWE/images/01-der-konzern/organisationsstruktur/rwe-clean-energy/TEA-rwe-renewables-americas.jpg?db=web&mw=1280&w=1280&hash=77F0BE84800F4181883E2E16E603A05C",
+   "srcset": "",
+   "w": 374,
+   "h": 249
+  },
+  {
+   "src": "https://www.rwe.com/-/media/RWE/images/07-presse/TEA-pm-filter/TEA-supply-and-trading.jpg?db=web&mw=1280&w=1280&hash=C4192A7C8B8F7BBB15F651A4F589F8F3",
+   "srcset": "",
+   "w": 374,
+   "h": 249
+  },
+  {
+   "src": "https://www.rwe.com/-/media/RWE/images/01-der-konzern/organisationsstruktur/TIC01-rwe-generation.jpg?db=web&mw=1280&w=1280&hash=7852AA435B32AB6946AC05C36DE6258F",
+   "srcset": "",
+   "w": 374,
+   "h": 249
+  },
+  {
+   "src": "https://www.rwe.com/-/media/RWE/images/07-presse/TEA-pm-filter/TEA-power.jpg?db=web&mw=1280&w=1280&hash=1F5915161321E7A3CCE095F2C43BFACD",
+   "srcset": "",
+   "w": 374,
+   "h": 249
+  },
+  {
+   "src": "https://www.rwe.com/Resources/energy-field/loosefield2-p-500.png",
+   "srcset": "/Resources/energy-field/loosefield2-p-500.png 500w,\n             /Resources/energy-field/loosefield2-p-800.png 800w,\n             /Resources/energy-field/loosefield2-p-1080.png 1080w,\n             /Resources/energy-field/loosefield2-p-1600.png 1600w,\n             /Resources/energy-field/loosefield2.",
+   "w": 400,
+   "h": 433
+  },
+  {
+   "src": "https://www.rwe.com/Resources/energy-field/loosefield1-p-500.png",
+   "srcset": "/Resources/energy-field/loosefield1-p-500.png 500w,\n             /Resources/energy-field/loosefield1-p-800.png 800w,\n             /Resources/energy-field/loosefield1-p-1080.png 1080w,\n             /Resources/energy-field/loosefield1-p-1600.png 1600w,\n             /Resources/energy-field/loosefield1.",
+   "w": 400,
+   "h": 367
+  }
+ ]
+}

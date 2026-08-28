@@ -1,0 +1,877 @@
+/* content-page.css — A4 content-page archetype (climate). New modules only;
+   canon.css + index.css + article.css carry chrome/tokens/zoomable/downloads.
+   Values lifted from stardust/replica/content-page-outline-{1440,360}.txt +
+   source-css (sta01, it01, breadcrumb-top, color-teaser-6, con01). */
+
+/* ================= full-bleed image stage (sta01--compact) ================= */
+.page-stage {
+  position: relative;
+  display: flex;
+  flex-flow: column;
+  height: calc(100vh - 130px);
+  background-image: var(--grad);
+  overflow: hidden;
+}
+
+.page-stage .stage-media {
+  position: absolute;
+  inset: 0;
+  background-image: url('../assets/media/STA01-klima.jpg');
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+.page-stage .teaser-width {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  width: 1170px;
+  max-width: 1170px;
+  height: 100%;
+  margin: 0 auto;
+  justify-content: flex-start;
+}
+
+.page-stage .stage-box {
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+  align-self: center;
+  background: linear-gradient(45deg, rgb(29 68 119 / 90%) 22%, rgb(0 161 159 / 75%));
+  border-radius: 6px;
+  padding: 24px;
+}
+
+.page-stage h1.headline {
+  color: #fff;
+  margin: 0;
+}
+
+.page-stage h1.headline span {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.page-stage .buttons-container {
+  display: flex;
+}
+
+.page-stage .btn--stage {
+  background: transparent;
+  color: #fff;
+  margin-right: 8px;
+}
+
+/* ================= zones (grid-bas nesting flattened) ================= */
+.cp-zone .container {
+  padding: 32px 0;
+}
+
+.cp-zone .cp-sub {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.cp-zone .crumb-sub {
+  padding-top: 0;
+  padding-bottom: 16px;
+}
+
+.cp-zone .qn-sub {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.cp-zone .qn-sub--last,
+.cp-zone .cp-sub--last {
+  padding-bottom: 0;
+}
+
+.cta-left {
+  display: flex;
+}
+
+.cp-zone .row,
+.cp-cards-zone .row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -12px;
+}
+
+.cp-zone .cell,
+.cp-cards-zone .cell {
+  width: 33.333%;
+  max-width: 33.3%;
+  padding: 0 12px;
+}
+
+.cp-zone .col-8 {
+  width: 66.666%;
+  padding: 0 12px;
+}
+
+.cp-zone .col-4 {
+  width: 33.333%;
+  padding: 0 12px;
+}
+
+/* breadcrumb (top) */
+#breadcrumb-top ol {
+  font-size: 18px;
+  line-height: 27px;
+}
+
+#breadcrumb-top ol li {
+  display: inline;
+  font-family: regular;
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--teal);
+  margin-right: 4px;
+}
+
+#breadcrumb-top ol li::before {
+  content: '\e918';
+  font-family: RWE_Icon_Font;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  margin-right: 4px;
+  color: var(--teal);
+}
+
+#breadcrumb-top ol li:first-child::before {
+  content: none;
+}
+
+#breadcrumb-top ol li.active,
+#breadcrumb-top ol li.active a {
+  font-family: bold;
+}
+
+/* quick-navigation full-width anchor buttons (cta01) */
+.btn-full {
+  display: inline-block;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  background: var(--teal);
+  color: #fff;
+}
+
+.btn-full:hover {
+  background: var(--mint);
+  border-color: var(--mint);
+}
+
+/* ================= prose modules (rwe-tick01) ================= */
+.text-module {
+  margin: 0 0 32px;
+}
+
+.text-module--tail {
+  margin-bottom: 0;
+}
+
+.text-module h2.headline {
+  margin-bottom: 24px;
+}
+
+.text-module .content p {
+  margin: 0 0 24px;
+}
+
+.text-module .content p:last-child {
+  margin-bottom: 0;
+}
+
+/* section rules */
+.cp-zone hr,
+main hr {
+  border: 0;
+  border-top: 1px solid #adafb1;
+  height: 2px;
+  overflow: hidden;
+  margin: 0 0 32px;
+}
+
+/* live text color utility classes (nkStyles) */
+.color__font--gradient-green { color: var(--teal); }
+.color__font--rwe-blue { color: var(--navy); }
+.color__font--energy-green { color: var(--mint); }
+
+/* lifted: sub glyphs don't grow live line boxes */
+main sub {
+  font-size: 62%;
+  line-height: 0;
+  position: relative;
+}
+
+main hr.hr-plain {
+  margin: 0;
+}
+
+.cp-zone header h2.headline {
+  margin-bottom: 0;
+}
+
+.text-module h2.headline {
+  margin-bottom: 24px;
+}
+
+/* zoomable figure adjustments (article.css sets figure margin-bottom 16) */
+.cp-zoom figure {
+  display: flow-root;
+  margin-bottom: 0;
+}
+
+.cp-zoom img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.cp-zoom .image-caption {
+  display: block;
+  margin-top: 16px;
+  font-size: 14px;
+  line-height: 19.6px;
+  color: #adafb1;
+  text-align: left;
+}
+
+/* ================= grey bands ================= */
+.cp-band {
+  position: relative;
+  background: var(--surface);
+  overflow-x: clip;
+  overflow-y: visible;
+}
+
+.cp-zone,
+.cp-cards-zone {
+  position: relative;
+}
+
+.cp-band .container {
+  position: relative;
+  z-index: 1;
+  padding: 32px 0;
+}
+
+.cp-band .loosefield-blue,
+.cp-band .loosefield-green {
+  z-index: 0;
+}
+
+/* loosefield art is randomized per live load; positions template-matched
+   against the frozen gate capture (permanent residual) */
+.lf-c-blue { left: 1389px; top: 249px; }
+.lf-c-green { left: -349px; top: 376px; }
+.lf-f-blue { left: -328px; top: 29px; }
+.lf-f-green { left: 1390px; top: 169px; }
+
+.cp-band .band-head {
+  margin: 0 0 32px;
+}
+
+.cp-band .band-head h2.headline {
+  margin-bottom: 0;
+}
+
+.hea01--centered {
+  text-align: center;
+}
+
+/* ================= icon tiles (it01) ================= */
+.icon-tiles {
+  display: flex;
+  justify-content: center;
+}
+
+.icon-tiles-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 220px);
+  grid-auto-rows: minmax(300px, auto);
+  gap: 16px;
+  justify-content: center;
+  max-width: 1170px;
+}
+
+.tile-item {
+  position: relative;
+  border-radius: 25px;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  min-height: 300px;
+  min-width: 220px;
+  z-index: 1;
+}
+
+.tile-cover {
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+  cursor: pointer;
+  z-index: 2;
+  color: #fff;
+  background-image: var(--grad);
+}
+
+.tile-cover::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--teal);
+  opacity: 0;
+  transition: opacity 0.4s;
+  z-index: -1;
+}
+
+.tile-cover:hover::before {
+  opacity: 1;
+}
+
+.tile-cover-inner {
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  font-family: medium;
+  text-align: center;
+  padding: 10px 16px 16px;
+  width: auto;
+}
+
+.tile-cover-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 2em;
+  font-size: 18px;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.tile-opener-mobile {
+  display: none;
+}
+
+.tile-content {
+  position: absolute;
+  inset: 0;
+  border-radius: 25px;
+  height: 100%;
+  width: 100%;
+  padding: 16px;
+  background: #fff;
+  opacity: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.tile-closer {
+  position: absolute;
+  top: 32px;
+  right: 32px;
+  font-size: 32px;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.tile-closer .icon-close::before,
+.tile-closer-mobile .icon-close::before {
+  content: '\e988';
+  font-family: RWE_Icon_Font;
+  color: var(--teal);
+}
+
+.tile-content-inner {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+}
+
+.tile-content-text {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.tile-content-text h3 {
+  font-family: bold;
+  font-size: 24px;
+  line-height: 32px;
+  color: var(--teal);
+  text-align: center;
+  margin: 0 0 16px;
+}
+
+.tile-content-text p {
+  margin: 0 0 24px;
+}
+
+.tile-closer-mobile {
+  display: none;
+}
+
+/* ================= teaser cards zone (grid-ext-02 / tea01r) ================= */
+.cp-cards-zone .container {
+  padding: 32px 0;
+}
+
+.cp-cards-zone header.content {
+  text-align: center;
+}
+
+.cp-cards-zone header.content h2.headline {
+  margin-bottom: 0;
+}
+
+.cards-sub {
+  padding: 32px 0 0;
+}
+
+.cp-cards-zone .cell {
+  display: flex;
+}
+
+.teaser-card {
+  width: 100%;
+}
+
+.card-link {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.card-media {
+  background-color: #c2c2c2;
+  background-size: cover;
+  background-position: 50% 50%;
+  padding-top: 66.66%;
+}
+
+.card-header-wrapper {
+  display: flex;
+  flex: 1;
+}
+
+.card-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 24px;
+  width: 100%;
+}
+
+.card-header--grey {
+  background-color: var(--surface);
+  color: var(--navy);
+}
+
+.card-header--gradient {
+  color: #fff;
+  background-image: url('../assets/media/combined-energy.png'), var(--grad);
+  background-position: 100% 100%, 0 0;
+  background-size: 240px 200px, auto;
+  background-repeat: no-repeat, repeat;
+}
+
+.card-header h3.headline {
+  margin: 0 0 24px;
+  color: inherit;
+}
+
+.card-header p {
+  margin: 0 0 24px;
+  color: inherit;
+}
+
+.card-cta {
+  align-self: flex-start;
+  color: var(--teal);
+  background: transparent;
+}
+
+.card-header--gradient .card-cta span {
+  color: #fff;
+}
+
+.teaser-plain {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.plain-media {
+  flex: 1;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+/* ================= downloads variant (ll01 with separators) ================= */
+.download-list li a {
+  border-bottom: 1px solid #ccc;
+}
+
+.download-list li a.link-download::after {
+  line-height: 1;
+  vertical-align: baseline;
+}
+
+.download-list li:last-child a {
+  border-bottom: 0;
+  padding-right: 22px;
+}
+
+/* footer link color (lifted: live renders f-link anchors mint #3ed8c3;
+   index.css shows them white — recorded as sharedFileFinding) */
+.site-footer .f-links ul li a {
+  color: var(--mint);
+}
+
+/* live: footer link columns start 2px lower than index.css's 40px pad */
+@media (min-width: 768px) {
+  .site-footer .f-links .accordion-content {
+    padding-top: 42px;
+  }
+}
+
+/* breadcrumb-bottom separators (lifted: #breadcrumb-bottom ol li:before);
+   live li font is regular, only the active item is bold (index.css has bold
+   for all — recorded as sharedFileFinding) */
+#breadcrumb-bottom ol li {
+  font-family: regular;
+  margin-right: 4px;
+}
+
+#breadcrumb-bottom ol li.active,
+#breadcrumb-bottom ol li.active a {
+  font-family: bold;
+}
+
+#breadcrumb-bottom ol li::before {
+  content: '\e918';
+  font-family: RWE_Icon_Font;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1;
+  color: #fff;
+  margin-right: 4px;
+}
+
+#breadcrumb-bottom ol li:first-child::before {
+  content: none;
+}
+
+/* ================= inline contact (con01--centered) ================= */
+.contact-inline {
+  max-width: 320px;
+  margin: 0 auto;
+  padding-left: 60.5px;
+}
+
+.contact-inline h2.headline {
+  margin-bottom: 8.8px;
+}
+
+.contact-inline h3.subheadline {
+  font-family: bold;
+}
+
+.contact-inline .cta {
+  margin-top: 24px;
+}
+
+.contact-inline .btn--solid:hover {
+  background-color: var(--mint);
+  border-color: var(--mint);
+}
+
+/* ================= mobile ================= */
+@media (max-width: 767px) {
+  /* stage: image strip 50% on top, box on gradient below */
+  .page-stage {
+    height: auto;
+  }
+
+  .page-stage .stage-media {
+    position: relative;
+    inset: auto;
+    width: 100%;
+    padding-top: 50%;
+  }
+
+  .page-stage .teaser-width {
+    width: 100%;
+    max-width: none;
+    height: auto;
+  }
+
+  .page-stage .stage-box {
+    align-self: auto;
+    width: 100%;
+    border-radius: 6px;
+    padding: 24px;
+  }
+
+  /* zones */
+  .cp-zone .container,
+  .cp-band .container,
+  .cp-cards-zone .container {
+    padding: 16px;
+  }
+
+  .cp-zone .nest {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .cp-zone .cp-sub {
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+
+  .cp-zone .crumb-sub {
+    padding-top: 0;
+    padding-bottom: 8px;
+  }
+
+  .cp-zone .qn-sub {
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+
+  .cp-zone .qn-sub--last,
+  .cp-zone .cp-sub--last {
+    padding-bottom: 0;
+  }
+
+  .cp-zone .row,
+  .cp-cards-zone .row {
+    display: block;
+    margin: 0;
+  }
+
+  .cp-zone .cell,
+  .cp-cards-zone .cell {
+    width: 100%;
+    max-width: none;
+    padding: 0;
+    margin-bottom: 16px;
+  }
+
+  .cp-zone .cell:last-child,
+  .cp-cards-zone .cell:last-child {
+    margin-bottom: 0;
+  }
+
+  .cp-zone .col-8,
+  .cp-zone .col-4 {
+    width: 100%;
+    padding: 0;
+  }
+
+  .cp-zone .col-8 + .col-4 .img-module {
+    margin-top: 16px;
+  }
+
+  /* breadcrumb-top */
+  #breadcrumb-top ol {
+    font-size: 15px;
+    line-height: 22px;
+  }
+
+  /* prose */
+  .text-module {
+    margin-bottom: 16px;
+  }
+
+  .text-module--tail {
+    margin-bottom: 0;
+  }
+
+  .text-module h2.headline {
+    margin-bottom: 16px;
+  }
+
+  .text-module .content p {
+    margin-bottom: 16px;
+  }
+
+  .text-module .content p:last-child {
+    margin-bottom: 0;
+  }
+
+  .cp-zone hr,
+  main hr {
+    margin: 0 0 16px;
+  }
+
+  main hr.hr-plain {
+    margin: 0;
+  }
+
+  /* bands */
+  .cp-band .loosefield-blue,
+  .cp-band .loosefield-green {
+    display: none;
+  }
+
+  .cp-band .band-head {
+    margin-bottom: 16px;
+  }
+
+  /* tiles: stacked covers 110px */
+  .icon-tiles-grid {
+    display: block;
+    max-width: none;
+    width: 100%;
+  }
+
+  .tile-item {
+    min-height: 0;
+    min-width: 0;
+    height: auto;
+  }
+
+  .tile-cover {
+    position: relative;
+    inset: auto;
+    height: 110px;
+    margin-bottom: 16px;
+  }
+
+  .tile-cover-inner {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    width: 100%;
+  }
+
+  .tile-cover-text {
+    width: 130px;
+    height: auto;
+    font-size: 15px;
+  }
+
+  .tile-opener-mobile {
+    display: block;
+    font-size: 32px;
+    margin-left: 16px;
+    cursor: pointer;
+  }
+
+  .tile-opener-mobile .icon-arrow-down::before {
+    content: '\e910';
+    font-family: RWE_Icon_Font;
+    color: #fff;
+  }
+
+  .tile-content {
+    position: static;
+    height: 0;
+    padding: 0;
+    opacity: 0;
+  }
+
+  .tile-closer {
+    display: none;
+  }
+
+  /* cards */
+  .cards-sub {
+    padding: 16px 0 0;
+  }
+
+  .card-media {
+    padding-top: 66.66%;
+  }
+
+  .card-header {
+    padding: 16px;
+  }
+
+  .card-header h3.headline {
+    margin-bottom: 16px;
+  }
+
+  .card-header p {
+    margin-bottom: 16px;
+  }
+
+  .cp-cards-zone .cell--plain {
+    display: none;
+  }
+
+  /* downloads: mobile heading rhythm (article.css sets 24) */
+  .download-list h3.headline {
+    margin-bottom: 16px;
+  }
+
+  /* live mobile: ol pads 16px vertically only (index.css double-pads to 296
+     — recorded as sharedFileFinding) */
+  #breadcrumb-bottom ol {
+    padding: 16px 0;
+  }
+
+  /* mobile footer rhythm measured off the live climate capture (index.css
+     mobile metrics drift up to 16px — sharedFileFinding) */
+  .site-footer .f-top {
+    padding-top: 22px;
+  }
+
+  .site-footer .f-recommend h2.headline--medium {
+    margin-bottom: 18px;
+  }
+
+  .site-footer .f-recommend {
+    margin-bottom: 12px;
+  }
+
+  .site-footer .talk-to-us h3 {
+    margin: 18px 0 16px;
+  }
+
+  .site-footer .f-top .f-section:last-child {
+    padding-top: 18px;
+  }
+
+  .site-footer .legal-row nav li {
+    margin: 0 0 16px;
+  }
+
+  .site-footer .legal-row .copyright {
+    margin-top: 18px;
+  }
+
+  /* contact inline */
+  .contact-inline {
+    padding-left: 85px;
+  }
+
+  .contact-inline h2.headline {
+    margin-bottom: 6px;
+  }
+
+  .contact-inline .cta {
+    margin-top: 20px;
+  }
+}

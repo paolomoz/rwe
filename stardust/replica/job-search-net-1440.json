@@ -1,0 +1,104 @@
+[
+ {
+  "type": "document",
+  "method": "GET",
+  "url": "https://www.rwe.com/en/rwe-careers-portal/job-offers/",
+  "post": ""
+ },
+ {
+  "type": "script",
+  "method": "GET",
+  "url": "https://prod-rwe-cv-matcher.d1cq0w2e273tz2.amplifyapp.com/webcomponent.js",
+  "post": ""
+ },
+ {
+  "type": "fetch",
+  "method": "GET",
+  "url": "https://js.monitor.azure.com/scripts/b/ai.config.1.cfg.json",
+  "post": ""
+ },
+ {
+  "type": "xhr",
+  "method": "GET",
+  "url": "https://www.rwe.com/api/jobborse/values/v1",
+  "post": ""
+ },
+ {
+  "type": "xhr",
+  "method": "POST",
+  "url": "https://www.rwe.com/api/jobborse/entities/v1",
+  "post": "{\"skip\":0,\"SortType\":\"Created_tdt desc\",\"take\":\"9\",\"LogoContainerId\":\"0212b60d-b1c6-47b6-8cd4-f75dcaf7a55b\",\"ExperienceLevel\":[],\"Company\":[],\"FunctionalArea\":[],\"Country\":[],\"Shift\":[],\"ShiftType\":[],\"City\":[],\"Keyword\":\"\",\"FromPersonalization\":true}"
+ },
+ {
+  "type": "xhr",
+  "method": "GET",
+  "url": "https://www.rwe.com/en/api/sitecore/Navigation/GetNavigationModel/",
+  "post": ""
+ },
+ {
+  "type": "fetch",
+  "method": "GET",
+  "url": "https://096wvaisra.execute-api.eu-central-1.amazonaws.com/prod/jobs_total",
+  "post": ""
+ },
+ {
+  "type": "fetch",
+  "method": "GET",
+  "url": "https://api.usercentrics.eu/settings/lrfueDZgn/latest/languages.json",
+  "post": ""
+ },
+ {
+  "type": "script",
+  "method": "GET",
+  "url": "https://www.etracker.de/cntcc?&&et=e8K7Wx&v=2026.827.45243&tc=17878685099901&pagename=Shape%20the%20future%20of%20the%20energy%20transition%20%7C%20Find%20your%20job%20with%20RWE&ilevel=1&et_source_url=https%3A%2F%2Fwww.rwe.com%2Fen%2Frwe-careers-portal%2Fjob-offers%2F&et_seg1=undefined&block_cookie",
+  "post": ""
+ },
+ {
+  "type": "image",
+  "method": "GET",
+  "url": "https://www.rwe.com/-/media/RWE/Job-search-logos/germany.jpg",
+  "post": ""
+ },
+ {
+  "type": "image",
+  "method": "GET",
+  "url": "https://www.rwe.com/-/media/DF/Feature/Jobborse/Flags/Vereinigte-Staaten.jpg",
+  "post": ""
+ },
+ {
+  "type": "fetch",
+  "method": "GET",
+  "url": "https://api.usercentrics.eu/settings/lrfueDZgn/latest/en.json",
+  "post": ""
+ },
+ {
+  "type": "xhr",
+  "method": "GET",
+  "url": "https://www.rwe.com/NjkTemplates/MegaMenu__List-Item.html?s=1787868510359",
+  "post": ""
+ },
+ {
+  "type": "fetch",
+  "method": "GET",
+  "url": "https://api.usercentrics.eu/translations/translations-en.json",
+  "post": ""
+ },
+ {
+  "type": "fetch",
+  "method": "GET",
+  "url": "https://aggregator.service.usercentrics.eu/aggregate/en?templates=-yWLvJiUL@7.3.11,8k_6cH8SP@6.5.13,AX2xvnIgrgV0y1@11.6.7,BIRApgk3o@5.3.4,H1Vl5NidjWX@40.18.46,HkIVcNiuoZX@6.3.11,J05PmJuvt36qTe@1.0.9,JQ2XQxIk@9.6.11,S1pcEj_jZX@21.10.10,UiXdWB_l@4.4.1,WU7t8fFc4@1.0.8,dyHOCwp5Y@1.0.5,jzMEq56vW@1.4.3,kD",
+  "post": ""
+ },
+ {
+  "type": "fetch",
+  "method": "POST",
+  "url": "https://consent-api.service.consent.usercentrics.eu/consent/uw/3",
+  "post": "{\"action\":\"onInitialPageLoad\",\"analytics\":true,\"appVersion\":\"4.63.1\",\"consents\":[{\"consentStatus\":true,\"consentTemplateId\":\"H1Vl5NidjWX\",\"consentTemplateVersion\":\"40.18.46\"},{\"consentStatus\":true,\"consentTemplateId\":\"8k_6cH8SP\",\"consentTemplateVersion\":\"6.5.13\"},{\"consentStatus\":true,\"consentTemplateId\":\"UiXdWB_l\",\"consentTemplateVersion\":\"4.4.1\"},{\"consentStatus\":true,\"consentTemplateId\":\"BIRApgk3o\",\"consentTemplateVersion\":\"5.3.4\"},{\"consentStatus\":true,\"consentTemplateId\":\"HkIVcNiuoZX\",\"conse"
+ },
+ {
+  "type": "image",
+  "method": "GET",
+  "url": "https://uct.service.usercentrics.eu/uct?v=1&sid=lrfueDZgn&t=1&abv=&r=https%3A%2F%2Fwww.rwe.com%2Fen%2Frwe-careers-portal%2Fjob-offers%2F&cb=1787868511064",
+  "post": ""
+ }
+]

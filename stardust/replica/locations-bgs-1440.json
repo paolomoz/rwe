@@ -1,0 +1,72 @@
+[
+ {
+  "cls": "",
+  "rect": [
+   0,
+   130,
+   1440,
+   770
+  ],
+  "bi": "url(\"https://www.rwe.com/-/media/RWE/images/01-der-konzern/laender-und-standorte/STA01-laender-und-standorte.jpg?db=web&mw=1280&hash=282AC366918119BD579EE45107201055\")"
+ },
+ {
+  "cls": "",
+  "rect": [
+   0,
+   130,
+   1440,
+   770
+  ],
+  "bi": "url(\"https://www.rwe.com/-/media/RWE/images/01-der-konzern/laender-und-standorte/STA01-laender-und-standorte-2.jpg?db=web&mw=1280&hash=53A200719EF5EF36785D59C95ED0F94B\")"
+ },
+ {
+  "cls": "",
+  "rect": [
+   0,
+   130,
+   1440,
+   770
+  ],
+  "bi": "url(\"https://www.rwe.com/-/media/RWE/images/01-der-konzern/laender-und-standorte/STA01-laender-und-standorte-3.jpg?db=web&mw=1280&hash=0A6E7F5039BBD99BD6CB774D3E7F7607\")"
+ },
+ {
+  "cls": "",
+  "rect": [
+   0,
+   130,
+   1440,
+   770
+  ],
+  "bi": "url(\"https://www.rwe.com/-/media/RWE/RWE-Japan/images/home/STA01-rwe-in-japan-2.jpg?db=web&mw=1280&hash=0E7A9ECC5E985F8A98BB1DE533590472\")"
+ },
+ {
+  "cls": "",
+  "rect": [
+   369,
+   3165,
+   936,
+   624
+  ],
+  "bi": "url(\"https://www.rwe.com/-/media/RWE/images/01-der-konzern/laender-und-standorte/standorte-virtuell/TEA-standorte-virtuell.jpg?db=web&mw=1280&hash=CFCF0EC25B811CF259D5AB3D9DFA4181\")"
+ },
+ {
+  "cls": "color-teaser-6 left-to-right-animation animate",
+  "rect": [
+   135,
+   3365,
+   410,
+   224
+  ],
+  "bi": "url(\"https://www.rwe.com/Resources/combined-energy.png\"), linear-gradient(45deg, rgb(29, 68, 119) 22%, rgb(0, 161, 159))"
+ },
+ {
+  "cls": "",
+  "rect": [
+   610,
+   3853,
+   220,
+   220
+  ],
+  "bi": "url(\"https://www.rwe.com/-/media/RWE/images/homepage/TIC02-kontakt-und-service.png?db=web&mw=1280&hash=7BB6FACBF981E8F67A4747B395763438\")"
+ }
+]

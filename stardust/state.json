@@ -83,6 +83,91 @@
           }
         }
       ]
+    },
+    {
+      "slug": "press-hub",
+      "url": "https://www.rwe.com/en/press/",
+      "type": "listing-hub",
+      "status": "prototyped",
+      "prototypePath": "stardust/prototypes/press-hub-proposed.html",
+      "history": [
+        {
+          "status": "prototyped",
+          "at": "2026-08-28T00:28:34.186Z",
+          "gate": {
+            "360": 2.2,
+            "1440": 1.01
+          }
+        }
+      ]
+    },
+    {
+      "slug": "group-landing",
+      "url": "https://www.rwe.com/en/the-group/",
+      "type": "section-landing",
+      "status": "prototyped",
+      "prototypePath": "stardust/prototypes/group-landing-proposed.html",
+      "history": [
+        {
+          "status": "prototyped",
+          "at": "2026-08-28T00:28:34.186Z",
+          "gate": {
+            "360": 3.38,
+            "1440": 2.22
+          }
+        }
+      ]
+    },
+    {
+      "slug": "content-page",
+      "url": "https://www.rwe.com/en/responsibility-and-sustainability/environmental-protection/climate/",
+      "type": "content-page",
+      "status": "prototyped",
+      "prototypePath": "stardust/prototypes/content-page-proposed.html",
+      "history": [
+        {
+          "status": "prototyped",
+          "at": "2026-08-28T00:28:34.186Z",
+          "gate": {
+            "360": 3.79,
+            "1440": 1.14
+          }
+        }
+      ]
+    },
+    {
+      "slug": "locations-map",
+      "url": "https://www.rwe.com/en/the-group/countries-and-locations/",
+      "type": "locations-map",
+      "status": "prototyped",
+      "prototypePath": "stardust/prototypes/locations-map-proposed.html",
+      "history": [
+        {
+          "status": "prototyped",
+          "at": "2026-08-28T00:28:34.186Z",
+          "gate": {
+            "360": 2.41,
+            "1440": 0.82
+          }
+        }
+      ]
+    },
+    {
+      "slug": "job-search",
+      "url": "https://www.rwe.com/en/rwe-careers-portal/job-offers/",
+      "type": "job-search",
+      "status": "prototyped",
+      "prototypePath": "stardust/prototypes/job-search-proposed.html",
+      "history": [
+        {
+          "status": "prototyped",
+          "at": "2026-08-28T00:28:34.186Z",
+          "gate": {
+            "360": 3.46,
+            "1440": 0.86
+          }
+        }
+      ]
     }
   ]
 }

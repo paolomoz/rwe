@@ -31,3 +31,12 @@
 - Two capture-state rulings: gate reference = DENY-consent state (accept loads a LinkedIn wall, +543px nondeterministic); NBSP preservation in extraction is load-bearing for line wraps.
 - Two chrome bugs found that also improve home: right nav list is width-auto flush-right (not mirrored calc); solid header needs flow-root (margin collapse).
 - Next: A2 listing-hub (press hub) → A3 section-landing → A4 content-page; then A5/A6 after integration spikes.
+
+## 2026-08-28 — A2-A6 archetypes gated (parallel agents)
+- Five independent agents (shared brief: stardust/migration/archetype-brief.md) each recreated + gated one archetype. First launch tripped a 600s no-progress watchdog (stagger sleeps + silent long captures) — resumed with anti-stall rules; all completed.
+- Gates (1440 / 360 pixel diff): press-hub 1.01/2.20 · group-landing 2.22/3.38 · content-page 1.14/3.79 · locations-map 0.82/2.41 · job-search 0.86/3.46. All Δ≤6px, 0 unjustified content reds, no visual flags. ALL SIX ARCHETYPES NOW GATED.
+- Jobs integration spike complete (from A6): Sitecore jobborse API (POST entities/v1, GET values/v1), AWS jobs_total, SuccessFactors apply deep-links, Amplify CV-matcher webcomponent — recorded in job-search-result.json.
+- A5: in the deny-consent state the locations map renders a pure-DOM List View (718 cards) — replicated structurally, no placeholder needed; real map = delivery integration.
+- Shared-chrome corrections confirmed by 3-4 agents independently and promoted to index.css (mint footer links, mobile footer link size, breadcrumb weights/separators/strut/mobile pad, copyright size); home and article gates re-verified and IMPROVED (1.68→1.61, 3.92→3.40). Finer mobile footer rhythm values left page-scoped (conflicting per-page measurements). Endorsement wordmark noted for the EDS footer block at delivery sync.
+- New live-site facts for the ledger: live hr elements are 2px boxes; some templates set html base 22px (not 20); the icon TTF draws ~1.22x smaller ink than live's rendering (per-glyph calibration); grid cols cap at 33.3% not 33.333%; stage carousels + top breadcrumbs live OUTSIDE <main> on hub/landing templates; band loosefield overhang widens fullpage captures unless clipped.
+- Next: EDS block conversion + delivery for the five new archetypes, then bulk migrate (P3).

@@ -1,0 +1,93 @@
+<li> <a href="/en/" data-link-type="Internal">RWE</a>
+
+<li> <a href="/en/responsibility-and-sustainability/" data-link-type="Internal">Responsibility and Sustainability</a>
+
+<li> <a href="/en/responsibility-and-sustainability/environmental-protection/" data-link-type="Internal">Environmental Protection</a>
+
+<li> <a href="" aria-current="page">Climate</a>
+
+<h2> <span class="color__font--rwe-blue">Powering the clean energy transformation</span>
+
+<p> <strong>Climate change is one of the defining challenges of our time.</strong> Rising global temperatures, extreme weather events, and growing climate risks demand urgent action. At the heart of effective climate protection lies the transformation of the energy system – away from fossil fuels and towards low-carbon, sustainable solutions.&nbsp;
+
+<p> <strong>Electricity is central to the transformation towards a Net Zero world.</strong> As digitalisation, electrification, and industrial decarbonisation accelerate, the demand for affordable, secure, and clean electricity will grow substantially. This makes the shift to renewable energy, flexible generation, and storage technologies not only an environmental imperative but also a societal and economic one.&nbsp;
+
+<p> <strong>RWE is committed to shaping the Net Zero energy system of the future.</strong> We are phasing out coal by 2030 in a socially responsible manner while investing in renewable energy, storage capacity, and decarbonised flexible generation assets. <strong>To date, we have already more than halved emissions from our power plants</strong> – and our commitment is clear: we aim to achieve Net Zero emissions by 2040. Our 2030 and 2040 targets are certified by the Science Based Targets initiative and support the 1.5°C target of the Paris Agreement.&nbsp;
+
+<p> <strong>As we transform the energy system, we are equally committed to ensuring that the transition is fair and inclusive.</strong>&nbsp;RWE takes its responsibility seriously in supporting affected employees. Through dialogue, reskilling initiatives, and a strong commitment to regional development, we aim to make the energy transition a positive opportunity for all.
+
+<h2> <span class="color__font--gradient-green">RWE will be Net Zero by 2040.</span> <br> <span class="color__font--rwe-blue">The Science Based Targets initiative has confirmed that our climate targets align with the 1.5°C goal of the Paris Agreement. </span>
+
+<h2> <span class="">Our key decarbonisation measures</span>
+
+<h3> Accelerating the coal phase-out
+
+<p> We are committed to phase out coal by 2030 – eight years ahead of the initial date for Germany. For this we have aligned an accelerated decommission schedule in 2022 with the federal and local government in Germany.
+
+<p> With the end of lignite-fired power generation, the three opencast mines we operate (Inden, Hambach and Garzweiler) will be decommissioned.
+
+<h3> Scaling up renewables
+
+<p> Accelerating the expansion of renewable energy is essential to achieving global climate goals. As one of the world’s largest wind, solar, and battery storage developers, RWE invested €11.1 billion in 2025 to increase its renewable capacity.
+
+<p> We launched and advanced over 200 innovation projects in collaboration with industry and research partners. These projects explore topics such as power storage, hydrogen and carbon dioxide recycling.
+
+<h3> Transforming our flexible generation assets
+
+<p> We plan to retrofit gas plants to be hydrogen-capable and deploy carbon capture and storage (CCS) to decarbonise flexible generation. These assets will help balance a system increasingly powered by renewables.
+
+<p> Our hydrogen strategy covers production, trading, storage, and supply agreements with industrial clients across Europe. Germany and the UK are key markets where we are converting existing assets and preparing new assets for green hydrogen.
+
+<h3> Driving decarbonisation with suppliers, customers and partners
+
+<p> As our renewable energy portfolio grows, supplier emissions will play a significant role in our greenhouse gas inventory. We’ve taken initial steps by assessing market conditions and availability of low-carbon materials such as green steel, concrete, polysilicon, and glass – key materials for our renewables build-out.
+
+<p> Through RWE Supply &amp; Trading, customers access tailored solutions such as green electricity, energy risk management, and hydrogen supply. We support industrial decarbonisation via direct energy supply agreements and advanced market-based trading of renewable power.
+
+<h3> Fostering a climate-conscious culture
+
+<p> Through learning sessions and dialogue, we raise awareness among all employees on their role in climate action. Climate considerations are becoming part of how we operate – from investment decisions and procurement to the operation of our assets. We are embedding climate in governance, operating practices, and performance metrics.
+
+<h2> <span class="">Project examples for climate action</span>
+
+<h3> Agreement with the German government to phaseout lignite by 2030
+
+<p> Since 2020, we have shut down 14 of 21 lignite-fired units, reducing capacity from 10.3 to 5.8 GW, and ended briquette production. We support employees and the structural transformation of the Rhenish region, where we plan to install 500 MW of solar and wind.
+
+<h3> Switching from hard coal to biomass in the Netherlands
+
+<p> We have decommissioned all hard coal assets in Germany and the UK. In the Netherlands, Amer and Eemshaven are the only two plants left. Since December 2024, Amer operates fully on biomass, which is entirely sourced from certified suppliers.
+
+<h3> Investing billions of euros worldwide in expanding our generation portfolio
+
+<p> Since 2022, we’ve expanded renewables from 13 GW to over 21.2 GW. They now make up 45% of our capacity, led by wind and solar. In 2025, renewables accounted for 41% of our total generation; and the share of taxonomy-aligned investments amounted to 94%.
+
+<h3> Actively involved in around 30 hydrogen projects in Germany, the Netherlands and the UK
+
+<p> Our 14 MW electrolysis pilot plant in Lingen can produce up to 270 kilograms of green hydrogen per hour. By 2027, we plan to expand our electrolysis capacity up to 300 MW.
+
+<h3> Using greener steel to reduce indirect emissions
+
+<p> At our Thor offshore wind farm, 36 of the 72 turbines will use Siemens Gamesa’s GreenerTowers, which are made of steel that emits at least 63% less CO<sub>2</sub> emissions compared to conventional steel.
+
+<h2> <span class="">Cutting other emissions</span>
+
+<p> <strong>Pollutants, such as nitrogen oxide, sulphur dioxide, particulate matter and mercury, are also emitted during the generation of electricity and heat at our power stations.&nbsp;</strong><strong>Statutory thresholds are observed in our plants with the help of primary emission reduction measures,</strong> such as the optimisation of the firing technology and secondary emission reduction measures, including duct extraction and desulphurisation in all operating conditions.
+
+<p> Particulate matter and noise are the main emissions associated with open-cast mines. We always take suitable measures to reduce these in agreement with supervisory authorities and taking account of operational and local factors.
+
+<p> The operations monitoring services of the open-cast mines are available around the clock for any affected citizens, so that we can take remedial action as swiftly as possible in the event of acute noise pollution.
+
+<h3> Further information
+
+<li> <a class="link--download link" rel="noopener noreferrer" href="/-/media/RWE/documents/05-investor-relations/finanzkalendar-und-veroeffentlichungen/2025-GJ/RWE-Annual-Report-2025.pdf" aria-label="Annual report" target="_blank" data-link-type="Media"> Annual report </a>
+
+<li> <a class="link--download link" rel="noopener noreferrer" href="/-/media/RWE/documents/09-verantwortung-nachhaltigkeit/cr-berichte/supplementary-sustainability-report-2025.pdf" aria-label="Supplementary Sustainability Report" target="_blank" data-link-type="Media"> Supplementary Sustainability Report </a>
+
+<li> <a class="link--download link" rel="noopener noreferrer" href="/-/media/RWE/documents/09-verantwortung-nachhaltigkeit/cr-berichte/industry-associations-climate-review-2023.pdf" aria-label="Industry Associations Climate Review 2023" target="_blank" data-link-type="Media"> Industry Associations Climate Review 2023 </a>
+
+<li> <a class="link--download link" rel="noopener noreferrer" href="/-/media/RWE/documents/09-verantwortung-nachhaltigkeit/2024-rwe-response-to-cdp-climate-change.pdf" aria-label="Questionnaire CDP Climate Change – RWE response" target="_blank" data-link-type="Media"> Questionnaire CDP Climate Change – RWE response </a>
+
+<h2> Tobias Heck
+
+<h3> Group Lead Climate

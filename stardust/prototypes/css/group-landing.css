@@ -1,0 +1,280 @@
+/* group-landing.css — A3 section-landing archetype (/en/the-group/).
+   New modules only; canon.css + index.css + article.css carry chrome/tokens.
+   Values lifted from stardust/replica/group-landing-outline-*.txt / deep probes. */
+
+/* page wrapper clips loosefield overhang (live: #page-wrapper{overflow:hidden}) */
+#page-wrapper { position: relative; max-width: 100%; overflow: hidden; }
+
+/* ================= grid (bootstrap-ish, lifted) ================= */
+.row { display: flex; flex-wrap: wrap; margin: 0 -12px; }
+.col { padding: 0 12px; }
+.col-4 { width: 33.333%; }
+.col-6 { width: 50%; }
+.col-8 { width: 66.667%; }
+.sub-container { width: 100%; }
+
+/* ================= stage carousel (sli01 / sta01--compact) ================= */
+.gl-stage { position: relative; height: 770px; }
+.gl-track { position: relative; height: 100%; overflow: hidden; }
+.gl-slide { position: absolute; inset: 0; }
+.gl-slide:not(.gl-slide--active) { opacity: 0; z-index: 0; }
+.gl-slide--active { z-index: 1; }
+.gl-sta { position: absolute; inset: 0; background-image: var(--grad); display: flex; }
+.gl-sta-image { position: absolute; inset: 0; background-size: cover; background-position: 50% 50%; }
+.gl-teaser-width {
+  position: relative; max-width: var(--container); margin: 0 auto; width: 100%;
+  padding: 0 0 110px; display: flex; align-items: center;
+}
+.gl-stage-box {
+  background-image: linear-gradient(45deg, rgba(29, 68, 119, 0.9) 22%, rgba(0, 161, 159, 0.75));
+  padding: 24px; border-radius: 6px; margin: 0 0 8px; max-width: 100%;
+  display: flex; flex-direction: column; justify-content: center; align-items: flex-start;
+}
+.gl-stage-box h1.headline { color: #fff; }
+.gl-stage-box h1.headline span { display: block; margin: 0 0 8px; }
+.gl-stage-box h3.subheadline { font-family: bold; font-size: 18px; line-height: 30px; margin: 0 0 24px; color: #fff; }
+.gl-stage-box .buttons-container { display: flex; }
+.gl-stage-box .buttons-container .btn { margin-right: 8px; }
+/* arrows */
+.gl-arrow {
+  position: absolute; top: 355px; width: 60px; height: 60px; padding: 1px 6px;
+  background: none; border: 0; cursor: pointer; z-index: 2;
+}
+.gl-arrow::before {
+  display: block; font-size: 42px; font-family: RWE_Icon_Font; font-weight: 800;
+  color: #fff; text-shadow: 0 0 6px #52555c;
+}
+.gl-prev { left: 9px; } .gl-prev::before { content: "\e911"; }
+.gl-next { right: 9px; } .gl-next::before { content: "\e918"; }
+/* dots */
+.gl-dots {
+  position: absolute; bottom: 32px; left: 0; right: 0; padding-left: 5px;
+  text-align: center; z-index: 2;
+}
+.gl-dots li { display: inline-block; margin: 0 5px; width: 20px; height: 20px; position: relative; }
+.gl-dots button {
+  display: block; width: 16px; height: 16px; padding: 0; margin: 2px;
+  border: 1px solid #fff; border-radius: 50%; background: transparent; color: transparent;
+  font-size: 0; cursor: pointer;
+}
+.gl-dots li.slick-active button { background-color: #fff; }
+
+/* ================= breadcrumb top ================= */
+.gl-breadcrumb-top .container { padding: 32px 0; }
+.gl-breadcrumb-top ol li {
+  display: inline; font-family: regular; font-size: 16px; line-height: 22px;
+  color: var(--teal); margin: 0 4px 0 0;
+}
+.gl-breadcrumb-top ol li.active { font-family: bold; }
+.gl-breadcrumb-top ol li.active::before {
+  content: "\e918"; font-family: RWE_Icon_Font; font-size: 14px; margin-right: 4px;
+}
+
+/* ================= anchor CTA rows (cta01) ================= */
+.gl-cta-row .container { padding: 32px 0; }
+.cta01--center { text-align: center; line-height: 0; }
+.btn--full { display: inline-block; width: 100%; max-width: 100%; overflow: hidden; }
+
+/* ================= centered intro (tic02) ================= */
+.gl-intro .container { padding: 32px 0; }
+.gl-intro .tic02--centered { margin: 0 0 32px; }
+.gl-intro .content h3 { font-family: bold; font-size: 24px; line-height: 32px; margin: 0; }
+.gl-intro-btn { display: table; margin: 24px auto 0; max-width: 100%; }
+
+/* ================= grey band: RWE introduces itself (grid-ext-02 / tea01r) ================= */
+.gl-band .container { padding: 32px 0; }
+.gl-band-head h2.headline { margin: 0; text-align: center; }
+.gl-cards .sub-container { padding: 32px 0 0; }
+.gl-cta-row--in-band .container,
+.gl-cta-row--in-band .sub-container { padding: 32px 0 0; }
+.gl-card { height: 100%; }
+.gl-card > a { display: flex; flex-direction: column; height: 100%; }
+.gl-card-media {
+  background-color: #c2c2c2; background-size: cover; background-position: 50% 50%;
+  aspect-ratio: 3 / 2;
+}
+.gl-card-hw { display: flex; flex: 1; }
+.gl-card-body {
+  padding: 24px; flex: 1; display: flex; flex-direction: column;
+  justify-content: space-between; align-items: flex-start;
+}
+.gl-card-body--white { background-color: #fff; color: var(--navy); }
+.gl-card-body--gradient {
+  background-image: url("../assets/media/combined-energy.png"), var(--grad);
+  background-position: 100% 100%, 0 0; background-repeat: no-repeat, repeat;
+  background-size: 240px 200px, auto;
+  color: #fff;
+}
+.gl-card-body h3.headline { color: inherit; }
+.gl-card-body p { color: inherit; margin: 0 0 24px; }
+.gl-card-btn { max-width: 100%; overflow: hidden; }
+.gl-card-body--white .gl-card-btn span { color: var(--teal); }
+.gl-card-body--gradient .gl-card-btn span { color: #fff; }
+
+/* ================= organisational structure head ================= */
+.gl-org-head .container { padding: 32px 0; }
+.gl-org-head h3.subheadline { font-family: bold; }
+
+/* ================= companies (grid-wrapper / tic01 / ll01 / lin01) ================= */
+.gl-companies > .container { padding: 32px 0; }
+.gl-company .sub-container { padding: 16px 0; }
+.gl-company--first .sub-container { padding: 0 0 16px; }
+.gl-company--last .sub-container { padding: 16px 0 0; }
+.gl-sep .sub-container { padding: 16px 0; }
+.gl-sep hr, .gl-quote hr {
+  border: 1px inset #808080; height: 0; background: none; margin: 0; overflow: hidden;
+}
+.gl-tick { position: relative; }
+.gl-tick h2.headline { color: var(--navy); }
+.gl-tick .content p { margin: 0 0 24px; }
+.gl-tick .content p sub {
+  font-size: 62%; line-height: 0; position: relative; vertical-align: baseline; bottom: -0.25em;
+}
+/* collapsed subsidiaries list (capture state: collapsed) */
+.content-extended { position: relative; height: 0; overflow: hidden; }
+.content-extended h3 { font-family: bold; font-size: 24px; line-height: 32px; color: var(--navy); }
+.content-extended p { margin: 0 0 16px; }
+.content-extended p a { color: var(--teal); }
+.content-extended hr { border: 0; height: 1px; background-color: #808080; margin: 0 0 10px; overflow: hidden; }
+.content-extended-arrow {
+  display: inline-flex; align-items: center; background: none; border: 0; padding: 0;
+  margin: 0 10px 24px 0; font-family: medium; font-size: 18px; line-height: 27px;
+  color: var(--teal); text-align: center; cursor: pointer;
+}
+.content-extended-arrow::before {
+  content: "\e910"; font-family: RWE_Icon_Font; font-size: 18px; display: block;
+  width: 18px; margin-right: 5px;
+}
+.content-extended-arrow .extended-arrow--open { display: none; }
+/* company image (zoomable) */
+.gl-zoomable { position: relative; }
+.gl-zoomable figure { margin: 0; }
+.gl-zoomable picture { display: block; }
+.gl-zoomable img { width: 100%; aspect-ratio: 3 / 2; object-fit: cover; display: block; }
+.gl-zoomable .image-caption { display: block; margin: 16px 0 0; font-size: 14px; line-height: 19.6px; color: #adafb1; }
+.gl-zoomable .zoom-btn { bottom: 16px; }
+
+/* ================= quote (quo01) ================= */
+.gl-quote .container { padding: 32px 0; }
+.gl-quote hr:first-child { margin: 0 0 32px; }
+.quo01 { margin: 0 0 32px; text-align: center; }
+.quo01 blockquote { margin: 0; padding: 0; }
+.quo01 h2.content {
+  font-family: light; font-weight: 700; font-size: 32px; line-height: 38px;
+  color: var(--navy); margin: 0; text-align: center;
+}
+.quo01 h2.content::before { content: "\""; }
+.quo01 h2.content::after { content: "\""; }
+
+/* ================= contact teaser (tea02r, grey) ================= */
+.gl-contact .container { padding: 32px 0; }
+.gl-tea02r > a { display: block; }
+.gl-contact-icon { width: 220px; height: 220px; margin: 0 auto 24px; }
+.gl-contact-icon div {
+  width: 100%; height: 100%;
+  background-size: contain; background-position: 50% 50%; background-repeat: no-repeat;
+}
+.gl-tea02r header { text-align: center; color: var(--navy); }
+.gl-tea02r header p { margin: 0 0 24px; }
+.gl-affordance {
+  display: flex; justify-content: center; font-family: medium; font-size: 18px;
+  line-height: 27px; color: var(--teal);
+}
+.gl-affordance::after {
+  content: "\e914"; font-family: RWE_Icon_Font; font-size: 18px; display: block;
+  width: 18px; margin-left: 10px;
+}
+
+/* footer quick links are mint on live (shared css renders white — page-scoped fix) */
+.page-group-landing .site-footer .f-links ul li a { color: var(--mint); }
+
+/* breadcrumbs: live shows non-active crumbs in regular, separator before active */
+.page-group-landing #breadcrumb-bottom ol li { font-family: regular; line-height: 22px; }
+.page-group-landing #breadcrumb-bottom ol li.active { font-family: bold; }
+.page-group-landing #breadcrumb-bottom ol li.active::before {
+  content: "\e918"; font-family: RWE_Icon_Font; font-size: 14px; margin-right: 4px; color: #fff;
+}
+
+/* ================= mobile ================= */
+@media (max-width: 767px) {
+  /* grid stacks; 16px rhythm between cells */
+  .row { display: block; margin: 0; }
+  .col { padding: 0; width: 100%; margin-bottom: 16px; }
+  .col:last-child { margin-bottom: 0; }
+
+  /* stage: photo strip on top, text on gradient below (no box) */
+  .gl-stage { height: auto; }
+  .gl-slide { position: relative; inset: auto; }
+  .gl-slide:not(.gl-slide--active) { display: none; }
+  .gl-sta { position: relative; inset: auto; display: block; }
+  .gl-sta-image { position: relative; inset: auto; height: 180px; }
+  .gl-teaser-width { max-width: none; padding: 0; display: flex; justify-content: center; align-items: stretch; }
+  .gl-stage-box {
+    background: none; border-radius: 0; width: 100%;
+    padding: 24px 24px 75px; margin: 0 0 8px;
+  }
+  .gl-stage-box h1.headline span { margin-bottom: 8px; }
+  .gl-stage-box h3.subheadline { font-size: 15px; line-height: 22px; margin: 0 0 16px; }
+  .gl-arrow { display: none; }
+  .gl-dots { bottom: 32px; }
+
+  /* breadcrumb top */
+  .gl-breadcrumb-top .container { padding: 16px; }
+
+  /* section paddings: 16 all around at mobile */
+  .gl-cta-row .container,
+  .gl-intro .container,
+  .gl-band .container,
+  .gl-org-head .container,
+  .gl-companies > .container,
+  .gl-quote .container,
+  .gl-contact .container { padding: 16px; }
+
+  .gl-cards .sub-container { padding: 16px 0 0; }
+  .gl-cta-row--in-band .container,
+  .gl-cta-row--in-band .sub-container { padding: 16px 0 0; }
+
+  /* intro */
+  .gl-intro .tic02--centered { margin: 0 0 16px; }
+  .gl-intro .content h3 { font-size: 18px; line-height: 24px; margin: 0 0 16px; }
+  .gl-intro-btn { margin: 16px 0 0; display: inline-block; width: 100%; }
+
+  /* cards */
+  .gl-card-media { aspect-ratio: 328 / 219; }
+  .gl-card-body { padding: 16px; }
+  .gl-card-body p { margin: 0 0 16px; }
+
+  /* companies: nested container double-pad (296 prose) */
+  .gl-company .sub-container { padding: 8px 16px; }
+  .gl-company--first .sub-container { padding: 0 16px 8px; }
+  .gl-company--last .sub-container { padding: 8px 16px 0; }
+  .gl-sep .sub-container { padding: 8px 16px; }
+
+  .gl-tick .content p { margin: 0 0 16px; }
+  .content-extended h3 { font-size: 18px; line-height: 24px; }
+  .content-extended-arrow { font-size: 15px; line-height: 22px; margin: 0 10px 16px 0; }
+  .gl-zoomable img { aspect-ratio: 296 / 197; }
+
+  /* quote */
+  .gl-quote hr:first-child { margin: 0 0 16px; }
+  .quo01 { margin: 0 0 16px; }
+  .quo01 h2.content { font-size: 24px; line-height: 28px; }
+
+  /* contact */
+  .gl-contact-icon { width: 150px; height: 150px; margin-bottom: 16px; }
+  .gl-tea02r header p { margin: 0 0 32px; }
+  .gl-affordance { font-size: 15px; line-height: 22px; }
+  .gl-affordance::after { font-size: 15px; width: 15px; }
+
+  /* loosefield art hidden on mobile (live) */
+  .page-group-landing .loosefield-blue,
+  .page-group-landing .loosefield-green { display: none; }
+
+  .page-group-landing #breadcrumb-bottom ol li { font-size: 16px; }
+  .page-group-landing #breadcrumb-bottom ol { padding: 17px 0 16px; }
+
+  /* footer rhythm at 360 measured off live (page-scoped) */
+  .page-group-landing .site-footer .f-top { padding-top: 19px; }
+  .page-group-landing .site-footer .talk-to-us h3 { margin: 15px 0 16px; }
+  .page-group-landing .site-footer .f-top > .f-section:last-child { padding-top: 18px; }
+}

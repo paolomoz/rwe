@@ -1,0 +1,15 @@
+{
+ "canvases": [],
+ "iframes": [],
+ "leaflet": false,
+ "gmap": false,
+ "htm01": [
+  {
+   "cls": "",
+   "html0": "\n    <style>\n          .gm-style-iw-chr {\n            height: 0;\n          }\n</style>\n"
+  }
+ ],
+ "locationClassSample": "location-browser",
+ "globals": [],
+ "resultClasses": []
+}

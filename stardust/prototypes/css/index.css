@@ -479,3 +479,61 @@
 @media (max-width: 767px) {
   .press-item header { padding: 7px 12px; }
 }
+
+/* ============================================================
+   Shared-chrome corrections promoted from archetype runs A2-A6
+   (each independently confirmed against live by 3-4 agents):
+   - footer link columns render MINT on live, not white
+   - footer link size is 15px at mobile (unscoped 18px was winning)
+   - breadcrumb trail: regular weight, bold active, \e918 separators,
+     16px/27px line (59px bar), mobile ol pad 16px 0 (no double-pad)
+   - copyright is 18px (15px mobile), not body 22px
+   ============================================================ */
+.site-footer .f-links ul li a {
+  color: var(--mint);
+}
+
+@media (width <= 767px) {
+  .site-footer .f-links ul li a {
+    font-size: 15px;
+  }
+}
+
+.site-footer .copyright span {
+  font-size: 18px;
+}
+
+@media (width <= 767px) {
+  .site-footer .copyright span {
+    font-size: 15px;
+  }
+}
+
+#breadcrumb-bottom ol li {
+  font-family: regular, rwe-fallback, sans-serif;
+  font-size: 16px;
+  line-height: 27px;
+}
+
+#breadcrumb-bottom ol li.active {
+  font-family: bold, rwe-fallback, sans-serif;
+}
+
+#breadcrumb-bottom ol li + li::before {
+  content: '\e918';
+  font-family: RWE_Icon_Font;
+  font-size: 12px;
+  font-weight: 700;
+  color: #fff;
+  margin-right: 4px;
+}
+
+@media (width <= 767px) {
+  #breadcrumb-bottom ol {
+    padding: 16px 0;
+  }
+
+  #breadcrumb-bottom ol li {
+    line-height: 22px;
+  }
+}

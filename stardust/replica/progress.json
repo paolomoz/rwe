@@ -227,6 +227,411 @@
           "flaggedFor": "delivery"
         }
       ]
+    },
+    "press-hub": {
+      "archetype": "press-hub",
+      "liveUrl": "https://www.rwe.com/en/press/",
+      "prototype": "stardust/prototypes/press-hub-proposed.html",
+      "gates": {
+        "360": {
+          "pixelPct": 2.2,
+          "heightDelta": 4,
+          "iterations": 6,
+          "pass": true
+        },
+        "1440": {
+          "pixelPct": 1.01,
+          "heightDelta": 3,
+          "iterations": 5,
+          "pass": true
+        }
+      },
+      "contentDiff": {
+        "reds": 42,
+        "verdict": "0 unjustified. All 42 structural reds fall into brief-justified classes: (1) 6 MISSING CTA press-release tiles + 6 matching EXTRA paired by identical href (source concatenates tile text without whitespace, build has element whitespace — normalization artifact of class (a)); (2) 2 MISSING CTA teaser cards whose source text is the live inline <style> with per-load random data-image-id + matching EXTRA by href (brief class (a) verbatim); (3) ~31 reds (LinkedIn/Instagram 'See original post', 'Show more…' eyebrows/role-swaps, '(enlarge visible text above)', social icon links, flockler skip link) all inside the consent-gated flockler social wall which only exists because the probe's --dismiss ACCEPTS cookies; the gate reference is the deny state where live renders the placeholder text my build reproduces verbatim (brief consent-state class). Hidden 'Show more' information-content bodies of the 3 events were mirrored verbatim (incl. nbsp) as hidden nodes. Remaining orange: FONT FORK on slick dot digits '1-4' (font-size:0 UI internals, video.js-class cosmetic)."
+      },
+      "visualDiff": "no red flags (advisory: none) — evidence in stardust/replica/gates/press-hub-1440/vdiff/",
+      "newModules": [
+        "listing-* (generic blanko-overview modules for all listing hubs): listing-filter (react-select dropdowns, flatpickr date inputs, search+button as styled inert widgets), listing-count (+RSS button), listing-tile result cards (teal tag badge, 3:2 image, date, Read more affordance), listing-more (count + Load more)",
+        "hub-hero (sli01 stage carousel @770px desktop/575px mobile, fade, reuses index.css .hero + replica.js)",
+        "country-slider (sli01 text carousel, frozen per-breakpoint state, all 4 slides in DOM)",
+        "topic-card (tea03r no-media color cards, gradient/white variants with combined-energy print)",
+        "listing-events (el01: teal date boxes 180×180 desktop / 64px bar mobile, Essen/Save-event mask-icon buttons, Show more accordions collapsed)",
+        "interest-card (tea01r image + 256px gradient/grey body)",
+        "quick-nav (cta01 4-up anchor buttons), hub-intro, hub-social placeholder, team-band (con01)"
+      ],
+      "integrations": [
+        "Press-release result list, filter widgets (Topics/Company/Energy Sources dropdowns, From/Until date range, search term) and 'Load more' pagination are RENDERED first-page state, inert — delivery wires them to the `press` query-index per stardust/dynamic-blocks-map.md",
+        "RWE @ Social Media wall (flockler embed) is consent-gated; deny-state placeholder text replicated verbatim — delivery keeps consent placeholder behavior",
+        "Save event / location buttons and 'All events' link belong to the events feed (dates-and-events)",
+        "RSS feed link on the result count row"
+      ],
+      "captureState": [
+        "Countries carousel frozen to the gate captures: slide 1 (Australia/Benelux/Denmark, dot 1 active) at 1440; slide 2 (France/Ireland/Italy, dot 2 active) at 360 — breakpoint-scoped CSS selects the visible slide; slides 3-4 (Japan/Poland/Spain, UK/U.S.A.) present in DOM aria-hidden",
+        "Hero sli01 frozen at slide 1 'Press & News' (stitch-shot dot reset); slides 2-4 (H1 2026 results, 2026 AGM, Q1 2026 results) in DOM, replica.js drives fade",
+        "'Until' filter value frozen at 27.08.2026 = capture date; live prefills the current date per load (permanent residual on future probes)",
+        "Result counts frozen: '885 results were found.', '6 / 885'",
+        "Consent placeholder text ('You currently have not allowed the cookies …') replicated verbatim (deny state)"
+      ],
+      "residuals": [
+        {
+          "band": "6500-7050 @1440 / 10500-11806 @360 (footer)",
+          "pct": 3.5,
+          "cause": "shared footer internals: live press footer measures ~1614px @360 vs shared prototype footer 1597px; spacing partially compensated page-locally (+15px), link color/size compensated (mint 15px vs white 18px from index.css)"
+        },
+        {
+          "band": "listing tiles / interest teasers",
+          "pct": 1.5,
+          "cause": "photography edge anti-aliasing + combined-energy wave print ghosting at slightly different raster"
+        },
+        {
+          "band": "grey bands",
+          "pct": 0.5,
+          "cause": "loosefield art randomized per live load; positioned from gate capture per brief"
+        }
+      ],
+      "sharedFileFindings": [
+        "index.css: `.site-footer .f-links ul li a { font-size:18px; line-height:22px }` is not media-scoped and loads after canon.css, overriding canon's mobile 15px rule; no rule colors footer links, so they render white while live renders mint #3ed8c3 (15px at 360). Home/article prototypes exhibit the same divergence (small pixel cost). Compensated in css/press-hub.css only.",
+        "index.css #breadcrumb-bottom: renders 61px tall (line box 29) vs live 59, styles all trail items bold while live uses regular + bold active, and has no chevron separators (live shows '›'). Compensated page-locally in press-hub.css.",
+        "stitch-shot fullpage follows body scrollWidth: grey-band loosefield images with right:-3xx px widen the capture (1760px at 1440) unless the band clips them; live clips at the band. Added overflow:hidden on my bands; other archetypes copying the index.css loosefield pattern may hit the same 1760px capture."
+      ],
+      "notes": "Header is the solid-gradient article variant; hero is a 770px sli01 stage (not 900 like home) sitting OUTSIDE <main> on live. Key live facts encoded in css/press-hub.css: live hr boxes are 2px; the filter grid has an invisible tag-row contributing one extra gutter (24px desktop / 16px mobile) before the count header; result tiles stretch per flex row (image 66.67% + content pad 24 + title mb8 + footer 27+24+27+24); event descriptions keep font-size 18px (line-height 22) at mobile — drives their 3/4-line wraps; mobile nested-grid content is 296 wide (double 16px pad) for quick-nav/intro/listing/dates while band-level modules are 328. Hook-flagged replica-lifted colors: #b5b7b8 (live hr), rgba(243,243,242,0.8) (live tile bg) — intentional source-fidelity values, not design-system drift."
+    },
+    "group-landing": {
+      "archetype": "group-landing",
+      "liveUrl": "https://www.rwe.com/en/the-group/",
+      "prototype": "stardust/prototypes/group-landing-proposed.html",
+      "css": "stardust/prototypes/css/group-landing.css",
+      "gates": {
+        "360": {
+          "pixelPct": 3.38,
+          "heightDelta": 6,
+          "iterations": 5,
+          "pass": true
+        },
+        "1440": {
+          "pixelPct": 2.22,
+          "heightDelta": 2,
+          "iterations": 4,
+          "pass": true
+        }
+      },
+      "contentDiff": {
+        "reds": 7,
+        "unjustifiedReds": 0,
+        "verdict": "95/95 text nodes, 11/11 headings, 54/54 CTAs, 30/30 body, 11/11 img. All 7 structural reds are the known justified class (a): live inline <style data-image-id=…> with per-load random ids inside tea01r/tea02r card links makes source CTA text start with style text → 7 MISSING CTA each with a matching EXTRA build link on the identical href (purpose-and-strategy, responsibility-and-sustainability, countries-and-locations, compliance, diversity-at-rwe, dates-and-events, contact-services)."
+      },
+      "visualDiff": "no red flags (advisory: none). Metrics parity: mainHeight 5406 vs 5407, textLen 6968 vs 6967 (1 char), headings/eyebrows/flushText SAME, contentBoxes same geometry (class-name labels differ), images same rendered boxes (live loads smaller loosefield srcset variant, same 400px render).",
+      "newModules": [
+        "sli01/sta01--compact stage variant (770px under solid gradient header, 2 slides, gradient stage-box, mobile 180px photo strip + gradient text block)",
+        "breadcrumb-top (teal, regular/bold, \\e918 separator, white bg)",
+        "cta01 full-width anchor button rows (grid-bas-03)",
+        "tic02 intro with inline h3 + display:table centered solid CTA",
+        "tea01r card grid in grey grid-ext-02 band (color-teaser-1 white / color-teaser-6 gradient+combined-energy variants, equal-height flex rows, hea01 band head)",
+        "tic01 company block (h2>span, collapsed content-extended subsidiaries accordion with ll01 link list + lin01 rules, content-extended-arrow button, cta01)",
+        "zoomable company image (3:2 cover, hover zoom button reused from article.css)",
+        "quo01 quote module (blockquote>h2.content, font-family light 32/38, CSS quote marks, hr rules)",
+        "tea02r contact teaser (220px contain icon, centered header, arrow affordance)"
+      ],
+      "integrations": [],
+      "interactions": [
+        "sli01 stage carousel: autoplay/arrows/dots (frozen on slide 1; slide 2 mirrored, hidden)",
+        "content-extended-arrow: expands collapsed Subsidiaries list (label toggles Subsidiaries/Show less); replica ships collapsed state with full link lists in DOM (height:0 overflow:hidden, as live)",
+        "image zoom (pinch-zoom overlay) on company images; zoom button is hover-only (opacity 0) as live",
+        "anchor scroll for #this-is-rwe / #organisational-structure"
+      ],
+      "captureState": [
+        "consent deny state (no consent-gated embeds on this page)",
+        "carousel frozen at slide 1 of 2",
+        "subsidiaries accordions collapsed (live default)",
+        "loosefield art positioned from probe capture (live randomizes per load)"
+      ],
+      "residuals": [
+        {
+          "band": "360 y500-1500",
+          "pct": 9.2,
+          "cause": "1-2px sub-pixel line-box offsets ghosting dense 15px text (stage box, breadcrumb, intro paragraph); zone x-corr shows +-1px alignment, no structural offset"
+        },
+        {
+          "band": "1440 y7000-7338",
+          "pct": 4.5,
+          "cause": "cumulative 2px page-height offset over footer link text + endorsement mark (shared gated footer)"
+        },
+        {
+          "band": "360 y9500-11000",
+          "pct": 6.4,
+          "cause": "footer icon/text antialiasing at +-1px after page-scoped rhythm fixes; shared footer"
+        },
+        {
+          "band": "grey band cards",
+          "pct": 3.4,
+          "cause": "JPEG re-encode differences in card photos + combined-energy wave overlay scale approximated at 240x200 (live value not exposed in computed styles)"
+        },
+        {
+          "band": "loosefield art",
+          "pct": 0.3,
+          "cause": "positions randomized per live load; frozen from probe capture (permanent residual per brief)"
+        }
+      ],
+      "sharedFileFindings": [
+        "css/index.css: .site-footer .f-links ul li a renders white, but live renders these quick-links mint #3ed8c3 (verified by pixel sampling on /en/the-group/ at 1440 and 360; likely site-wide, so home/article gates absorbed it). Fixed page-scoped in group-landing.css (.page-group-landing .site-footer .f-links ul li a { color: var(--mint) }).",
+        "css/index.css: #breadcrumb-bottom li all bold; live renders non-active crumbs regular with \\e918 separator before active. Fixed page-scoped.",
+        "stitch-shot fullpage uses body scrollWidth: absolutely-positioned loosefield overhang (right:-337px) inflated capture to 1777px until the live #page-wrapper{overflow:hidden} wrapper was mirrored — other archetypes with .band loosefields may want the same wrapper."
+      ],
+      "notes": "Live stage + top breadcrumb sit OUTSIDE <main> (main starts y991@1440 / y579@360); replica mirrors that. Page height 7340@1440 (proto 7338), 11214@360 (proto 11208). CO2 <sub> needed normalize-style sub rule (live p stays 6x27). Mobile nested company containers double-pad to 296px prose as per brief. Footer share URLs updated to the-group permalinks. Sanctioned lifted colors outside DESIGN.md palette: #808080 (live hr rule color), matching precedent (#adafb1/#c2c2c2/#52555c) already in gated shared CSS; no hook-admin.mjs present in repo to persist the ignore."
+    },
+    "content-page": {
+      "archetype": "content-page",
+      "liveUrl": "https://www.rwe.com/en/responsibility-and-sustainability/environmental-protection/climate/",
+      "prototype": "stardust/prototypes/content-page-proposed.html",
+      "gates": {
+        "360": {
+          "pixelPct": 3.79,
+          "heightDelta": 0,
+          "iterations": 4,
+          "pass": true
+        },
+        "1440": {
+          "pixelPct": 1.14,
+          "heightDelta": 1,
+          "iterations": 7,
+          "pass": true
+        }
+      },
+      "contentDiff": {
+        "reds": 5,
+        "verdict": "0 unjustified. All 5 reds are the documented justified class (a): live inline <style> with per-load random data-image-id is captured as the card-link CTA text, producing MISSING CTA + matching build EXTRA for the same href (5 teaser cards). Remaining yellows: schema.org JSON-LD + inline style bodies (non-visual), stage h1/CTA classified body-vs-heading."
+      },
+      "visualDiff": "EDS red flags: none (1440, deny-consent state). mainHeight differs by design: live keeps the sta01 stage outside <main>, replica keeps it inside; all heading colors/sizes, image dims and grid boxes match.",
+      "newModules": [
+        "page-stage (sta01--compact lightImage: full-bleed image stage, gradient fallback box, h1 + reverse CTA; mobile = 50% image strip + copy on gradient)",
+        "breadcrumb-top (teal in-page breadcrumb with \\e918 separators)",
+        "quick-nav (cta01 btn--full-width teal anchor-button grid, 2 rows x 3)",
+        "text-module (rwe-tick01 prose: h2 with color__font-- spans, strong lead-ins, nbsp preserved)",
+        "icon-tiles (it01: 5x220px gradient flip-tiles radius 25, hidden white content layer + closer; mobile 110px covers with arrow-down opener)",
+        "teaser-card (tea01r 3-up: 3:2 image + grey/gradient combined-energy header, bottom-pinned reverse CTA) + teaser-plain (tea00n image-only cell, hidden on mobile)",
+        "download-list (ll01 variant of article downloads with #ccc separators)",
+        "contact-inline (con01--centered: offset name/role/mail CTA in grey band)",
+        "cp-band (grey band with loosefield art, overflow-x clip / overflow-y visible so art bleeds below the band as on live)"
+      ],
+      "integrations": [],
+      "captureState": [
+        "Consent deny state (Deny all) on both sides; no consent-gated embeds on this page",
+        "Loosefield band art is randomized per live load; positions template-matched against the frozen gate capture (C-blue 1389/249, C-green -349/376, F-blue -328/29, F-green 1390/169)",
+        "it01 tile flip-content replicated in DOM but hidden (opacity 0 desktop / height 0 mobile), matching live default state; tile open/close is JS interaction for delivery",
+        "Quick-nav anchors (#targets #approach #projects #cutting-other-emissions #further-information #contact) replicated as inert named anchors"
+      ],
+      "residuals": [
+        {
+          "band": "1440 y3000-4000",
+          "pct": 3,
+          "cause": "teaser-card photos at 1px fractional x/y offset (live 33.3% col cap = 397.602px cells) -> high-frequency resample noise; plus loosefield arc art at band edges (randomized live positions, frozen approximation)"
+        },
+        {
+          "band": "1440 y2500-3000",
+          "pct": 1.9,
+          "cause": "tile gradient/radius antialiasing + band arc art"
+        },
+        {
+          "band": "360 y7500-8500",
+          "pct": 7.7,
+          "cause": "shared footer chrome mobile internals: ±2px text offsets after page-scoped rhythm fixes; second icon row sits ~9px lower on live"
+        },
+        {
+          "band": "360 y1000-2000",
+          "pct": 5.5,
+          "cause": "15px text subpixel AA (bold lead-ins flag red at 1px offset); wraps identical"
+        },
+        {
+          "band": "360 y3500-4000",
+          "pct": 5.4,
+          "cause": "card photos at 328px width, 1px offsets"
+        }
+      ],
+      "sharedFileFindings": [
+        "index.css: .site-footer .f-links ul li a renders white; live renders mint #3ed8c3 (affects home/article gates too) — overridden page-scoped in content-page.css",
+        "index.css: #breadcrumb-bottom ol li is font-family:bold for ALL items; live is regular with only li.active bold, and li have \\e918 ::before separators (missing in index.css) — added page-scoped",
+        "index.css mobile: #breadcrumb-bottom ol{padding:16px} double-pads with the nav's 0 16px -> 296px trail (3 lines); live is padding:16px 0 -> 328px (2 lines) — overridden page-scoped",
+        "index.css mobile footer rhythm drifts up to 16px vs live (f-top padding-top 22 not 16, recommend h2 mb 18, f-recommend mb 12, talk-to-us h3 margin-top 18, legal nav li mb 16 not 19, copyright needs +18 margin-top) — patched page-scoped; article 360 gate likely carried these diffs",
+        "article.css: .downloads h3{margin-bottom:24px} unscoped; live mobile uses 16px — overridden page-scoped",
+        "article.css: .zoomable figure{margin-bottom:16px} conflicts with live figcaption spacing (margin-top 16 on figcaption, figure display inline-block) — overridden page-scoped with display:flow-root",
+        "index.css desktop: .f-links .accordion-content padding-top 40px; live is 42px — overridden page-scoped (min-width 768)"
+      ],
+      "notes": "Survey flagged acc01/59 accordion markers, but all acc01 instances live inside the hidden global-navigation chrome (menu overlay), not in the visible page: no accordion module is needed for this archetype's visible content. it01 tiles keep generic .icon-tiles/.tile-* class names for reuse on location-detail/rwe-share variants. hr on live renders as a 2px box (1px border + 1px hidden content) — with border-box you must set height:2px. .cp-cards-zone .cell{display:flex} outspecifies .cell--plain{display:none}; scoped selector used. impeccable hook: '#ccc' download separators flagged as off-palette; it is the lifted live value (204,204,204) — ignore could not be persisted (hook-admin blocked by permission classifier)."
+    },
+    "locations-map": {
+      "archetype": "locations-map",
+      "liveUrl": "https://www.rwe.com/en/the-group/countries-and-locations/",
+      "prototype": "stardust/prototypes/locations-map-proposed.html",
+      "gates": {
+        "360": {
+          "pixelPct": 2.41,
+          "heightDelta": 3,
+          "iterations": 5,
+          "pass": true
+        },
+        "1440": {
+          "pixelPct": 0.82,
+          "heightDelta": 0,
+          "iterations": 6,
+          "pass": true
+        }
+      },
+      "contentDiff": {
+        "reds": 2,
+        "verdict": "PASS — both structural reds are the brief's cited justified class (a): live inline <style> with per-load random data-image-id inside the two teaser links (location-video-portraits, contact-services) reads as MISSING CTA, with matching EXTRA build links by href. The 1 yellow is live's .gm-style-iw-chr <style> text counted as body copy. 718/718 location cards, 722 headings, 20 CTAs, 721 images matched on both sides."
+      },
+      "visualDiff": "No structural flags: heading tags/sizes/colors/fonts identical both sides, all content rails 1170@135, fonts loaded. Only divergence: live main is +52px (3421 vs 3369) because the probe's --dismiss ACCEPTS consent, which boots the consent-gated Google Maps SDK (96 gm tile images appear on the live side). The gate reference is the deny state (no map), which the prototype matches exactly.",
+      "newModules": [
+        "lmhero (sli01 stage carousel, sta01--compact variant: full-bleed image + gradient fallback box, 4 slides frozen on slide 1)",
+        "lm-intro / lm-btnrow (cta01 country-button grid, 15 solid-teal full-width buttons)",
+        "lm-mapintro (tic01 headed prose)",
+        "lm-filter (map-tool search filter: react-select replicas, search-term input + teal button, collapsed 'Additional filter options' accordion — styled inert widgets)",
+        "lm-switch / lm-toggle (718-results count + Map/List pill toggle frozen in List state)",
+        "lm-listview (grey 580px list browser: A-Z sort button, 718 location-list-cards with colour-coded pin SVGs, active '360 Solar' card scaled+bordered, detail tile with image/basic-info/address/read-more, clipped at 480px like live)",
+        "lm-disclaimer (14px Google-data small print between lin01 rules)",
+        "lm-video-teaser (tea01r image-right teaser with gradient caption box)",
+        "lm-contact-band (tea02r centred icon teaser on grey band with frozen loosefield art)"
+      ],
+      "integrations": [
+        "locations map widget (htm01/new-map-tool): live is a React map-tool reading a locations API; map view is Google Maps JS, consent-gated. In the deny-state gate reference the widget renders pure DOM List View — replicated as inert DOM (all 718 cards verbatim, frozen '718 results' count, frozen detail tile). Delivery wires the real map + facets against the 'locations' query-index per stardust/dynamic-blocks-map.md; no canvas/tiles existed to freeze, so no screenshot-background placeholder was needed.",
+        "filter facets (Location type / Country-Region / Search term / Additional filter options): styled inert controls replicating captured state; delivery implements them against the locations index."
+      ],
+      "captureState": [
+        "consent deny-state (Deny all) per brief — map JS never boots, List View DOM is the reference",
+        "carousel frozen on slide 1 of 4 (slides 2-4 present in DOM, hidden, as on live)",
+        "'718 results' count frozen from capture (live value is API-driven)",
+        "list frozen at scroll top: cards 1-4 visible, card 4 clipped at the 480px container; detail tile clipped below the address border, as captured",
+        "no scrollbars replicated: macOS overlay scrollbars were not painted in the live capture"
+      ],
+      "residuals": [
+        {
+          "band": "y 3000-3500 @1440 (1.8%) / y 3000-3500 @360",
+          "pct": 1.8,
+          "cause": "TEA-standorte-virtuell world-map image resampling speckle (served rendition vs live srcset variant) + ±1px AA on 14px disclaimer type"
+        },
+        {
+          "band": "y 2500-3000 @1440 (1.4%)",
+          "pct": 1.4,
+          "cause": "±1px text AA in list cards/detail tile and detail-image resampling; card geometry verified aligned to ±1px"
+        },
+        {
+          "band": "contact band loosefield art",
+          "pct": 0.4,
+          "cause": "permanent residual: loosefield art randomized per live load; frozen to this capture (blue field only, left:-331/top:65; green absent in the reference load)"
+        },
+        {
+          "band": "y 5000-5212 @1440 legal bar (1.7%)",
+          "pct": 1.7,
+          "cause": "font AA on legal links + copyright; positions aligned to ±1px"
+        },
+        {
+          "band": "360 height delta 3px",
+          "pct": 0,
+          "cause": "sub-pixel rounding accumulated across footer sections (every landmark within ±2px)"
+        }
+      ],
+      "sharedFileFindings": [
+        "index.css: .site-footer .f-links ul li a is 18px at all widths, but live renders 15px/22px at mobile (canon.css's mobile 15px rule is overridden by the later-loaded index.css base rule). Fixed scoped as .page-locations …; article-proposed likely shows the same mobile footer-link oversize.",
+        "index.css/article footer: live footer link-column links are mint (#3ed8c3), not white; article-proposed renders them white (inherit). Fixed scoped for this page.",
+        "article-proposed.html footer: .endorsement div is empty, but live shows a white RWE logo svg next to the copyright; added on this page.",
+        "index.css: .site-footer .copyright span inherits 22px body size; live renders 18px.",
+        "index.css: #breadcrumb-bottom ol has no font-size/line-height, so the 22px body strut makes the bar 61-62px instead of live's 59px (fixed scoped: font-size 16/line-height 27).",
+        "index.css: .site-footer .talk-to-us h3 margin-top collapses away at mobile; live keeps the 8px gap (fixed scoped via padding-top).",
+        "index.css: live's footer f-links section has ~2px more top padding and .f-recommend ~3px more bottom margin at desktop than the article prototype values (fixed scoped)."
+      ],
+      "notes": "Map freeze policy applied: in the deny-consent reference state the htm01 widget is pure DOM (no canvas, no tiles, no leaflet/gmaps globals — verified by probe), so the visible List View was replicated structurally, not as a screenshot. All 718 location cards generated verbatim from the live DOM (5 pin colours extracted as SVG assets). Widget styles lifted from the live map-tool CSS chunks (index/Multiselect/ToggleSwitch/SearchInput/Accordion/Label/ScrollableContainer .20260811.5.css). Breadcrumb chevron separators replicated (live shows them; scoped to .page-locations). Live hits used: 2 gate captures + 3 probes + 3 milestone probe runs, all paced ≥3s."
+    },
+    "job-search": {
+      "archetype": "job-search",
+      "liveUrl": "https://www.rwe.com/en/rwe-careers-portal/job-offers/",
+      "prototype": "stardust/prototypes/job-search-proposed.html",
+      "gates": {
+        "360": {
+          "pixelPct": 3.46,
+          "heightDelta": 1,
+          "iterations": 7,
+          "pass": true
+        },
+        "1440": {
+          "pixelPct": 0.86,
+          "heightDelta": 1,
+          "iterations": 7,
+          "pass": true
+        }
+      },
+      "contentDiff": {
+        "reds": 3,
+        "verdict": "0 unjustified. (1) MISSING CTA 'Grid Modeling Manager' + (2) 'Preconstruction Manager': live job list rotated between the gate ground-truth capture and the milestone probe — cards are FROZEN to the pixel ground truth (live.png), matching EXTRA entries 'Software & Data Engineer d/w/m' / 'Commercial Analyst - Analytics, Strategy & Projects' are the frozen counterparts (permanent residual: live data). (3) MISSING CTA '@media…data-image-id' -> /what-we-offer/: known justified class (a) from the brief — live per-load random data-image-id inline <style> inside card links, matching EXTRA by same href. Yellows are inert-widget internals (hidden select option lists, off-canvas mobile filter drawer incl. 'Refine search', full country/city facet lists) frozen to captured visible state."
+      },
+      "visualDiff": "EDS red flags: none (stardust/replica/gates/job-search-1440/vdiff/, visual-diff.txt)",
+      "newModules": [
+        "job-hero (hea01 h1 + gradient-green h2 highlight)",
+        "cvm-teaser (tea01r video teaser + gradient caption + impact-print art)",
+        "jic-count (jic01 result-count heading)",
+        "src-header (sde01 sort select as styled inert widget + tfb01 show-my-favorites link)",
+        "job-results / n-jrt01 cards (facility badge, flag/globe+city, clock+working-time, apply-now affordance, favourite heart button, More CTA, load-more)",
+        "job-side (jar01 job-alerts teaser with opacity-.4 CTA + n-jfc01 filter panel: 2 visible + 4 hidden filter selects, show-more-filters toggle, ses01 keyword input + search button — all styled INERT)",
+        "htm-band (rwe-cv-matcher embed slot, renders 1px empty at capture)",
+        "note-band (lin01 hr + tic01 footnote)",
+        "explore-band (grid-ext-02/grid-bas-05 tea01r 3-up cards, gradient/white bodies, mw=479 mobile renditions)"
+      ],
+      "integrations": [
+        "Jobs query API: POST https://www.rwe.com/api/jobborse/entities/v1 — JSON body { skip:0, take:'9', SortType:'Created_tdt desc', LogoContainerId:'0212b60d-b1c6-47b6-8cd4-f75dcaf7a55b', ExperienceLevel… } (Solr-style sort fields seen in sde01 select: Created_tdt, Facility_t, ProductService_t, CustomField1_s, CountryIso2_s, City_s); powers result list + Load more (skip/take pagination)",
+        "Filter facets API: GET https://www.rwe.com/api/jobborse/values/v1 — returns dropdown values for Experience Level / Functional Area / Company / Country-Region / City / Working time model (full option lists captured in stardust/replica/job-search-frozen-1440.json → njfc)",
+        "Jobs total: GET https://096wvaisra.execute-api.eu-central-1.amazonaws.com/prod/jobs_total (AWS API Gateway, fetched by CV-matcher webcomponent)",
+        "CV Matcher: <rwe-cv-matcher> web component from https://prod-rwe-cv-matcher.d1cq0w2e273tz2.amplifyapp.com/webcomponent.js, launched via javascript:RweCVMatch.start('en') from the teaser CTA; renders 0x0 in captured (consent-denied) state — reproduced as empty 1px htm01 slot, INTEGRATION PLACEHOLDER",
+        "Apply-now deep links: https://career5.successfactors.eu/career?company=rweProd&career_ns=job_application&career_job_req_id=<id>&lang=<loc>&jobPipeline=CMS_Jobsearch (SAP SuccessFactors ATS)",
+        "Job detail template: /en/rwe-careers-portal/job-offers/details/?id=<reqId>-<locale>&utm_campaign=CMS_Jobsearch…",
+        "Favorites: /en/rwe-careers-portal/job-offers/my-favourites/ (heart buttons toggle per-card favourite state)",
+        "Job Alerts: jar01 form-v3 modal registration ('Registration for our careers newsletter', fields GivenName/Surname/Email, hidden at capture; markup preserved in job-search-frozen-1440.json → jar)",
+        "Chrome-level XHR: GET /en/api/sitecore/Navigation/GetNavigationModel/, GET /NjkTemplates/MegaMenu__List-Item.html",
+        "Language switch (las01r): /karriere-bei-rwe/job-angebote-finden/",
+        "Analytics/consent: usercentrics (lrfueDZgn), GTM, etracker — not replicated",
+        "Full request log: stardust/replica/job-search-net-1440.json"
+      ],
+      "captureState": [
+        "Job result cards (9) frozen VERBATIM to the gate ground-truth capture (live.png, deny-consent). The live list rotated between capture and probe: two probe-time cards (Grid Modeling Manager 93362, Preconstruction Manager 93342) are replaced in the ground truth by 'Software & Data Engineer d/w/m' and 'Commercial Analyst - Analytics, Strategy & Projects', whose detail hrefs/req-ids were NOT capturable — reconstructed as plausible ids (93245-de_DE, 93298-en_GB), flagged for delivery-phase wiring",
+        "'210 Jobs of total 210 Jobs' count frozen",
+        "Search form + filters are styled INERT widgets in captured state (Sort='Newest', filters='All data', 4 more-filters hidden behind 'Show more filters', empty Keywords input)",
+        "Job Alerts 'Save and register' button captured disabled (opacity .4)",
+        "360: filter panel/job-alerts are a position:fixed off-canvas drawer + 'Refine search' bottom bar on live; NOT painted in fullpage captures — replicated hidden (.job-side display:none), drawer markup not reproduced at 360",
+        "CV-matcher video teaser paused at t=0 by the capture instrument (symmetric)"
+      ],
+      "residuals": [
+        {
+          "band": "1440 y4000-5000 (explore band)",
+          "pct": 2,
+          "cause": "impact-print SVG arc art: dense thin concentric lines ghost at sub-pixel offsets (live rotated/scaled fractional placement); photos resample sub-pixel"
+        },
+        {
+          "band": "1440 y5000-5569 (footer)",
+          "pct": 2.3,
+          "cause": "shared-chrome footer: 1px text ghosting; live footer on this page renders mint link columns + RWE endorsement mark — fixed page-scoped; remaining sub-pixel"
+        },
+        {
+          "band": "360 y3500-4000",
+          "pct": 9.3,
+          "cause": "explore card photos: live serves mw=479 Sitecore renditions (replicated) but server resample vs browser resample still ghosts; footnote text wrap 1px"
+        },
+        {
+          "band": "360 y2250-3250 (cards)",
+          "pct": 3,
+          "cause": "frozen card text 1px line-metric ghosting (live fractional line heights: globe cards 271/272 alternating)"
+        },
+        {
+          "band": "360 footer",
+          "pct": 5.5,
+          "cause": "shared-chrome footer at mobile: icon SVG anti-aliasing + link list 1-3px ghosting (same class as gated article 360 residuals)"
+        }
+      ],
+      "sharedFileFindings": [
+        "css/index.css .site-footer link color: live renders footer link-column links MINT (#3ed8c3), not white — gated index/article prototypes render them white (small pixel cost). Fixed here via .page-jobsearch scope; consider promoting to shared css",
+        "css/index.css .endorsement is an empty box in the gated chrome; live legal row shows the RWE wordmark + 2px #345785 separator ('© RWE 2026 | RWE'). Fixed here page-scoped (svg added in my html)",
+        "breadcrumb (#breadcrumb-bottom): live renders non-active items in 'regular' family with '>' separators (only active item bold) and 16px outer padding at mobile (not 32); gated chrome renders all-bold, no separators. Fixed here via .page-jobsearch scope",
+        "article-proposed/index-proposed footer legal: live copyright span is 18px (mobile 15px) not body-22px — page-scoped fix here"
+      ],
+      "notes": "Environment: prototype server 8797 verified serving this file before gate runs. Live captured once per breakpoint (deny-consent state), all fixes measured build-side. html base font on live is 22px (not 20) — px values lifted directly. Icon font quirk: live RWE_Icon_Font renders clock (\\e934) ~1.22x larger ink than our self-hosted TTF at equal font-size — calibrated per-glyph (27px clock, width:22px advance). Mobile tea01r has-imprint captions are 85%-width (imprint gutter). Content-diff yellows include live hidden option lists (countries/cities/functional areas) that the inert widgets intentionally omit — full lists preserved in stardust/replica/job-search-frozen-1440.json for the delivery-phase integration spike."
     }
   }
 }

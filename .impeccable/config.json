@@ -26,6 +26,91 @@
         "value": "#adafb1",
         "createdAt": "2026-08-27T12:31:21.357Z",
         "reason": "stardust:replica — lifted verbatim from rwe.com image-component zoom button / caption grey (rgb(173,175,177)); replica forbids palette changes"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "#e4e9f2",
+        "createdAt": "2026-08-27T22:35:14.051Z"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "#ccc",
+        "createdAt": "2026-08-27T22:35:14.082Z",
+        "reason": "stardust:replica — lifted verbatim from rwe.com download-list separator (rgb 204,204,204); replica forbids palette changes"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "#c6d0dd",
+        "createdAt": "2026-08-27T22:35:14.112Z"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "#f9f9f9",
+        "createdAt": "2026-08-27T22:35:14.141Z"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "#dbdbdb",
+        "createdAt": "2026-08-27T22:35:14.196Z"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "#ed7168",
+        "createdAt": "2026-08-27T22:35:14.251Z"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "#ffd854",
+        "createdAt": "2026-08-27T22:35:14.277Z"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "#f5a04c",
+        "createdAt": "2026-08-27T22:35:14.303Z"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "#91cbab",
+        "createdAt": "2026-08-27T22:35:14.330Z"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "#556793",
+        "createdAt": "2026-08-27T22:35:14.357Z"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "#808080",
+        "createdAt": "2026-08-27T22:35:14.383Z"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "rgb(0 0 0 / 20%)",
+        "createdAt": "2026-08-27T22:48:48.966Z"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "#f4f4f2",
+        "createdAt": "2026-08-27T22:48:49.001Z"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "#8f9bb3",
+        "createdAt": "2026-08-27T22:48:49.034Z"
+      },
+      {
+        "rule": "marketing-buzzword",
+        "value": "*",
+        "files": [
+          "stardust/prototypes/group-landing-proposed.html"
+        ],
+        "createdAt": "2026-08-27T22:59:15.449Z",
+        "reason": "stardust:replica — verbatim source copy from rwe.com/en/the-group/ (content-diff verified 95/95 nodes); replica contract forbids rewording"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "#345785",
+        "createdAt": "2026-08-27T22:59:30.996Z"
       }
     ]
   }
