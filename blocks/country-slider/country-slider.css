@@ -113,6 +113,11 @@
 }
 
 @media (width <= 767px) {
+  .country-slider .cs-col h3.subheadline {
+    font-size: 15px;
+    line-height: 22px;
+  }
+
   .country-slider .country-slider,
   .country-slider > .country-slider { margin-bottom: 16px; }
 
