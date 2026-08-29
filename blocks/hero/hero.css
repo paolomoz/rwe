@@ -145,7 +145,7 @@ main .hero-container > div {
 .hero .slider-arrow::before {
   display: block;
   font-size: 42px;
-  font-family: RWE_Icon_Font, sans-serif;
+  font-family: "RWE_Icon_Font", sans-serif;
   font-weight: 800;
   color: #fff;
   text-shadow: 0 0 6px #52555c;
@@ -156,8 +156,15 @@ main .hero-container > div {
 .hero .slider-next { right: 9px; }
 .hero .slider-next::before { content: '\e918'; }
 
-.hero .slider-prev:hover::before { transform: translateX(-15%); transition: 0.2s ease-in-out; }
-.hero .slider-next:hover::before { transform: translateX(15%); transition: 0.2s ease-in-out; }
+.hero .slider-prev:hover::before {
+  transform: translateX(-15%);
+  transition: 0.2s ease-in-out;
+}
+
+.hero .slider-next:hover::before {
+  transform: translateX(15%);
+  transition: 0.2s ease-in-out;
+}
 
 /* dots */
 .hero .slick-dots {
@@ -242,5 +249,21 @@ main .hero-container > div {
 
   .hero .slider-arrow {
     display: none;
+  }
+}
+
+/* ---- variant: hub — sub-hub stage (770px vs home 900; gated A2 values) ---- */
+.hero.hub { height: 770px; }
+.hero.hub .teaser-width { padding: 0 0 110px; }
+.hero.hub h3.subheadline { max-width: 1122px; }
+
+@media (width <= 767px) {
+  .hero.hub { height: 575px; }
+
+  .hero.hub header.stage-box--gradient { background-image: none; }
+
+  .hero.hub .teaser-width {
+    padding: 189px 8px 110px;
+    justify-content: flex-start;
   }
 }

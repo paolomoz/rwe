@@ -51,7 +51,7 @@ export default async function decorate(block) {
 
   const nav = document.createElement('div');
   nav.className = 'cs-nav';
-  nav.innerHTML = `<button class="cs-prev" aria-label="Previous"></button><ul class="cs-dots">${slides.map((_, i) => `<li class="d${i + 1}"><button>${i + 1}</button></li>`).join('')}</ul><button class="cs-next" aria-label="Next"></button>`;
+  nav.innerHTML = `<button class="cs-prev" aria-label="Previous"></button><ul class="cs-dots slick-dots">${slides.map((_, i) => `<li class="d${i + 1}"><button>${i + 1}</button></li>`).join('')}</ul><button class="cs-next" aria-label="Next"></button>`;
 
   const slider = document.createElement('div');
   slider.className = 'country-slider';
@@ -64,6 +64,7 @@ export default async function decorate(block) {
   slider.classList.add('js-init');
   const go = (n) => {
     cur = (n + slides.length) % slides.length;
+    dots.forEach((d, i) => d.classList.toggle('slick-active', i === cur));
     slides.forEach((s, i) => {
       s.classList.toggle('cs-active', i === cur);
       s.setAttribute('aria-hidden', i === cur ? 'false' : 'true');
