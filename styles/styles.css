@@ -502,6 +502,7 @@ main .section.contact-row .default-content-wrapper p.button-wrapper { margin: 12
 
 /* hr separators inside default content (hub pages: live lin01 rules) */
 main .default-content-wrapper hr {
+  box-sizing: border-box;
   border: 0;
   border-top: 1px solid #b5b7b8;
   height: 2px;
@@ -515,16 +516,18 @@ main .default-content-wrapper hr {
 /* section styles: rule-above / rule-below — live lin01 hr separators
    (the pipeline strips authored <hr>, so rules render as section borders) */
 main .section.rule-above > div:first-of-type::before {
-  content: '';
+  content: "";
   display: block;
+  box-sizing: border-box;
   border-top: 1px solid #b5b7b8;
   height: 2px;
   margin-bottom: 32px;
 }
 
 main .section.rule-below > div:last-of-type::after {
-  content: '';
+  content: "";
   display: block;
+  box-sizing: border-box;
   border-top: 1px solid #b5b7b8;
   height: 2px;
   margin-top: 32px;
