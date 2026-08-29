@@ -1,0 +1,302 @@
+{
+  "url": "https://www.rwe.com/en/responsibility-and-sustainability/environmental-protection/climate/",
+  "width": 1440,
+  "headerTimeline": [
+    {
+      "y": 0,
+      "cls": "header-container lightImage",
+      "position": "relative",
+      "height": "130px",
+      "transform": "matrix(1, 0, 0, 1, 0, 0)",
+      "transition": "background-color 0.2s",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 13
+    },
+    {
+      "y": 0,
+      "cls": "header-container lightImage",
+      "position": "relative",
+      "height": "130px",
+      "transform": "matrix(1, 0, 0, 1, 0, 0)",
+      "transition": "background-color 0.2s",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 13
+    },
+    {
+      "y": 1200,
+      "cls": "header-container lightImage header-container--has-scrolled-down header-container--has-scrolled-up",
+      "position": "fixed",
+      "height": "64px",
+      "transform": "matrix(1, 0, 0, 1, 0, -64)",
+      "transition": "transform 0.2s ease-in-out",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 13
+    },
+    {
+      "y": 2400,
+      "cls": "header-container lightImage header-container--has-scrolled-down header-container--has-scrolled-up",
+      "position": "fixed",
+      "height": "64px",
+      "transform": "matrix(1, 0, 0, 1, 0, -64)",
+      "transition": "transform 0.2s ease-in-out",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 13
+    },
+    {
+      "y": 3600,
+      "cls": "header-container lightImage header-container--has-scrolled-down header-container--has-scrolled-up",
+      "position": "fixed",
+      "height": "64px",
+      "transform": "matrix(1, 0, 0, 1, 0, -64)",
+      "transition": "transform 0.2s ease-in-out",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 13
+    },
+    {
+      "y": 4800,
+      "cls": "header-container lightImage header-container--has-scrolled-down header-container--has-scrolled-up",
+      "position": "fixed",
+      "height": "64px",
+      "transform": "matrix(1, 0, 0, 1, 0, -64)",
+      "transition": "transform 0.2s ease-in-out",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 13
+    },
+    {
+      "y": 4397,
+      "cls": "header-container lightImage header-container--has-scrolled-up",
+      "position": "fixed",
+      "height": "64px",
+      "transform": "matrix(1, 0, 0, 1, 0, -2.00665)",
+      "transition": "transform 0.2s ease-in-out",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 13
+    },
+    {
+      "y": 2897,
+      "cls": "header-container lightImage header-container--has-scrolled-up",
+      "position": "fixed",
+      "height": "64px",
+      "transform": "matrix(1, 0, 0, 1, 0, 0)",
+      "transition": "transform 0.2s ease-in-out",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 13
+    },
+    {
+      "y": 2400,
+      "cls": "header-container lightImage header-container--has-scrolled-up",
+      "position": "fixed",
+      "height": "64px",
+      "transform": "matrix(1, 0, 0, 1, 0, 0)",
+      "transition": "transform 0.2s ease-in-out",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 13
+    },
+    {
+      "y": 1200,
+      "cls": "header-container lightImage header-container--has-scrolled-up",
+      "position": "fixed",
+      "height": "64px",
+      "transform": "matrix(1, 0, 0, 1, 0, 0)",
+      "transition": "transform 0.2s ease-in-out",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 13
+    },
+    {
+      "y": 800,
+      "cls": "header-container lightImage header-container--has-scrolled-up",
+      "position": "fixed",
+      "height": "64px",
+      "transform": "matrix(1, 0, 0, 1, 0, 0)",
+      "transition": "transform 0.2s ease-in-out",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 13
+    },
+    {
+      "y": 500,
+      "cls": "header-container lightImage header-container--has-scrolled-up",
+      "position": "fixed",
+      "height": "64px",
+      "transform": "matrix(1, 0, 0, 1, 0, 0)",
+      "transition": "transform 0.2s ease-in-out",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 13
+    },
+    {
+      "y": 300,
+      "cls": "header-container lightImage header-container--has-scrolled-up",
+      "position": "fixed",
+      "height": "64px",
+      "transform": "matrix(1, 0, 0, 1, 0, 0)",
+      "transition": "transform 0.2s ease-in-out",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 13
+    },
+    {
+      "y": 200,
+      "cls": "header-container lightImage header-container--has-scrolled-up",
+      "position": "fixed",
+      "height": "64px",
+      "transform": "matrix(1, 0, 0, 1, 0, 0)",
+      "transition": "transform 0.2s ease-in-out",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 13
+    },
+    {
+      "y": 150,
+      "cls": "header-container lightImage header-container--has-scrolled-up",
+      "position": "fixed",
+      "height": "64px",
+      "transform": "matrix(1, 0, 0, 1, 0, 0)",
+      "transition": "transform 0.2s ease-in-out",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 13
+    },
+    {
+      "y": 120,
+      "cls": "header-container lightImage header-container--has-scrolled-up",
+      "position": "fixed",
+      "height": "64px",
+      "transform": "matrix(1, 0, 0, 1, 0, 0)",
+      "transition": "transform 0.2s ease-in-out",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 13
+    },
+    {
+      "y": 90,
+      "cls": "header-container lightImage header-container--has-scrolled-up",
+      "position": "fixed",
+      "height": "64px",
+      "transform": "matrix(1, 0, 0, 1, 0, 0)",
+      "transition": "transform 0.2s ease-in-out",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 13
+    },
+    {
+      "y": 60,
+      "cls": "header-container lightImage header-container--has-scrolled-up",
+      "position": "fixed",
+      "height": "64px",
+      "transform": "matrix(1, 0, 0, 1, 0, 0)",
+      "transition": "transform 0.2s ease-in-out",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 13
+    },
+    {
+      "y": 30,
+      "cls": "header-container lightImage header-container--has-scrolled-up",
+      "position": "fixed",
+      "height": "64px",
+      "transform": "matrix(1, 0, 0, 1, 0, 0)",
+      "transition": "transform 0.2s ease-in-out",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 13
+    },
+    {
+      "y": 0,
+      "cls": "header-container lightImage",
+      "position": "relative",
+      "height": "130px",
+      "transform": "matrix(1, 0, 0, 1, 0, 0)",
+      "transition": "background-color 0.2s",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 13
+    }
+  ],
+  "widgetSamples": [],
+  "events": {
+    "animations": [],
+    "transitions": [
+      {
+        "prop": "opacity",
+        "el": "html.is-desktop.is-chrome > body > div > button.back-to-top",
+        "y": 270,
+        "dur": "0.4s"
+      },
+      {
+        "prop": "transform",
+        "el": "html.is-desktop.is-chrome > body > div > div > header.header-container.lightImage.header-container--has-scrolled-up",
+        "y": 4397,
+        "dur": "0.2s"
+      },
+      {
+        "prop": "opacity",
+        "el": "html.is-desktop.is-chrome > body > div > button.back-to-top",
+        "y": 90,
+        "dur": "0.4s"
+      }
+    ],
+    "classMutations": [
+      {
+        "added": [
+          "header-container--has-scrolled-down",
+          "header-container--has-scrolled-up"
+        ],
+        "el": "html.is-desktop.is-chrome > body > div > div > header.header-container.lightImage.header-container--has-scrolled-down",
+        "y": 270
+      },
+      {
+        "added": [
+          "header-container--has-scrolled-up"
+        ],
+        "el": "html.is-desktop.is-chrome > body > div > div > header.header-container.lightImage.header-container--has-scrolled-down",
+        "y": 270
+      },
+      {
+        "added": [
+          "animate"
+        ],
+        "el": "article.teaser-width.tea01--image-left.inside-bas-05[data-tpl=tea01r] > a.link.link--external > div.header-wrapper > header.color-teaser-2.right-to-left-animation.animate",
+        "y": 2400
+      },
+      {
+        "added": [
+          "animate"
+        ],
+        "el": "article.teaser-width.tea01--image-left.inside-bas-05[data-tpl=tea01r] > a.link.link--internal > div.header-wrapper > header.color-teaser-6.right-to-left-animation.animate",
+        "y": 2400
+      },
+      {
+        "added": [
+          "animate"
+        ],
+        "el": "article.teaser-width.tea01--image-left.inside-bas-05[data-tpl=tea01r] > a.link.link--internal > div.header-wrapper > header.color-teaser-6.right-to-left-animation.animate",
+        "y": 2400
+      },
+      {
+        "added": [
+          "animate"
+        ],
+        "el": "article.teaser-width.tea01--image-left.inside-bas-05[data-tpl=tea01r] > a.link.link--internal > div.header-wrapper > header.color-teaser-2.right-to-left-animation.animate",
+        "y": 3200
+      },
+      {
+        "added": [
+          "animate"
+        ],
+        "el": "article.teaser-width.tea01--image-left.inside-bas-05[data-tpl=tea01r] > a.link.link--external > div.header-wrapper > header.color-teaser-2.right-to-left-animation.animate",
+        "y": 3200
+      }
+    ]
+  }
+}

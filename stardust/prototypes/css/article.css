@@ -292,9 +292,10 @@
   text-align: center;
 }
 
+/* live contract: standard teal solid (color-cta--default) hovers to #007977 */
 .contact-card .btn-solid:hover {
-  background: var(--mint);
-  border-color: var(--mint);
+  background: #007977;
+  border-color: #007977;
 }
 
 .social-placeholder {

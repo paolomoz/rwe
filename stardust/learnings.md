@@ -1,7 +1,23 @@
 # Learnings ledger — rwe.com replica + deploy (2026-08-26)
 
-Status: pending harvest. Instrument fixes for items 1–3 are implemented and
-commented in this repo's `scripts/replica/stitch-shot.mjs`.
+Status: HARVESTED 2026-08-28 into adobe/skills stardust 0.18.3 (branch
+`harvest-rwe-centene`, per the improvement plan
+`plugins/stardust/notes/improvement-plan-2026-08-rwe-centene.md`): items 1, 3
+(stitch-shot freeze: video pause + timer clear + slick-dot t=0, ported from
+this repo's `scripts/replica/stitch-shot.mjs`), 4 (crawl.mjs consent
+text-match fallback), 5 (extract bot-wall asset note), 6–7 (deploy Step 3:
+block-`<header>` warning #107, overlay chrome #108), 9 (brief-template
+variant specificity #109), 10 (gate no-op-fix check), 11 (gate.sh identity
+assertion + port-verify doc lines), 12 (recreation-procedure residual
+classes), and 13–14 (motion parity: `motion-observe.mjs` ported from this
+repo's `scripts/replica/motion-observe.mjs` + `--hover`; § Interaction
+parity rewritten around the observe-don't-infer evidence rule; motion
+inventory a required gate output — per the spec in this repo's
+`stardust/plugin-improvements/replica-motion-parity.md`, also copied into
+the plugin's notes/). DEFERRED with rationale in the plan: item 2
+(`--fullpage` — this repo's reference implementation stands by for a second
+seam-corruption session) and item 8 (shared-classifier separators — global
+diff-key change, needs its own validation protocol).
 
 ## Capture instrument (stitch-shot / crawl) — upstream candidates
 
@@ -66,3 +82,56 @@ commented in this repo's `scripts/replica/stitch-shot.mjs`.
     (energy-field line art), and live-data embeds — where the winning move is
     loading the SAME live embed on both sides so the data cancels out,
     rather than freezing a snapshot.
+13. **Motion parity is a per-archetype gate step, not a canon-page
+    afterthought — and it is liftable, not guessable.** The static pixel
+    gate passes while every scroll-entrance animation, header scroll-morph,
+    hover transition, and secondary carousel is missing (all invisible at
+    t=0); the user notices immediately. `recreation-procedure.md`
+    § Interaction parity already exists but was only run on the first
+    archetype; parallel-agent briefs skipped it → all five archetypes
+    shipped static. Skill fixes: (a) make the interaction-parity pass a
+    REQUIRED gate output per archetype (hover diff + behavior diff + a
+    motion inventory), like content-diff; (b) the whole motion contract
+    lifts mechanically from the source site: `@keyframes` + trigger classes
+    from source CSS, per-element inventory via one live DOM probe
+    (`querySelectorAll('[class*="-animation"]')` + text snippets to map
+    elements to prototype counterparts), `:hover` rules by parsing source
+    CSS for `:hover` selectors with transform/color declarations, scroll
+    chrome via a scripted scroll probe reading header classes/computed
+    styles at top/down/up; (c) implement as ONE shared motion layer
+    (motion.css + motion.js) reusing the LIVE class names — that keeps
+    capture instruments symmetric (stitch-shot's animation-forcing already
+    keys on `*-animation`) and makes the layer gate-neutral by
+    construction (entrance classes only animate once `.animate` is added
+    on intersection, mirroring live; live has no pre-animate hidden
+    state); (d) after adding motion, re-run pixel-compare once per touched
+    archetype to prove t=0 is unchanged (rwe: press-hub 1.01→1.06%,
+    locations 0.82→0.88% — noise). Candidate for a bundled
+    `motion-probe.mjs` next to stitch-shot.
+14. **CORRECTION to #13 — static CSS lifting INVENTS motion; the only
+    trustworthy source is runtime observation.** User review caught three
+    invented behaviors that the static-lift method produced: (a) elements
+    carrying `*-animation` classes on live whose animations NEVER fire
+    (live's JS never adds the `.animate` trigger to them — on rwe.com the
+    majority of tagged captions are dead: press-hub interest cards,
+    group-landing/content-page/job-search captions, home media-cards —
+    only 2 of 8 caption-class families actually animate); (b) hover rules
+    lifted from CSS whose scope conditions don't match at runtime (home
+    full-width teaser headers had a plausible scale rule that never
+    applies); (c) a scroll-chrome mechanism (cloned fixed bar) that
+    approximated the visible effect but allowed a double-render state
+    impossible on live, which morphs its SINGLE header in place (fixed
+    compact when scrolled, full in-flow only at exactly y=0, no layout
+    compensation). The method that works — now scripted as
+    `scripts/replica/motion-observe.mjs` (plugin candidate next to
+    stitch-shot): instrument the live page with `animationstart` /
+    `transitionstart` capture listeners + a MutationObserver on class
+    attributes, auto-scroll the full page down AND up while sampling the
+    header's computed state per scroll position, poke widgets and sample
+    frames — then implement ONLY what fired, with the recorded durations/
+    mechanics. Complement with a per-module hover-diff (hover, wait, read
+    computed transform/colors) instead of trusting `:hover` rules' scopes.
+    Static CSS remains the source for exact keyframe/duration VALUES; the
+    runtime trace decides WHAT runs and WHERE. Verified: after replacing
+    inference with observation, press-hub returned to its exact gated
+    pixel number (1.01%).

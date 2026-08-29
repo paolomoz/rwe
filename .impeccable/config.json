@@ -111,6 +111,16 @@
         "rule": "design-system-color",
         "value": "#345785",
         "createdAt": "2026-08-27T22:59:30.996Z"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "#007977",
+        "createdAt": "2026-08-28T15:21:38.868Z"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "#edf1f7",
+        "createdAt": "2026-08-28T15:21:38.898Z"
       }
     ]
   }

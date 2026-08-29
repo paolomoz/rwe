@@ -40,3 +40,38 @@
 - Shared-chrome corrections confirmed by 3-4 agents independently and promoted to index.css (mint footer links, mobile footer link size, breadcrumb weights/separators/strut/mobile pad, copyright size); home and article gates re-verified and IMPROVED (1.68→1.61, 3.92→3.40). Finer mobile footer rhythm values left page-scoped (conflicting per-page measurements). Endorsement wordmark noted for the EDS footer block at delivery sync.
 - New live-site facts for the ledger: live hr elements are 2px boxes; some templates set html base 22px (not 20); the icon TTF draws ~1.22x smaller ink than live's rendering (per-glyph calibration); grid cols cap at 33.3% not 33.333%; stage carousels + top breadcrumbs live OUTSIDE <main> on hub/landing templates; band loosefield overhang widens fullpage captures unless clipped.
 - Next: EDS block conversion + delivery for the five new archetypes, then bulk migrate (P3).
+
+## 2026-08-28 — motion-parity layer (user review feedback on press-hub)
+
+User flagged missing hover effects + scroll motion on press-hub; audit showed
+all archetypes shipped static (interaction-parity pass skipped in the A2-A6
+briefs). Lifted the full motion contract from source CSS + a 7-page live DOM
+probe (stardust/replica/motion-probe.json): entrance keyframes/triggers,
+header scroll morph (fixed 64/50px gradient bar, up=show/down=hide, .2s),
+hover contract (cards scale 1.03, captions scale, btn solid→#007977,
+reverse→teal fill, onmedia→teal text, download icons +2px, fields #edf1f7),
+wobble stagger, slider configs. Implemented as shared css/motion.css +
+js/motion.js (live class names; observer adds .animate) wired into all 7
+prototypes; activated press-hub country slider, group-landing stage
+(autoplay 7s), locations stage (manual). Fixed article contact btn hover
+mint→#007977 (live value). Gate-neutral verified: press-hub 1.06% (was
+1.01), locations 0.88% (was 0.82), Δ≤3px. Learnings #13 (motion parity =
+required per-archetype gate step, liftable not guessable) + brief updated.
+
+## 2026-08-28 (later) — motion corrections: observe, don't infer
+
+User caught three invented behaviors in the motion layer: interest-card
+scroll effect (dead class on live — never fires), missing dot transitions
+on the country slider, header double-render (clone-overlay allowed a state
+impossible on live). Root cause: motion inferred from static CSS classes/
+rules instead of runtime behavior. Built scripts/replica/motion-observe.mjs
+(runtime animation/transition/class-mutation recorder + scrolled header
+state timeline + widget frame sampler), ran it on 6 live pages + a
+per-module hover-diff. Findings: only home jobs-caption + locations
+video-caption entrance animations fire among all caption classes; home
+media-cards scale the CAPTION not the card; trading/jobs full-width teasers
+have no hover scale; live morphs its single header in place (fixed 64px
+when scrolled, restore only at y=0). Rewrote motion.js/motion.css to
+evidence-only maps, in-place header morph, dot size transitions (.2s).
+Press-hub pixel gate back to exactly 1.01%. Learnings #14 (correction to
+#13); brief motion section rewritten with the evidence rule.

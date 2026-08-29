@@ -7,3 +7,5 @@
 {"event":"phase-end","skill":"stardust:prepare-migration","phase":"discovery+typing+dynamic-blocks","at":"2026-08-27T11:07:56.031Z","note":"2329 /en/ URLs tracked; 7 archetypes; 4 dynamic indexes authored; integrations register written"}
 {"event":"phase-end","skill":"stardust:replica","phase":"archetype-A1-article-detail","at":"2026-08-27T13:53:19.284Z","note":"gated 1440 3.92%/D0, 360 5.84%/D2; 0 unjustified red; covers 1807 pages (100 in import wave)"}
 {"event":"phase-end","skill":"stardust:replica","phase":"archetypes-A2-A6-parallel","at":"2026-08-28T00:28:34.187Z","note":"5 archetypes gated in parallel agents; all pass; shared chrome corrections promoted (home 1.68->1.61, article 3.92->3.40)"}
+{"ts":"2026-08-28","event":"motion-parity-layer","pages":"all7","gateNeutral":{"press-hub":1.06,"locations-map":0.88}}
+{"ts":"2026-08-28","event":"motion-corrections-observe-not-infer","instrument":"scripts/replica/motion-observe.mjs","pressHubPixel":1.01}

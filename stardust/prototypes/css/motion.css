@@ -1,0 +1,125 @@
+/* motion.css — shared motion & interaction-parity layer (all archetypes).
+   Every value lifted from live source CSS (nkStyles.20260811.5.min.css) or
+   the 2026-08-28 live motion probe (stardust/replica/motion-probe.json).
+   Gate-safe by construction: entrance animations only run once `.animate`
+   is added by js/motion.js on scroll-into-view (live behavior — no initial
+   opacity:0 state exists on live either); the compact header bar rests at
+   translateY(-100%); hovers need a pointer. */
+
+/* ---- entrance keyframes (verbatim lift) ---- */
+@keyframes fadeInFromBottom { 0% { opacity: 0; transform: translateY(50px); } to { opacity: 1; transform: translate(0); } }
+@keyframes fadeInFromRight { 0% { opacity: 0; transform: translate(50px); } to { opacity: 1; transform: translate(0); } }
+@keyframes fadeInFromLeft { 0% { opacity: 0; transform: translate(-50px); } to { opacity: 1; transform: translate(0); } }
+@keyframes fadeIn { 0% { opacity: 0; } to { opacity: 1; } }
+
+@keyframes wobble {
+  5% { transform: scale3d(0.95, 0.95, 1); }
+  10% { transform: scale3d(0.9, 0.9, 1); }
+  15% { transform: scale3d(0.85, 0.85, 1); }
+  20% { transform: scale3d(0.8, 0.8, 1); }
+  25% { transform: scale3d(0.75, 0.75, 1); }
+  30% { transform: scale3d(0.75, 0.75, 1); }
+  35% { transform: scale3d(0.75, 0.75, 1); }
+  40% { transform: scale3d(0.85, 0.85, 1); }
+  45% { transform: scale3d(0.95, 0.95, 1); }
+  50% { transform: scaleX(1); }
+  55% { transform: scale3d(1.05, 1.05, 1); }
+  60% { transform: scale3d(1.075, 1.075, 1); }
+  65% { transform: scale3d(1.09, 1.09, 1); }
+  70% { transform: scale3d(1.075, 1.075, 1); }
+  75% { transform: scale3d(1.05, 1.05, 1); }
+  80% { transform: scale3d(1.02, 1.02, 1); }
+  85% { transform: scale3d(0.98, 0.98, 1); }
+  90% { transform: scale3d(1.01, 1.01, 1); }
+  95% { transform: scale3d(0.99, 0.99, 1); }
+  to { transform: scaleX(1); }
+}
+
+/* ---- entrance triggers (live class names — stitch-shot's animation
+   forcing keys on "*-animation", so gate instruments stay symmetric) ---- */
+.bottom-to-top-animation.animate { animation: fadeInFromBottom 0.5s ease-in-out; animation-iteration-count: 1; }
+.right-to-left-animation.animate { animation: fadeInFromRight 0.5s ease-in-out; animation-iteration-count: 1; }
+.left-to-right-animation.animate { animation: fadeInFromLeft 0.5s ease-in-out; animation-iteration-count: 1; }
+.wobble-animation-trigger.animate .wobble-animation { animation: wobble 0.75s ease; animation-iteration-count: 1; }
+
+/* ---- hover: scale(1.03), transition transform .2s ease-in-out —
+   measured per module via live hover-diff (2026-08-28): WHOLE CARD scales
+   on color/topic/interest/gl/teaser cards + quotes; the CAPTION scales on
+   home media-cards, job-search explore cards, cv-matcher and locations
+   video teaser; trading/jobs full-width teasers do NOT scale at all. ---- */
+.color-card, .topic-card, .interest-card, .gl-card, .teaser-card, .gl-quote,
+.resp-video-teaser {
+  transition: transform 0.2s ease-in-out;
+}
+
+.color-card:hover, .topic-card:hover, .interest-card:hover,
+.gl-card:hover, .teaser-card:hover, .gl-quote:hover, .resp-video-teaser:hover {
+  transform: scale(1.03);
+}
+
+.media-card .card-body, .cvm-caption, .lm-video-teaser header,
+.explore-card .card-body {
+  transition: transform 0.2s ease-in-out;
+}
+
+.media-card .card-body:hover, .cvm-caption:hover, .lm-video-teaser header:hover,
+.explore-card .card-body:hover {
+  transform: scale(1.03);
+}
+
+/* ---- hover: buttons (live color-cta contract) ----
+   solid teal (color-cta--default) → #007977; reverse teal outline
+   (gradient-green-reverse) → teal fill, white text; white outline on media
+   (gradient-green-white-reverse) → teal text/border, bg stays transparent */
+.btn { transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, color 0.2s ease-in-out; }
+.btn--solid:hover { background-color: #007977; border-color: #007977; }
+.btn--reverse:hover { background-color: var(--teal); color: #fff; }
+.btn--reverse-onmedia:hover { color: var(--teal); border-color: var(--teal); }
+
+/* ---- hover: download links (icon dips 2px) ---- */
+.link-download::after { transition: transform 0.2s ease-in-out; }
+a.link-download:hover::after, .downloads li a:hover::after { transform: translateY(2px); }
+
+/* ---- hover: form fields (live form-control/select2/jobsearch → #edf1f7) ---- */
+main input[type='search']:hover,
+main input[type='text']:hover,
+main select:hover,
+.lf-value:hover {
+  background-color: #edf1f7;
+  transition: background-color 0.2s ease-in-out;
+}
+
+/* ---- header scroll morph, in place (live header-container--has-scrolled-*
+   measured contract: fixed 64px desktop / 50px mobile, gradient, transform
+   .2s; hidden = translateY(-100%); full header restored only at y=0) ---- */
+.site-header--scrolled {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 64px;
+  z-index: 10000;
+  background-image: var(--grad);
+  transition: transform 0.2s ease-in-out;
+}
+
+/* nav row (27px) recentered within the 64px bar (full header uses 52px) */
+.site-header--scrolled nav.header-navigation { margin-top: 18px; }
+.site-header--hidden { transform: translateY(-100%); }
+
+@media (width <= 767px) {
+  .site-header--scrolled { height: 50px; }
+  .site-header--scrolled nav.header-navigation { margin-top: 11px; }
+}
+
+/* ---- carousel dots animate their size change (live slick magic-dots:
+   li transition left .2s + transform .2s — equivalent rendered effect) ---- */
+.cs-dots button, .slick-dots button {
+  transition: width 0.2s ease-in-out, height 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+
+/* ---- carousels activated by motion.js ---- */
+.gl-slide { transition: opacity 0.5s ease; }
+.lmhero .lm-track { transition: transform 0.5s ease; }
+.country-slider.js-init .cs-slide { display: none; }
+.country-slider.js-init .cs-slide.cs-active { display: flex; animation: fadeIn 0.5s; }

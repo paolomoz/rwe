@@ -153,6 +153,46 @@ globe-bold \e996, magnifier-bold \e995.
   delivery phase wires the real map. Same for job-result cards: freeze the
   captured results verbatim.)
 
+## Interaction/motion parity (REQUIRED — learned the hard way)
+
+The static gate does not cover motion; a page can pass all four probes with
+every animation missing. After the static gate passes, run the
+interaction-parity pass and implement (never justify away).
+
+**Evidence rule: motion is OBSERVED at runtime, never inferred from static
+classes or CSS rules.** Live pages carry `*-animation` classes on elements
+whose animations never fire, and `:hover` rules whose scopes never match —
+implementing from those INVENTS motion (caught in user review). Run
+`node scripts/replica/motion-observe.mjs "<liveURL>" <out.json> --consent
+'button:has-text("Deny all")'` — it records `animationstart`/
+`transitionstart` events, class mutations, and the header's computed state
+per scroll position over a full down+up scroll. Tag ONLY elements whose
+animation measurably fired; verify each hover with a hover-diff (hover the
+live element, read computed transform/colors) before adding the rule.
+
+- **Entrance animations**: live uses `.bottom-to-top-animation` /
+  `.right-to-left-animation` / `.left-to-right-animation` + `.animate`
+  (added on scroll-into-view) and `.wobble-animation-trigger`/`.wobble-animation`
+  (staggered: 2nd child first, 0.5s steps, 1st child last). Keyframes +
+  triggers live in `css/motion.css`; the observer + per-module tagging map
+  in `js/motion.js` — EXTEND the map for your modules (runtime-fired only),
+  don't fork it.
+- **Header scroll morph**: the SINGLE header morphs in place (measured live
+  contract): scrolled past 130px → fixed 64px (50 mobile) gradient +
+  hidden; any scroll-up → compact bar slides in (.2s); full in-flow header
+  restored only at y=0; no layout compensation (live's content jump is
+  intentional). Global in motion.js; nothing to do beyond including the
+  two files. Never implement as a cloned overlay bar — it double-renders.
+- **Hovers**: cards scale(1.03) (0.2s), full-width teaser captions scale on
+  their own hover, solid teal buttons → #007977, reverse → teal fill,
+  white-on-media → teal text/border, download icons translateY(2px),
+  affordance arrows +10px (canon), form fields → #edf1f7 (motion.css).
+- **Carousels**: implement autoplay/arrows/dots per live slick config
+  (`sli01--autoplay` = 7s). t=0 must equal the static gate state
+  (stitch-shot clears timers, so gate captures are unaffected).
+- Include `css/motion.css` + `js/motion.js` in the page, then re-run ONE
+  pixel-compare round to prove t=0 unchanged (build-side, free).
+
 ## Result file (required): stardust/replica/gates/<slug>-result.json
 
 ```json

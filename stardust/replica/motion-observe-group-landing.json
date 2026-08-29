@@ -1,0 +1,375 @@
+{
+  "url": "https://www.rwe.com/en/the-group/",
+  "width": 1440,
+  "headerTimeline": [
+    {
+      "y": 0,
+      "cls": "header-container lightImage",
+      "position": "relative",
+      "height": "130px",
+      "transform": "matrix(1, 0, 0, 1, 0, 0)",
+      "transition": "background-color 0.2s",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 13
+    },
+    {
+      "y": 0,
+      "cls": "header-container lightImage",
+      "position": "relative",
+      "height": "130px",
+      "transform": "matrix(1, 0, 0, 1, 0, 0)",
+      "transition": "background-color 0.2s",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 13
+    },
+    {
+      "y": 1200,
+      "cls": "header-container lightImage header-container--has-scrolled-down header-container--has-scrolled-up",
+      "position": "fixed",
+      "height": "64px",
+      "transform": "matrix(1, 0, 0, 1, 0, -64)",
+      "transition": "transform 0.2s ease-in-out",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 13
+    },
+    {
+      "y": 2400,
+      "cls": "header-container lightImage header-container--has-scrolled-down header-container--has-scrolled-up",
+      "position": "fixed",
+      "height": "64px",
+      "transform": "matrix(1, 0, 0, 1, 0, -64)",
+      "transition": "transform 0.2s ease-in-out",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 13
+    },
+    {
+      "y": 3600,
+      "cls": "header-container lightImage header-container--has-scrolled-down header-container--has-scrolled-up",
+      "position": "fixed",
+      "height": "64px",
+      "transform": "matrix(1, 0, 0, 1, 0, -64)",
+      "transition": "transform 0.2s ease-in-out",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 13
+    },
+    {
+      "y": 4800,
+      "cls": "header-container lightImage header-container--has-scrolled-down header-container--has-scrolled-up",
+      "position": "fixed",
+      "height": "64px",
+      "transform": "matrix(1, 0, 0, 1, 0, -64)",
+      "transition": "transform 0.2s ease-in-out",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 13
+    },
+    {
+      "y": 6000,
+      "cls": "header-container lightImage header-container--has-scrolled-down header-container--has-scrolled-up",
+      "position": "fixed",
+      "height": "64px",
+      "transform": "matrix(1, 0, 0, 1, 0, -64)",
+      "transition": "transform 0.2s ease-in-out",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 13
+    },
+    {
+      "y": 5340,
+      "cls": "header-container lightImage header-container--has-scrolled-up",
+      "position": "fixed",
+      "height": "64px",
+      "transform": "matrix(1, 0, 0, 1, 0, -0.87276)",
+      "transition": "transform 0.2s ease-in-out",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 13
+    },
+    {
+      "y": 3840,
+      "cls": "header-container lightImage header-container--has-scrolled-up",
+      "position": "fixed",
+      "height": "64px",
+      "transform": "matrix(1, 0, 0, 1, 0, 0)",
+      "transition": "transform 0.2s ease-in-out",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 13
+    },
+    {
+      "y": 2400,
+      "cls": "header-container lightImage header-container--has-scrolled-up",
+      "position": "fixed",
+      "height": "64px",
+      "transform": "matrix(1, 0, 0, 1, 0, 0)",
+      "transition": "transform 0.2s ease-in-out",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 13
+    },
+    {
+      "y": 1200,
+      "cls": "header-container lightImage header-container--has-scrolled-up",
+      "position": "fixed",
+      "height": "64px",
+      "transform": "matrix(1, 0, 0, 1, 0, 0)",
+      "transition": "transform 0.2s ease-in-out",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 13
+    },
+    {
+      "y": 800,
+      "cls": "header-container lightImage header-container--has-scrolled-up",
+      "position": "fixed",
+      "height": "64px",
+      "transform": "matrix(1, 0, 0, 1, 0, 0)",
+      "transition": "transform 0.2s ease-in-out",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 13
+    },
+    {
+      "y": 500,
+      "cls": "header-container lightImage header-container--has-scrolled-up",
+      "position": "fixed",
+      "height": "64px",
+      "transform": "matrix(1, 0, 0, 1, 0, 0)",
+      "transition": "transform 0.2s ease-in-out",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 13
+    },
+    {
+      "y": 300,
+      "cls": "header-container lightImage header-container--has-scrolled-up",
+      "position": "fixed",
+      "height": "64px",
+      "transform": "matrix(1, 0, 0, 1, 0, 0)",
+      "transition": "transform 0.2s ease-in-out",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 13
+    },
+    {
+      "y": 200,
+      "cls": "header-container lightImage header-container--has-scrolled-up animateSwipe",
+      "position": "fixed",
+      "height": "64px",
+      "transform": "matrix(1, 0, 0, 1, 0, 0)",
+      "transition": "transform 0.2s ease-in-out",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 13
+    },
+    {
+      "y": 150,
+      "cls": "header-container lightImage header-container--has-scrolled-up animateSwipe",
+      "position": "fixed",
+      "height": "64px",
+      "transform": "matrix(1, 0, 0, 1, 0, 0)",
+      "transition": "transform 0.2s ease-in-out",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 13
+    },
+    {
+      "y": 120,
+      "cls": "header-container lightImage header-container--has-scrolled-up animateSwipe",
+      "position": "fixed",
+      "height": "64px",
+      "transform": "matrix(1, 0, 0, 1, 0, 0)",
+      "transition": "transform 0.2s ease-in-out",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 13
+    },
+    {
+      "y": 90,
+      "cls": "header-container lightImage header-container--has-scrolled-up animateSwipe",
+      "position": "fixed",
+      "height": "64px",
+      "transform": "matrix(1, 0, 0, 1, 0, 0)",
+      "transition": "transform 0.2s ease-in-out",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 13
+    },
+    {
+      "y": 60,
+      "cls": "header-container lightImage header-container--has-scrolled-up animateSwipe",
+      "position": "fixed",
+      "height": "64px",
+      "transform": "matrix(1, 0, 0, 1, 0, 0)",
+      "transition": "transform 0.2s ease-in-out",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 13
+    },
+    {
+      "y": 30,
+      "cls": "header-container lightImage header-container--has-scrolled-up animateSwipe",
+      "position": "fixed",
+      "height": "64px",
+      "transform": "matrix(1, 0, 0, 1, 0, 0)",
+      "transition": "transform 0.2s ease-in-out",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 13
+    },
+    {
+      "y": 0,
+      "cls": "header-container lightImage animateSwipe",
+      "position": "relative",
+      "height": "130px",
+      "transform": "matrix(1, 0, 0, 1, 0, 0)",
+      "transition": "background-color 0.2s",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 13
+    }
+  ],
+  "widgetSamples": [],
+  "events": {
+    "animations": [
+      {
+        "name": "wobble",
+        "el": "article[data-tpl=tea02r] > a.link.link--internal > div.wobble-animation",
+        "txt": "@media ( max-width: 479px ) { [data-image-id='c7a4",
+        "y": 5200
+      }
+    ],
+    "transitions": [
+      {
+        "prop": "opacity",
+        "el": "html.is-desktop.is-chrome > body > div > button.back-to-top",
+        "y": 670,
+        "dur": "0.4s"
+      },
+      {
+        "prop": "transform",
+        "el": "html.is-desktop.is-chrome > body > div > div > header.header-container.lightImage.header-container--has-scrolled-up",
+        "y": 5340,
+        "dur": "0.2s"
+      },
+      {
+        "prop": "opacity",
+        "el": "div.slider-container > div.slider-wrapper.slick-initialized.slick-slider > div.slick-list.draggable > div.slick-track > div.slider-slide.slick-slide",
+        "y": 200,
+        "dur": "0.5s"
+      },
+      {
+        "prop": "opacity",
+        "el": "div.slider-container > div.slider-wrapper.slick-initialized.slick-slider > div.slick-list.draggable > div.slick-track > div.slider-slide.slick-slide.slick-current",
+        "y": 200,
+        "dur": "0.5s"
+      },
+      {
+        "prop": "opacity",
+        "el": "html.is-desktop.is-chrome > body > div > button.back-to-top",
+        "y": 90,
+        "dur": "0.4s"
+      }
+    ],
+    "classMutations": [
+      {
+        "added": [
+          "header-container--has-scrolled-down",
+          "header-container--has-scrolled-up"
+        ],
+        "el": "html.is-desktop.is-chrome > body > div > div > header.header-container.lightImage.header-container--has-scrolled-down",
+        "y": 670
+      },
+      {
+        "added": [
+          "header-container--has-scrolled-up"
+        ],
+        "el": "html.is-desktop.is-chrome > body > div > div > header.header-container.lightImage.header-container--has-scrolled-down",
+        "y": 670
+      },
+      {
+        "added": [
+          "animate"
+        ],
+        "el": "article.teaser-width.tea01--image-left.inside-bas-05[data-tpl=tea01r] > a.link.link--internal > div.header-wrapper > header.color-teaser-6.right-to-left-animation.animate",
+        "y": 1200
+      },
+      {
+        "added": [
+          "animate"
+        ],
+        "el": "article.teaser-width.tea01--image-left.inside-bas-05[data-tpl=tea01r] > a.link.link--internal > div.header-wrapper > header.color-teaser-1.right-to-left-animation.animate",
+        "y": 1200
+      },
+      {
+        "added": [
+          "animate"
+        ],
+        "el": "article.teaser-width.tea01--image-left.inside-bas-05[data-tpl=tea01r] > a.link.link--internal > div.header-wrapper > header.color-teaser-6.right-to-left-animation.animate",
+        "y": 1200
+      },
+      {
+        "added": [
+          "animate"
+        ],
+        "el": "article.teaser-width.tea01--image-left.inside-bas-05[data-tpl=tea01r] > a.link.link--internal > div.header-wrapper > header.color-teaser-6.right-to-left-animation.animate",
+        "y": 2000
+      },
+      {
+        "added": [
+          "animate"
+        ],
+        "el": "article.teaser-width.tea01--image-left.inside-bas-05[data-tpl=tea01r] > a.link.link--internal > div.header-wrapper > header.color-teaser-1.right-to-left-animation.animate",
+        "y": 2000
+      },
+      {
+        "added": [
+          "animate"
+        ],
+        "el": "article.teaser-width.tea01--image-left.inside-bas-05[data-tpl=tea01r] > a.link.link--internal > div.header-wrapper > header.color-teaser-1.right-to-left-animation.animate",
+        "y": 2000
+      },
+      {
+        "added": [
+          "animate"
+        ],
+        "el": "section.color-background-2.energy-waves-grid.wobble-animation-trigger[data-tpl=grid-bas-02]",
+        "y": 5200
+      },
+      {
+        "added": [
+          "animateSwipe"
+        ],
+        "el": "html.is-desktop.is-chrome > body > div > div > header.header-container.lightImage.header-container--has-scrolled-up",
+        "y": 200
+      },
+      {
+        "added": [
+          "slick-current",
+          "slick-active"
+        ],
+        "el": "div.slider-container > div.slider-wrapper.slick-initialized.slick-slider > div.slick-list.draggable > div.slick-track > div.slider-slide.slick-slide.slick-current",
+        "y": 200
+      },
+      {
+        "added": [
+          "slick-active"
+        ],
+        "el": "div.slider-container > div.slider-wrapper.slick-initialized.slick-slider > div.slick-list.draggable > div.slick-track > div.slider-slide.slick-slide.slick-current",
+        "y": 200
+      },
+      {
+        "added": [
+          "slick-active"
+        ],
+        "el": "div.sli01--stage-components.sli01--carousel.sli01--autoplay[data-tpl=sli01] > div.slider-container > div.slider-dots > ul.slick-dots > li.slick-active",
+        "y": 200
+      }
+    ]
+  }
+}

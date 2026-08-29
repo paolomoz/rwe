@@ -1,0 +1,578 @@
+{
+  "url": "https://www.rwe.com/en/press/",
+  "width": 1440,
+  "headerTimeline": [
+    {
+      "y": 0,
+      "cls": "header-container lightImage",
+      "position": "relative",
+      "height": "130px",
+      "transform": "matrix(1, 0, 0, 1, 0, 0)",
+      "transition": "background-color 0.2s",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 25
+    },
+    {
+      "y": 0,
+      "cls": "header-container lightImage",
+      "position": "relative",
+      "height": "130px",
+      "transform": "matrix(1, 0, 0, 1, 0, 0)",
+      "transition": "background-color 0.2s",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 25
+    },
+    {
+      "y": 1200,
+      "cls": "header-container lightImage header-container--has-scrolled-down header-container--has-scrolled-up",
+      "position": "fixed",
+      "height": "64px",
+      "transform": "matrix(1, 0, 0, 1, 0, -64)",
+      "transition": "transform 0.2s ease-in-out",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 25
+    },
+    {
+      "y": 2400,
+      "cls": "header-container lightImage header-container--has-scrolled-down header-container--has-scrolled-up",
+      "position": "fixed",
+      "height": "64px",
+      "transform": "matrix(1, 0, 0, 1, 0, -64)",
+      "transition": "transform 0.2s ease-in-out",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 25
+    },
+    {
+      "y": 3600,
+      "cls": "header-container lightImage header-container--has-scrolled-down header-container--has-scrolled-up",
+      "position": "fixed",
+      "height": "64px",
+      "transform": "matrix(1, 0, 0, 1, 0, -64)",
+      "transition": "transform 0.2s ease-in-out",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 25
+    },
+    {
+      "y": 4800,
+      "cls": "header-container lightImage header-container--has-scrolled-down header-container--has-scrolled-up",
+      "position": "fixed",
+      "height": "64px",
+      "transform": "matrix(1, 0, 0, 1, 0, -64)",
+      "transition": "transform 0.2s ease-in-out",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 25
+    },
+    {
+      "y": 3928,
+      "cls": "header-container lightImage header-container--has-scrolled-up",
+      "position": "fixed",
+      "height": "64px",
+      "transform": "matrix(1, 0, 0, 1, 0, -0.220391)",
+      "transition": "transform 0.2s ease-in-out",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 25
+    },
+    {
+      "y": 2428,
+      "cls": "header-container lightImage header-container--has-scrolled-up",
+      "position": "fixed",
+      "height": "64px",
+      "transform": "matrix(1, 0, 0, 1, 0, 0)",
+      "transition": "transform 0.2s ease-in-out",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 25
+    },
+    {
+      "y": 2400,
+      "cls": "header-container lightImage header-container--has-scrolled-up",
+      "position": "fixed",
+      "height": "64px",
+      "transform": "matrix(1, 0, 0, 1, 0, 0)",
+      "transition": "transform 0.2s ease-in-out",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 25
+    },
+    {
+      "y": 1200,
+      "cls": "header-container lightImage header-container--has-scrolled-up",
+      "position": "fixed",
+      "height": "64px",
+      "transform": "matrix(1, 0, 0, 1, 0, 0)",
+      "transition": "transform 0.2s ease-in-out",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 25
+    },
+    {
+      "y": 800,
+      "cls": "header-container lightImage header-container--has-scrolled-up",
+      "position": "fixed",
+      "height": "64px",
+      "transform": "matrix(1, 0, 0, 1, 0, 0)",
+      "transition": "transform 0.2s ease-in-out",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 25
+    },
+    {
+      "y": 500,
+      "cls": "header-container header-container--has-scrolled-up animateSwipe darkImage",
+      "position": "fixed",
+      "height": "64px",
+      "transform": "matrix(1, 0, 0, 1, 0, 0)",
+      "transition": "transform 0.2s ease-in-out",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 25
+    },
+    {
+      "y": 300,
+      "cls": "header-container header-container--has-scrolled-up animateSwipe darkImage",
+      "position": "fixed",
+      "height": "64px",
+      "transform": "matrix(1, 0, 0, 1, 0, 0)",
+      "transition": "transform 0.2s ease-in-out",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 25
+    },
+    {
+      "y": 200,
+      "cls": "header-container header-container--has-scrolled-up animateSwipe darkImage",
+      "position": "fixed",
+      "height": "64px",
+      "transform": "matrix(1, 0, 0, 1, 0, 0)",
+      "transition": "transform 0.2s ease-in-out",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 25
+    },
+    {
+      "y": 150,
+      "cls": "header-container header-container--has-scrolled-up animateSwipe darkImage",
+      "position": "fixed",
+      "height": "64px",
+      "transform": "matrix(1, 0, 0, 1, 0, 0)",
+      "transition": "transform 0.2s ease-in-out",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 25
+    },
+    {
+      "y": 120,
+      "cls": "header-container header-container--has-scrolled-up animateSwipe darkImage",
+      "position": "fixed",
+      "height": "64px",
+      "transform": "matrix(1, 0, 0, 1, 0, 0)",
+      "transition": "transform 0.2s ease-in-out",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 25
+    },
+    {
+      "y": 90,
+      "cls": "header-container header-container--has-scrolled-up animateSwipe lightImage",
+      "position": "fixed",
+      "height": "64px",
+      "transform": "matrix(1, 0, 0, 1, 0, 0)",
+      "transition": "transform 0.2s ease-in-out",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 25
+    },
+    {
+      "y": 60,
+      "cls": "header-container header-container--has-scrolled-up animateSwipe lightImage",
+      "position": "fixed",
+      "height": "64px",
+      "transform": "matrix(1, 0, 0, 1, 0, 0)",
+      "transition": "transform 0.2s ease-in-out",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 25
+    },
+    {
+      "y": 30,
+      "cls": "header-container header-container--has-scrolled-up animateSwipe lightImage",
+      "position": "fixed",
+      "height": "64px",
+      "transform": "matrix(1, 0, 0, 1, 0, 0)",
+      "transition": "transform 0.2s ease-in-out",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 25
+    },
+    {
+      "y": 0,
+      "cls": "header-container animateSwipe lightImage",
+      "position": "relative",
+      "height": "130px",
+      "transform": "matrix(1, 0, 0, 1, 0, 0)",
+      "transition": "background-color 0.2s",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 25
+    }
+  ],
+  "widgetSamples": [
+    {
+      "sel": "[data-tpl=sli01].sli01--text-components .slick-next",
+      "error": "not found"
+    }
+  ],
+  "events": {
+    "animations": [
+      {
+        "name": "fadeInFromBottom",
+        "el": "article.bottom-to-top-animation.color-teaser-6.no-media[data-tpl=tea03r]",
+        "txt": "Statements & Positions\n                    \n\n     ",
+        "y": 3200
+      },
+      {
+        "name": "fadeInFromBottom",
+        "el": "article.bottom-to-top-animation.color-teaser-1.no-media[data-tpl=tea03r]",
+        "txt": "RWE in national & international media\n            ",
+        "y": 3200
+      },
+      {
+        "name": "fadeInFromBottom",
+        "el": "article.bottom-to-top-animation.color-teaser-6.no-media[data-tpl=tea03r]",
+        "txt": "Contacts\n                    \n\n                   ",
+        "y": 3200
+      },
+      {
+        "name": "fadeInFromBottom",
+        "el": "article.bottom-to-top-animation.color-teaser-1.no-media[data-tpl=tea03r]",
+        "txt": "Media Centre\n                    \n\n               ",
+        "y": 3200
+      },
+      {
+        "name": "fadeInFromBottom",
+        "el": "article.bottom-to-top-animation.color-teaser-6.no-media[data-tpl=tea03r]",
+        "txt": "Research & Development\n                    \n\n     ",
+        "y": 3200
+      },
+      {
+        "name": "fadeInFromBottom",
+        "el": "article.bottom-to-top-animation.color-teaser-1.no-media[data-tpl=tea03r]",
+        "txt": "Sustainability & Responsibility\n                  ",
+        "y": 3200
+      },
+      {
+        "name": "fadeInFromBottom",
+        "el": "article.bottom-to-top-animation.color-teaser-6.no-media[data-tpl=tea03r]",
+        "txt": "Purpose & Strategy\n                    \n\n         ",
+        "y": 3600
+      },
+      {
+        "name": "fadeInFromBottom",
+        "el": "article.bottom-to-top-animation.color-teaser-1.no-media[data-tpl=tea03r]",
+        "txt": "Inclusive Company Culture\n                    \n\n  ",
+        "y": 3600
+      },
+      {
+        "name": "fadeInFromBottom",
+        "el": "article.bottom-to-top-animation.color-teaser-6.no-media[data-tpl=tea03r]",
+        "txt": "RWE Careers\n                    \n\n                ",
+        "y": 3600
+      }
+    ],
+    "transitions": [
+      {
+        "prop": "opacity",
+        "el": "html.is-desktop.is-chrome > body > div > button.back-to-top",
+        "y": 270,
+        "dur": "0.4s"
+      },
+      {
+        "prop": "transform",
+        "el": "html.is-desktop.is-chrome > body > div > div > header.header-container.lightImage.header-container--has-scrolled-up",
+        "y": 3928,
+        "dur": "0.2s"
+      },
+      {
+        "prop": "left",
+        "el": "div.slider-container > div.slider-navigation > div.slider-dots > ul.slick-dots > li",
+        "y": 500,
+        "dur": "0.2s, 0.2s"
+      },
+      {
+        "prop": "transform",
+        "el": "div.slider-container > div.slider-navigation > div.slider-dots > ul.slick-dots > li",
+        "y": 500,
+        "dur": "0.2s, 0.2s"
+      },
+      {
+        "prop": "left",
+        "el": "div.slider-container > div.slider-navigation > div.slider-dots > ul.slick-dots > li.slick-active",
+        "y": 500,
+        "dur": "0.2s, 0.2s"
+      },
+      {
+        "prop": "transform",
+        "el": "div.slider-container > div.slider-navigation > div.slider-dots > ul.slick-dots > li.slick-active",
+        "y": 500,
+        "dur": "0.2s, 0.2s"
+      },
+      {
+        "prop": "left",
+        "el": "div.slider-container > div.slider-navigation > div.slider-dots > ul.slick-dots > li",
+        "y": 500,
+        "dur": "0.2s, 0.2s"
+      },
+      {
+        "prop": "transform",
+        "el": "div.slider-container > div.slider-navigation > div.slider-dots > ul.slick-dots > li",
+        "y": 500,
+        "dur": "0.2s, 0.2s"
+      },
+      {
+        "prop": "left",
+        "el": "div.slider-container > div.slider-navigation > div.slider-dots > ul.slick-dots > li",
+        "y": 500,
+        "dur": "0.2s, 0.2s"
+      },
+      {
+        "prop": "opacity",
+        "el": "div.slider-container > div.slider-wrapper.slick-initialized.slick-slider > div.slick-list.draggable > div.slick-track > div.slider-slide.slick-slide",
+        "y": 500,
+        "dur": "0.5s"
+      },
+      {
+        "prop": "opacity",
+        "el": "div.slider-container > div.slider-wrapper.slick-initialized.slick-slider > div.slick-list.draggable > div.slick-track > div.slider-slide.slick-slide.slick-current",
+        "y": 500,
+        "dur": "0.5s"
+      },
+      {
+        "prop": "opacity",
+        "el": "html.is-desktop.is-chrome > body > div > button.back-to-top",
+        "y": 90,
+        "dur": "0.4s"
+      },
+      {
+        "prop": "opacity",
+        "el": "div.slider-container > div.slider-wrapper.slick-initialized.slick-slider > div.slick-list.draggable > div.slick-track > div.slider-slide.slick-slide",
+        "y": 90,
+        "dur": "0.5s"
+      },
+      {
+        "prop": "opacity",
+        "el": "div.slider-container > div.slider-wrapper.slick-initialized.slick-slider > div.slick-list.draggable > div.slick-track > div.slider-slide.slick-slide.slick-current",
+        "y": 90,
+        "dur": "0.5s"
+      }
+    ],
+    "classMutations": [
+      {
+        "added": [
+          "flatpickr-input"
+        ],
+        "el": "div.row.g-1.g-md-3 > div.search-filter-component.col-12.col-md-3 > div.date-picker > div.date-picker-container > input.date-picker-input.flatpickr-input",
+        "y": 0
+      },
+      {
+        "added": [
+          "flatpickr-input"
+        ],
+        "el": "div.row.g-1.g-md-3 > div.search-filter-component.col-12.col-md-3 > div.date-picker > div.date-picker-container > input.date-picker-input.flatpickr-input",
+        "y": 0
+      },
+      {
+        "added": [
+          "flatpickr-input"
+        ],
+        "el": "div.row.g-1.g-md-3 > div.search-filter-component.col-12.col-md-3 > div.date-picker > div.date-picker-container > input.date-picker-input.flatpickr-input",
+        "y": 0
+      },
+      {
+        "added": [
+          "flatpickr-input"
+        ],
+        "el": "div.row.g-1.g-md-3 > div.search-filter-component.col-12.col-md-3 > div.date-picker > div.date-picker-container > input.date-picker-input.flatpickr-input",
+        "y": 0
+      },
+      {
+        "added": [
+          "flatpickr-input"
+        ],
+        "el": "div.row.g-1.g-md-3 > div.search-filter-component.col-12.col-md-3 > div.date-picker > div.date-picker-container > input.date-picker-input.flatpickr-input",
+        "y": 0
+      },
+      {
+        "added": [
+          "flatpickr-input"
+        ],
+        "el": "div.row.g-1.g-md-3 > div.search-filter-component.col-12.col-md-3 > div.date-picker > div.date-picker-container > input.date-picker-input.flatpickr-input",
+        "y": 0
+      },
+      {
+        "added": [
+          "header-container--has-scrolled-down",
+          "header-container--has-scrolled-up"
+        ],
+        "el": "html.is-desktop.is-chrome > body > div > div > header.header-container.lightImage.header-container--has-scrolled-down",
+        "y": 270
+      },
+      {
+        "added": [
+          "header-container--has-scrolled-up"
+        ],
+        "el": "html.is-desktop.is-chrome > body > div > div > header.header-container.lightImage.header-container--has-scrolled-down",
+        "y": 270
+      },
+      {
+        "added": [
+          "animate"
+        ],
+        "el": "article.bottom-to-top-animation.color-teaser-6.no-media[data-tpl=tea03r]",
+        "y": 3200
+      },
+      {
+        "added": [
+          "animate"
+        ],
+        "el": "article.bottom-to-top-animation.color-teaser-1.no-media[data-tpl=tea03r]",
+        "y": 3200
+      },
+      {
+        "added": [
+          "animate"
+        ],
+        "el": "article.bottom-to-top-animation.color-teaser-6.no-media[data-tpl=tea03r]",
+        "y": 3200
+      },
+      {
+        "added": [
+          "animate"
+        ],
+        "el": "article.bottom-to-top-animation.color-teaser-1.no-media[data-tpl=tea03r]",
+        "y": 3200
+      },
+      {
+        "added": [
+          "animate"
+        ],
+        "el": "article.bottom-to-top-animation.color-teaser-6.no-media[data-tpl=tea03r]",
+        "y": 3200
+      },
+      {
+        "added": [
+          "animate"
+        ],
+        "el": "article.bottom-to-top-animation.color-teaser-1.no-media[data-tpl=tea03r]",
+        "y": 3200
+      },
+      {
+        "added": [
+          "animate"
+        ],
+        "el": "article.bottom-to-top-animation.color-teaser-6.no-media[data-tpl=tea03r]",
+        "y": 3600
+      },
+      {
+        "added": [
+          "animate"
+        ],
+        "el": "article.bottom-to-top-animation.color-teaser-1.no-media[data-tpl=tea03r]",
+        "y": 3600
+      },
+      {
+        "added": [
+          "animate"
+        ],
+        "el": "article.bottom-to-top-animation.color-teaser-6.no-media[data-tpl=tea03r]",
+        "y": 3600
+      },
+      {
+        "added": [
+          "animateSwipe",
+          "darkImage"
+        ],
+        "el": "html.is-desktop.is-chrome > body > div > div > header.header-container.header-container--has-scrolled-up.animateSwipe",
+        "y": 500
+      },
+      {
+        "added": [
+          "darkImage"
+        ],
+        "el": "html.is-desktop.is-chrome > body > div > div > header.header-container.header-container--has-scrolled-up.animateSwipe",
+        "y": 500
+      },
+      {
+        "added": [
+          "darkImage"
+        ],
+        "el": "html.is-desktop.is-chrome > body > div > div > header.header-container.header-container--has-scrolled-up.animateSwipe",
+        "y": 500
+      },
+      {
+        "added": [
+          "slick-current",
+          "slick-active"
+        ],
+        "el": "div.slider-container > div.slider-wrapper.slick-initialized.slick-slider > div.slick-list.draggable > div.slick-track > div.slider-slide.slick-slide.slick-current",
+        "y": 500
+      },
+      {
+        "added": [
+          "slick-active"
+        ],
+        "el": "div.slider-container > div.slider-wrapper.slick-initialized.slick-slider > div.slick-list.draggable > div.slick-track > div.slider-slide.slick-slide.slick-current",
+        "y": 500
+      },
+      {
+        "added": [
+          "slick-active"
+        ],
+        "el": "div.slider-container > div.slider-navigation > div.slider-dots > ul.slick-dots > li.slick-active",
+        "y": 500
+      },
+      {
+        "added": [
+          "lightImage"
+        ],
+        "el": "html.is-desktop.is-chrome > body > div > div > header.header-container.header-container--has-scrolled-up.animateSwipe",
+        "y": 90
+      },
+      {
+        "added": [
+          "lightImage"
+        ],
+        "el": "html.is-desktop.is-chrome > body > div > div > header.header-container.header-container--has-scrolled-up.animateSwipe",
+        "y": 90
+      },
+      {
+        "added": [
+          "slick-current",
+          "slick-active"
+        ],
+        "el": "div.slider-container > div.slider-wrapper.slick-initialized.slick-slider > div.slick-list.draggable > div.slick-track > div.slider-slide.slick-slide.slick-current",
+        "y": 90
+      },
+      {
+        "added": [
+          "slick-active"
+        ],
+        "el": "div.slider-container > div.slider-wrapper.slick-initialized.slick-slider > div.slick-list.draggable > div.slick-track > div.slider-slide.slick-slide.slick-current",
+        "y": 90
+      },
+      {
+        "added": [
+          "slick-active"
+        ],
+        "el": "div.sli01--stage-components.sli01--carousel.sli01--autoplay[data-tpl=sli01] > div.slider-container > div.slider-dots > ul.slick-dots > li.slick-active",
+        "y": 90
+      }
+    ]
+  }
+}

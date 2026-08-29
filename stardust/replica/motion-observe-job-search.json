@@ -1,0 +1,305 @@
+{
+  "url": "https://www.rwe.com/en/rwe-careers-portal/job-offers/",
+  "width": 1440,
+  "headerTimeline": [
+    {
+      "y": 0,
+      "cls": "header-container darkImage",
+      "position": "relative",
+      "height": "130px",
+      "transform": "matrix(1, 0, 0, 1, 0, 0)",
+      "transition": "background-color 0.2s",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 10
+    },
+    {
+      "y": 0,
+      "cls": "header-container darkImage",
+      "position": "relative",
+      "height": "130px",
+      "transform": "matrix(1, 0, 0, 1, 0, 0)",
+      "transition": "background-color 0.2s",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 19
+    },
+    {
+      "y": 1200,
+      "cls": "header-container darkImage header-container--has-scrolled-down header-container--has-scrolled-up",
+      "position": "fixed",
+      "height": "64px",
+      "transform": "matrix(1, 0, 0, 1, 0, -64)",
+      "transition": "transform 0.2s ease-in-out",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 19
+    },
+    {
+      "y": 2400,
+      "cls": "header-container darkImage header-container--has-scrolled-down header-container--has-scrolled-up",
+      "position": "fixed",
+      "height": "64px",
+      "transform": "matrix(1, 0, 0, 1, 0, -64)",
+      "transition": "transform 0.2s ease-in-out",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 19
+    },
+    {
+      "y": 1371,
+      "cls": "header-container darkImage header-container--has-scrolled-up",
+      "position": "fixed",
+      "height": "64px",
+      "transform": "matrix(1, 0, 0, 1, 0, -0.866176)",
+      "transition": "transform 0.2s ease-in-out",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 19
+    },
+    {
+      "y": 2400,
+      "cls": "header-container darkImage header-container--has-scrolled-up header-container--has-scrolled-down",
+      "position": "fixed",
+      "height": "64px",
+      "transform": "matrix(1, 0, 0, 1, 0, -62.0933)",
+      "transition": "transform 0.2s ease-in-out",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 19
+    },
+    {
+      "y": 1200,
+      "cls": "header-container darkImage header-container--has-scrolled-up",
+      "position": "fixed",
+      "height": "64px",
+      "transform": "matrix(1, 0, 0, 1, 0, -1.59389)",
+      "transition": "transform 0.2s ease-in-out",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 19
+    },
+    {
+      "y": 800,
+      "cls": "header-container darkImage header-container--has-scrolled-up",
+      "position": "fixed",
+      "height": "64px",
+      "transform": "matrix(1, 0, 0, 1, 0, 0)",
+      "transition": "transform 0.2s ease-in-out",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 19
+    },
+    {
+      "y": 500,
+      "cls": "header-container darkImage header-container--has-scrolled-up",
+      "position": "fixed",
+      "height": "64px",
+      "transform": "matrix(1, 0, 0, 1, 0, 0)",
+      "transition": "transform 0.2s ease-in-out",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 19
+    },
+    {
+      "y": 300,
+      "cls": "header-container darkImage header-container--has-scrolled-up",
+      "position": "fixed",
+      "height": "64px",
+      "transform": "matrix(1, 0, 0, 1, 0, 0)",
+      "transition": "transform 0.2s ease-in-out",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 19
+    },
+    {
+      "y": 200,
+      "cls": "header-container darkImage header-container--has-scrolled-up",
+      "position": "fixed",
+      "height": "64px",
+      "transform": "matrix(1, 0, 0, 1, 0, 0)",
+      "transition": "transform 0.2s ease-in-out",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 19
+    },
+    {
+      "y": 150,
+      "cls": "header-container darkImage header-container--has-scrolled-up",
+      "position": "fixed",
+      "height": "64px",
+      "transform": "matrix(1, 0, 0, 1, 0, 0)",
+      "transition": "transform 0.2s ease-in-out",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 19
+    },
+    {
+      "y": 120,
+      "cls": "header-container darkImage header-container--has-scrolled-up",
+      "position": "fixed",
+      "height": "64px",
+      "transform": "matrix(1, 0, 0, 1, 0, 0)",
+      "transition": "transform 0.2s ease-in-out",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 19
+    },
+    {
+      "y": 90,
+      "cls": "header-container darkImage header-container--has-scrolled-up",
+      "position": "fixed",
+      "height": "64px",
+      "transform": "matrix(1, 0, 0, 1, 0, 0)",
+      "transition": "transform 0.2s ease-in-out",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 19
+    },
+    {
+      "y": 60,
+      "cls": "header-container darkImage header-container--has-scrolled-up",
+      "position": "fixed",
+      "height": "64px",
+      "transform": "matrix(1, 0, 0, 1, 0, 0)",
+      "transition": "transform 0.2s ease-in-out",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 19
+    },
+    {
+      "y": 30,
+      "cls": "header-container darkImage header-container--has-scrolled-up",
+      "position": "fixed",
+      "height": "64px",
+      "transform": "matrix(1, 0, 0, 1, 0, 0)",
+      "transition": "transform 0.2s ease-in-out",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 19
+    },
+    {
+      "y": 0,
+      "cls": "header-container darkImage",
+      "position": "relative",
+      "height": "130px",
+      "transform": "matrix(1, 0, 0, 1, 0, 0)",
+      "transition": "background-color 0.2s",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 19
+    }
+  ],
+  "widgetSamples": [],
+  "events": {
+    "animations": [],
+    "transitions": [
+      {
+        "prop": "top",
+        "el": "section.[data-tpl=grid-bas-04] > div.container > div.row > div.grid-content.grid-content-2.col-md-4 > div.sticky-initialized.sticky-animate",
+        "y": 270,
+        "dur": "0.2s"
+      },
+      {
+        "prop": "opacity",
+        "el": "html.is-desktop.is-chrome > body.sticky-filter > div > button.back-to-top",
+        "y": 270,
+        "dur": "0.4s"
+      },
+      {
+        "prop": "transform",
+        "el": "html.is-desktop.is-chrome > body.sticky-filter > div > div > header.header-container.darkImage.header-container--has-scrolled-up",
+        "y": 1371,
+        "dur": "0.2s"
+      },
+      {
+        "prop": "top",
+        "el": "section.[data-tpl=grid-bas-04] > div.container > div.row > div.grid-content.grid-content-2.col-md-4 > div.sticky-initialized.sticky-animate",
+        "y": 1371,
+        "dur": "0.2s"
+      },
+      {
+        "prop": "transform",
+        "el": "html.is-desktop.is-chrome > body.sticky-filter > div > div > header.header-container.darkImage.header-container--has-scrolled-up",
+        "y": 2400,
+        "dur": "0.2s"
+      },
+      {
+        "prop": "top",
+        "el": "section.[data-tpl=grid-bas-04] > div.container > div.row > div.grid-content.grid-content-2.col-md-4 > div.sticky-initialized.sticky-animate",
+        "y": 2400,
+        "dur": "0.2s"
+      },
+      {
+        "prop": "transform",
+        "el": "html.is-desktop.is-chrome > body.sticky-filter > div > div > header.header-container.darkImage.header-container--has-scrolled-up",
+        "y": 1200,
+        "dur": "0.2s"
+      },
+      {
+        "prop": "top",
+        "el": "section.[data-tpl=grid-bas-04] > div.container > div.row > div.grid-content.grid-content-2.col-md-4 > div.sticky-initialized.sticky-animate",
+        "y": 1200,
+        "dur": "0.2s"
+      },
+      {
+        "prop": "opacity",
+        "el": "html.is-desktop.is-chrome > body.sticky-filter > div > button.back-to-top",
+        "y": 90,
+        "dur": "0.4s"
+      }
+    ],
+    "classMutations": [
+      {
+        "added": [
+          "header-container--has-scrolled-down",
+          "header-container--has-scrolled-up"
+        ],
+        "el": "html.is-desktop.is-chrome > body.sticky-filter > div > div > header.header-container.darkImage.header-container--has-scrolled-down",
+        "y": 270
+      },
+      {
+        "added": [
+          "header-container--has-scrolled-up"
+        ],
+        "el": "html.is-desktop.is-chrome > body.sticky-filter > div > div > header.header-container.darkImage.header-container--has-scrolled-down",
+        "y": 270
+      },
+      {
+        "added": [
+          "sticky-animate"
+        ],
+        "el": "section.[data-tpl=grid-bas-04] > div.container > div.row > div.grid-content.grid-content-2.col-md-4 > div.sticky-initialized.sticky-animate",
+        "y": 270
+      },
+      {
+        "added": [
+          "is-visible"
+        ],
+        "el": "div.grid-content.grid-content-2.col-md-4 > div.sticky-initialized.sticky-animate > div > div.n-job-filter-wrapper.is-visible > div.n-toggle-mobile-filter.color-background-9.is-visible",
+        "y": 800
+      },
+      {
+        "added": [
+          "is-visible"
+        ],
+        "el": "div.row > div.grid-content.grid-content-2.col-md-4 > div.sticky-initialized.sticky-animate > div > div.n-job-filter-wrapper.is-visible",
+        "y": 800
+      },
+      {
+        "added": [
+          "sticky-animate"
+        ],
+        "el": "section.[data-tpl=grid-bas-04] > div.container > div.row > div.grid-content.grid-content-2.col-md-4 > div.sticky-initialized.sticky-animate",
+        "y": 1371
+      },
+      {
+        "added": [
+          "header-container--has-scrolled-down"
+        ],
+        "el": "html.is-desktop.is-chrome > body.sticky-filter > div > div > header.header-container.darkImage.header-container--has-scrolled-up",
+        "y": 2400
+      }
+    ]
+  }
+}

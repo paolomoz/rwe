@@ -1,0 +1,611 @@
+{
+  "url": "https://www.rwe.com/en/",
+  "width": 1440,
+  "headerTimeline": [
+    {
+      "y": 0,
+      "cls": "header-container header-container--is-transparent lightImage",
+      "position": "absolute",
+      "height": "130px",
+      "transform": "matrix(1, 0, 0, 1, 0, 0)",
+      "transition": "background-color 0.2s",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 31
+    },
+    {
+      "y": 0,
+      "cls": "header-container header-container--is-transparent lightImage",
+      "position": "absolute",
+      "height": "130px",
+      "transform": "matrix(1, 0, 0, 1, 0, 0)",
+      "transition": "background-color 0.2s",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 31
+    },
+    {
+      "y": 1200,
+      "cls": "header-container header-container--is-transparent lightImage header-container--has-scrolled-down header-container--has-scrolled-up",
+      "position": "fixed",
+      "height": "64px",
+      "transform": "matrix(1, 0, 0, 1, 0, -64)",
+      "transition": "transform 0.2s ease-in-out",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 31
+    },
+    {
+      "y": 2400,
+      "cls": "header-container header-container--is-transparent lightImage header-container--has-scrolled-down header-container--has-scrolled-up",
+      "position": "fixed",
+      "height": "64px",
+      "transform": "matrix(1, 0, 0, 1, 0, -64)",
+      "transition": "transform 0.2s ease-in-out",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 31
+    },
+    {
+      "y": 3600,
+      "cls": "header-container header-container--is-transparent lightImage header-container--has-scrolled-down header-container--has-scrolled-up",
+      "position": "fixed",
+      "height": "64px",
+      "transform": "matrix(1, 0, 0, 1, 0, -64)",
+      "transition": "transform 0.2s ease-in-out",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 31
+    },
+    {
+      "y": 4800,
+      "cls": "header-container header-container--is-transparent lightImage header-container--has-scrolled-down header-container--has-scrolled-up",
+      "position": "fixed",
+      "height": "64px",
+      "transform": "matrix(1, 0, 0, 1, 0, -64)",
+      "transition": "transform 0.2s ease-in-out",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 31
+    },
+    {
+      "y": 6000,
+      "cls": "header-container header-container--is-transparent lightImage header-container--has-scrolled-down header-container--has-scrolled-up",
+      "position": "fixed",
+      "height": "64px",
+      "transform": "matrix(1, 0, 0, 1, 0, -64)",
+      "transition": "transform 0.2s ease-in-out",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 31
+    },
+    {
+      "y": 5885,
+      "cls": "header-container header-container--is-transparent header-container--has-scrolled-up animateSwipe darkImage invertLogo",
+      "position": "fixed",
+      "height": "64px",
+      "transform": "matrix(1, 0, 0, 1, 0, -3.6736)",
+      "transition": "transform 0.2s ease-in-out",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 31
+    },
+    {
+      "y": 4385,
+      "cls": "header-container header-container--is-transparent header-container--has-scrolled-up animateSwipe darkImage invertLogo",
+      "position": "fixed",
+      "height": "64px",
+      "transform": "matrix(1, 0, 0, 1, 0, 0)",
+      "transition": "transform 0.2s ease-in-out",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 31
+    },
+    {
+      "y": 2400,
+      "cls": "header-container header-container--is-transparent header-container--has-scrolled-up animateSwipe darkImage invertLogo",
+      "position": "fixed",
+      "height": "64px",
+      "transform": "matrix(1, 0, 0, 1, 0, 0)",
+      "transition": "transform 0.2s ease-in-out",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 31
+    },
+    {
+      "y": 1200,
+      "cls": "header-container header-container--is-transparent header-container--has-scrolled-up animateSwipe darkImage invertLogo",
+      "position": "fixed",
+      "height": "64px",
+      "transform": "matrix(1, 0, 0, 1, 0, 0)",
+      "transition": "transform 0.2s ease-in-out",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 31
+    },
+    {
+      "y": 800,
+      "cls": "header-container header-container--is-transparent header-container--has-scrolled-up animateSwipe darkImage invertLogo",
+      "position": "fixed",
+      "height": "64px",
+      "transform": "matrix(1, 0, 0, 1, 0, 0)",
+      "transition": "transform 0.2s ease-in-out",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 31
+    },
+    {
+      "y": 500,
+      "cls": "header-container header-container--is-transparent header-container--has-scrolled-up animateSwipe darkImage invertLogo",
+      "position": "fixed",
+      "height": "64px",
+      "transform": "matrix(1, 0, 0, 1, 0, 0)",
+      "transition": "transform 0.2s ease-in-out",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 31
+    },
+    {
+      "y": 300,
+      "cls": "header-container header-container--is-transparent header-container--has-scrolled-up animateSwipe darkImage invertLogo",
+      "position": "fixed",
+      "height": "64px",
+      "transform": "matrix(1, 0, 0, 1, 0, 0)",
+      "transition": "transform 0.2s ease-in-out",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 31
+    },
+    {
+      "y": 200,
+      "cls": "header-container header-container--is-transparent header-container--has-scrolled-up animateSwipe darkImage invertLogo",
+      "position": "fixed",
+      "height": "64px",
+      "transform": "matrix(1, 0, 0, 1, 0, 0)",
+      "transition": "transform 0.2s ease-in-out",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 31
+    },
+    {
+      "y": 150,
+      "cls": "header-container header-container--is-transparent header-container--has-scrolled-up animateSwipe darkImage invertLogo",
+      "position": "fixed",
+      "height": "64px",
+      "transform": "matrix(1, 0, 0, 1, 0, 0)",
+      "transition": "transform 0.2s ease-in-out",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 31
+    },
+    {
+      "y": 120,
+      "cls": "header-container header-container--is-transparent header-container--has-scrolled-up animateSwipe darkImage invertLogo",
+      "position": "fixed",
+      "height": "64px",
+      "transform": "matrix(1, 0, 0, 1, 0, 0)",
+      "transition": "transform 0.2s ease-in-out",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 31
+    },
+    {
+      "y": 90,
+      "cls": "header-container header-container--is-transparent header-container--has-scrolled-up animateSwipe darkImage invertLogo",
+      "position": "fixed",
+      "height": "64px",
+      "transform": "matrix(1, 0, 0, 1, 0, 0)",
+      "transition": "transform 0.2s ease-in-out",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 31
+    },
+    {
+      "y": 60,
+      "cls": "header-container header-container--is-transparent header-container--has-scrolled-up animateSwipe darkImage invertLogo",
+      "position": "fixed",
+      "height": "64px",
+      "transform": "matrix(1, 0, 0, 1, 0, 0)",
+      "transition": "transform 0.2s ease-in-out",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 31
+    },
+    {
+      "y": 30,
+      "cls": "header-container header-container--is-transparent header-container--has-scrolled-up animateSwipe darkImage invertLogo",
+      "position": "fixed",
+      "height": "64px",
+      "transform": "matrix(1, 0, 0, 1, 0, 0)",
+      "transition": "transform 0.2s ease-in-out",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 31
+    },
+    {
+      "y": 0,
+      "cls": "header-container header-container--is-transparent animateSwipe darkImage invertLogo",
+      "position": "absolute",
+      "height": "130px",
+      "transform": "matrix(1, 0, 0, 1, 0, 0)",
+      "transition": "background-color 0.2s",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 31
+    }
+  ],
+  "widgetSamples": [],
+  "events": {
+    "animations": [
+      {
+        "name": "fadeInFromBottom",
+        "el": "section.bottom-to-top-animation.animate[data-tpl=grid-bas-08]",
+        "txt": "Responsibility & sustainability\n                  ",
+        "y": 1600
+      },
+      {
+        "name": "fadeInFromBottom",
+        "el": "article.bottom-to-top-animation.color-teaser-1.no-media[data-tpl=tea03r]",
+        "txt": "RWE @ Social Media\n                    \n\n         ",
+        "y": 2000
+      },
+      {
+        "name": "fadeInFromBottom",
+        "el": "article.bottom-to-top-animation.color-teaser-1.no-media[data-tpl=tea03r]",
+        "txt": "Research & Development\n                    \n\n     ",
+        "y": 2000
+      },
+      {
+        "name": "fadeInFromBottom",
+        "el": "article.bottom-to-top-animation.color-teaser-1.no-media[data-tpl=tea03r]",
+        "txt": "Environmental protection\n                    \n\n   ",
+        "y": 2000
+      },
+      {
+        "name": "fadeInFromBottom",
+        "el": "article.bottom-to-top-animation.color-teaser-1.no-media[data-tpl=tea03r]",
+        "txt": "Our locations\n                    \n\n              ",
+        "y": 2400
+      },
+      {
+        "name": "fadeInFromBottom",
+        "el": "article.bottom-to-top-animation.color-teaser-1.no-media[data-tpl=tea03r]",
+        "txt": "Hydrogen\n                    \n\n                   ",
+        "y": 2400
+      },
+      {
+        "name": "fadeInFromBottom",
+        "el": "article.bottom-to-top-animation.color-teaser-1.no-media[data-tpl=tea03r]",
+        "txt": "Diversity\n                    \n\n                  ",
+        "y": 2400
+      },
+      {
+        "name": "fadeInFromRight",
+        "el": "article.teaser-width.tea01--image-left[data-tpl=tea01r] > a.link.link--internal > div.header-wrapper > header.color-teaser-6.no-energy-lines.right-to-left-animation",
+        "txt": "Explore your opportunities at RWE\n                ",
+        "y": 4400
+      },
+      {
+        "name": "fadeInFromBottom",
+        "el": "div.bottom-to-top-animation.plt01r-rss.animate[data-tpl=plt01r]",
+        "txt": "13\n            August\n        \n\n        \n         ",
+        "y": 5600
+      },
+      {
+        "name": "fadeInFromBottom",
+        "el": "div.bottom-to-top-animation.plt01r-rss.animate[data-tpl=plt01r]",
+        "txt": "11\n            August\n        \n\n        \n         ",
+        "y": 5600
+      },
+      {
+        "name": "fadeInFromBottom",
+        "el": "div.bottom-to-top-animation.plt01r-rss.animate[data-tpl=plt01r]",
+        "txt": "6\n            August\n        \n\n        \n          ",
+        "y": 5600
+      },
+      {
+        "name": "wobble",
+        "el": "article[data-tpl=tea02r] > a.link.link--external > div.wobble-animation",
+        "txt": "@media ( max-width: 479px ) { [data-image-id='716a",
+        "y": 6000
+      },
+      {
+        "name": "wobble",
+        "el": "article[data-tpl=tea02r] > a.link.link--internal > div.wobble-animation",
+        "txt": "@media ( max-width: 479px ) { [data-image-id='d52d",
+        "y": 6800
+      },
+      {
+        "name": "wobble",
+        "el": "article[data-tpl=tea02r] > a.link.link--internal > div.wobble-animation",
+        "txt": "@media ( max-width: 479px ) { [data-image-id='6eee",
+        "y": 5885
+      }
+    ],
+    "transitions": [
+      {
+        "prop": "opacity",
+        "el": "html.is-desktop.is-chrome > body > div > button.back-to-top",
+        "y": 400,
+        "dur": "0.4s"
+      },
+      {
+        "prop": "transform",
+        "el": "article.bottom-to-top-animation.color-teaser-1.no-media[data-tpl=tea03r]",
+        "y": 2000,
+        "dur": "0.2s"
+      },
+      {
+        "prop": "transform",
+        "el": "article.teaser-width.tea01--image-left.inside-bas-05[data-tpl=tea01r]",
+        "y": 3200,
+        "dur": "0.2s"
+      },
+      {
+        "prop": "transform",
+        "el": "article.teaser-width.tea01--image-left.inside-bas-05[data-tpl=tea01r]",
+        "y": 4000,
+        "dur": "0.2s"
+      },
+      {
+        "prop": "transform",
+        "el": "article.teaser-width.tea01--image-left.inside-bas-05[data-tpl=tea01r]",
+        "y": 4800,
+        "dur": "0.2s"
+      },
+      {
+        "prop": "transform",
+        "el": "article.teaser-width.tea01--image-left.inside-bas-05[data-tpl=tea01r]",
+        "y": 5200,
+        "dur": "0.2s"
+      },
+      {
+        "prop": "color",
+        "el": "div[data-tpl=ll01] > ul > li > a.link.link--internal",
+        "y": 6800,
+        "dur": "0.2s"
+      },
+      {
+        "prop": "opacity",
+        "el": "div.slider-container > div.slider-wrapper.slick-initialized.slick-slider > div.slick-list.draggable > div.slick-track > div.slider-slide.slick-slide",
+        "y": 6800,
+        "dur": "0.5s"
+      },
+      {
+        "prop": "opacity",
+        "el": "div.slider-container > div.slider-wrapper.slick-initialized.slick-slider > div.slick-list.draggable > div.slick-track > div.slider-slide.slick-slide.slick-current",
+        "y": 6800,
+        "dur": "0.5s"
+      },
+      {
+        "prop": "transform",
+        "el": "html.is-desktop.is-chrome > body > div > div > header.header-container.header-container--is-transparent.header-container--has-scrolled-up",
+        "y": 5885,
+        "dur": "0.2s"
+      },
+      {
+        "prop": "color",
+        "el": "div[data-tpl=ll01] > ul > li > a.link.link--internal",
+        "y": 5885,
+        "dur": "0.2s"
+      },
+      {
+        "prop": "opacity",
+        "el": "html.is-desktop.is-chrome > body > div > button.back-to-top",
+        "y": 90,
+        "dur": "0.4s"
+      }
+    ],
+    "classMutations": [
+      {
+        "added": [
+          "header-container--has-scrolled-down",
+          "header-container--has-scrolled-up"
+        ],
+        "el": "html.is-desktop.is-chrome > body > div > div > header.header-container.header-container--is-transparent.lightImage",
+        "y": 400
+      },
+      {
+        "added": [
+          "header-container--has-scrolled-up"
+        ],
+        "el": "html.is-desktop.is-chrome > body > div > div > header.header-container.header-container--is-transparent.lightImage",
+        "y": 400
+      },
+      {
+        "added": [
+          "animate"
+        ],
+        "el": "section.bottom-to-top-animation.animate[data-tpl=grid-bas-08]",
+        "y": 1600
+      },
+      {
+        "added": [
+          "animate"
+        ],
+        "el": "article.bottom-to-top-animation.hasVideo.hasImage[data-tpl=tea03r]",
+        "y": 1600
+      },
+      {
+        "added": [
+          "animate"
+        ],
+        "el": "article.bottom-to-top-animation.color-teaser-1.no-media[data-tpl=tea03r]",
+        "y": 2000
+      },
+      {
+        "added": [
+          "animate"
+        ],
+        "el": "article.bottom-to-top-animation.color-teaser-1.no-media[data-tpl=tea03r]",
+        "y": 2000
+      },
+      {
+        "added": [
+          "animate"
+        ],
+        "el": "article.bottom-to-top-animation.color-teaser-1.no-media[data-tpl=tea03r]",
+        "y": 2000
+      },
+      {
+        "added": [
+          "animate"
+        ],
+        "el": "article.bottom-to-top-animation.color-teaser-1.no-media[data-tpl=tea03r]",
+        "y": 2400
+      },
+      {
+        "added": [
+          "animate"
+        ],
+        "el": "article.bottom-to-top-animation.color-teaser-1.no-media[data-tpl=tea03r]",
+        "y": 2400
+      },
+      {
+        "added": [
+          "animate"
+        ],
+        "el": "article.bottom-to-top-animation.color-teaser-1.no-media[data-tpl=tea03r]",
+        "y": 2400
+      },
+      {
+        "added": [
+          "animate"
+        ],
+        "el": "article.teaser-width.tea01--image-left[data-tpl=tea01r] > a.link.link--internal > div.header-wrapper > header.color-teaser-6.right-to-left-animation.animate",
+        "y": 2800
+      },
+      {
+        "added": [
+          "animate"
+        ],
+        "el": "article.teaser-width.tea01--image-left.inside-bas-05[data-tpl=tea01r] > a.link.link--internal > div.header-wrapper > header.color-teaser-1.right-to-left-animation.animate",
+        "y": 3600
+      },
+      {
+        "added": [
+          "animate"
+        ],
+        "el": "article.teaser-width.tea01--image-left.inside-bas-05[data-tpl=tea01r] > a.link.link--internal > div.header-wrapper > header.color-teaser-1.right-to-left-animation.animate",
+        "y": 3600
+      },
+      {
+        "added": [
+          "animate"
+        ],
+        "el": "article.teaser-width.tea01--image-left.inside-bas-05[data-tpl=tea01r] > a.link.link--internal > div.header-wrapper > header.color-teaser-1.right-to-left-animation.animate",
+        "y": 3600
+      },
+      {
+        "added": [
+          "animate"
+        ],
+        "el": "article.teaser-width.tea01--image-left[data-tpl=tea01r] > a.link.link--internal > div.header-wrapper > header.color-teaser-6.no-energy-lines.right-to-left-animation",
+        "y": 4400
+      },
+      {
+        "added": [
+          "animate"
+        ],
+        "el": "article.teaser-width.tea01--image-left.inside-bas-05[data-tpl=tea01r] > a.link.link--internal > div.header-wrapper > header.color-teaser-2.right-to-left-animation.animate",
+        "y": 5200
+      },
+      {
+        "added": [
+          "animate"
+        ],
+        "el": "article.teaser-width.tea01--image-left.inside-bas-05[data-tpl=tea01r] > a.link.link--internal > div.header-wrapper > header.color-teaser-2.right-to-left-animation.animate",
+        "y": 5200
+      },
+      {
+        "added": [
+          "animate"
+        ],
+        "el": "article.teaser-width.tea01--image-left.inside-bas-05[data-tpl=tea01r] > a.link.link--internal > div.header-wrapper > header.color-teaser-2.right-to-left-animation.animate",
+        "y": 5200
+      },
+      {
+        "added": [
+          "animate"
+        ],
+        "el": "div.bottom-to-top-animation.plt01r-rss.animate[data-tpl=plt01r]",
+        "y": 5600
+      },
+      {
+        "added": [
+          "animate"
+        ],
+        "el": "div.bottom-to-top-animation.plt01r-rss.animate[data-tpl=plt01r]",
+        "y": 5600
+      },
+      {
+        "added": [
+          "animate"
+        ],
+        "el": "div.bottom-to-top-animation.plt01r-rss.animate[data-tpl=plt01r]",
+        "y": 5600
+      },
+      {
+        "added": [
+          "animate"
+        ],
+        "el": "section.wobble-animation-trigger.three-wobble.animate[data-tpl=grid-bas-05]",
+        "y": 6000
+      },
+      {
+        "added": [
+          "animateSwipe",
+          "darkImage",
+          "invertLogo"
+        ],
+        "el": "html.is-desktop.is-chrome > body > div > div > header.header-container.header-container--is-transparent.header-container--has-scrolled-down",
+        "y": 6800
+      },
+      {
+        "added": [
+          "darkImage",
+          "invertLogo"
+        ],
+        "el": "html.is-desktop.is-chrome > body > div > div > header.header-container.header-container--is-transparent.header-container--has-scrolled-down",
+        "y": 6800
+      },
+      {
+        "added": [
+          "darkImage",
+          "invertLogo"
+        ],
+        "el": "html.is-desktop.is-chrome > body > div > div > header.header-container.header-container--is-transparent.header-container--has-scrolled-down",
+        "y": 6800
+      },
+      {
+        "added": [
+          "invertLogo"
+        ],
+        "el": "html.is-desktop.is-chrome > body > div > div > header.header-container.header-container--is-transparent.header-container--has-scrolled-down",
+        "y": 6800
+      },
+      {
+        "added": [
+          "slick-current",
+          "slick-active"
+        ],
+        "el": "div.slider-container > div.slider-wrapper.slick-initialized.slick-slider > div.slick-list.draggable > div.slick-track > div.slider-slide.slick-slide.slick-current",
+        "y": 6800
+      },
+      {
+        "added": [
+          "slick-active"
+        ],
+        "el": "div.slider-container > div.slider-wrapper.slick-initialized.slick-slider > div.slick-list.draggable > div.slick-track > div.slider-slide.slick-slide.slick-current",
+        "y": 6800
+      },
+      {
+        "added": [
+          "slick-active"
+        ],
+        "el": "div.sli01--stage-components.sli01--carousel.sli01--autoplay[data-tpl=sli01] > div.slider-container > div.slider-dots > ul.slick-dots > li.slick-active",
+        "y": 6800
+      }
+    ]
+  }
+}

@@ -1,0 +1,316 @@
+{
+  "url": "https://www.rwe.com/en/the-group/countries-and-locations/",
+  "width": 1440,
+  "headerTimeline": [
+    {
+      "y": 0,
+      "cls": "header-container lightImage",
+      "position": "relative",
+      "height": "130px",
+      "transform": "matrix(1, 0, 0, 1, 0, 0)",
+      "transition": "background-color 0.2s",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 8
+    },
+    {
+      "y": 0,
+      "cls": "header-container lightImage",
+      "position": "relative",
+      "height": "130px",
+      "transform": "matrix(1, 0, 0, 1, 0, 0)",
+      "transition": "background-color 0.2s",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 8
+    },
+    {
+      "y": 1200,
+      "cls": "header-container lightImage header-container--has-scrolled-down header-container--has-scrolled-up",
+      "position": "fixed",
+      "height": "64px",
+      "transform": "matrix(1, 0, 0, 1, 0, -64)",
+      "transition": "transform 0.2s ease-in-out",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 8
+    },
+    {
+      "y": 2400,
+      "cls": "header-container lightImage header-container--has-scrolled-down header-container--has-scrolled-up",
+      "position": "fixed",
+      "height": "64px",
+      "transform": "matrix(1, 0, 0, 1, 0, -64)",
+      "transition": "transform 0.2s ease-in-out",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 9
+    },
+    {
+      "y": 3600,
+      "cls": "header-container lightImage header-container--has-scrolled-down header-container--has-scrolled-up",
+      "position": "fixed",
+      "height": "64px",
+      "transform": "matrix(1, 0, 0, 1, 0, -64)",
+      "transition": "transform 0.2s ease-in-out",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 9
+    },
+    {
+      "y": 3211,
+      "cls": "header-container lightImage header-container--has-scrolled-up",
+      "position": "fixed",
+      "height": "64px",
+      "transform": "matrix(1, 0, 0, 1, 0, -1.83611)",
+      "transition": "transform 0.2s ease-in-out",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 9
+    },
+    {
+      "y": 1711,
+      "cls": "header-container lightImage header-container--has-scrolled-up",
+      "position": "fixed",
+      "height": "64px",
+      "transform": "matrix(1, 0, 0, 1, 0, 0)",
+      "transition": "transform 0.2s ease-in-out",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 9
+    },
+    {
+      "y": 2400,
+      "cls": "header-container lightImage header-container--has-scrolled-up header-container--has-scrolled-down",
+      "position": "fixed",
+      "height": "64px",
+      "transform": "matrix(1, 0, 0, 1, 0, -63.1043)",
+      "transition": "transform 0.2s ease-in-out",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 9
+    },
+    {
+      "y": 1200,
+      "cls": "header-container lightImage header-container--has-scrolled-up",
+      "position": "fixed",
+      "height": "64px",
+      "transform": "matrix(1, 0, 0, 1, 0, -3.87759)",
+      "transition": "transform 0.2s ease-in-out",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 9
+    },
+    {
+      "y": 800,
+      "cls": "header-container lightImage header-container--has-scrolled-up",
+      "position": "fixed",
+      "height": "64px",
+      "transform": "matrix(1, 0, 0, 1, 0, 0)",
+      "transition": "transform 0.2s ease-in-out",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 9
+    },
+    {
+      "y": 500,
+      "cls": "header-container lightImage header-container--has-scrolled-up",
+      "position": "fixed",
+      "height": "64px",
+      "transform": "matrix(1, 0, 0, 1, 0, 0)",
+      "transition": "transform 0.2s ease-in-out",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 9
+    },
+    {
+      "y": 300,
+      "cls": "header-container lightImage header-container--has-scrolled-up",
+      "position": "fixed",
+      "height": "64px",
+      "transform": "matrix(1, 0, 0, 1, 0, 0)",
+      "transition": "transform 0.2s ease-in-out",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 9
+    },
+    {
+      "y": 200,
+      "cls": "header-container lightImage header-container--has-scrolled-up",
+      "position": "fixed",
+      "height": "64px",
+      "transform": "matrix(1, 0, 0, 1, 0, 0)",
+      "transition": "transform 0.2s ease-in-out",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 9
+    },
+    {
+      "y": 150,
+      "cls": "header-container lightImage header-container--has-scrolled-up",
+      "position": "fixed",
+      "height": "64px",
+      "transform": "matrix(1, 0, 0, 1, 0, 0)",
+      "transition": "transform 0.2s ease-in-out",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 9
+    },
+    {
+      "y": 120,
+      "cls": "header-container lightImage header-container--has-scrolled-up",
+      "position": "fixed",
+      "height": "64px",
+      "transform": "matrix(1, 0, 0, 1, 0, 0)",
+      "transition": "transform 0.2s ease-in-out",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 9
+    },
+    {
+      "y": 90,
+      "cls": "header-container lightImage header-container--has-scrolled-up",
+      "position": "fixed",
+      "height": "64px",
+      "transform": "matrix(1, 0, 0, 1, 0, 0)",
+      "transition": "transform 0.2s ease-in-out",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 9
+    },
+    {
+      "y": 60,
+      "cls": "header-container lightImage header-container--has-scrolled-up",
+      "position": "fixed",
+      "height": "64px",
+      "transform": "matrix(1, 0, 0, 1, 0, 0)",
+      "transition": "transform 0.2s ease-in-out",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 9
+    },
+    {
+      "y": 30,
+      "cls": "header-container lightImage header-container--has-scrolled-up",
+      "position": "fixed",
+      "height": "64px",
+      "transform": "matrix(1, 0, 0, 1, 0, 0)",
+      "transition": "transform 0.2s ease-in-out",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 9
+    },
+    {
+      "y": 0,
+      "cls": "header-container lightImage",
+      "position": "relative",
+      "height": "130px",
+      "transform": "matrix(1, 0, 0, 1, 0, 0)",
+      "transition": "background-color 0.2s",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 9
+    }
+  ],
+  "widgetSamples": [],
+  "events": {
+    "animations": [
+      {
+        "name": "spin",
+        "el": "div.spinner-container > svg > g > g > g",
+        "txt": "",
+        "y": 800
+      },
+      {
+        "name": "fadeInFromLeft",
+        "el": "article.teaser-width.tea01--image-right[data-tpl=tea01r] > a.link.link--internal > div.header-wrapper > header.color-teaser-6.left-to-right-animation.animate",
+        "txt": "Location facts in video format\n                   ",
+        "y": 2800
+      },
+      {
+        "name": "wobble",
+        "el": "article[data-tpl=tea02r] > a.link.link--internal > div.wobble-animation",
+        "txt": "@media ( max-width: 479px ) { [data-image-id='7a5d",
+        "y": 3200
+      }
+    ],
+    "transitions": [
+      {
+        "prop": "opacity",
+        "el": "html.is-desktop.is-chrome > body > div > button.back-to-top",
+        "y": 270,
+        "dur": "0.4s"
+      },
+      {
+        "prop": "transform",
+        "el": "html.is-desktop.is-chrome > body > div > div > header.header-container.lightImage.header-container--has-scrolled-up",
+        "y": 3211,
+        "dur": "0.2s"
+      },
+      {
+        "prop": "transform",
+        "el": "html.is-desktop.is-chrome > body > div > div > header.header-container.lightImage.header-container--has-scrolled-up",
+        "y": 2400,
+        "dur": "0.2s"
+      },
+      {
+        "prop": "transform",
+        "el": "html.is-desktop.is-chrome > body > div > div > header.header-container.lightImage.header-container--has-scrolled-up",
+        "y": 1200,
+        "dur": "0.2s"
+      },
+      {
+        "prop": "opacity",
+        "el": "html.is-desktop.is-chrome > body > div > button.back-to-top",
+        "y": 90,
+        "dur": "0.4s"
+      }
+    ],
+    "classMutations": [
+      {
+        "added": [
+          "header-container--has-scrolled-down",
+          "header-container--has-scrolled-up"
+        ],
+        "el": "html.is-desktop.is-chrome > body > div > div > header.header-container.lightImage.header-container--has-scrolled-down",
+        "y": 270
+      },
+      {
+        "added": [
+          "header-container--has-scrolled-up"
+        ],
+        "el": "html.is-desktop.is-chrome > body > div > div > header.header-container.lightImage.header-container--has-scrolled-down",
+        "y": 270
+      },
+      {
+        "added": [
+          "list-view-wrapper__left",
+          "row"
+        ],
+        "el": "div.location-browser > div.location-list-view-container > div.list-view-content > div.list-view-wrapper > div.list-view-wrapper__left.row",
+        "y": 2000
+      },
+      {
+        "added": [
+          "animate"
+        ],
+        "el": "article.teaser-width.tea01--image-right[data-tpl=tea01r] > a.link.link--internal > div.header-wrapper > header.color-teaser-6.left-to-right-animation.animate",
+        "y": 2800
+      },
+      {
+        "added": [
+          "animate"
+        ],
+        "el": "section.color-background-2.energy-waves-grid.wobble-animation-trigger[data-tpl=grid-bas-02]",
+        "y": 3200
+      },
+      {
+        "added": [
+          "header-container--has-scrolled-down"
+        ],
+        "el": "html.is-desktop.is-chrome > body > div > div > header.header-container.lightImage.header-container--has-scrolled-up",
+        "y": 2400
+      }
+    ]
+  }
+}
