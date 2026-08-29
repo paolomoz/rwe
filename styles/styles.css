@@ -553,11 +553,10 @@ main .section.rule-below > .default-content-wrapper > h3:first-child {
   margin: 8px 0 32px;
 }
 
-main .section.rule-below { padding-bottom: 32px; }
 main .section.press-list-container { padding: 16px 0 32px; }
 
 /* social band: rules above and below, band padding */
-main .section.rule-above.rule-below { padding-top: 32px; }
+main .section.rule-above.rule-below { padding: 32px 0; }
 
 /* hub h2 rhythm: centered heading with 32px below (grey topics band keeps
    its own row spacing instead) */
@@ -575,9 +574,8 @@ main .section.centered-heading.cards-container:not(.grey) { padding-bottom: 32px
     margin: 0 0 16px;
   }
 
-  main .section.rule-below { padding-bottom: 16px; }
   main .section.press-list-container { padding: 8px 0 16px; }
-  main .section.rule-above.rule-below { padding-top: 16px; }
+  main .section.rule-above.rule-below { padding: 16px 0; }
   main .section.centered-heading .default-content-wrapper h2 { margin-bottom: 16px; }
   main .section.country-slider-container { padding: 16px 0; }
   main .section.events-container { padding-top: 16px; }

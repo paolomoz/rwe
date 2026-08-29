@@ -191,6 +191,9 @@ header .header {
    130px desktop / 72px mobile — page opts in via metadata theme: solid-header
    (decorateTemplateAndTheme adds the body class) ---- */
 body.solid-header > header {
+  /* flow-root: the nav margin-top (52px) must not collapse through the
+     static header (it pushed the whole page down 52px) */
+  display: flow-root;
   position: static;
   height: var(--nav-height);
   background-image: var(--grad);
