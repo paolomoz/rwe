@@ -794,3 +794,10 @@ main .section.article-body .default-content-wrapper p:has(picture) + p {
   main .section.article-body .default-content-wrapper p { margin-bottom: 16px; }
   main .section.article-body .default-content-wrapper ul { margin-bottom: 16px; }
 }
+
+/* RWE Sans is family-weighted: <strong> must switch family, a synthetic
+   bold on the `regular` face is visibly lighter than the real `bold` face */
+main strong {
+  font-family: var(--heading-font-family);
+  font-weight: 700;
+}
