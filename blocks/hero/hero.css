@@ -54,6 +54,8 @@ main .hero-container > div {
 }
 
 .hero .teaser-width {
+  /* border-box so the bottom pad participates in the centering math */
+  box-sizing: border-box;
   position: relative;
   max-width: var(--container);
   margin: 0 auto;
@@ -267,3 +269,4 @@ main .hero-container > div {
     justify-content: flex-start;
   }
 }
+
