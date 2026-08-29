@@ -1,0 +1,203 @@
+/* events — el01 event list (values from the gated A2 prototype) */
+
+.events .listing-events { margin: 0 0 32px; }
+
+.events .le-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 16px;
+  height: 27px;
+}
+
+.events .le-headline { margin: 0; }
+
+.events .le-all {
+  display: flex;
+  align-items: center;
+  font-family: var(--medium-font-family);
+  font-size: 15px;
+  line-height: 27px;
+  color: var(--teal);
+}
+
+.events .le-all-icon {
+  width: 22px;
+  height: 22px;
+  margin-left: 8px;
+  display: block;
+  background: url('../../img/RWE_98_Gradient_green.svg') center / contain no-repeat;
+}
+
+.events .le-event {
+  display: flex;
+  margin-bottom: 24px;
+}
+.events .le-event:last-child { margin-bottom: 0; }
+
+.events .le-date {
+  width: 180px;
+  height: 180px;
+  flex: 0 0 auto;
+  background: var(--teal);
+  padding: 16px 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.events .le-date time {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.events .le-day {
+  font-family: var(--bold-font-family);
+  font-size: 32px;
+  line-height: 32px;
+  color: #fff;
+  display: block;
+}
+
+.events .le-month {
+  font-family: var(--body-font-family);
+  font-size: 18px;
+  line-height: 18px;
+  color: #fff;
+  display: block;
+}
+
+.events .le-content {
+  flex: 1;
+  margin: 0 32px;
+  display: flex;
+  flex-direction: column;
+}
+
+.events .le-title {
+  font-family: var(--bold-font-family);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 27px;
+  color: var(--navy);
+  margin: 0 0 16px;
+}
+
+.events .le-desc {
+  font-size: 18px;
+  line-height: 27px;
+  margin: 0 0 16px;
+}
+.events .le-additional { margin: 56px 0 16px; }
+
+.events .le-show-more {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  border: 0;
+  background: none;
+  cursor: pointer;
+  font-family: var(--medium-font-family);
+  font-size: 18px;
+  line-height: 22px;
+  color: var(--teal);
+}
+
+.events .le-show-more::before {
+  content: '\e910';
+  font-family: RWE_Icon_Font, sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  margin-right: 10px;
+}
+
+.events .le-information p {
+  font-size: 18px;
+  line-height: 27px;
+  margin: 16px 0 0;
+}
+
+.events .le-buttons-desktop {
+  width: 144px;
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.events .le-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+}
+.events .le-buttons--mobile { display: none; }
+
+.events .le-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  height: 42px;
+  padding: 8px 16px;
+  font-size: 15px;
+  line-height: 18px;
+  cursor: pointer;
+  margin: 0;
+}
+
+.events .le-icon {
+  width: 22px;
+  height: 22px;
+  flex: 0 0 auto;
+  background: #fff;
+}
+
+.events .le-icon--location {
+  mask: url('../../img/RWE_Location.svg') center / contain no-repeat;
+}
+
+.events .le-icon--download {
+  mask: url('../../img/RWE_Download.svg') center / contain no-repeat;
+}
+
+@media (width <= 767px) {
+  .events .listing-events { margin-bottom: 24px; }
+
+  .events .le-head {
+    height: 38px;
+    align-items: flex-end;
+    justify-content: flex-start;
+  }
+  .events .le-all { line-height: 22px; }
+  .events .le-event { display: block; }
+
+  .events .le-date {
+    width: 100%;
+    height: 64px;
+  }
+
+  .events .le-date time {
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+  }
+
+  .events .le-content {
+    margin: 0 32px;
+    padding-top: 24px;
+  }
+
+  .events .le-desc {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .events .le-additional { margin: 8px 0 16px; }
+  .events .le-buttons-desktop { display: none; }
+
+  .events .le-buttons--mobile {
+    display: flex;
+    margin-top: 8px;
+  }
+}

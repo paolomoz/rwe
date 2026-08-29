@@ -125,12 +125,32 @@ h6 {
   scroll-margin: 40px;
 }
 
-h1 { font-size: var(--heading-font-size-xxl); line-height: var(--heading-line-height-xxl); }
-h2 { font-size: var(--heading-font-size-xl); line-height: var(--heading-line-height-xl); }
-h3 { font-size: var(--heading-font-size-l); line-height: var(--heading-line-height-l); }
-h4 { font-family: var(--body-font-family); font-size: var(--body-font-size-m); line-height: var(--body-line-height-m); }
+h1 {
+  font-size: var(--heading-font-size-xxl);
+  line-height: var(--heading-line-height-xxl);
+}
+
+h2 {
+  font-size: var(--heading-font-size-xl);
+  line-height: var(--heading-line-height-xl);
+}
+
+h3 {
+  font-size: var(--heading-font-size-l);
+  line-height: var(--heading-line-height-l);
+}
+
+h4 {
+  font-family: var(--body-font-family);
+  font-size: var(--body-font-size-m);
+  line-height: var(--body-line-height-m);
+}
+
 h5,
-h6 { font-size: var(--heading-font-size-s); line-height: var(--heading-line-height-s); }
+h6 {
+  font-size: var(--heading-font-size-s);
+  line-height: var(--heading-line-height-s);
+}
 
 @media (width <= 767px) {
   h1,
@@ -244,7 +264,7 @@ main .hero .gradient a.button.secondary {
 
 .affordance::after {
   content: '\e914';
-  font-family: RWE_Icon_Font, sans-serif;
+  font-family: "RWE_Icon_Font", sans-serif;
   font-weight: 700;
   color: currentcolor;
   display: inline-block;
@@ -423,4 +443,59 @@ main .section.centered .banner-wrapper {
   main .section.grey > .default-content-wrapper:not(:first-child) {
     padding-top: 8px;
   }
+}
+
+/* solid-header theme: header participates in layout (non-home pages) */
+body.solid-header { --nav-height: 130px; }
+
+@media (width <= 767px) {
+  body.solid-header { --nav-height: 72px; }
+}
+
+/* section style: quick-nav — 4-up jump-button row (press hub head) */
+main .section.quick-nav .default-content-wrapper p.button-wrapper {
+  display: flex;
+  gap: 24px;
+  margin: 0;
+}
+
+main .section.quick-nav .default-content-wrapper p.button-wrapper .button {
+  flex: 1;
+  display: block;
+  text-align: center;
+  margin: 0;
+}
+
+@media (width <= 767px) {
+  main .section.quick-nav .default-content-wrapper p.button-wrapper { display: block; }
+  main .section.quick-nav .default-content-wrapper p.button-wrapper .button { margin-bottom: 16px; }
+}
+
+/* section style: centered-heading — hub h2s centered, body copy left */
+main .section.centered-heading .default-content-wrapper h2 { text-align: center; }
+
+/* section style: contact-row — con01 heading + CTA (press team band) */
+main .section.contact-row .default-content-wrapper {
+  width: 320px;
+  margin: 0 auto;
+  padding-left: 60.5px;
+}
+
+main .section.contact-row .default-content-wrapper h2 { margin: 0; }
+main .section.contact-row .default-content-wrapper p.button-wrapper { margin: 12px 0 0; }
+
+@media (width <= 767px) {
+  main .section.contact-row .default-content-wrapper { padding-left: 85px; }
+}
+
+/* hr separators inside default content (hub pages: live lin01 rules) */
+main .default-content-wrapper hr {
+  border: 0;
+  border-top: 1px solid #b5b7b8;
+  height: 2px;
+  margin: 0 0 32px;
+}
+
+@media (width <= 767px) {
+  main .default-content-wrapper hr { margin-bottom: 16px; }
 }

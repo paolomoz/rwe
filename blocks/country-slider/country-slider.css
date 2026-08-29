@@ -1,0 +1,133 @@
+/* country-slider — sli01 text carousel (values from the gated A2 prototype) */
+
+.country-slider .country-slider,
+.country-slider > .country-slider { margin-bottom: 24px; }
+
+.country-slider .cs-window {
+  margin-bottom: 16px;
+  height: 198px;
+}
+
+.country-slider .cs-slide {
+  display: flex;
+  margin: 0 -12px;
+}
+.country-slider.js-init .cs-slide { display: none; }
+
+.country-slider.js-init .cs-slide.cs-active {
+  display: flex;
+  animation: cs-fade 0.5s;
+}
+
+@keyframes cs-fade { 0% { opacity: 0; } 100% { opacity: 1; } }
+
+.country-slider .cs-col {
+  width: 33.3333%;
+  padding: 0 12px;
+  text-align: center;
+}
+
+.country-slider .cs-col h3.subheadline {
+  font-family: var(--bold-font-family);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 27px;
+  color: var(--navy);
+  margin: 0;
+}
+
+.country-slider .cs-col .content p { margin: 24px 0; }
+.country-slider .cs-col .content .button { margin: 24px 0; }
+
+.country-slider .cs-nav {
+  display: flex;
+  justify-content: center;
+  height: 29px;
+}
+
+.country-slider .cs-prev,
+.country-slider .cs-next {
+  width: 32px;
+  border: 0;
+  background: none;
+  padding: 1px 6px;
+  cursor: pointer;
+  font-family: RWE_Icon_Font, sans-serif;
+  font-size: 20px;
+  color: var(--teal);
+  font-weight: 600;
+}
+
+.country-slider .cs-prev::before { content: '\e911'; }
+.country-slider .cs-next::before { content: '\e918'; }
+
+.country-slider .cs-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.country-slider .cs-dots li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 12px;
+  height: 12px;
+  margin: 0 5px;
+}
+
+.country-slider .cs-dots button {
+  padding: 0;
+  font-size: 0;
+  background: transparent;
+  cursor: pointer;
+  border: 1px solid var(--teal);
+  border-radius: 50%;
+  transition: width 0.2s ease-in-out, height 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+
+/* t=0 sizes (slide 1 active) — JS re-derives on change */
+.country-slider .cs-dots .d1 button {
+  width: 12px;
+  height: 12px;
+  background: var(--teal);
+}
+
+.country-slider .cs-dots .d2 button {
+  width: 8px;
+  height: 8px;
+}
+
+.country-slider .cs-dots .d3 button {
+  width: 4px;
+  height: 4px;
+}
+
+.country-slider .cs-dots .d4 button {
+  width: 2px;
+  height: 2px;
+}
+
+@media (width <= 767px) {
+  .country-slider .cs-window { height: auto; }
+
+  .country-slider.js-init .cs-slide.cs-active {
+    display: block;
+    margin: 0;
+  }
+
+  .country-slider .cs-col {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 16px;
+  }
+  .country-slider .cs-col:last-child { margin-bottom: 0; }
+  .country-slider .cs-nav { height: 24px; }
+
+  .country-slider .cs-prev,
+  .country-slider .cs-next { font-size: 18px; }
+}

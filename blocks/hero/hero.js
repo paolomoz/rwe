@@ -16,7 +16,8 @@ function slideBox(cell, isFirst) {
   const heading = cell.querySelector('h1, h2, h3:first-child') || cell.querySelector('h1, h2');
   const sub = cell.querySelector('h3:not(:first-child), h4') || [...cell.querySelectorAll('h3')].pop();
   const cta = cell.querySelector('a.button, a');
-  const light = cta ? cta.classList.contains('primary') : true;
+  // no CTA → gradient box (live default; press-hub slide 1)
+  const light = cta ? cta.classList.contains('primary') : false;
 
   const box = document.createElement('header');
   box.className = `stage-box ${light ? 'stage-box--light light' : 'stage-box--gradient gradient'}`;

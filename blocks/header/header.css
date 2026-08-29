@@ -75,7 +75,7 @@ header .header {
 
 .header .icon-burgermenu::before {
   content: '\e924';
-  font-family: RWE_Icon_Font, sans-serif;
+  font-family: "RWE_Icon_Font", sans-serif;
   font-size: 20px;
   color: var(--mint);
   display: block;
@@ -84,7 +84,7 @@ header .header {
 
 .header .icon-contact::before {
   content: '\e993';
-  font-family: RWE_Icon_Font, sans-serif;
+  font-family: "RWE_Icon_Font", sans-serif;
   font-size: 20px;
   color: var(--mint);
   display: block;
@@ -93,7 +93,7 @@ header .header {
 
 .header .icon-add-app::before {
   content: '\e99a';
-  font-family: RWE_Icon_Font, sans-serif;
+  font-family: "RWE_Icon_Font", sans-serif;
   font-size: 20px;
   color: var(--mint);
   display: block;
@@ -102,7 +102,7 @@ header .header {
 
 .header .icon-region::after {
   content: '\e996';
-  font-family: RWE_Icon_Font, sans-serif;
+  font-family: "RWE_Icon_Font", sans-serif;
   font-size: 20px;
   color: var(--mint);
   display: block;
@@ -111,7 +111,7 @@ header .header {
 
 .header .icon-search::after {
   content: '\e995';
-  font-family: RWE_Icon_Font, sans-serif;
+  font-family: "RWE_Icon_Font", sans-serif;
   font-size: 20px;
   color: var(--mint);
   display: block;
@@ -120,7 +120,7 @@ header .header {
 
 .header .lang-select::after {
   content: '\e910';
-  font-family: RWE_Icon_Font, sans-serif;
+  font-family: "RWE_Icon_Font", sans-serif;
   font-size: 12px;
   color: #fff;
   display: block;
@@ -185,4 +185,17 @@ header .header {
     width: 83px;
     height: 24px;
   }
+}
+
+/* ---- solid chrome variant (all non-home pages): static gradient header
+   130px desktop / 72px mobile — page opts in via metadata theme: solid-header
+   (decorateTemplateAndTheme adds the body class) ---- */
+body.solid-header > header {
+  position: static;
+  height: var(--nav-height);
+  background-image: var(--grad);
+}
+
+@media (width <= 767px) {
+  body.solid-header > header .header .header-container { height: 72px; }
 }

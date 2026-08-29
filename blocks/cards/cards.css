@@ -246,3 +246,207 @@
     padding: 0;
   }
 }
+
+/* ---- variant: topics — tea03r color cards, alternating gradient/white,
+   3-up rows with 3:2 aspect (values from the gated A2 prototype) ---- */
+.cards.topics .card-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -12px;
+}
+
+.cards.topics .cell {
+  width: 33.3333%;
+  padding: 0 12px;
+  margin-top: 32px;
+  display: flex;
+}
+
+.cards.topics .card {
+  position: relative;
+  width: 100%;
+  padding-top: 66.6667%;
+}
+
+.cards.topics .card > a {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #fff;
+}
+
+.cards.topics .cell:nth-child(odd) .card > a {
+  background-image: url('../../img/combined-energy.png'), var(--grad);
+  background-size: 240px 200px, auto;
+  background-position: 100% 100%, 0 0;
+  background-repeat: no-repeat, repeat;
+  color: #fff;
+}
+
+.cards.topics .card header {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.cards.topics .card h3.headline {
+  color: var(--navy);
+  margin: 0 0 24px;
+  text-align: left;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.cards.topics .card p {
+  margin: 0 0 16px;
+  text-align: left;
+  overflow: hidden;
+}
+
+.cards.topics .cell:nth-child(odd) .card h3.headline,
+.cards.topics .cell:nth-child(odd) .card p { color: #fff; }
+.cards.topics .card .affordance { margin: 0 24px 24px; }
+.cards.topics .cell:nth-child(odd) .card .affordance { color: #fff; }
+
+@media (width <= 767px) {
+  .cards.topics .card-list {
+    display: block;
+    margin: 0;
+  }
+
+  .cards.topics .cell {
+    width: 100%;
+    padding: 0;
+    margin-top: 16px;
+    display: flex;
+  }
+  .cards.topics .card header { padding: 16px; }
+
+  .cards.topics .card h3.headline {
+    margin-bottom: 16px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .cards.topics .card .affordance {
+    margin: 0 16px 16px;
+    font-size: 15px;
+    line-height: 22px;
+  }
+}
+
+/* ---- variant: interest — tea01r media cards with gradient/grey caption
+   bodies (nth-child(2) grey) and onmedia/ghost buttons ---- */
+.cards.interest .card-list {
+  display: flex;
+  margin: 0 -12px;
+  padding-top: 16px;
+}
+
+.cards.interest .cell {
+  width: 33.3333%;
+  padding: 0 12px;
+  display: flex;
+  margin-top: 0;
+}
+
+.cards.interest .card {
+  width: 100%;
+  display: flex;
+}
+
+.cards.interest .card > a {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.cards.interest .card-media {
+  position: relative;
+  padding-top: 66.6667%;
+  overflow: hidden;
+}
+
+.cards.interest .card-media img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cards.interest .card-body {
+  height: 256px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-image: url('../../img/combined-energy.png'), var(--grad);
+  background-size: 240px 200px, auto;
+  background-position: 100% 100%, 0 0;
+  background-repeat: no-repeat, repeat;
+  color: #fff;
+}
+
+.cards.interest .cell:nth-child(2) .card-body {
+  background: var(--surface);
+  color: var(--navy);
+}
+.cards.interest .card-body .content { flex: 1; }
+
+.cards.interest .card h3.headline {
+  color: #fff;
+  margin: 0 0 24px;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.cards.interest .card-body p {
+  margin: 0 0 24px;
+  color: #fff;
+}
+
+.cards.interest .cell:nth-child(2) .card h3.headline,
+.cards.interest .cell:nth-child(2) .card-body p { color: var(--navy); }
+
+.cards.interest .card-cta {
+  border-color: #fff;
+  color: #fff;
+  background: transparent;
+}
+
+.cards.interest .cell:nth-child(2) .card-cta {
+  border-color: var(--teal);
+  color: var(--teal);
+}
+
+@media (width <= 767px) {
+  .cards.interest .card-list {
+    display: block;
+    margin: 0;
+    padding: 8px 0 0;
+  }
+
+  .cards.interest .cell {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 16px;
+  }
+  .cards.interest .cell:last-child { margin-bottom: 0; }
+
+  .cards.interest .card-body {
+    height: auto;
+    padding: 16px;
+  }
+
+  .cards.interest .card h3.headline {
+    margin-bottom: 16px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .cards.interest .card-body p { margin-bottom: 16px; }
+}
