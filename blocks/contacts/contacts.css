@@ -1,0 +1,76 @@
+/* contacts — article aside contact cards (values from the gated A1 prototype,
+   stardust/prototypes/css/article.css) */
+
+.contacts .contact-card { margin: 0 0 16px; }
+.contacts .contact-card figure { margin: 0 0 12px; }
+
+.contacts .contact-card img {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  display: block;
+}
+
+.contacts .contact-card h2.headline {
+  font-size: 32px;
+  line-height: 38px;
+  color: var(--navy);
+  margin: 0 0 9px;
+}
+
+.contacts .contact-card h3.subheadline {
+  font-family: var(--heading-font-family);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 27px;
+  color: var(--navy);
+  margin: 0 0 9px;
+}
+
+.contacts .contact { margin: 0 0 24px; }
+
+.contacts .phone {
+  display: flex;
+  align-items: center;
+}
+
+.contacts .phone-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 4px;
+  background: url('../../img/rwe-phone.svg') center / contain no-repeat;
+}
+
+.contacts .phone a {
+  color: var(--sky);
+  font-size: 18px;
+  line-height: 27px;
+}
+.contacts .cta { margin-top: 12px; }
+.contacts .cta .button { margin: 0; }
+.contacts .social-placeholder { margin-top: 16px; }
+
+.contacts .social-placeholder .content {
+  font-size: 18px;
+  line-height: 27px;
+}
+
+@media (width <= 767px) {
+  .contacts .contact-card img {
+    width: auto;
+    height: 166px;
+    aspect-ratio: 1;
+  }
+
+  .contacts .contact-card h2.headline {
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  .contacts .contact-card h3.subheadline,
+  .contacts .phone a,
+  .contacts .social-placeholder .content {
+    font-size: 15px;
+    line-height: 22px;
+  }
+}

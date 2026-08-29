@@ -27,13 +27,16 @@ function collectCard(row) {
 export default async function decorate(block) {
   const isMedia = block.classList.contains('media');
   const isContact = block.classList.contains('contact');
+  const isRelated = block.classList.contains('related');
   const rows = [...block.children];
 
   const grid = document.createElement('ul');
   grid.className = 'card-list';
 
   rows.forEach((row) => {
-    const { pic, heading, p, link } = collectCard(row);
+    const {
+      pic, heading, p, link,
+    } = collectCard(row);
     const li = document.createElement('li');
     li.className = 'cell';
     const article = document.createElement('article');
@@ -41,7 +44,37 @@ export default async function decorate(block) {
     const a = document.createElement('a');
     if (link) { a.href = link.href; a.title = link.title || (heading ? heading.textContent.trim() : ''); }
 
-    if (isContact) {
+    if (isRelated) {
+      // related press cards: media + [h3 + date] header + fixed affordance
+      const media = document.createElement('div');
+      media.className = 'card-media';
+      if (pic) {
+        const img = pic.matches('img') ? pic : pic.querySelector('img');
+        if (img) img.setAttribute('loading', 'lazy');
+        media.append(pic.cloneNode(true));
+      }
+      a.append(media);
+      const header = document.createElement('header');
+      if (heading) {
+        const h3 = document.createElement('h3');
+        h3.className = 'headline';
+        h3.textContent = heading.textContent.trim();
+        header.append(h3);
+      }
+      if (p) {
+        const date = document.createElement('p');
+        date.className = 'date';
+        date.textContent = p.textContent.trim();
+        header.append(date);
+      }
+      const aff = document.createElement('div');
+      aff.className = 'affordance';
+      const sp = document.createElement('span');
+      sp.textContent = 'Read more';
+      aff.append(sp);
+      header.append(aff);
+      a.append(header);
+    } else if (isContact) {
       const iconWrap = document.createElement('div');
       iconWrap.className = 'icon-img';
       if (pic) iconWrap.append(pic.cloneNode(true));

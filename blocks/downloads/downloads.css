@@ -1,0 +1,49 @@
+/* downloads — article download links (values from the gated A1 prototype) */
+
+.downloads h3 {
+  font-family: var(--heading-font-family);
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  color: var(--navy);
+  margin: 0 0 24px;
+}
+
+.downloads ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.downloads li a {
+  display: block;
+  font-family: var(--medium-font-family);
+  font-size: 18px;
+  line-height: 22px;
+  color: var(--teal);
+  padding: 8px 0;
+}
+
+.downloads li:first-child a { padding-top: 0; }
+.downloads li:last-child a { padding-bottom: 0; }
+
+.downloads li a.link-download::after {
+  content: '\e93d';
+  transition: transform 0.2s ease-in-out;
+  font-family: "RWE_Icon_Font", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.downloads li a.link-download:hover::after { transform: translateY(2px); }
+
+@media (width <= 767px) {
+  .downloads h3 {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 16px;
+  }
+  .downloads li a { font-size: 15px; }
+}
