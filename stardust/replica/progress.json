@@ -295,7 +295,54 @@
         "index.css #breadcrumb-bottom: renders 61px tall (line box 29) vs live 59, styles all trail items bold while live uses regular + bold active, and has no chevron separators (live shows '›'). Compensated page-locally in press-hub.css.",
         "stitch-shot fullpage follows body scrollWidth: grey-band loosefield images with right:-3xx px widen the capture (1760px at 1440) unless the band clips them; live clips at the band. Added overflow:hidden on my bands; other archetypes copying the index.css loosefield pattern may hit the same 1760px capture."
       ],
-      "notes": "Header is the solid-gradient article variant; hero is a 770px sli01 stage (not 900 like home) sitting OUTSIDE <main> on live. Key live facts encoded in css/press-hub.css: live hr boxes are 2px; the filter grid has an invisible tag-row contributing one extra gutter (24px desktop / 16px mobile) before the count header; result tiles stretch per flex row (image 66.67% + content pad 24 + title mb8 + footer 27+24+27+24); event descriptions keep font-size 18px (line-height 22) at mobile — drives their 3/4-line wraps; mobile nested-grid content is 296 wide (double 16px pad) for quick-nav/intro/listing/dates while band-level modules are 328. Hook-flagged replica-lifted colors: #b5b7b8 (live hr), rgba(243,243,242,0.8) (live tile bg) — intentional source-fidelity values, not design-system drift."
+      "notes": "Header is the solid-gradient article variant; hero is a 770px sli01 stage (not 900 like home) sitting OUTSIDE <main> on live. Key live facts encoded in css/press-hub.css: live hr boxes are 2px; the filter grid has an invisible tag-row contributing one extra gutter (24px desktop / 16px mobile) before the count header; result tiles stretch per flex row (image 66.67% + content pad 24 + title mb8 + footer 27+24+27+24); event descriptions keep font-size 18px (line-height 22) at mobile — drives their 3/4-line wraps; mobile nested-grid content is 296 wide (double 16px pad) for quick-nav/intro/listing/dates while band-level modules are 328. Hook-flagged replica-lifted colors: #b5b7b8 (live hr), rgba(243,243,242,0.8) (live tile bg) — intentional source-fidelity values, not design-system drift.",
+      "publishedOrigin": {
+        "url": "https://main--rwe--paolomoz.aem.live/en/press",
+        "gatedAt": "2026-08-29",
+        "gates": {
+          "360": {
+            "pixelPct": 3.28,
+            "heightDelta": 3,
+            "pass": true
+          },
+          "1440": {
+            "pixelPct": 2.04,
+            "heightDelta": -4,
+            "pass": true
+          }
+        },
+        "contentDiff": {
+          "findings": 24,
+          "reds": 23,
+          "verdict": "all justified: (a) style-in-link pairing noise MISSING+EXTRA same href (tiles/topics/interest/hero), (c) hub h2>span role swaps x5, breadcrumb-inside-main (established at home)"
+        },
+        "visualDiff": "4 STRETCHED IMAGE flags = hero cover-crop, intentional (live identical)",
+        "blocks": [
+          "hero (hub variant)",
+          "press-list",
+          "country-slider",
+          "events",
+          "cards (topics, interest)",
+          "breadcrumb",
+          "header (solid theme)",
+          "footer (mint links)"
+        ],
+        "residuals": [
+          {
+            "note": "press-list filter/count/pagination frozen at capture values; wired to press query-index at P4"
+          },
+          {
+            "note": "country slider starts at slide 1 (live capture happened to match after instrument all-slider reset)"
+          }
+        ],
+        "learnings": [
+          "teaser-width needs border-box for centering math",
+          "nav margin-top collapses through static header (flow-root)",
+          "--bold-font-family did not exist: invalid var() wipes inherited bold",
+          "home grey default-content nested rule vs hub single-container h2",
+          "CDN edge can serve stale block CSS: verify computed style before counting a no-op round"
+        ]
+      }
     },
     "group-landing": {
       "archetype": "group-landing",

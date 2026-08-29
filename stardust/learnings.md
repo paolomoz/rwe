@@ -1,7 +1,7 @@
 # Learnings ledger — rwe.com replica + deploy (2026-08-26)
 
-Status: HARVESTED 2026-08-28 into adobe/skills stardust 0.18.3 (branch
-`harvest-rwe-centene`, per the improvement plan
+Status: HARVESTED 2026-08-28 into adobe/skills stardust 0.18.3 (merged to
+main 2026-08-29, PR adobe/skills#313, per the improvement plan
 `plugins/stardust/notes/improvement-plan-2026-08-rwe-centene.md`): items 1, 3
 (stitch-shot freeze: video pause + timer clear + slick-dot t=0, ported from
 this repo's `scripts/replica/stitch-shot.mjs`), 4 (crawl.mjs consent

@@ -75,3 +75,16 @@ when scrolled, restore only at y=0). Rewrote motion.js/motion.css to
 evidence-only maps, in-place header morph, dot size transitions (.2s).
 Press-hub pixel gate back to exactly 1.01%. Learnings #14 (correction to
 #13); brief motion section rewritten with the evidence rule.
+
+## 2026-08-29 — P2 step 1: press-hub delivered to EDS (published-origin gates PASS)
+
+content/en/press.html + blocks press-list/country-slider/events + cards
+topics/interest variants + hero hub variant + solid-header theme + hub section
+styles (quick-nav, centered-heading, rule-above/below, nested, contact-row).
+Validations all green: David lint 0 red; plain.html contract; computed-style
+gate (all blocks loaded, flex computes, 0 errors); published-origin pixel
+1440 2.04%/Δ-4, 360 3.28%/Δ+3; content-diff 24 findings all justified
+classes; visual-diff 4 intentional cover-crop flags. Field lessons: teaser
+border-box centering, header margin-collapse (flow-root), invalid
+--bold-font-family var wiped bold, stale CDN edge produced a phantom no-op
+round, instrument now resets ALL slick sliders (was first-only).

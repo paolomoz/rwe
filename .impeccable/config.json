@@ -121,6 +121,11 @@
         "rule": "design-system-color",
         "value": "#edf1f7",
         "createdAt": "2026-08-28T15:21:38.898Z"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "rgb(243 243 242 / 80%)",
+        "createdAt": "2026-08-29T07:24:31.329Z"
       }
     ]
   }

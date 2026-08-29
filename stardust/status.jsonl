@@ -9,3 +9,4 @@
 {"event":"phase-end","skill":"stardust:replica","phase":"archetypes-A2-A6-parallel","at":"2026-08-28T00:28:34.187Z","note":"5 archetypes gated in parallel agents; all pass; shared chrome corrections promoted (home 1.68->1.61, article 3.92->3.40)"}
 {"ts":"2026-08-28","event":"motion-parity-layer","pages":"all7","gateNeutral":{"press-hub":1.06,"locations-map":0.88}}
 {"ts":"2026-08-28","event":"motion-corrections-observe-not-infer","instrument":"scripts/replica/motion-observe.mjs","pressHubPixel":1.01}
+{"ts":"2026-08-29","event":"press-hub-published-gate-pass","1440":{"px":2.04,"dh":-4},"360":{"px":3.28,"dh":3}}
