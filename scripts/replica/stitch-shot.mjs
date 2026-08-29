@@ -285,8 +285,13 @@ async function main() {
       // slick-convention dot resets BOTH sides to slide 1 (transition is
       // already frozen, so the reset is instant). Symmetric + generic.
       await page.evaluate(() => {
-        const dot = document.querySelector('.slick-dots li:first-child button');
-        if (dot) dot.click();
+        // EVERY slick slider on the page (a page can carry several — hero +
+        // text carousels); resetting only the first leaves the others on an
+        // arbitrary autoplay slide
+        document.querySelectorAll('.slick-dots').forEach((dots) => {
+          const dot = dots.querySelector('li:first-child button');
+          if (dot) dot.click();
+        });
       });
       await page.waitForTimeout(600);
       await page.mouse.move(10, opts.vh - 10);

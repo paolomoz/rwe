@@ -201,3 +201,7 @@
     margin-top: 8px;
   }
 }
+
+@media (width <= 767px) {
+  .events .le-date { justify-content: flex-start; }
+}
