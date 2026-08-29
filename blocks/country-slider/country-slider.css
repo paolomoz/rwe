@@ -28,7 +28,7 @@
 }
 
 .country-slider .cs-col h3.subheadline {
-  font-family: var(--bold-font-family);
+  font-family: var(--heading-font-family);
   font-weight: 700;
   font-size: 18px;
   line-height: 27px;

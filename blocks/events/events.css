@@ -54,7 +54,7 @@
 }
 
 .events .le-day {
-  font-family: var(--bold-font-family);
+  font-family: var(--heading-font-family);
   font-size: 32px;
   line-height: 32px;
   color: #fff;
@@ -77,7 +77,7 @@
 }
 
 .events .le-title {
-  font-family: var(--bold-font-family);
+  font-family: var(--heading-font-family);
   font-weight: 700;
   font-size: 18px;
   line-height: 27px;

@@ -115,6 +115,7 @@ footer .f-links ul li:last-child {
 }
 
 footer .f-links ul li a {
+  color: var(--mint);
   font-size: 18px;
   line-height: 22px;
   display: block;

@@ -153,7 +153,7 @@
 }
 
 .press-list .lc-count {
-  font-family: var(--bold-font-family);
+  font-family: var(--heading-font-family);
   font-weight: 700;
   font-size: 24px;
   line-height: 32px;
@@ -200,7 +200,7 @@
 
 .press-list .lt-tag-label {
   display: inline-flex;
-  font-family: var(--bold-font-family);
+  font-family: var(--heading-font-family);
   font-weight: 700;
   font-size: 18px;
   line-height: 22px;
@@ -238,7 +238,7 @@
 }
 
 .press-list .lt-title {
-  font-family: var(--bold-font-family);
+  font-family: var(--heading-font-family);
   font-weight: 700;
   font-size: 24px;
   line-height: 32px;
@@ -262,7 +262,7 @@
 }
 
 .press-list .lm-count {
-  font-family: var(--bold-font-family);
+  font-family: var(--heading-font-family);
   font-weight: 700;
   font-size: 18px;
   line-height: 27px;

@@ -549,7 +549,7 @@ main .section.quick-nav { padding: 32px 0 16px; }
 
 /* intro caption (h3 leading a rule-below section): live tic01 18/27 bold */
 main .section.rule-below > .default-content-wrapper > h3:first-child {
-  font-family: var(--bold-font-family);
+  font-family: var(--heading-font-family);
   font-size: 18px;
   line-height: 27px;
   color: var(--navy);
@@ -583,4 +583,11 @@ main .section.centered-heading.cards-container:not(.grey) { padding-bottom: 32px
   main .section.country-slider-container { padding: 16px 0; }
   main .section.events-container { padding-top: 16px; }
   main .section.centered-heading.cards-container:not(.grey) { padding-bottom: 16px; }
+}
+
+/* section style: nested — live nested-grid mobile gutter (content 296px) */
+@media (width <= 767px) {
+  main .section.nested > div {
+    padding: 0 32px;
+  }
 }
