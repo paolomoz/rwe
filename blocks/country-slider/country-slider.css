@@ -113,6 +113,9 @@
 }
 
 @media (width <= 767px) {
+  .country-slider .country-slider,
+  .country-slider > .country-slider { margin-bottom: 16px; }
+
   .country-slider .cs-window { height: auto; }
 
   .country-slider.js-init .cs-slide.cs-active {

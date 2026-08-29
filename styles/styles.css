@@ -592,3 +592,11 @@ main .section.centered-heading.cards-container:not(.grey) { padding-bottom: 32px
     padding: 0 32px;
   }
 }
+
+/* hub grey bands: the centered heading spans the single-container width
+   (home grey prose is nested 296px; hub topics h2 is 328px — live) */
+@media (width <= 767px) {
+  main .section.grey.centered-heading > .default-content-wrapper {
+    padding: 0 16px;
+  }
+}
