@@ -499,3 +499,31 @@ main .default-content-wrapper hr {
 @media (width <= 767px) {
   main .default-content-wrapper hr { margin-bottom: 16px; }
 }
+
+/* section styles: rule-above / rule-below — live lin01 hr separators
+   (the pipeline strips authored <hr>, so rules render as section borders) */
+main .section.rule-above > div:first-of-type::before {
+  content: '';
+  display: block;
+  border-top: 1px solid #b5b7b8;
+  height: 2px;
+  margin-bottom: 32px;
+}
+
+main .section.rule-below > div:last-of-type::after {
+  content: '';
+  display: block;
+  border-top: 1px solid #b5b7b8;
+  height: 2px;
+  margin-top: 32px;
+}
+
+@media (width <= 767px) {
+  main .section.rule-above > div:first-of-type::before {
+    margin-bottom: 16px;
+  }
+
+  main .section.rule-below > div:last-of-type::after {
+    margin-top: 16px;
+  }
+}
