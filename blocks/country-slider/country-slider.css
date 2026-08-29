@@ -37,7 +37,7 @@
 }
 
 .country-slider .cs-col .content p { margin: 24px 0; }
-.country-slider .cs-col .content .button { margin: 24px 0; }
+.country-slider .cs-col .content .button { margin: 0; }
 
 .country-slider .cs-nav {
   display: flex;

@@ -483,6 +483,7 @@ main .section.quick-nav .default-content-wrapper .button {
 /* section style: centered-heading — hub h2s centered, body copy left */
 main .section.centered-heading .default-content-wrapper h2 {
   text-align: center;
+  margin-top: 0;
   margin-bottom: 32px;
 }
 
