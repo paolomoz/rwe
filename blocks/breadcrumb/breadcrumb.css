@@ -122,7 +122,10 @@ main .breadcrumb-container:has(.breadcrumb.top) {
   }
 }
 
-/* live mobile: crumb text sits 22 below the hero; pb16 + next-section pt16 = 32px gap */
+/* live mobile: pb16 + next-section pt16 = 32px gap (hub templates);
+   content-template pages (content-variant hero) carry pt22 */
 @media (width <= 767px) {
-  .breadcrumb.top .breadcrumb-list { padding: 22px 0 16px; }
+  .breadcrumb.top .breadcrumb-list { padding: 16px 0; }
+
+  main .section:has(.hero.content) + .section .breadcrumb.top .breadcrumb-list { padding-top: 22px; }
 }
