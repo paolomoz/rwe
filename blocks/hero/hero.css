@@ -328,5 +328,6 @@ main .hero-container > div {
   .hero.hub.group .stage {
     position: relative;
     inset: auto;
+    display: block;
   }
 }
