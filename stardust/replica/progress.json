@@ -827,7 +827,52 @@
         "breadcrumb (#breadcrumb-bottom): live renders non-active items in 'regular' family with '>' separators (only active item bold) and 16px outer padding at mobile (not 32); gated chrome renders all-bold, no separators. Fixed here via .page-jobsearch scope",
         "article-proposed/index-proposed footer legal: live copyright span is 18px (mobile 15px) not body-22px — page-scoped fix here"
       ],
-      "notes": "Environment: prototype server 8797 verified serving this file before gate runs. Live captured once per breakpoint (deny-consent state), all fixes measured build-side. html base font on live is 22px (not 20) — px values lifted directly. Icon font quirk: live RWE_Icon_Font renders clock (\\e934) ~1.22x larger ink than our self-hosted TTF at equal font-size — calibrated per-glyph (27px clock, width:22px advance). Mobile tea01r has-imprint captions are 85%-width (imprint gutter). Content-diff yellows include live hidden option lists (countries/cities/functional areas) that the inert widgets intentionally omit — full lists preserved in stardust/replica/job-search-frozen-1440.json for the delivery-phase integration spike."
+      "notes": "Environment: prototype server 8797 verified serving this file before gate runs. Live captured once per breakpoint (deny-consent state), all fixes measured build-side. html base font on live is 22px (not 20) — px values lifted directly. Icon font quirk: live RWE_Icon_Font renders clock (\\e934) ~1.22x larger ink than our self-hosted TTF at equal font-size — calibrated per-glyph (27px clock, width:22px advance). Mobile tea01r has-imprint captions are 85%-width (imprint gutter). Content-diff yellows include live hidden option lists (countries/cities/functional areas) that the inert widgets intentionally omit — full lists preserved in stardust/replica/job-search-frozen-1440.json for the delivery-phase integration spike.",
+      "publishedOrigin": {
+        "url": "https://main--rwe--paolomoz.aem.live/en/rwe-careers-portal/job-offers",
+        "gatedAt": "2026-08-31",
+        "gates": {
+          "360": {
+            "pixelPct": 3.78,
+            "heightDelta": 4,
+            "pass": true
+          },
+          "1440": {
+            "pixelPct": 1.02,
+            "heightDelta": 3,
+            "pass": true
+          }
+        },
+        "contentDiff": {
+          "findings": 382,
+          "reds": 8,
+          "verdict": "all justified: frozen-vs-rotated live job cards x6 (permanent residual: live data drift, matches prototype-gate class), (c) h2>span role swap x1, (a) style-in-link x1"
+        },
+        "visualDiff": {
+          "flags": 1,
+          "verdict": "justified: CONTENT GAP heuristic (heading/box counts vs frozen list + htm slot space); pixel 1.02% proves layout parity"
+        },
+        "learnings": [
+          "cleanest archetype delivery: 6.98% -> 1.02% in 2 rounds; htm01 embed slot (65px/33px) reserved via footnote margin-top",
+          "live mobile jic/results bands carry pb16 + cell mb16 + 1px side cell = 33px bottom spacing",
+          "live mobile breadcrumb is 16px not 15px (site-wide chrome fix applied to breadcrumb block)",
+          "footer endorsement wordmark added as block chrome (legal-row parity, site-wide)"
+        ],
+        "blocks": [
+          "banner (cvm variant)",
+          "job-list (frozen results fragment)",
+          "job-side (frozen filter panel)",
+          "cards (media explore)",
+          "breadcrumb",
+          "job-hero/jobs-count/jobs-grid/footnote section styles"
+        ],
+        "integrationsDeferred": [
+          "jobs API (POST /api/jobborse/entities/v1)",
+          "CV-matcher launch (RweCVMatch.start) + htm01 embed",
+          "favourites/localStorage",
+          "filter drawer behavior"
+        ]
+      }
     }
   }
 }
