@@ -220,12 +220,13 @@
 
 /* ================= disclaimer + teasers ================= */
 
+
 @media (width <= 767px) {
-  .locations-map .lm-filter { padding: 0 16px; }
   .locations-map .lm-filter .lm-filter-head { font-size: 18px; line-height: 24px; margin: 16px 0 24px; }
   .locations-map .lm-filter-row { display: flex; flex-direction: column; margin: 0 -11.25px; }
   .locations-map .lm-filter-col { padding: 0 11.25px; }
   .locations-map .lm-filter-row--split .lm-filter-col { width: 100%; }
+  .locations-map .lm-label { font-size: 15px; line-height: 22px; }
   .locations-map .lm-select .select-control { min-height: 35px; }
   .locations-map .lm-select .select-value-container { padding: 0 16px; }
   .locations-map .lm-select .select-input input { font-size: 15px; }
@@ -235,12 +236,8 @@
   .locations-map .lm-search-container input { height: 37px; padding: 0 16px; font-size: 15px; }
   .locations-map .lm-search-container .search-input-button { width: 42px; }
   .locations-map .lm-search-container .search-input-button::after { font-size: 24px; }
-  .locations-map .lm-switch-wrapper { padding: 0 16px; }
-
-  .locations-map .lm-switch-container {
-    flex-direction: column; justify-content: flex-end; align-items: center;
-    gap: 15px 0; margin: 8px 0; height: auto;
-  }
+  .locations-map .lm-accordion-label { font-size: 15px; line-height: 27px; }
+  .locations-map .lm-switch-container { flex-direction: column; justify-content: flex-end; align-items: center; gap: 15px 0; margin: 8px 0; height: auto; }
   .locations-map .lm-count { font-size: 15px; line-height: 22px; flex-grow: 0; }
   .locations-map .lm-toggle { margin-top: 0; }
   .locations-map .lm-toggle .toggle-switch-text { font-size: 15px; line-height: 22px; }
@@ -249,7 +246,6 @@
   .locations-map .lm-toggle-pill .pill i.rwe-icon-tiles::before { font-size: 25px; }
   .locations-map .lm-toggle-pill .knob { top: 4px; width: 48px; height: 48px; }
   .locations-map .lm-toggle-pill .knob::before { font-size: 20px; }
-  .locations-map .lm-listview .lm-list-content { padding: 16px 8px 0 16px; }
   .locations-map .lm-list-wrapper { grid-template-columns: 1fr; }
   .locations-map .lm-list-left { padding-right: 11.25px; }
   .locations-map .lm-list-second { display: none; }
