@@ -806,7 +806,7 @@
 
 @media (width <= 767px) {
   .cards.cp .cell--plain { display: none; }
-  .cards.cp .cell:nth-child(3n) { margin-bottom: 0; }
+  .cards.cp .cell:last-child { margin-bottom: 0; }
 }
 
 /* --- explore variant: careers tea01r cards — odd gradient + imprint, even white --- */
