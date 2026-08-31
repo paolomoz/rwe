@@ -725,7 +725,6 @@ main .section.article-body .default-content-wrapper li a { color: var(--sky); }
 main .section.article-body .default-content-wrapper picture img {
   width: 100%;
   display: block;
-  margin-bottom: 16px;
 }
 
 /* zoom note: small grey line following the zoomable figure */
