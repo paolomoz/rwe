@@ -780,6 +780,11 @@ main .section.article-body .default-content-wrapper p:has(picture) + p {
     margin-bottom: 16px;
   }
 
+  main .section.article-body .default-content-wrapper p:has(picture) + p {
+    font-size: 15px;
+    line-height: 22px;
+  }
+
   main .section.article-body .default-content-wrapper > h3:first-of-type {
     font-size: 15px;
     line-height: 22px;
