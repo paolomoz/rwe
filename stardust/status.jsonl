@@ -11,3 +11,4 @@
 {"ts":"2026-08-28","event":"motion-corrections-observe-not-infer","instrument":"scripts/replica/motion-observe.mjs","pressHubPixel":1.01}
 {"ts":"2026-08-29","event":"press-hub-published-gate-pass","1440":{"px":2.04,"dh":-4},"360":{"px":3.28,"dh":3}}
 {"ts":"2026-08-31","event":"article-published-gate-pass","1440":{"px":9.17,"dh":4},"360":{"px":7.01,"dh":-5}}
+{"ts":"2026-08-31","event":"group-landing-published-gate-pass","1440":{"px":6.30,"dh":0},"360":{"px":8.48,"dh":-1}}

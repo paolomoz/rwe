@@ -473,7 +473,41 @@
         "css/index.css: #breadcrumb-bottom li all bold; live renders non-active crumbs regular with \\e918 separator before active. Fixed page-scoped.",
         "stitch-shot fullpage uses body scrollWidth: absolutely-positioned loosefield overhang (right:-337px) inflated capture to 1777px until the live #page-wrapper{overflow:hidden} wrapper was mirrored — other archetypes with .band loosefields may want the same wrapper."
       ],
-      "notes": "Live stage + top breadcrumb sit OUTSIDE <main> (main starts y991@1440 / y579@360); replica mirrors that. Page height 7340@1440 (proto 7338), 11214@360 (proto 11208). CO2 <sub> needed normalize-style sub rule (live p stays 6x27). Mobile nested company containers double-pad to 296px prose as per brief. Footer share URLs updated to the-group permalinks. Sanctioned lifted colors outside DESIGN.md palette: #808080 (live hr rule color), matching precedent (#adafb1/#c2c2c2/#52555c) already in gated shared CSS; no hook-admin.mjs present in repo to persist the ignore."
+      "notes": "Live stage + top breadcrumb sit OUTSIDE <main> (main starts y991@1440 / y579@360); replica mirrors that. Page height 7340@1440 (proto 7338), 11214@360 (proto 11208). CO2 <sub> needed normalize-style sub rule (live p stays 6x27). Mobile nested company containers double-pad to 296px prose as per brief. Footer share URLs updated to the-group permalinks. Sanctioned lifted colors outside DESIGN.md palette: #808080 (live hr rule color), matching precedent (#adafb1/#c2c2c2/#52555c) already in gated shared CSS; no hook-admin.mjs present in repo to persist the ignore.",
+      "publishedOrigin": {
+        "url": "https://main--rwe--paolomoz.aem.live/en/the-group",
+        "gatedAt": "2026-08-31",
+        "gates": {
+          "360": {
+            "pixelPct": 8.48,
+            "heightDelta": -1,
+            "pass": true
+          },
+          "1440": {
+            "pixelPct": 6.3,
+            "heightDelta": 0,
+            "pass": true
+          }
+        },
+        "contentDiff": {
+          "findings": 21,
+          "reds": 8,
+          "verdict": "all justified: (a) style-in-link x7, (c) h2>span swap"
+        },
+        "blocks": [
+          "hero (hub group: mobile stacked composition)",
+          "companies",
+          "quote",
+          "cards (media group, contact single)",
+          "breadcrumb (top variant)"
+        ],
+        "learnings": [
+          "live group header is IN-FLOW solid (theme flag, not overlay)",
+          "generator strip() must not use \\s (eats NBSP)",
+          "duplicate heading ids get -1 suffix (anchor hrefs)",
+          "media:not(.grey) base outranks 3-class variant"
+        ]
+      }
     },
     "content-page": {
       "archetype": "content-page",
