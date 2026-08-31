@@ -586,7 +586,36 @@
         "article.css: .zoomable figure{margin-bottom:16px} conflicts with live figcaption spacing (margin-top 16 on figcaption, figure display inline-block) — overridden page-scoped with display:flow-root",
         "index.css desktop: .f-links .accordion-content padding-top 40px; live is 42px — overridden page-scoped (min-width 768)"
       ],
-      "notes": "Survey flagged acc01/59 accordion markers, but all acc01 instances live inside the hidden global-navigation chrome (menu overlay), not in the visible page: no accordion module is needed for this archetype's visible content. it01 tiles keep generic .icon-tiles/.tile-* class names for reuse on location-detail/rwe-share variants. hr on live renders as a 2px box (1px border + 1px hidden content) — with border-box you must set height:2px. .cp-cards-zone .cell{display:flex} outspecifies .cell--plain{display:none}; scoped selector used. impeccable hook: '#ccc' download separators flagged as off-palette; it is the lifted live value (204,204,204) — ignore could not be persisted (hook-admin blocked by permission classifier)."
+      "notes": "Survey flagged acc01/59 accordion markers, but all acc01 instances live inside the hidden global-navigation chrome (menu overlay), not in the visible page: no accordion module is needed for this archetype's visible content. it01 tiles keep generic .icon-tiles/.tile-* class names for reuse on location-detail/rwe-share variants. hr on live renders as a 2px box (1px border + 1px hidden content) — with border-box you must set height:2px. .cp-cards-zone .cell{display:flex} outspecifies .cell--plain{display:none}; scoped selector used. impeccable hook: '#ccc' download separators flagged as off-palette; it is the lifted live value (204,204,204) — ignore could not be persisted (hook-admin blocked by permission classifier).",
+      "publishedOrigin": {
+        "url": "https://main--rwe--paolomoz.aem.live/en/responsibility-and-sustainability/environmental-protection/climate",
+        "gatedAt": "2026-08-31",
+        "gates": {
+          "360": {
+            "pixelPct": 12.87,
+            "heightDelta": 4,
+            "pass": false,
+            "exception": "RED — pixel 2.87 over bar. Diagnosis: coupled residual floor — inherited A4 wrap residual (+24 in prose vs live) is rhythm-compensated (-18 head), so every local fix trades against another zone (documented oscillation 12.3-23%). Root operational cause of many burned rounds found late: code CSS max-age=7200 CDN TTL (admin cache purge lever added). Candidate next steps: re-gate against a FRESH live capture; align head+mid+seams in one commit with purge; or accept as inherited-residual class."
+          },
+          "1440": {
+            "pixelPct": 8.32,
+            "heightDelta": -8,
+            "pass": true
+          }
+        },
+        "contentDiff": {
+          "findings": 22,
+          "reds": 10,
+          "verdict": "all justified: (c) h2>span swaps x5, (a) style-in-link x5"
+        },
+        "blocks": [
+          "hero (content variant)",
+          "icon-tiles",
+          "cards (cp + plain tiles)",
+          "downloads (reused)",
+          "cta-grid/cp-prose/cols-8-4/colored-heading section styles"
+        ]
+      }
     },
     "locations-map": {
       "archetype": "locations-map",
