@@ -826,3 +826,110 @@ main .section.centered.loose { padding-bottom: 64px; }
 @media (width <= 767px) {
   main .section.quick-nav.band-tail .default-content-wrapper p.button-wrapper:last-child { margin-bottom: 0; }
 }
+
+/* ---- content-page (A4) section styles ---- */
+
+/* cta-grid: rows of 3 left-aligned full-width jump buttons */
+main .section.cta-grid > .default-content-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px 24px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+main .section.cta-grid .default-content-wrapper p.button-wrapper { margin: 0; }
+
+main .section.cta-grid .button {
+  display: inline-block;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-align: center;
+  margin: 0;
+}
+
+/* colored heading: em spans render teal (live color__font--gradient-green) */
+main .section.colored-heading h2 em {
+  color: var(--teal);
+  font-style: normal;
+}
+
+/* cp prose rhythm (text-module) */
+main .section.cp-prose .default-content-wrapper h2 {
+  font-size: 32px;
+  line-height: 38px;
+  color: var(--navy);
+  margin: 0 0 24px;
+}
+
+main .section.cp-prose .default-content-wrapper p {
+  font-size: 18px;
+  line-height: 27px;
+  margin: 0 0 24px;
+}
+
+main .section.cp-prose .default-content-wrapper h3 {
+  font-size: 24px;
+  line-height: 32px;
+  color: var(--navy);
+  margin: 0 0 24px;
+}
+
+main .section.cp-prose .default-content-wrapper picture img {
+  width: 100%;
+  display: block;
+}
+
+main .section.cp-prose .default-content-wrapper p:has(picture) + p {
+  font-size: 14px;
+  line-height: 27px;
+  color: #adafb1;
+  margin-top: 0;
+}
+
+/* cols-8-4: prose left, image right */
+main .section.cols-8-4 > .default-content-wrapper {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
+  column-gap: 24px;
+}
+
+main .section.cols-8-4 .default-content-wrapper > * { grid-column: 1; }
+
+main .section.cols-8-4 .default-content-wrapper > p:has(picture) {
+  grid-column: 2;
+  grid-row: 1 / span 8;
+  margin: 0;
+}
+
+@media (width <= 767px) {
+  main .section.cta-grid > .default-content-wrapper {
+    display: block;
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+
+  main .section.cta-grid .default-content-wrapper p.button-wrapper { margin-bottom: 16px; }
+
+  main .section.cp-prose .default-content-wrapper h2 {
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 16px;
+  }
+
+  main .section.cp-prose .default-content-wrapper p {
+    font-size: 15px;
+    line-height: 22px;
+    margin-bottom: 16px;
+  }
+
+  main .section.cp-prose .default-content-wrapper h3 {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 16px;
+  }
+  main .section.cols-8-4 > .default-content-wrapper { display: block; }
+}

@@ -331,3 +331,26 @@ main .hero-container > div {
     display: block;
   }
 }
+
+/* ---- variant: content — single-slide page stage (gated A4: fills the
+   viewport under the 130px solid header; gradient box left-center) ---- */
+.hero.content { height: calc(100vh - 130px); }
+
+.hero.content .slider-arrow,
+.hero.content .slick-dots { display: none; }
+.hero.content .teaser-width { padding: 0; justify-content: center; }
+
+.hero.content header.stage-box {
+  background: linear-gradient(45deg, rgb(29 68 119 / 90%) 22%, rgb(0 161 159 / 75%));
+}
+
+.hero.content .stage-box .button {
+  background: transparent;
+  border-color: var(--teal);
+  color: #fff;
+  margin: 0 8px 0 0;
+}
+
+@media (width <= 767px) {
+  .hero.content { height: calc(100vh - 72px); }
+}

@@ -39,6 +39,21 @@ export default async function decorate(block) {
     } = collectCard(row);
     const li = document.createElement('li');
     li.className = 'cell';
+    if (pic && !heading && !link) {
+      // media-only tile (no caption, no link)
+      li.classList.add('cell--plain');
+      const plain = document.createElement('article');
+      plain.className = 'card card--plain';
+      const media = document.createElement('div');
+      media.className = 'card-media';
+      const img0 = pic.matches('img') ? pic : pic.querySelector('img');
+      if (img0) img0.setAttribute('loading', 'lazy');
+      media.append(pic.cloneNode(true));
+      plain.append(media);
+      li.append(plain);
+      grid.append(li);
+      return;
+    }
     const article = document.createElement('article');
     article.className = 'card';
     const a = document.createElement('a');
