@@ -758,7 +758,7 @@ main .section.article-body .default-content-wrapper p:has(picture) + p {
   main .section.article-body { display: block; }
 
   main .section.article-body > .default-content-wrapper {
-    padding: 16px;
+    padding: 16px 16px 0;
     max-width: none;
   }
 
