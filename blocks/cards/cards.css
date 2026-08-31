@@ -522,7 +522,6 @@
     padding: 0;
     margin-bottom: 24px;
   }
-  .cards.related .cell:last-child { margin-bottom: 0; }
   .cards.related .card header { min-height: 0; }
 
   .cards.related .card h3.headline {
