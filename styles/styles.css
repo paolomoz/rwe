@@ -817,3 +817,8 @@ main .section.companies-container { padding-bottom: 32px; }
 
 /* group intro: content block carries 32px before the band (tic02 mb) */
 main .section.centered.loose { padding-bottom: 64px; }
+
+@media (width <= 767px) {
+  main .section.quick-nav.loose { padding-bottom: 16px; }
+  main .section.centered.loose { padding-bottom: 32px; }
+}
