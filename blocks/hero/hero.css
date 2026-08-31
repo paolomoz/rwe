@@ -323,3 +323,10 @@ main .hero-container > div {
     inset: auto;
   }
 }
+
+@media (width <= 767px) {
+  .hero.hub.group .stage {
+    position: relative;
+    inset: auto;
+  }
+}
