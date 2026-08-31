@@ -927,7 +927,7 @@ main .section.cols-8-4 .default-content-wrapper > p:has(picture) {
   main .section.cp-prose .default-content-wrapper p {
     font-size: 15px;
     line-height: 22px;
-    margin-bottom: 16px;
+    margin-bottom: 24px;
   }
 
   main .section.cp-prose .default-content-wrapper h3 {
