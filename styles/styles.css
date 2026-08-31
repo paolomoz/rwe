@@ -1021,3 +1021,5 @@ main .section.small-print .default-content-wrapper p {
 }
 
 main .section.small-print .default-content-wrapper p:last-child { margin-bottom: 0; }
+
+main .section.locations-map-container { padding-bottom: 32px; }
