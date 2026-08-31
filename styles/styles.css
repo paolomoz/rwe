@@ -1012,3 +1012,8 @@ main .section.cta-grid .default-content-wrapper p.button-wrapper {
     padding: 8px 16px;
   }
 }
+
+@media (width <= 767px) {
+  main .section.cta-grid.pad-btm { padding-bottom: 0; }
+  main .section.cols-8-4.cp-prose { padding-top: 32px; }
+}
