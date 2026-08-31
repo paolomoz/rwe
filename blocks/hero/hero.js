@@ -110,11 +110,13 @@ export default async function decorate(block) {
     dotEls.forEach((d, i) => d.classList.toggle('slick-active', i === cur));
   };
   const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  let timer = reduced ? null : setInterval(() => go(cur + 1), 7000);
+  // `static` variant: live slider without autoplay (locations stage)
+  const autoplay = !reduced && !block.classList.contains('static');
+  let timer = autoplay ? setInterval(() => go(cur + 1), 7000) : null;
   const manual = (n) => {
     if (timer) clearInterval(timer);
     go(n);
-    if (!reduced) timer = setInterval(() => go(cur + 1), 7000);
+    timer = autoplay ? setInterval(() => go(cur + 1), 7000) : null;
   };
   prev.addEventListener('click', () => manual(cur - 1));
   next.addEventListener('click', () => manual(cur + 1));

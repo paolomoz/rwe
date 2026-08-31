@@ -196,3 +196,61 @@ main .banner-container > div:has(.banner.trading) {
     max-width: 240px;
   }
 }
+
+/* ---- variant: locations — image teaser, media right + caption left ---- */
+.banner.locations .lm-video-teaser { position: relative; display: block; height: 624px; }
+
+.banner.locations .lm-video-teaser .media {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 936px;
+  height: 624px;
+  overflow: hidden;
+}
+
+.banner.locations .lm-video-teaser .media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.banner.locations .lm-video-teaser header {
+  position: absolute;
+  left: 0;
+  top: 200px;
+  width: 410px;
+  background-image: url('../../img/combined-energy.png'), var(--grad);
+  background-position: 100% 100%, 0 0;
+  background-size: 240px 200px, auto;
+  background-repeat: no-repeat, repeat;
+  color: #fff;
+  padding: 24px 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.banner.locations .lm-video-teaser h3.headline { color: #fff; margin: 0 0 24px; font-size: 24px; line-height: 32px; }
+.banner.locations .lm-video-teaser p { color: #fff; margin: 0 0 24px; width: 378px; }
+.banner.locations .lm-video-teaser .button { color: #fff; border-color: #fff; background: transparent; margin: 0; }
+
+@media (width <= 767px) {
+  .banner.locations .lm-video-teaser { height: auto; }
+
+  .banner.locations .lm-video-teaser .media {
+    position: static;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 3 / 2;
+  }
+
+  .banner.locations .lm-video-teaser header {
+    position: static;
+    width: 100%;
+    padding: 16px;
+  }
+
+  .banner.locations .lm-video-teaser h3.headline { margin-bottom: 16px; font-size: 18px; line-height: 24px; }
+  .banner.locations .lm-video-teaser p { margin-bottom: 16px; width: auto; }
+}

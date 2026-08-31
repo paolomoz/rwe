@@ -19,6 +19,43 @@ const VIDEOS = {
 };
 
 export default async function decorate(block) {
+  if (block.classList.contains('locations')) {
+    // image teaser: big media right + gradient caption box left (gated A5)
+    const row0 = block.firstElementChild;
+    const pic = row0.querySelector('picture, img');
+    const heading = row0.querySelector('h2, h3');
+    const p0 = [...row0.querySelectorAll('p')].find((x) => !x.querySelector('a, picture, img') && x.textContent.trim());
+    const link0 = [...row0.querySelectorAll('a')].pop();
+    const a0 = document.createElement('a');
+    a0.className = 'lm-video-teaser';
+    if (link0) a0.href = link0.href;
+    const mediaEl = document.createElement('div');
+    mediaEl.className = 'media';
+    if (pic) {
+      const img = pic.matches('img') ? pic : pic.querySelector('img');
+      if (img) img.setAttribute('loading', 'lazy');
+      mediaEl.append(pic.cloneNode(true));
+    }
+    const header0 = document.createElement('header');
+    if (heading) {
+      const h3 = document.createElement('h3');
+      h3.className = 'headline';
+      h3.textContent = heading.textContent.trim();
+      header0.append(h3);
+    }
+    if (p0) { const pp = document.createElement('p'); pp.textContent = p0.textContent.trim(); header0.append(pp); }
+    if (link0) {
+      const btn = document.createElement('div');
+      btn.className = 'button secondary on-media-cta';
+      const sp = document.createElement('span');
+      sp.textContent = link0.textContent.trim();
+      btn.append(sp);
+      header0.append(btn);
+    }
+    a0.append(mediaEl, header0);
+    block.replaceChildren(a0);
+    return;
+  }
   const variant = block.classList.contains('jobs') ? 'jobs' : 'trading';
   const row = block.firstElementChild;
   const link = row ? [...row.querySelectorAll('a')].pop() : null;

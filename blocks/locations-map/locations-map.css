@@ -1,0 +1,261 @@
+/* locations-map — frozen map tool (gated A5 values) */
+
+/* ================= map tool: search filter ================= */
+.locations-map .lm-maptool { display: flex; flex-direction: column; background: #fff; }
+.locations-map .lm-filter { align-self: center; width: 100%; max-width: 1170px; }
+
+.locations-map .lm-filter .lm-filter-head {
+  text-align: center; margin: 16px 0 24px;
+  font-family: var(--heading-font-family); font-size: 24px; line-height: 32px; color: var(--navy);
+}
+.locations-map .lm-filter-row { display: flex; margin: 0 -16.5px; }
+.locations-map .lm-filter-col { width: 100%; padding: 0 16.5px; margin-bottom: 16px; }
+.locations-map .lm-filter-row--split .lm-filter-col { width: 50%; }
+
+.locations-map .lm-label {
+  display: inline-block; font-family: var(--medium-font-family); color: var(--teal);
+  margin-bottom: 8px; font-size: 18px; line-height: 27px;
+}
+
+/* react-select replica */
+.locations-map .lm-select { display: flex; flex-direction: column; }
+
+.locations-map .lm-select .select-control {
+  min-height: 55px; background: #f9f9f9; border: 1px solid #e4e9f2;
+  display: flex; align-items: stretch;
+}
+
+.locations-map .lm-select .select-value-container {
+  display: flex; flex-wrap: nowrap; align-items: center; padding: 0 24px; flex: 1;
+}
+.locations-map .lm-select .select-placeholder { display: none; }
+.locations-map .lm-select .select-input { display: flex; flex: 1; }
+
+.locations-map .lm-select .select-input input {
+  width: 100%; min-width: 2px; border: 0; margin: 0; outline: 0; padding: 0;
+  background: none; font-family: var(--medium-font-family); font-size: 18px; color: var(--navy);
+}
+.locations-map .lm-select .select-input input::placeholder { font-family: var(--medium-font-family); color: var(--navy); opacity: 1; }
+.locations-map .lm-select .select-indicators { display: flex; align-items: center; }
+.locations-map .lm-select .indicator-separator { align-self: stretch; width: 1px; background: #ccc; margin: 8px 0; }
+.locations-map .lm-select .dropdown-indicator { display: flex; align-items: center; justify-content: center; padding: 8px; }
+
+.locations-map .lm-select .dropdown-indicator::after {
+  content: "\e910"; font-family: "RWE_Icon_Font"; font-size: 27px; line-height: 1; color: var(--teal);
+}
+
+/* search term input */
+.locations-map .lm-filter-col--search { display: flex; flex-direction: column; }
+
+.locations-map .lm-search-container { display: flex; }
+
+.locations-map .lm-search-container input {
+  padding: 0 24px; border: 1px solid #e4e9f2; background-color: #f9f9f9;
+  width: 100%; height: 55px; border-radius: 0; appearance: none;
+  font-family: var(--medium-font-family); font-size: 18px; color: var(--navy); outline: none;
+}
+.locations-map .lm-search-container input::placeholder { font-family: var(--body-font-family); color: var(--navy); opacity: 1; }
+
+.locations-map .lm-search-container .search-input-button {
+  width: 62px; background-color: var(--teal); border: 0; cursor: pointer;
+  display: flex; flex-direction: column; justify-content: center; align-items: center;
+}
+
+.locations-map .lm-search-container .search-input-button::after {
+  content: "\e954"; font-family: "RWE_Icon_Font"; font-size: 27px; line-height: 1; color: #fff;
+}
+
+/* additional filter options accordion (collapsed) */
+.locations-map .lm-accordion-label {
+  display: flex; align-items: center; color: var(--teal); font-family: var(--medium-font-family);
+  font-size: 18px; line-height: 27px; cursor: pointer; margin: 16px 0;
+  background: none; border: 0; width: 100%; padding: 0; overflow: hidden; text-align: left;
+}
+
+.locations-map .lm-accordion-label::before {
+  content: "\e910"; font-family: "RWE_Icon_Font"; font-size: 16px; font-weight: 700;
+  color: var(--teal); width: 27px; min-width: 27px; height: 27px;
+  display: inline-flex; justify-content: center; align-items: center; margin-right: 5px;
+}
+
+.locations-map .lm-accordion-label::after {
+  content: ""; display: inline-flex; margin-left: 8px; flex-grow: 1;
+  border-top: 1px solid #c6d0dd; align-self: center;
+}
+.locations-map .lm-accordion .accordion-content { display: none; }
+.locations-map .lm-filter .lm-filter-row--accordion .lm-filter-col { margin-bottom: 16px; }
+
+/* ================= map tool: browser (list view, frozen state) ================= */
+.locations-map .lm-switch-wrapper {
+  display: flex; align-self: center; width: 100%; max-width: 1170px;
+}
+
+.locations-map .lm-switch-container {
+  display: flex; width: 100%; justify-content: flex-end; align-items: center;
+  column-gap: 22px; margin: 16px 0; background: #fff; height: 66.5px;
+}
+
+.locations-map .lm-count {
+  display: flex; align-items: center; justify-content: center; flex-grow: 1;
+  font-family: var(--body-font-family); font-weight: 700; font-size: 18px; line-height: 27px; color: var(--navy);
+}
+.locations-map .lm-toggle { display: inline-flex; flex-shrink: 0; align-items: center; }
+.locations-map .lm-toggle .toggle-switch-text { text-align: center; font-size: 18px; line-height: 27px; }
+.locations-map .lm-toggle .toggle-switch-text:first-of-type { padding-right: 16px; }
+.locations-map .lm-toggle .toggle-switch-text:last-of-type { padding-left: 16px; }
+.locations-map .lm-toggle-pill { position: relative; width: 116px; height: 58px; }
+
+.locations-map .lm-toggle-pill .pill {
+  position: absolute; left: 0; top: 9px; width: 107px; height: 40px;
+  background: #fff; border: 1px solid var(--teal); border-radius: 20px;
+  display: flex; align-items: center;
+}
+
+.locations-map .lm-toggle-pill .pill i {
+  flex: 1 1 auto; display: flex; align-items: center; justify-content: center; font-style: normal;
+}
+
+.locations-map .lm-toggle-pill .pill i.rwe-icon-tiles::before {
+  content: "\e94b"; font-family: "RWE_Icon_Font"; font-size: 30px; color: var(--mint);
+}
+.locations-map .lm-toggle-pill .pill i.rwe-icon-list::before { content: ""; }
+
+.locations-map .lm-toggle-pill .knob {
+  position: absolute; right: 0; top: 0; width: 58px; height: 58px;
+  background: var(--teal); border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+}
+
+.locations-map .lm-toggle-pill .knob::before {
+  content: "\e924"; font-family: "RWE_Icon_Font"; font-size: 25px; color: #fff;
+}
+
+/* grey list container */
+.locations-map .lm-listview { height: 580px; background-color: var(--surface); display: flex; flex-direction: column; }
+.locations-map .lm-listview .lm-list-content { padding: 16px 0 0; width: 100%; max-width: 1170px; align-self: center; }
+.locations-map .lm-sort-nav { margin-bottom: 16px; }
+
+.locations-map .lm-sort-nav .sorting {
+  font-weight: 700; font-family: var(--body-font-family); font-size: 18px; line-height: 27px; color: var(--navy);
+  cursor: pointer; display: inline-flex; align-items: center;
+  padding: 5px 0; border: 0; background: none;
+}
+
+.locations-map .lm-sort-nav .arrow {
+  position: relative; display: inline-block; width: 14px; height: 14px;
+  border-width: 2px 2px 0 0; border-style: solid; color: var(--teal);
+  margin-left: 14px; margin-bottom: 5px; transform: rotate(135deg); top: -1px;
+}
+.locations-map .lm-list-wrapper { display: grid; grid-template-columns: 702px 468px; height: 480px; }
+.locations-map .lm-list-left { padding-right: 16.5px; }
+.locations-map .lm-scroll { height: 480px; overflow: hidden; }
+
+.locations-map .location-list-card {
+  display: flex; align-items: center; padding: 30px;
+  background-color: #f9f9f9; margin-bottom: 20px; cursor: pointer;
+}
+.locations-map .location-list-card:first-child { margin-top: 5px; }
+
+.locations-map .location-list-card.active {
+  border: 2px solid var(--teal); border-radius: 5px;
+  transform: scale(1.02);
+}
+.locations-map .location-list-card .location-info-icon { margin-right: 14px; }
+.locations-map .location-list-card .location-info-icon img { width: 30px; height: 36px; display: block; }
+.locations-map .location-list-card .location-info-information { margin: 0; overflow-wrap: anywhere; }
+
+.locations-map .location-list-card h3 {
+  margin: 0; font-family: var(--heading-font-family); font-size: 24px; font-weight: 700; line-height: 32px; color: var(--navy);
+}
+.locations-map .location-list-card span { font-size: 14px; line-height: 28px; color: var(--navy); display: block; }
+
+/* detail tile (frozen: 360 Solar) */
+.locations-map .lm-list-second { height: 480px; margin-left: 16.5px; }
+.locations-map .lm-tile-scroll { height: 100%; border: 1px solid #c6d0dd; overflow: hidden; position: relative; }
+.locations-map .location-tile { display: flex; flex-direction: column; background: var(--surface); }
+.locations-map .location-tile .location-header { padding-bottom: 16px; border-bottom: 1px solid #c6d0dd; background: #fff; }
+.locations-map .location-tile .location-image { height: 180px; }
+.locations-map .location-tile .location-image img { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+.locations-map .location-tile .location-header-text {
+  display: flex; align-items: center; padding: 16px 16px 0;
+  font-family: var(--heading-font-family); font-size: 24px; line-height: 32px; font-weight: 700; color: var(--navy); margin: 0;
+}
+.locations-map .location-tile .location-type-icons { display: flex; align-items: center; padding-left: 10px; }
+
+.locations-map .location-tile .location-type-icon {
+  display: inline-block; margin: 0 4px; width: 24px; height: 24px;
+  background-repeat: no-repeat; background-size: contain; background-position: center;
+}
+.locations-map .location-tile .location-basic-info { padding: 16px; }
+.locations-map .lm-info-row { display: grid; grid-template-columns: 1.66fr 2.33fr; }
+.locations-map .lm-info-row p { font-size: 16px; line-height: 27px; padding: 0 8px 0 0; margin: 0; }
+.locations-map .lm-info-row p.basic-info-value { padding: 0 0 0 8px; }
+.locations-map .location-tile .lm-info-gap { height: 27px; }
+
+.locations-map .location-tile .address-container {
+  display: flex; justify-content: space-between; align-items: center; column-gap: 20px;
+  background: #fff; padding: 16px; border-top: 1px solid #c6d0dd; border-bottom: 1px solid #c6d0dd;
+}
+.locations-map .location-tile .address-container h4 { font-family: var(--heading-font-family); font-size: 18px; line-height: 27px; margin: 0; color: var(--navy); }
+.locations-map .location-tile .address-details { margin-top: 8px; }
+.locations-map .location-tile .address-details p { white-space: pre-wrap; font-size: 16px; line-height: 27px; }
+.locations-map .location-tile .find-route-wrapper { flex-shrink: 0; }
+.locations-map .location-tile .icon-link { display: flex; flex-direction: column; align-items: center; padding: 16px 0; }
+.locations-map .location-tile .icon-link a { display: flex; flex-direction: column; align-items: center; color: var(--teal); }
+.locations-map .location-tile .icon-link .icon-link-button { display: flex; align-items: center; column-gap: 5px; }
+.locations-map .location-tile .icon-link .icon-link-button p { font-size: 16px; line-height: 27px; }
+
+.locations-map .location-tile .icon-link .icon-arrow::after {
+  content: "\e907"; font-family: "RWE_Icon_Font"; font-weight: 700; color: var(--teal); font-size: 16px;
+}
+.locations-map .location-tile .location-footer { padding: 16px; background: var(--surface); }
+.locations-map .location-tile .read-more-button-container { display: flex; justify-content: center; }
+
+.locations-map .location-tile .read-more-button {
+  border-radius: 5px; display: inline-block; text-align: center; cursor: pointer;
+  padding: 8px 24px; font-family: var(--medium-font-family); font-size: 18px; line-height: 1;
+  border: 2px solid var(--teal); color: #fff; background-color: var(--teal);
+}
+
+/* ================= disclaimer + teasers ================= */
+
+@media (width <= 767px) {
+  .locations-map .lm-filter { padding: 0 16px; }
+  .locations-map .lm-filter .lm-filter-head { font-size: 18px; line-height: 24px; margin: 16px 0 24px; }
+  .locations-map .lm-filter-row { display: flex; flex-direction: column; margin: 0 -11.25px; }
+  .locations-map .lm-filter-col { padding: 0 11.25px; }
+  .locations-map .lm-filter-row--split .lm-filter-col { width: 100%; }
+  .locations-map .lm-select .select-control { min-height: 35px; }
+  .locations-map .lm-select .select-value-container { padding: 0 16px; }
+  .locations-map .lm-select .select-input input { font-size: 15px; }
+  .locations-map .lm-select .dropdown-indicator { padding: 7px; }
+  .locations-map .lm-select .dropdown-indicator::after { font-size: 18px; }
+  .locations-map .lm-select .indicator-separator { margin: 5px 0; }
+  .locations-map .lm-search-container input { height: 37px; padding: 0 16px; font-size: 15px; }
+  .locations-map .lm-search-container .search-input-button { width: 42px; }
+  .locations-map .lm-search-container .search-input-button::after { font-size: 24px; }
+  .locations-map .lm-switch-wrapper { padding: 0 16px; }
+
+  .locations-map .lm-switch-container {
+    flex-direction: column; justify-content: flex-end; align-items: center;
+    gap: 15px 0; margin: 8px 0; height: auto;
+  }
+  .locations-map .lm-count { font-size: 15px; line-height: 22px; flex-grow: 0; }
+  .locations-map .lm-toggle { margin-top: 0; }
+  .locations-map .lm-toggle .toggle-switch-text { font-size: 15px; line-height: 22px; }
+  .locations-map .lm-toggle-pill { width: 96px; height: 56px; }
+  .locations-map .lm-toggle-pill .pill { top: 9px; width: 88px; height: 37px; border-radius: 19px; }
+  .locations-map .lm-toggle-pill .pill i.rwe-icon-tiles::before { font-size: 25px; }
+  .locations-map .lm-toggle-pill .knob { top: 4px; width: 48px; height: 48px; }
+  .locations-map .lm-toggle-pill .knob::before { font-size: 20px; }
+  .locations-map .lm-listview .lm-list-content { padding: 16px 8px 0 16px; }
+  .locations-map .lm-list-wrapper { grid-template-columns: 1fr; }
+  .locations-map .lm-list-left { padding-right: 11.25px; }
+  .locations-map .lm-list-second { display: none; }
+  .locations-map .location-list-card:first-child { margin-top: 3px; }
+  .locations-map .location-list-card .location-info-icon { margin-right: 10.5px; }
+  .locations-map .location-list-card.active { transform: scale(1.04); }
+  .locations-map .location-list-card h3 { font-size: 18px; line-height: 27px; }
+  .locations-map .location-list-card span { font-size: 14px; line-height: 19px; }
+}

@@ -1012,3 +1012,12 @@ main .section.cta-grid .default-content-wrapper p.button-wrapper {
     padding: 8px 16px;
   }
 }
+
+/* small print (map disclaimers) */
+main .section.small-print .default-content-wrapper p {
+  font-size: 14px;
+  line-height: 27px;
+  margin: 0 0 24px;
+}
+
+main .section.small-print .default-content-wrapper p:last-child { margin-bottom: 0; }
