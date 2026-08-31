@@ -782,3 +782,13 @@
   .cards.cp .card-body { padding: 16px; }
   .cards.cp .card-body p { margin-bottom: 16px; }
 }
+
+/* cp plain tile fills the row height (live teaser-plain) */
+.cards.cp .cell--plain .card--plain { height: 100%; display: flex; }
+
+.cards.cp .cell--plain .card-media {
+  padding-top: 0;
+  height: auto;
+  min-height: 100%;
+  width: 100%;
+}
