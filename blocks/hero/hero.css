@@ -307,3 +307,19 @@ main .hero-container > div {
     margin: 0 0 16px;
   }
 }
+
+/* group mobile: auto-height needs the active slide in flow */
+@media (width <= 767px) {
+  .hero.hub.group .hero-track { display: block; position: relative; }
+
+  .hero.hub.group .slider-slide {
+    position: absolute;
+    inset: 0;
+    height: auto;
+  }
+
+  .hero.hub.group .slider-slide.active {
+    position: relative;
+    inset: auto;
+  }
+}
