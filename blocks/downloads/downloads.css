@@ -24,6 +24,8 @@
   padding: 8px 0;
 }
 
+.downloads li { border-bottom: 1px solid #b5b7b8; }
+.downloads li:last-child { border-bottom: 0; }
 .downloads li:first-child a { padding-top: 0; }
 .downloads li:last-child a { padding-bottom: 0; }
 
