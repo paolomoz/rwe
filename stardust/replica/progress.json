@@ -698,7 +698,45 @@
         "index.css: .site-footer .talk-to-us h3 margin-top collapses away at mobile; live keeps the 8px gap (fixed scoped via padding-top).",
         "index.css: live's footer f-links section has ~2px more top padding and .f-recommend ~3px more bottom margin at desktop than the article prototype values (fixed scoped)."
       ],
-      "notes": "Map freeze policy applied: in the deny-consent reference state the htm01 widget is pure DOM (no canvas, no tiles, no leaflet/gmaps globals — verified by probe), so the visible List View was replicated structurally, not as a screenshot. All 718 location cards generated verbatim from the live DOM (5 pin colours extracted as SVG assets). Widget styles lifted from the live map-tool CSS chunks (index/Multiselect/ToggleSwitch/SearchInput/Accordion/Label/ScrollableContainer .20260811.5.css). Breadcrumb chevron separators replicated (live shows them; scoped to .page-locations). Live hits used: 2 gate captures + 3 probes + 3 milestone probe runs, all paced ≥3s."
+      "notes": "Map freeze policy applied: in the deny-consent reference state the htm01 widget is pure DOM (no canvas, no tiles, no leaflet/gmaps globals — verified by probe), so the visible List View was replicated structurally, not as a screenshot. All 718 location cards generated verbatim from the live DOM (5 pin colours extracted as SVG assets). Widget styles lifted from the live map-tool CSS chunks (index/Multiselect/ToggleSwitch/SearchInput/Accordion/Label/ScrollableContainer .20260811.5.css). Breadcrumb chevron separators replicated (live shows them; scoped to .page-locations). Live hits used: 2 gate captures + 3 probes + 3 milestone probe runs, all paced ≥3s.",
+      "publishedOrigin": {
+        "url": "https://main--rwe--paolomoz.aem.live/en/the-group/countries-and-locations",
+        "gatedAt": "2026-08-31",
+        "gates": {
+          "360": {
+            "pixelPct": 9.44,
+            "heightDelta": 6,
+            "pass": true
+          },
+          "1440": {
+            "pixelPct": 5.76,
+            "heightDelta": -3,
+            "pass": true
+          }
+        },
+        "contentDiff": {
+          "findings": 1515,
+          "reds": 13,
+          "verdict": "all justified: (c) h2>span swaps x2, frozen-list card-title role x7 (live styled divs vs gated h3 recreation), Google-map iframe chrome x2 (map = P4 integration; list state ships), (a) style-in-link x2. 1400+ yellows = frozen 718-card list absent from live consent-gated DOM."
+        },
+        "visualDiff": {
+          "flags": 5,
+          "verdict": "justified: hero cover-crop x4, frozen-card thumb cover x1"
+        },
+        "learnings": [
+          "locations page mobile is single-container (328) for more/mapintro/disclaimer but NESTED (296) for intro lead + CTA column — per-zone, not per-page; not-nested style class added",
+          "div.button gets no box styles from global a.button selectors — banner locations CTA needed explicit box rules",
+          "small-print mobile = fs14/lh22/mb16 (desktop lh27/mb24)",
+          "proto has zero gap between list bottom and disclaimer at mobile — locations-map-container pb goes to 0 at 360"
+        ],
+        "blocks": [
+          "hero (hub group static)",
+          "locations-map (frozen maptool fragment)",
+          "banner (locations variant)",
+          "cards (contact single)",
+          "breadcrumb"
+        ]
+      }
     },
     "job-search": {
       "archetype": "job-search",
