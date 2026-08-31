@@ -1,0 +1,137 @@
+/* companies — org-structure rows (values from the gated A3 prototype) */
+
+.companies .company { padding: 16px 0; }
+.companies .company--first { padding: 0 0 16px; }
+.companies .company--last { padding: 16px 0 0; }
+.companies .company-sep { padding: 16px 0; }
+
+.companies .company-sep hr {
+  border: 0;
+  box-sizing: border-box;
+  border-top: 1px solid #b5b7b8;
+  height: 2px;
+  margin: 0;
+}
+
+.companies .row {
+  display: flex;
+  margin: 0 -12px;
+}
+
+.companies .col { padding: 0 12px; }
+.companies .col-8 { width: 66.6667%; }
+.companies .col-4 { width: 33.3333%; }
+.companies .gl-tick { position: relative; }
+
+.companies .gl-tick h2.headline {
+  color: var(--navy);
+  font-size: 32px;
+  line-height: 38px;
+  margin: 0 0 24px;
+}
+
+.companies .content p {
+  font-size: 18px;
+  line-height: 27px;
+  margin: 0 0 24px;
+}
+
+.companies .content-extended {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+}
+
+.companies .content-extended h3 {
+  font-family: var(--heading-font-family);
+  font-size: 24px;
+  line-height: 32px;
+  color: var(--navy);
+  margin: 0 0 16px;
+}
+
+.companies .content-extended p {
+  margin: 0 0 16px;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.companies .content-extended p a {
+  color: var(--teal);
+  font-family: var(--heading-font-family);
+  font-weight: 700;
+}
+
+.companies .content-extended-arrow {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  border: 0;
+  background: none;
+  cursor: pointer;
+  font-family: var(--medium-font-family);
+  font-size: 18px;
+  line-height: 22px;
+  color: var(--teal);
+  margin: 0 0 24px;
+}
+
+.companies .content-extended-arrow::before {
+  content: '\e910';
+  font-family: "RWE_Icon_Font", sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  margin-right: 10px;
+}
+
+.companies .content-extended-arrow .extended-arrow--open { display: none; }
+.companies .content-extended-arrow[aria-expanded='true'] .extended-arrow--open { display: inline; }
+.companies .content-extended-arrow[aria-expanded='true'] .extended-arrow--close { display: none; }
+.companies .gl-cta .button { margin: 0; }
+
+.companies .gl-zoomable {
+  position: relative;
+  margin: 0;
+}
+
+.companies .gl-zoomable img {
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  display: block;
+}
+
+@media (width <= 767px) {
+  .companies .row {
+    display: block;
+    margin: 0;
+  }
+
+  .companies .col {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 16px;
+  }
+
+  .companies .gl-tick h2.headline {
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 16px;
+  }
+
+  .companies .content p {
+    font-size: 15px;
+    line-height: 22px;
+    margin-bottom: 16px;
+  }
+
+  .companies .content-extended p {
+    font-size: 15px;
+    line-height: 22px;
+  }
+
+  .companies .content-extended-arrow {
+    font-size: 15px;
+    margin-bottom: 16px;
+  }
+}

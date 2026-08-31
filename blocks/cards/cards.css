@@ -536,3 +536,188 @@
     margin-bottom: 16px;
   }
 }
+
+/* ---- variant: group — gl-cards 3-up, alternating gradient/white caption
+   bodies with ghost CTA (gated A3 values) ---- */
+.cards.group .card-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -12px;
+  padding: 32px 0 0;
+}
+
+.cards.group .cell {
+  width: 33.3333%;
+  padding: 0 12px;
+  margin-top: 0;
+  display: flex;
+}
+.cards.group .cell:nth-child(n+4) { margin-top: 24px; }
+
+.cards.group .card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.cards.group .card > a {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.cards.group .card-media {
+  position: relative;
+  aspect-ratio: 3 / 2;
+  overflow: hidden;
+  background-color: #c2c2c2;
+}
+
+.cards.group .card-media img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cards.group .card-body {
+  padding: 24px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: #fff;
+  color: var(--navy);
+}
+
+.cards.group .cell:nth-child(odd) .card-body {
+  background-image: url('../../img/combined-energy.png'), var(--grad);
+  background-position: 100% 100%, 0 0;
+  background-repeat: no-repeat, repeat;
+  background-size: 240px 200px, auto;
+  color: #fff;
+}
+
+.cards.group .card h3.headline {
+  color: inherit;
+  font-size: 24px;
+  line-height: 32px;
+  margin: 0 0 24px;
+}
+
+.cards.group .card-body p {
+  color: inherit;
+  margin: 0 0 24px;
+}
+
+.cards.group .card-cta {
+  border-color: currentcolor;
+  color: var(--teal);
+  background: transparent;
+}
+
+.cards.group .cell:nth-child(odd) .card-cta {
+  color: #fff;
+  border-color: #fff;
+}
+
+@media (width <= 767px) {
+  .cards.group .card-list {
+    display: block;
+    margin: 0;
+    padding: 16px 0 0;
+  }
+
+  .cards.group .cell {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 16px;
+  }
+  .cards.group .cell:nth-child(n+4) { margin-top: 0; }
+
+  .cards.group .card h3.headline {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 16px;
+  }
+  .cards.group .card-body { padding: 16px; }
+  .cards.group .card-body p { margin-bottom: 16px; }
+}
+
+/* ---- variant: contact single — tea02r contact teaser (gated A3 values) ---- */
+.cards.contact.single .card-list {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.cards.contact.single .cell {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.cards.contact.single .icon-img {
+  width: 220px;
+  height: 220px;
+  margin: 0 auto 24px;
+}
+
+.cards.contact.single .icon-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.cards.contact.single header {
+  text-align: center;
+  color: var(--navy);
+}
+
+.cards.contact.single h2.headline {
+  font-size: 32px;
+  line-height: 38px;
+  margin: 0 0 24px;
+}
+
+.cards.contact.single header p {
+  margin: 0 0 24px;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.cards.contact.single .affordance {
+  display: flex;
+  justify-content: center;
+  font-family: var(--medium-font-family);
+  font-size: 18px;
+  line-height: 27px;
+  color: var(--teal);
+}
+
+@media (width <= 767px) {
+  .cards.contact.single .icon-img {
+    width: 166px;
+    height: 166px;
+    margin-bottom: 16px;
+  }
+
+  .cards.contact.single h2.headline {
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 16px;
+  }
+
+  .cards.contact.single header p {
+    font-size: 15px;
+    line-height: 22px;
+    margin-bottom: 16px;
+  }
+
+  .cards.contact.single .affordance {
+    font-size: 15px;
+    line-height: 22px;
+  }
+}

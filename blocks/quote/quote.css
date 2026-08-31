@@ -1,0 +1,33 @@
+/* quote — quo01 (values from the gated A3 prototype) */
+
+.quote .quo01 {
+  margin: 0 0 32px;
+  text-align: center;
+}
+
+.quote blockquote {
+  margin: 0;
+  padding: 0;
+}
+
+.quote h2.content {
+  font-family: light, rwe-fallback, sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 38px;
+  color: var(--navy);
+  margin: 0;
+  text-align: center;
+}
+
+.quote h2.content::before { content: '"'; }
+.quote h2.content::after { content: '"'; }
+
+@media (width <= 767px) {
+  .quote .quo01 { margin-bottom: 16px; }
+
+  .quote h2.content {
+    font-size: 24px;
+    line-height: 28px;
+  }
+}

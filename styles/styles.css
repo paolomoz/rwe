@@ -805,3 +805,6 @@ main strong {
   font-family: var(--heading-font-family);
   font-weight: 700;
 }
+
+/* band-tail: section continues the previous grey band (no top padding) */
+main .section.band-tail { padding-top: 0; }
