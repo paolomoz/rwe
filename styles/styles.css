@@ -814,3 +814,6 @@ main .section.quick-nav.loose { padding-bottom: 32px; }
 
 /* companies band closes with the live 32px */
 main .section.companies-container { padding-bottom: 32px; }
+
+/* group intro: content block carries 32px before the band (tic02 mb) */
+main .section.centered.loose { padding-bottom: 64px; }
