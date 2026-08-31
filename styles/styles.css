@@ -822,3 +822,7 @@ main .section.centered.loose { padding-bottom: 64px; }
   main .section.quick-nav.loose { padding-bottom: 16px; }
   main .section.centered.loose { padding-bottom: 32px; }
 }
+
+@media (width <= 767px) {
+  main .section.quick-nav .default-content-wrapper p.button-wrapper:last-child { margin-bottom: 0; }
+}
