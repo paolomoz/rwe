@@ -966,3 +966,11 @@ main .section.cols-8-4:has(> .downloads-wrapper) > .default-content-wrapper {
 @media (width <= 767px) {
   main .section.cols-8-4:has(> .downloads-wrapper) { display: block; }
 }
+
+/* cta-grid: kill line-box slack and wrapper tail pad */
+main .section.cta-grid > .default-content-wrapper { padding-bottom: 0; }
+
+main .section.cta-grid .default-content-wrapper p.button-wrapper {
+  margin: 0;
+  line-height: 0;
+}
