@@ -180,7 +180,8 @@
     "instrumentFixesRound2": [
       "fullpage: force-decode imgs (rule-4 gray placeholder trap on authored <img>)",
       "fullpage: slick first-dot click for carousel t=0 determinism (symmetric)"
-    ]
+    ],
+    "reverified": "2026-08-31: home 1440 2.76%/Δ-8, 360 9.81%/Δ-2 (post footer endorsement, breadcrumb 16px, strong/teaser/hero shared changes)"
   },
   "archetypes": {
     "article-detail": {
@@ -273,7 +274,8 @@
           "main col is 895 border-box (content 871)",
           "margin+wrapper-padding double-counts at section splits",
           "pixel-compare byte-identity = render didnt change: verify computed style, not CSS delivery"
-        ]
+        ],
+        "reverified": "2026-08-31: 1440 9.17%/Δ+4, 360 7.02%/Δ-5 (post shared-chrome changes)"
       }
     },
     "press-hub": {
@@ -389,7 +391,8 @@
           "--bold-font-family did not exist: invalid var() wipes inherited bold",
           "home grey default-content nested rule vs hub single-container h2",
           "CDN edge can serve stale block CSS: verify computed style before counting a no-op round"
-        ]
+        ],
+        "reverified": "2026-08-31: 1440 2.05%/Δ-4, 360 3.28%/Δ+3 (post shared-chrome changes)"
       }
     },
     "group-landing": {
@@ -506,7 +509,8 @@
           "generator strip() must not use \\s (eats NBSP)",
           "duplicate heading ids get -1 suffix (anchor hrefs)",
           "media:not(.grey) base outranks 3-class variant"
-        ]
+        ],
+        "reverified": "2026-08-31: 360 regressed to 15.30% from shared crumb/breadcrumb changes; restored to 8.48%/Δ-1 via top-crumb pb16 + template-scoped pt. 1440 6.30% unchanged."
       }
     },
     "content-page": {
@@ -592,10 +596,9 @@
         "gatedAt": "2026-08-31",
         "gates": {
           "360": {
-            "pixelPct": 12.87,
-            "heightDelta": 4,
-            "pass": false,
-            "exception": "RED — pixel 2.87 over bar. Diagnosis: coupled residual floor — inherited A4 wrap residual (+24 in prose vs live) is rhythm-compensated (-18 head), so every local fix trades against another zone (documented oscillation 12.3-23%). Root operational cause of many burned rounds found late: code CSS max-age=7200 CDN TTL (admin cache purge lever added). Candidate next steps: re-gate against a FRESH live capture; align head+mid+seams in one commit with purge; or accept as inherited-residual class."
+            "pixelPct": 5.06,
+            "heightDelta": 2,
+            "pass": true
           },
           "1440": {
             "pixelPct": 8.32,
@@ -614,7 +617,8 @@
           "cards (cp + plain tiles)",
           "downloads (reused)",
           "cta-grid/cp-prose/cols-8-4/colored-heading section styles"
-        ]
+        ],
+        "exceptionCleared": "2026-08-31: former RED exception (12.87%) cleared at 5.06%/Δ+2. Root causes found via direct live-vs-pub DOM ladder: (1) live mobile prose mb is 16 not 24; (2) live keeps 16px card gaps (3n rule was wrong) + 58px post-cards band gap; (3) pipeline trims the trailing nbsp that renders as an empty 22px 9th line on live (restored as scoped padding); (4) hero content box pb+4; (5) content-template top-crumb pt22 vs hub 16 (template-scoped :has(.hero.content) rule)."
       }
     },
     "locations-map": {
@@ -704,9 +708,10 @@
         "gatedAt": "2026-08-31",
         "gates": {
           "360": {
-            "pixelPct": 9.44,
-            "heightDelta": 6,
-            "pass": true
+            "pixelPct": 8.47,
+            "heightDelta": -8,
+            "pass": true,
+            "note": "improved from 9.44 by cp-prose mb16 spillover (intro lead closer to live mb8)"
           },
           "1440": {
             "pixelPct": 5.76,
@@ -874,5 +879,9 @@
         ]
       }
     }
+  },
+  "p2Complete": {
+    "at": "2026-08-31",
+    "verdict": "all 7 archetypes green on published origin at 1440 and 360: home 2.76/9.81, press-hub 2.05/3.28, article 9.17/7.02, group 6.30/8.48, content-page 8.32/5.06, locations-map 5.76/8.47, job-search 1.02/3.78 (pixel % 1440/360, all |Δh| ≤ 8)"
   }
 }
