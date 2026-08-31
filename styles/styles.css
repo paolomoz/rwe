@@ -858,6 +858,10 @@ main .section.colored-heading h2 em {
 }
 
 /* cp prose rhythm (text-module) */
+main .section.cp-prose { padding-top: 32px; }
+
+main .section.pad-btm { padding-bottom: 32px; }
+
 main .section.cp-prose .default-content-wrapper h2 {
   font-size: 32px;
   line-height: 38px;
@@ -932,4 +936,10 @@ main .section.cols-8-4 .default-content-wrapper > p:has(picture) {
     margin-bottom: 16px;
   }
   main .section.cols-8-4 > .default-content-wrapper { display: block; }
+}
+
+@media (width <= 767px) {
+  main .section.cp-prose { padding-top: 16px; }
+
+  main .section.pad-btm { padding-bottom: 16px; }
 }
