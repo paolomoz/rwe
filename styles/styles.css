@@ -1125,7 +1125,8 @@ main .section.footnote p {
     margin-top: 28px;
   }
 
-  main .section.jobs-count { padding: 16px 0 0; }
+  /* pb = container 16 + cell margin 16 + 1px side cell (live mobile) */
+  main .section.jobs-count { padding: 16px 0 33px; }
 
   main .section.jobs-count h2 {
     width: auto;
@@ -1135,7 +1136,9 @@ main .section.footnote p {
 
   main .section.jobs-grid {
     display: block;
-    padding: 16px 0;
+
+    /* pb = container 16 + cell margin 16 + 1px side cell (live mobile) */
+    padding: 16px 0 33px;
   }
 
   main .section.jobs-grid > .job-list-wrapper {
