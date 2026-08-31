@@ -636,6 +636,7 @@
     margin-bottom: 16px;
   }
   .cards.group .cell:nth-child(n+4) { margin-top: 0; }
+  .cards.group .cell:last-child { margin-bottom: 0; }
 
   .cards.group .card h3.headline {
     font-size: 18px;
