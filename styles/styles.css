@@ -1004,3 +1004,8 @@ main .section.cta-grid .default-content-wrapper p.button-wrapper {
     line-height: 22px;
   }
 }
+
+@media (width <= 767px) {
+  main .section.colored-heading.pad-btm { padding-bottom: 8px; }
+  main .section.cp-prose.rule-below > div:last-of-type::after { margin-top: 8px; }
+}
