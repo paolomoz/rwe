@@ -769,11 +769,9 @@ main .section.article-body .default-content-wrapper p:has(picture) + p {
   }
   main .section.article-body > .contacts-wrapper { padding: 0 16px 16px; }
 
-  /* live keeps article prose at 18px on mobile (measured; same pattern as
-     the press-hub event copy) */
   main .section.article-body .default-content-wrapper li,
   main .section.article-body .default-content-wrapper p {
-    font-size: 18px;
+    font-size: 15px;
     line-height: 22px;
   }
 
