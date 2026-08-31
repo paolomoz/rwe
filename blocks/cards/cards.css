@@ -775,9 +775,12 @@
 
 @media (width <= 767px) {
   .cards.cp .card-list { display: block; margin: 0; }
-  .cards.cp .cell { width: 100%; padding: 0; margin-top: 16px; }
-  .cards.cp .cell:nth-child(-n+3) { margin-top: 16px; }
-  .cards.cp .cell:first-child { margin-top: 0; }
+
+  .cards.cp .cell {
+    width: 100%;
+    padding: 0;
+    margin: 0 0 16px;
+  }
   .cards.cp .card h3.headline { font-size: 18px; line-height: 24px; margin-bottom: 16px; }
   .cards.cp .card-body { padding: 16px; }
   .cards.cp .card-body p { margin-bottom: 16px; }

@@ -121,3 +121,7 @@ main .breadcrumb-container:has(.breadcrumb.top) {
     top: 6px;
   }
 }
+
+@media (width <= 767px) {
+  .breadcrumb.top .breadcrumb-list { padding: 16px 0 8px; }
+}
