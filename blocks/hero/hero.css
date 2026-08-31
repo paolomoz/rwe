@@ -389,3 +389,10 @@ main .hero-container > div {
     padding: 24px;
   }
 }
+
+@media (width <= 767px) {
+  .hero.hub.content .stage-image img {
+    position: absolute;
+    inset: 0;
+  }
+}
