@@ -983,8 +983,13 @@ main .section.cta-grid .default-content-wrapper p.button-wrapper {
 
 /* cp mobile: prose zones are nested (296px content — live grid-bas nesting) */
 @media (width <= 767px) {
-  main .section.cp-prose > div,
-  main .section.cta-grid > div {
+  main .section.cp-prose > .default-content-wrapper,
+  main .section.cta-grid > .default-content-wrapper {
     padding: 0 32px;
   }
+
+  /* blocks and side images stay at the single-container width */
+  main .section.cp-prose > div:not(.default-content-wrapper) { padding: 0 16px; }
+
+  main .section.cols-8-4 > .default-content-wrapper { padding: 0 16px; }
 }
