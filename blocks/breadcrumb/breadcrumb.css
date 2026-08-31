@@ -109,3 +109,15 @@ main .breadcrumb-container:has(.breadcrumb.top) {
     line-height: 22px;
   }
 }
+
+@media (width <= 767px) {
+  .breadcrumb .breadcrumb-list li:not(:first-child) {
+    padding-left: 14px;
+    margin-left: 4px;
+  }
+
+  .breadcrumb .breadcrumb-list li:not(:first-child)::before {
+    font-size: 9px;
+    top: 6px;
+  }
+}
