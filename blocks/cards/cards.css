@@ -800,3 +800,8 @@
     height: auto;
   }
 }
+
+@media (width <= 767px) {
+  .cards.cp .cell--plain { display: none; }
+  .cards.cp .cell:nth-child(3n) { margin-bottom: 0; }
+}
