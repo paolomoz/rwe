@@ -652,14 +652,14 @@ main .section.article-body > div { max-width: var(--container); }
 
 main .section.article-body {
   display: grid;
-  grid-template-columns: minmax(0, 871px) 299px;
+  grid-template-columns: minmax(0, 895px) 299px;
   justify-content: center;
 }
 
 main .section.article-body > .default-content-wrapper {
   grid-column: 1;
   padding: 32px 12px;
-  max-width: 871px;
+  max-width: 895px;
   margin: 0;
 }
 
@@ -667,7 +667,7 @@ main .section.article-body > .downloads-wrapper {
   grid-column: 1;
   grid-row: 2;
   padding: 0 12px 32px;
-  max-width: 871px;
+  max-width: 895px;
   margin: 0;
 }
 

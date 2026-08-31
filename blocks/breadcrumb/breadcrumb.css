@@ -34,3 +34,34 @@ main .breadcrumb-container > div {
     line-height: 22px;
   }
 }
+
+/* multi-item trails (live: regular family items, bold active, chevron
+   separators — gated A2 refinements) */
+.breadcrumb ol li a {
+  font-family: var(--body-font-family);
+  font-weight: 400;
+  color: #fff;
+}
+
+.breadcrumb ol li.active a {
+  font-family: var(--heading-font-family);
+  font-weight: 700;
+}
+
+.breadcrumb ol li:not(:first-child) {
+  position: relative;
+  margin-left: 6px;
+  padding-left: 20px;
+}
+
+.breadcrumb ol li:not(:first-child)::before {
+  content: '\e918';
+  font-family: RWE_Icon_Font, sans-serif;
+  font-size: 10px;
+  font-weight: 600;
+  position: absolute;
+  left: 0;
+  top: 7px;
+  line-height: 10px;
+  color: #fff;
+}
