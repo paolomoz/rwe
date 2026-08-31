@@ -1,0 +1,146 @@
+/* job-side — frozen job-offers sidebar: jar01 alerts teaser + n-jfc01 filters */
+
+.job-side .job-side { background: #f4f4f2; }
+
+.job-side .job-alert { padding: 24px 24px 0; }
+
+.job-side .job-alert__inner {
+  padding-bottom: 24px;
+  border-bottom: 1px solid rgb(0 0 0 / 20%);
+}
+
+.job-side .job-alert h3.headline { margin: 0; }
+
+.job-side .job-alert .subText { font-size: 16px; line-height: 27px; }
+
+.job-side .alert-btn {
+  margin-top: 20px;
+  width: 100%;
+  background: var(--teal);
+  color: #fff;
+  border: 2px solid var(--teal);
+  border-radius: 5px;
+  padding: 8px 24px;
+  font-family: var(--medium-font-family);
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  display: inline-block;
+  opacity: 0.4;
+  cursor: pointer;
+}
+
+.job-side .job-filter { padding: 24px; }
+
+.job-side .job-filter h3.headline { margin: 0; }
+
+.job-side .filter-form { margin-top: 20px; }
+
+.job-side .filter-form .form-grid { margin: 0 0 24px; display: flow-root; }
+
+.job-side .filter-form .f-row { margin: 0 -8px; }
+
+.job-side .filter-form .f-cell { padding: 0 8px; }
+
+.job-side .filter-form .f-cell--more { display: none; }
+
+.job-side .filter-form fieldset { padding: 0; border: 0; margin: 0; }
+
+.job-side .filter-form .form-group { margin-bottom: 18px; }
+
+.job-side .filter-form .form-group label {
+  display: block;
+  font-family: var(--medium-font-family);
+  font-size: 16px;
+  line-height: 27px;
+  color: var(--teal);
+  margin: 0;
+}
+
+.job-side .f-select {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 44px;
+  background: #fff;
+  border: 1px solid #e4e9f2;
+  padding: 0 14px;
+  cursor: pointer;
+}
+
+.job-side .f-select p { margin: 0; overflow: hidden; text-overflow: ellipsis; }
+
+.job-side .f-select .inlineLabel { font-family: var(--medium-font-family); font-size: 15px; color: var(--navy); }
+
+.job-side .f-select::after,
+.job-side .toggle-more::after {
+  content: '\e994';
+  font-family: "RWE_Icon_Font", sans-serif;
+  font-size: 28px;
+  line-height: 1;
+  color: var(--teal);
+}
+
+.job-side .toggle-more {
+  border-top: 1px solid rgb(0 0 0 / 20%);
+  padding: 12px 0 0;
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: space-between;
+  font-family: var(--medium-font-family);
+  font-size: 16px;
+  line-height: 27px;
+  color: var(--teal);
+  cursor: pointer;
+}
+
+.job-side .toggle-more::after { padding-right: 8px; align-self: flex-end; }
+
+.job-side .f-select::after { position: relative; top: 2px; }
+
+.job-side .kw-zone {
+  border-top: 1px solid rgb(0 0 0 / 20%);
+  border-bottom: 1px solid rgb(0 0 0 / 20%);
+  padding: 12px 0 18px;
+  margin-bottom: 18px;
+}
+
+.job-side .kw-zone .input-group { display: flex; align-items: stretch; }
+
+.job-side .kw-input {
+  flex: 1;
+  height: 44px;
+  border: 1px solid #e4e9f2;
+  background: #fff;
+  padding: 0 12px;
+  font-family: var(--medium-font-family);
+  font-size: 15px;
+  color: var(--navy);
+  border-radius: 0;
+  box-shadow: none;
+  min-width: 1px;
+  outline: none;
+  appearance: none;
+  margin: 0;
+}
+
+.job-side .kw-input::placeholder { color: #8f9bb3; font-family: var(--body-font-family); font-size: 15px; opacity: 1; }
+
+.job-side .kw-btn {
+  width: 43px;
+  height: 44px;
+  background: var(--teal);
+  border: 0;
+  border-radius: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+.job-side .kw-btn::before {
+  content: '\e954';
+  font-family: "RWE_Icon_Font", sans-serif;
+  color: #fff;
+  font-size: 22px;
+  line-height: 1;
+  display: inline-block;
+}

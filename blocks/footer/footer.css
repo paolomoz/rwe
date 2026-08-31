@@ -153,6 +153,7 @@ footer .copyright {
   display: flex;
   align-items: center;
   height: 43px;
+  gap: 16px;
 }
 
 @media (width <= 1219px) {
@@ -220,5 +221,26 @@ footer .copyright {
   footer .copyright {
     height: 38px;
     justify-content: center;
+  }
+}
+
+/* RWE endorsement wordmark (legal-row right, separated) */
+footer .endorsement {
+  border-left: 2px solid #345785;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0 2px 0 16px;
+}
+
+footer .endorsement svg {
+  fill: #fff;
+  display: block;
+}
+
+@media (width <= 767px) {
+  footer .endorsement svg {
+    width: 53px;
+    height: 15px;
   }
 }

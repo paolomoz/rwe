@@ -1032,3 +1032,118 @@ main .section.locations-map-container { padding-bottom: 16px; }
   main .section.small-print .default-content-wrapper p { line-height: 22px; margin-bottom: 16px; }
   main .section.small-print .default-content-wrapper p:last-child { margin-bottom: 0; }
 }
+
+/* ================= job-search page (gated A6) ================= */
+
+/* grey band without loosefield art (careers bands are plain) */
+main .section.grey.plain::before,
+main .section.grey.plain::after { display: none; }
+
+/* job-hero: centered h1 + gradient-teal sub-line */
+main .section.job-hero { padding: 32px 0; }
+
+main .section.job-hero h1 {
+  text-align: center;
+  color: var(--navy);
+  margin: 0;
+}
+
+main .section.job-hero h1 em {
+  display: block;
+  font-style: normal;
+  font-size: 32px;
+  line-height: 38px;
+  color: var(--teal);
+  margin-top: 38px;
+}
+
+/* jobs-count: jic01 count heading centered in the main (2/3) column */
+main .section.jobs-count { padding: 32px 0; }
+
+main .section.jobs-count > .default-content-wrapper {
+  max-width: calc(var(--container) + 24px);
+  width: 100%;
+}
+
+main .section.jobs-count h2 {
+  width: 66.666%;
+  padding: 0 12px;
+  box-sizing: border-box;
+  text-align: center;
+  margin: 0 0 56px;
+}
+
+/* jobs-grid: results main column (2/3) + filter sidebar (1/3) */
+main .section.jobs-grid {
+  display: flex;
+  align-items: flex-start;
+  max-width: calc(var(--container) + 24px);
+  margin: 0 auto;
+  padding: 32px 0;
+}
+
+main .section.jobs-grid > .job-list-wrapper {
+  width: 66.666%;
+  padding: 0 12px;
+  box-sizing: border-box;
+  max-width: none;
+  margin: 0;
+}
+
+main .section.jobs-grid > .job-side-wrapper {
+  width: 33.333%;
+  padding: 0 12px;
+  box-sizing: border-box;
+  max-width: none;
+  margin: 0;
+}
+
+/* footnote: lin01 rule + tic01 note */
+main .section.footnote { padding: 32px 0; }
+
+main .section.footnote > .default-content-wrapper {
+  border-top: 2px solid #808080;
+  padding-top: 32px;
+}
+
+main .section.footnote p {
+  font-size: 18px;
+  line-height: 27px;
+  margin: 0;
+}
+
+@media (width <= 767px) {
+  main .section.job-hero { padding: 16px 0; }
+
+  main .section.job-hero h1 em {
+    font-size: 24px;
+    line-height: 28px;
+    margin-top: 28px;
+  }
+
+  main .section.jobs-count { padding: 16px 0 0; }
+
+  main .section.jobs-count h2 {
+    width: auto;
+    padding: 0;
+    margin: 0 0 32px;
+  }
+
+  main .section.jobs-grid {
+    display: block;
+    padding: 16px 0;
+  }
+
+  main .section.jobs-grid > .job-list-wrapper {
+    width: auto;
+    padding: 0 16px;
+  }
+  main .section.jobs-grid > .job-side-wrapper { display: none; }
+  main .section.footnote { padding: 16px 0; }
+  main .section.footnote > .default-content-wrapper { padding-top: 16px; }
+
+  main .section.footnote p {
+    font-size: 15px;
+    line-height: 22px;
+  }
+}

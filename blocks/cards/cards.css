@@ -808,3 +808,99 @@
   .cards.cp .cell--plain { display: none; }
   .cards.cp .cell:nth-child(3n) { margin-bottom: 0; }
 }
+
+/* --- explore variant: careers tea01r cards — odd gradient + imprint, even white --- */
+.cards.media.explore .card-list {
+  padding-top: 32px;
+}
+
+.cards.media.explore .cell {
+  width: 33.3%;
+  padding: 0 12px;
+}
+
+.cards.media.explore .card,
+.cards.media.explore .card > a {
+  height: 100%;
+}
+
+.cards.media.explore .card-body {
+  position: relative;
+  overflow: hidden;
+}
+
+.cards.media.explore .cell:nth-child(odd) .card-body {
+  background-image: var(--grad);
+  color: #fff;
+}
+
+.cards.media.explore .cell:nth-child(odd) .card-body h3.headline,
+.cards.media.explore .cell:nth-child(odd) .card-body p {
+  color: #fff;
+}
+
+.cards.media.explore .cell:nth-child(odd) .card-body::after {
+  content: '';
+  position: absolute;
+  top: 37%;
+  right: -5%;
+  height: 80%;
+  aspect-ratio: 428.7 / 690.3;
+  background: url('/img/impact-print-dark-green-and-white.svg') no-repeat 50% 50% / contain;
+  transform: rotate(10deg);
+  pointer-events: none;
+}
+
+.cards.media.explore h3.headline {
+  margin: 0 0 24px;
+}
+
+.cards.media.explore .card-cta {
+  position: relative;
+  z-index: 1;
+}
+
+.cards.media.explore .cell:nth-child(odd) .card-cta {
+  color: #fff;
+}
+
+@media (width <= 767px) {
+  .cards.media.explore .card-list {
+    display: block;
+    margin: 0;
+    padding: 16px 0 0;
+  }
+
+  .cards.media.explore .cell {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 16px;
+  }
+
+  .cards.media.explore .cell:last-child {
+    margin-bottom: 0;
+  }
+
+  .cards.media.explore .card-body {
+    height: auto;
+    padding: 16px;
+  }
+
+  .cards.media.explore .cell:nth-child(odd) .card-body .content {
+    width: 85%;
+  }
+
+  .cards.media.explore h3.headline {
+    margin: 0 0 16px;
+  }
+
+  .cards.media.explore p {
+    margin-bottom: 16px;
+  }
+
+  .cards.media.explore .card-cta {
+    padding: 8px 16px;
+    font-size: 15px;
+    line-height: 18px;
+  }
+}

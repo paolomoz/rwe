@@ -16,9 +16,65 @@
 const VIDEOS = {
   trading: '/media/trading-floor-webm.webm',
   jobs: '/media/tea01r-jobs-webm.webm',
+  cvm: '/media/cv-matcher-video-teaser-webm.webm',
 };
 
 export default async function decorate(block) {
+  if (block.classList.contains('cvm')) {
+    // CV-matcher teaser (tea01r): contained video + gradient caption box.
+    // Launch behavior (RweCVMatch.start) is the P4 careers integration.
+    const row0 = block.firstElementChild;
+    const heading0 = row0.querySelector('h2, h3');
+    const cta0 = [...row0.querySelectorAll('p')].pop();
+    const art0 = document.createElement('article');
+    art0.className = 'cvm-teaser';
+    const link0 = document.createElement('div');
+    link0.className = 'link';
+    const media0 = document.createElement('div');
+    media0.className = 'media-container';
+    const video0 = document.createElement('video');
+    video0.className = 'cvm-video';
+    video0.muted = true;
+    video0.setAttribute('muted', '');
+    video0.setAttribute('playsinline', '');
+    video0.setAttribute('preload', 'auto');
+    const src0 = document.createElement('source');
+    src0.src = VIDEOS.cvm;
+    src0.type = 'video/webm';
+    video0.append(src0);
+    media0.append(video0);
+    const capWrap = document.createElement('div');
+    capWrap.className = 'caption-wrapper';
+    const cap = document.createElement('header');
+    cap.className = 'cvm-caption';
+    const content0 = document.createElement('div');
+    content0.className = 'content';
+    if (heading0) {
+      const h3 = document.createElement('h3');
+      h3.className = 'headline';
+      h3.textContent = heading0.textContent.trim();
+      content0.append(h3);
+    }
+    content0.append(document.createElement('p'));
+    const ctaBox = document.createElement('div');
+    ctaBox.className = 'cta-reverse';
+    const sp0 = document.createElement('span');
+    sp0.textContent = cta0 ? cta0.textContent.trim() : '';
+    ctaBox.append(sp0);
+    const imprintWrap = document.createElement('div');
+    imprintWrap.className = 'imprint-wrapper';
+    const imprint = document.createElement('img');
+    imprint.src = '/img/impact-print-dark-green-and-white.svg';
+    imprint.alt = '';
+    imprint.className = 'imprint';
+    imprintWrap.append(imprint);
+    cap.append(content0, ctaBox, imprintWrap);
+    capWrap.append(cap);
+    link0.append(media0, capWrap);
+    art0.append(link0);
+    block.replaceChildren(art0);
+    return;
+  }
   if (block.classList.contains('locations')) {
     // image teaser: big media right + gradient caption box left (gated A5)
     const row0 = block.firstElementChild;
