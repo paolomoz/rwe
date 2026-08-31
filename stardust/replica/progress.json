@@ -226,7 +226,55 @@
           "cause": "text antialias + aside photo rendition",
           "flaggedFor": "delivery"
         }
-      ]
+      ],
+      "publishedOrigin": {
+        "url": "https://main--rwe--paolomoz.aem.live/en/press/rwe-ag/2026-08-13-rwe-delivers-strong-first-half-results",
+        "gatedAt": "2026-08-31",
+        "gates": {
+          "360": {
+            "pixelPct": 7.01,
+            "heightDelta": -5,
+            "pass": true
+          },
+          "1440": {
+            "pixelPct": 9.17,
+            "heightDelta": 4,
+            "pass": true
+          }
+        },
+        "contentDiff": {
+          "findings": 16,
+          "reds": 5,
+          "verdict": "all justified: (a) style-in-link x3, (c) h2>span swap, consent pseudo-link capture-state"
+        },
+        "visualDiff": "1 CONTENT GAP flag = breadcrumb-inside-main placement (established at home) — justified",
+        "blocks": [
+          "contacts",
+          "downloads",
+          "cards (related)",
+          "breadcrumb (trail)",
+          "article-stage/article-body section styles"
+        ],
+        "queryIndex": "press index live: config-service POST content/query.yaml (helix-query.yaml at root NOT consumed); Tier-2 meta (publishdate/company/topics/teaser) verified in /en/press/query-index.json",
+        "residuals": [
+          {
+            "note": "aside contact photo 275sq vs live ~250 (inherited A1 prototype residual)"
+          },
+          {
+            "note": "live LinkedIn embed under contacts absent in deny-state build (inherited A1 capture-state)"
+          },
+          {
+            "note": "related card mobile renditions art-directed differently on live (inherited A1)"
+          }
+        ],
+        "learnings": [
+          "strong needs bold FAMILY (family-weighted RWE Sans)",
+          "NBSPs are content: port them programmatically, never transcribe via terminal",
+          "main col is 895 border-box (content 871)",
+          "margin+wrapper-padding double-counts at section splits",
+          "pixel-compare byte-identity = render didnt change: verify computed style, not CSS delivery"
+        ]
+      }
     },
     "press-hub": {
       "archetype": "press-hub",
