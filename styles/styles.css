@@ -946,6 +946,10 @@ main .section.cols-8-4 .default-content-wrapper > p:has(picture) {
   /* live mobile prose rhythm is 16 (desktop 24); locations lm modules keep 24 */
   main .section.cp-prose:not(.not-nested) .default-content-wrapper p { margin-bottom: 16px; }
 
+  /* live p1 ends with a trailing nbsp that wraps to an empty 22px line;
+     the pipeline trims trailing nbsp, so the line is restored as padding */
+  main .section.cp-prose.rule-below:not(.not-nested) .default-content-wrapper h2 + p { padding-bottom: 22px; }
+
   /* live gap between the last project card and the next band is 58px */
   main .section.cp-prose.pad-btm:has(.cards.cp) { padding-bottom: 42px; }
 }
