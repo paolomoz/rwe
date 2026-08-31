@@ -101,3 +101,11 @@ main .breadcrumb-container:has(.breadcrumb.top) {
 @media (width <= 767px) {
   .breadcrumb.top .breadcrumb-list { padding: 16px 0; }
 }
+
+@media (width <= 767px) {
+  .breadcrumb .breadcrumb-list li,
+  .breadcrumb .breadcrumb-list li a {
+    font-size: 15px;
+    line-height: 22px;
+  }
+}

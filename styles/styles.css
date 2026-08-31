@@ -991,3 +991,16 @@ main .section.cta-grid .default-content-wrapper p.button-wrapper {
   /* the project-cards grid stays at the single-container width */
   main .section.cp-prose > .cards-wrapper { padding: 0 16px; }
 }
+
+@media (width <= 767px) {
+  /* side images bleed to the single-container width (live) */
+  main .section.cols-8-4 > .default-content-wrapper > p:has(picture) { margin: 0 -16px 24px; }
+
+  /* contact band mobile type */
+  main .section.contact-row .default-content-wrapper h2 { font-size: 24px; line-height: 28px; }
+
+  main .section.contact-row .default-content-wrapper h3 {
+    font-size: 15px;
+    line-height: 22px;
+  }
+}
