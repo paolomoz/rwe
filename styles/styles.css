@@ -1028,6 +1028,7 @@ main .section.locations-map-container { padding-bottom: 16px; }
 @media (width <= 767px) {
   main .section.not-nested > div { padding: 0 16px; }
   main .section.not-nested.rule-below p { margin-bottom: 16px; }
+  main .section.locations-map-container { padding-bottom: 0; }
   main .section.small-print .default-content-wrapper p { line-height: 22px; margin-bottom: 16px; }
   main .section.small-print .default-content-wrapper p:last-child { margin-bottom: 0; }
 }
