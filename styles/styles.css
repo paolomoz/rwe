@@ -1098,8 +1098,12 @@ main .section.jobs-grid > .job-side-wrapper {
   margin: 0;
 }
 
-/* footnote: lin01 rule + tic01 note */
-main .section.footnote { padding: 32px 0; }
+/* footnote: lin01 rule + tic01 note. Top margin reserves the CV-matcher
+   embed slot (htm01, 32+1+32) — P4 careers integration placeholder. */
+main .section.footnote {
+  padding: 32px 0;
+  margin-top: 65px;
+}
 
 main .section.footnote > .default-content-wrapper {
   border-top: 2px solid #808080;
@@ -1139,7 +1143,11 @@ main .section.footnote p {
     padding: 0 16px;
   }
   main .section.jobs-grid > .job-side-wrapper { display: none; }
-  main .section.footnote { padding: 16px 0; }
+
+  main .section.footnote {
+    padding: 16px 0;
+    margin-top: 33px;
+  }
   main .section.footnote > .default-content-wrapper { padding-top: 16px; }
 
   main .section.footnote p {
