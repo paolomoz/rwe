@@ -125,23 +125,3 @@ main .breadcrumb-container:has(.breadcrumb.top) {
 @media (width <= 767px) {
   .breadcrumb.top .breadcrumb-list { padding: 16px 0 8px; }
 }
-
-@media (width <= 767px) {
-  .breadcrumb.top .breadcrumb-list { padding: 16px 0 8px; }
-
-  .breadcrumb.top .breadcrumb-list li,
-  .breadcrumb.top .breadcrumb-list li a {
-    font-size: 15px;
-    line-height: 24px;
-  }
-
-  .breadcrumb.top .breadcrumb-list li:not(:first-child) {
-    padding-left: 11px;
-    margin-left: 2px;
-  }
-
-  .breadcrumb.top .breadcrumb-list li:not(:first-child)::before {
-    font-size: 8px;
-    top: 8px;
-  }
-}
