@@ -808,3 +808,9 @@ main strong {
 
 /* band-tail: section continues the previous grey band (no top padding) */
 main .section.band-tail { padding-top: 0; }
+
+/* quick-nav loose: group-page CTA rows keep the 32px bottom pad */
+main .section.quick-nav.loose { padding-bottom: 32px; }
+
+/* companies band closes with the live 32px */
+main .section.companies-container { padding-bottom: 32px; }

@@ -69,7 +69,7 @@ main .breadcrumb-container > div {
 /* variant: top — in-page breadcrumb strip (white bg, teal, gated A3) */
 .breadcrumb.top {
   background: none;
-  padding: 32px 0;
+  padding: 0;
 }
 .breadcrumb.top nav { background: none; }
 
@@ -88,9 +88,7 @@ main .breadcrumb-container > div {
   top: 4px;
 }
 
-@media (width <= 767px) {
-  .breadcrumb.top { padding: 16px 0; }
-}
+
 
 /* top variant: the SECTION carries the navy bg for the bottom bar — undo it */
 main .breadcrumb-container:has(.breadcrumb.top) {

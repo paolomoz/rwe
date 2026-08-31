@@ -721,3 +721,10 @@
     line-height: 22px;
   }
 }
+
+/* media:not(.grey) base outranks .cards.group — re-assert the group grid */
+.cards.media.group .card-list { padding: 32px 0 0; }
+
+@media (width <= 767px) {
+  .cards.media.group .card-list { padding: 16px 0 0; }
+}
