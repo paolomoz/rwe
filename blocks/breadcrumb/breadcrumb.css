@@ -123,5 +123,5 @@ main .breadcrumb-container:has(.breadcrumb.top) {
 }
 
 @media (width <= 767px) {
-  .breadcrumb.top .breadcrumb-list { padding: 16px 0 8px; }
+  .breadcrumb.top .breadcrumb-list { padding: 24px 0 16px; }
 }
