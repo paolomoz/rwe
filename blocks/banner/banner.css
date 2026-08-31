@@ -233,7 +233,19 @@ main .banner-container > div:has(.banner.trading) {
 
 .banner.locations .lm-video-teaser h3.headline { color: #fff; margin: 0 0 24px; font-size: 24px; line-height: 32px; }
 .banner.locations .lm-video-teaser p { color: #fff; margin: 0 0 24px; width: 378px; }
-.banner.locations .lm-video-teaser .button { color: #fff; border-color: #fff; background: transparent; margin: 0; }
+
+.banner.locations .lm-video-teaser .button {
+  display: inline-block;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  padding: 8px 24px;
+  font-family: var(--heading-font-family);
+  font-size: 16px;
+  line-height: 22px;
+  background: transparent;
+  margin: 0;
+}
 
 @media (width <= 767px) {
   .banner.locations .lm-video-teaser { height: auto; }
@@ -253,4 +265,5 @@ main .banner-container > div:has(.banner.trading) {
 
   .banner.locations .lm-video-teaser h3.headline { margin-bottom: 16px; font-size: 18px; line-height: 24px; }
   .banner.locations .lm-video-teaser p { margin-bottom: 16px; width: auto; }
+  .banner.locations .lm-video-teaser .button { font-size: 15px; line-height: 18px; padding: 8px 16px; }
 }
