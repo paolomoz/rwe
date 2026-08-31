@@ -980,3 +980,11 @@ main .section.cta-grid .default-content-wrapper p.button-wrapper {
   main .section.cta-grid .default-content-wrapper p.button-wrapper { margin-bottom: 16px; }
   main .section.cta-grid .default-content-wrapper p.button-wrapper:last-child { margin-bottom: 0; }
 }
+
+/* cp mobile: prose zones are nested (296px content — live grid-bas nesting) */
+@media (width <= 767px) {
+  main .section.cp-prose > div,
+  main .section.cta-grid > div {
+    padding: 0 32px;
+  }
+}
