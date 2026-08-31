@@ -91,3 +91,15 @@ main .breadcrumb-container > div {
 @media (width <= 767px) {
   .breadcrumb.top { padding: 16px 0; }
 }
+
+/* top variant: the SECTION carries the navy bg for the bottom bar — undo it */
+main .breadcrumb-container:has(.breadcrumb.top) {
+  background: none;
+  padding: 0;
+}
+
+.breadcrumb.top .breadcrumb-list { padding: 32px 0; }
+
+@media (width <= 767px) {
+  .breadcrumb.top .breadcrumb-list { padding: 16px 0; }
+}
