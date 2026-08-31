@@ -943,3 +943,26 @@ main .section.cols-8-4 .default-content-wrapper > p:has(picture) {
 
   main .section.pad-btm { padding-bottom: 16px; }
 }
+
+/* cp refinements (ladder round 3) */
+main .section.cta-grid > .default-content-wrapper { padding-top: 0; }
+main .section.grey .icon-tiles-wrapper { margin-top: 32px; }
+
+/* cols-8-4 with a block in col 1 (downloads + side image) */
+main .section.cols-8-4:has(> .downloads-wrapper) {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
+  column-gap: 24px;
+}
+
+main .section.cols-8-4:has(> .downloads-wrapper) > .downloads-wrapper { grid-column: 1; }
+
+main .section.cols-8-4:has(> .downloads-wrapper) > .default-content-wrapper {
+  display: block;
+  grid-column: 2;
+  margin: 0;
+}
+
+@media (width <= 767px) {
+  main .section.cols-8-4:has(> .downloads-wrapper) { display: block; }
+}
