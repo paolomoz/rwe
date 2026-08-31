@@ -974,3 +974,9 @@ main .section.cta-grid .default-content-wrapper p.button-wrapper {
   margin: 0;
   line-height: 0;
 }
+
+@media (width <= 767px) {
+  main .section.grey .icon-tiles-wrapper { margin-top: 16px; }
+  main .section.cta-grid .default-content-wrapper p.button-wrapper { margin-bottom: 16px; }
+  main .section.cta-grid .default-content-wrapper p.button-wrapper:last-child { margin-bottom: 0; }
+}

@@ -140,9 +140,18 @@
     gap: 16px;
   }
 
-  .icon-tiles .tile-item { min-height: 64px; }
-  .icon-tiles .tile-cover { position: relative; inset: auto; height: 64px; border-radius: 15px; }
-  .icon-tiles .tile-cover-text { height: auto; font-size: 15px; }
+  .icon-tiles .tile-item { min-height: 0; min-width: 0; height: auto; }
+
+  .icon-tiles .tile-cover {
+    position: relative;
+    inset: auto;
+    height: 110px;
+    margin-bottom: 16px;
+  }
+
+  .icon-tiles .tile-cover-inner { flex-direction: row; padding: 16px; width: 100%; }
+  .icon-tiles .tile-cover-text { width: 130px; height: auto; font-size: 15px; }
+  .icon-tiles .tile-opener-mobile { font-size: 32px; margin-left: 16px; cursor: pointer; }
   .icon-tiles .tile-opener-mobile { display: block; }
 
   .icon-tiles .tile-opener-mobile .icon-arrow-down::before {

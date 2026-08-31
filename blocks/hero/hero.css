@@ -354,3 +354,38 @@ main .hero-container > div {
 @media (width <= 767px) {
   .hero.content { height: calc(100vh - 72px); }
 }
+
+/* content variant mobile: stacked image (50% strip) + full-width box */
+@media (width <= 767px) {
+  .hero.hub.content,
+  .hero.hub.content .slick-list,
+  .hero.hub.content .hero-track,
+  .hero.hub.content .slider-slide,
+  .hero.hub.content .stage { height: auto; }
+
+  .hero.hub.content .hero-track { display: block; position: relative; }
+  .hero.hub.content .slider-slide { position: relative; inset: auto; }
+
+  .hero.hub.content .stage {
+    position: relative;
+    inset: auto;
+    display: block;
+  }
+
+  .hero.hub.content .stage-image {
+    position: relative;
+    inset: auto;
+    height: auto;
+    padding-top: 50%;
+  }
+
+  .hero.hub.content .teaser-width { padding: 0; }
+
+  .hero.hub.content header.stage-box {
+    background: linear-gradient(45deg, rgb(29 68 119 / 90%) 22%, rgb(0 161 159 / 75%));
+    width: 100%;
+    margin: 0;
+    border-radius: 6px;
+    padding: 24px;
+  }
+}
