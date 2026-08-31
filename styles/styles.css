@@ -1004,3 +1004,11 @@ main .section.cta-grid .default-content-wrapper p.button-wrapper {
     line-height: 22px;
   }
 }
+
+@media (width <= 767px) {
+  main .section.cta-grid .button {
+    font-size: 15px;
+    line-height: 18px;
+    padding: 8px 16px;
+  }
+}
