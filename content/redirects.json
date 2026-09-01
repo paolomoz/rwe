@@ -1,7 +1,7 @@
 {
- "total": 1707,
+ "total": 1711,
  "offset": 0,
- "limit": 1707,
+ "limit": 1711,
  "data": [
   {
    "source": "/en/press/rwe-renewables/2022-12-08-rwe-joins-forces-with-leading-institutions-in-lithuania-to-drive-education",
@@ -6830,6 +6830,22 @@
   {
    "source": "/en/press/rwe-ag/2025-03-12-rwe-and-totalenergies-agree-long-term-offtake-agreement-for-green-h2",
    "destination": "/en/press/"
+  },
+  {
+   "source": "/en/investor-relations/financial-calendar-and-publications/news-and-ad-hoc-announcements/ad-hoc-announcements/ad-hoc-2026-06-22_a",
+   "destination": "/en/investor-relations/financial-calendar-and-publications/news-and-ad-hoc-announcements/ad-hoc-announcements/ad-hoc-2026-06-22-a/"
+  },
+  {
+   "source": "/en/investor-relations/financial-calendar-and-publications/news-and-ad-hoc-announcements/ad-hoc-announcements/ad-hoc-2026-06-22_b",
+   "destination": "/en/investor-relations/financial-calendar-and-publications/news-and-ad-hoc-announcements/ad-hoc-announcements/ad-hoc-2026-06-22-b/"
+  },
+  {
+   "source": "/en/investor-relations/financial-calendar-and-publications/news-and-ad-hoc-announcements/news/news-2026-06-11_a",
+   "destination": "/en/investor-relations/financial-calendar-and-publications/news-and-ad-hoc-announcements/news/news-2026-06-11-a/"
+  },
+  {
+   "source": "/en/investor-relations/financial-calendar-and-publications/news-and-ad-hoc-announcements/news/news-2026-06-29_a",
+   "destination": "/en/investor-relations/financial-calendar-and-publications/news-and-ad-hoc-announcements/news/news-2026-06-29-a/"
   }
  ]
 }
