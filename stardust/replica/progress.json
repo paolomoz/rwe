@@ -883,5 +883,25 @@
   "p2Complete": {
     "at": "2026-08-31",
     "verdict": "all 7 archetypes green on published origin at 1440 and 360: home 2.76/9.81, press-hub 2.05/3.28, article 9.17/7.02, group 6.30/8.48, content-page 8.32/5.06, locations-map 5.76/8.47, job-search 1.02/3.78 (pixel % 1440/360, all |Δh| ≤ 8)"
+  },
+  "motionLayer": {
+    "portedAt": "2026-09-01",
+    "source": "stardust/prototypes/{js/motion.js,css/motion.css} — live-lifted contracts (motion-probe/motion-observe 2026-08-28), translated to EDS selectors",
+    "runtime": "scripts/motion.js (loadDelayed) + styles/lazy-styles.css",
+    "behaviors": [
+      "entrance: fadeInFromBottom 0.5s on .cards.color/.cards.topics cards, .press-item, .responsibility .teaser-row; fadeInFromRight on .banner.jobs .caption; fadeInFromLeft on locations video-teaser header — armed via IntersectionObserver threshold 0.15, live class names",
+      "wobble 0.75s on .cards.contact .icon-img with live stagger (2nd child 0s, then +0.5s, 1st child last)",
+      "header scroll morph: fixed 64px/50px gradient bar, hidden on scroll-down, slides in on scroll-up, full header at y=0",
+      "hovers: card scale(1.03) whole-card vs caption-only per live hover-diff; form fields #edf1f7; download icon dip; solid button hover #007977 (was mint — corrected to live contract)"
+    ],
+    "reviewFixes": [
+      "header right nav group flush right (justify-content flex-end, 40px left gaps) — live x951/1105/1225, pub x959/1113/1233",
+      "columns video play button: centered 88x88 (60x60 mobile), borderless white triangle — live vjs-big-play-button parity (was bordered rounded square at right-bottom)"
+    ],
+    "gatesAfter": {
+      "home1440": 2.11,
+      "home360": 9.78,
+      "pressHub360": 3.28
+    }
   }
 }
