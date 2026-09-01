@@ -1,7 +1,7 @@
 {
- "total": 1711,
+ "total": 1717,
  "offset": 0,
- "limit": 1711,
+ "limit": 1717,
  "data": [
   {
    "source": "/en/press/rwe-renewables/2022-12-08-rwe-joins-forces-with-leading-institutions-in-lithuania-to-drive-education",
@@ -6846,6 +6846,30 @@
   {
    "source": "/en/investor-relations/financial-calendar-and-publications/news-and-ad-hoc-announcements/news/news-2026-06-29_a",
    "destination": "/en/investor-relations/financial-calendar-and-publications/news-and-ad-hoc-announcements/news/news-2026-06-29-a/"
+  },
+  {
+   "source": "/en/rwe-careers-portal/job-offers/my-favourites",
+   "destination": "/en/rwe-careers-portal/job-offers/"
+  },
+  {
+   "source": "/en/rwe-careers-portal/job-offers/confirmation",
+   "destination": "/en/rwe-careers-portal/job-offers/"
+  },
+  {
+   "source": "/en/rwe-careers-portal/job-offers/unsubscribe",
+   "destination": "/en/rwe-careers-portal/job-offers/"
+  },
+  {
+   "source": "/en/rwe-careers-portal/job-offers/details",
+   "destination": "/en/rwe-careers-portal/job-offers/"
+  },
+  {
+   "source": "/en/investor-relations/online-report-2024",
+   "destination": "/en/investor-relations/"
+  },
+  {
+   "source": "/en/investor-relations/online-report",
+   "destination": "/en/investor-relations/"
   }
  ],
  ":type": "sheet"
