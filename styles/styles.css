@@ -226,9 +226,10 @@ button.button.primary {
 
 a.button.primary:hover,
 a.button.primary:focus-visible {
-  background-color: var(--mint);
-  border-color: var(--mint);
+  background-color: #007977;
+  border-color: #007977;
   color: #fff;
+  transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 }
 
 a.button.secondary,

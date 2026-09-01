@@ -1,1 +1,164 @@
 /* add global styles that can be loaded post LCP here */
+
+/* motion-parity layer — EDS port of the gated prototype layer
+   (stardust/prototypes/css/motion.css). Every value lifted from live
+   source CSS (nkStyles.20260811.5.min.css) or the 2026-08-28 live motion
+   probe. Entrance animations only run once `.animate` is added by
+   scripts/motion.js on scroll-into-view (live behavior — no initial
+   opacity:0 state exists on live either). */
+
+/* ---- entrance keyframes (verbatim lift) ---- */
+@keyframes fade-in-from-bottom {
+  0% { opacity: 0; transform: translateY(50px); }
+  100% { opacity: 1; transform: translate(0); }
+}
+
+@keyframes fade-in-from-right {
+  0% { opacity: 0; transform: translate(50px); }
+  100% { opacity: 1; transform: translate(0); }
+}
+
+@keyframes fade-in-from-left {
+  0% { opacity: 0; transform: translate(-50px); }
+  100% { opacity: 1; transform: translate(0); }
+}
+
+@keyframes wobble {
+  5% { transform: scale3d(0.95, 0.95, 1); }
+  10% { transform: scale3d(0.9, 0.9, 1); }
+  15% { transform: scale3d(0.85, 0.85, 1); }
+  20% { transform: scale3d(0.8, 0.8, 1); }
+  25% { transform: scale3d(0.75, 0.75, 1); }
+  30% { transform: scale3d(0.75, 0.75, 1); }
+  35% { transform: scale3d(0.75, 0.75, 1); }
+  40% { transform: scale3d(0.85, 0.85, 1); }
+  45% { transform: scale3d(0.95, 0.95, 1); }
+  50% { transform: scaleX(1); }
+  55% { transform: scale3d(1.05, 1.05, 1); }
+  60% { transform: scale3d(1.075, 1.075, 1); }
+  65% { transform: scale3d(1.09, 1.09, 1); }
+  70% { transform: scale3d(1.075, 1.075, 1); }
+  75% { transform: scale3d(1.05, 1.05, 1); }
+  80% { transform: scale3d(1.02, 1.02, 1); }
+  85% { transform: scale3d(0.98, 0.98, 1); }
+  90% { transform: scale3d(1.01, 1.01, 1); }
+  95% { transform: scale3d(0.99, 0.99, 1); }
+  100% { transform: scaleX(1); }
+}
+
+/* ---- entrance triggers (live class names) ---- */
+.bottom-to-top-animation.animate {
+  animation: fade-in-from-bottom 0.5s ease-in-out;
+  animation-iteration-count: 1;
+}
+
+.right-to-left-animation.animate {
+  animation: fade-in-from-right 0.5s ease-in-out;
+  animation-iteration-count: 1;
+}
+
+.left-to-right-animation.animate {
+  animation: fade-in-from-left 0.5s ease-in-out;
+  animation-iteration-count: 1;
+}
+
+.wobble-animation-trigger.animate .wobble-animation {
+  animation: wobble 0.75s ease;
+  animation-iteration-count: 1;
+}
+
+/* ---- hover: scale(1.03), transition transform .2s ease-in-out —
+   measured per module via live hover-diff (2026-08-28): WHOLE CARD scales
+   on color/topic/interest/group/project cards + quotes; the CAPTION scales
+   on media-cards, explore cards, cv-matcher and locations video teaser;
+   trading/jobs full-width teasers do NOT scale at all. ---- */
+.cards.color .card,
+.cards.topics .card,
+.cards.interest .card,
+.cards.group .card,
+.cards.cp .card,
+.quote .quo01,
+.responsibility .resp-video-teaser {
+  transition: transform 0.2s ease-in-out;
+}
+
+.cards.color .card:hover,
+.cards.topics .card:hover,
+.cards.interest .card:hover,
+.cards.group .card:hover,
+.cards.cp .card:hover,
+.quote .quo01:hover,
+.responsibility .resp-video-teaser:hover {
+  transform: scale(1.03);
+}
+
+.cards.media:not(.cp, .group) .card-body,
+.cards.explore .card-body,
+.banner.cvm .cvm-caption,
+.banner.locations .lm-video-teaser header {
+  transition: transform 0.2s ease-in-out;
+}
+
+.cards.media:not(.cp, .group) .card-body:hover,
+.cards.explore .card-body:hover,
+.banner.cvm .cvm-caption:hover,
+.banner.locations .lm-video-teaser header:hover {
+  transform: scale(1.03);
+}
+
+/* ---- hover: form fields (live form-control/select2/jobsearch → #edf1f7) ---- */
+main input[type='search']:hover,
+main input[type='text']:hover,
+main select:hover,
+.lf-value:hover {
+  background-color: #edf1f7;
+  transition: background-color 0.2s ease-in-out;
+}
+
+/* ---- hover: download links (icon dips 2px) ---- */
+.downloads li a:hover::after {
+  transform: translateY(2px);
+}
+
+.downloads li a::after {
+  transition: transform 0.2s ease-in-out;
+}
+
+/* ---- header scroll morph, in place (live header-container--has-scrolled-*
+   measured contract: fixed 64px desktop / 50px mobile, gradient, transform
+   .2s; hidden = translateY(-100%); full header restored only at y=0) ---- */
+.header.header-scrolled {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 64px;
+  z-index: 10000;
+  background-image: var(--grad);
+  transition: transform 0.2s ease-in-out;
+}
+
+/* nav row (27px) recentered within the 64px bar (full header uses 52px) */
+.header.header-scrolled nav.header-navigation {
+  margin-top: 18px;
+}
+
+.header.header-hidden {
+  transform: translateY(-100%);
+}
+
+@media (width <= 767px) {
+  .header.header-scrolled {
+    height: 50px;
+  }
+
+  .header.header-scrolled nav.header-navigation {
+    margin-top: 11px;
+  }
+}
+
+/* ---- carousel dots animate their size change (live slick magic-dots) ---- */
+.slick-dots button,
+.cs-dots button {
+  transition: width 0.2s ease-in-out, height 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}

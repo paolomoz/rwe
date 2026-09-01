@@ -42,7 +42,7 @@ header .header {
 }
 
 .header .navigation-list--right {
-  justify-content: flex-start;
+  justify-content: flex-end;
 }
 
 .header .navigation-list li {
@@ -52,7 +52,8 @@ header .header {
 }
 
 .header .navigation-list--right li {
-  margin-right: 40px;
+  margin-right: 0;
+  margin-left: 40px;
 }
 
 .header .navigation-list a,

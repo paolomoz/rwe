@@ -29,12 +29,13 @@
 
 .columns .big-play {
   position: absolute;
-  right: 55px;
-  bottom: 88px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
   width: 88px;
   height: 88px;
-  border: 3px solid #fff;
-  border-radius: 14px;
+  border: 0;
+  padding: 0;
   background: transparent;
   cursor: pointer;
 }
@@ -46,7 +47,7 @@
   top: 50%;
   transform: translate(-40%, -50%);
   border-style: solid;
-  border-width: 18px 0 18px 30px;
+  border-width: 23px 0 23px 40px;
   border-color: transparent transparent transparent #fff;
 }
 
@@ -71,10 +72,11 @@
   }
 
   .columns .big-play {
-    width: 56px;
-    height: 56px;
-    right: 24px;
-    bottom: 40px;
-    border-radius: 10px;
+    width: 60px;
+    height: 60px;
+  }
+
+  .columns .big-play::before {
+    border-width: 16px 0 16px 27px;
   }
 }
