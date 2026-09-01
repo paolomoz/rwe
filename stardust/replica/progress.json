@@ -903,5 +903,20 @@
       "home360": 9.78,
       "pressHub360": 3.28
     }
+  },
+  "p3": {
+    "wave1": {
+      "at": "2026-09-01",
+      "scope": "100 A1 articles (57 press + 43 IR) via import-article.mjs + deploy-batch",
+      "results": "100/100 imported, 108 ledger entries all live; press query-index 57, IR index 43; redirects.json live (1711 rows: 833 press->hub, 790 IR->hub, 10 statements, 74 stories, 4 underscore-slug renames)",
+      "validation": "David lint 0 red across 100 files; plain.html 1 h1/0 about:error spot-checked; content-diff on sibling: 4 reds all justified classes (a + consent)",
+      "learnings": [
+        "EDS pipeline renders about:error for external www.rwe.com image URLs — all article images rehosted to DA media/rwe/a1/ (102 unique, deduped by url hash)",
+        "DA sheet JSON requires \":type\":\"sheet\" or preview 400s (invalid sheet; unknown type)",
+        "underscores in path segments preview-fail — hyphenate slug + redirect original",
+        "meta[name=date] drifts to last-modified — URL slug date is authoritative for publishdate",
+        "IR pubs have no h1 on live (h2>span headline) — promoted to h1 for the delivery contract"
+      ]
+    }
   }
 }
