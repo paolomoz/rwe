@@ -1,0 +1,32 @@
+/* table — tbl01/tbl02 data tables */
+
+.table table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 18px;
+  line-height: 27px;
+  color: var(--navy);
+}
+
+.table th {
+  font-family: var(--heading-font-family);
+  text-align: left;
+  padding: 12px 16px;
+  border-bottom: 2px solid #b5b7b8;
+}
+
+.table td {
+  padding: 12px 16px;
+  border-bottom: 1px solid #c6d0dd;
+}
+
+@media (width <= 767px) {
+  .table {
+    overflow-x: auto;
+  }
+
+  .table table {
+    font-size: 15px;
+    line-height: 22px;
+  }
+}

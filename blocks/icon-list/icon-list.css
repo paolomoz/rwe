@@ -1,0 +1,43 @@
+/* icon-list — il01 checklist (values lifted live 2026-09-01) */
+
+.icon-list h2 {
+  font-size: 32px;
+  line-height: 38px;
+  color: var(--navy);
+  margin-bottom: 24px;
+}
+
+.icon-list p {
+  margin-bottom: 16px;
+}
+
+.icon-list .icon-list-items {
+  list-style: none;
+  margin: 24px 0 0;
+  padding: 0;
+}
+
+.icon-list .icon-list-items li {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  line-height: 27px;
+  color: var(--navy);
+  margin-bottom: 16px;
+}
+
+.icon-list .icon-list-items li::before {
+  content: '\e92a';
+  font-family: "RWE_Icon_Font", sans-serif;
+  font-size: 28px;
+  color: #fff;
+  background: var(--teal);
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 24px;
+  flex-shrink: 0;
+}

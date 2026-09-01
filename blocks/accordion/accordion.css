@@ -1,0 +1,67 @@
+/* accordion — acc01 content accordion (values lifted live 2026-09-01) */
+
+.accordion .accordion-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.accordion .accordion-item {
+  border-top: 1px solid #c6d0dd;
+}
+
+.accordion .accordion-item:last-child {
+  border-bottom: 1px solid #c6d0dd;
+}
+
+.accordion .accordion-headline {
+  margin: 0;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.accordion .accordion-headline button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 16px 16px 16px 0;
+  border: 0;
+  background: transparent;
+  color: var(--teal);
+  font-family: var(--medium-font-family);
+  font-size: 18px;
+  line-height: 27px;
+  text-align: left;
+  cursor: pointer;
+}
+
+.accordion .accordion-headline button::after {
+  content: '\e994';
+  font-family: "RWE_Icon_Font", sans-serif;
+  font-size: 32px;
+  line-height: 1;
+  color: var(--teal);
+  transition: transform 0.2s ease-in-out;
+}
+
+.accordion .accordion-item.expanded .accordion-headline button::after {
+  transform: rotate(180deg);
+}
+
+.accordion .accordion-panel {
+  padding: 0 24px 16px 0;
+}
+
+.accordion .accordion-panel p {
+  margin-bottom: 16px;
+}
+
+.accordion .accordion-panel ul {
+  margin: 0 0 16px;
+  padding-left: 20px;
+}
+
+.accordion .accordion-panel a {
+  color: var(--teal);
+}
