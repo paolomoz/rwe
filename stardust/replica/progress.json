@@ -917,6 +917,29 @@
         "meta[name=date] drifts to last-modified — URL slug date is authoritative for publishdate",
         "IR pubs have no h1 on live (h2>span headline) — promoted to h1 for the delivery contract"
       ]
+    },
+    "wave2": {
+      "at": "2026-09-01",
+      "scope": "510 in-scope pages via generic import-page.mjs (content-page 326, ir-content 96, location-detail 59, press-hub siblings 12, section-landings 7, legal 9, download-centre 1)",
+      "results": "510/510 imported 0 fail; 618 total pages live on origin; 1,572 images rehosted to DA (media/rwe/a1/); redirects.json 1,718 rows live",
+      "newBlocks": [
+        "accordion (acc01)",
+        "icon-list (il01)",
+        "table (tbl01/02)"
+      ],
+      "validation": "David lint 0 red across 615 files; spot .plain checks 200/1h1/0 about:error; computed-style gate: blocks load, 0 pageerrors, 0 broken imgs; accordion 16-item legal page verified interactive",
+      "knownResiduals": [
+        "6 pages <60% content ratio: press brand hubs x5 + download-centre — dynamic listing zones, P4 wires them to the press index / docs model",
+        "placeholders logged per page in import-pages-ledger.json: forms (P4), htm01/iframe embeds (P4), job zones (P4), ri01/sta04-video (rare)",
+        "sli01 content carousels flattened to prose on 50 pages (content preserved, motion simplified)",
+        "3 pages had slug sanitization renames (underscores/commas) with redirects"
+      ],
+      "learnings": [
+        "live accordion items are <li> — a container-scoped list-dedup guard is required or panel paragraphs are silently dropped (75 pages hit this)",
+        "stage sliders live OUTSIDE <main> — module walk must root at body with chrome filters",
+        "bare timeline markup lives directly inside grid containers (no inner data-tpl) — grids need a direct-content prose fallback",
+        "new block dirs must be git-added explicitly — content deploys via DA while blocks 404 on the code origin (silent: block status still says loaded)"
+      ]
     }
   }
 }
