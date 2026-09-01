@@ -1,7 +1,7 @@
 {
- "total": 1717,
+ "total": 1718,
  "offset": 0,
- "limit": 1717,
+ "limit": 1718,
  "data": [
   {
    "source": "/en/press/rwe-renewables/2022-12-08-rwe-joins-forces-with-leading-institutions-in-lithuania-to-drive-education",
@@ -6870,6 +6870,10 @@
   {
    "source": "/en/investor-relations/online-report",
    "destination": "/en/investor-relations/"
+  },
+  {
+   "source": "/en/press/rwe-renewables/Wind-in-southern-Germany,-c-,-RWE-wins-tender--in-Baden-Wurttemberg",
+   "destination": "/en/press/rwe-renewables/wind-in-southern-germany-rwe-wins-tender-in-baden-wurttemberg/"
   }
  ],
  ":type": "sheet"
