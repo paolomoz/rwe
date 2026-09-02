@@ -980,6 +980,13 @@
       "irPublications": 44,
       "site": 616
     },
-    "verdict": "P5 PASS — estate is delivery-clean, layout-clean, link-parity with live, redirects covering all excluded waves"
+    "verdict": "P5 PASS — estate is delivery-clean, layout-clean, link-parity with live, redirects covering all excluded waves",
+    "formsPersonalizationFix": {
+      "at": "2026-09-02",
+      "rootCause": "contact-form pages are server-personalized per ?c= config; sitemap-driven discovery captured only the bare-path generic state, and the careers instance (not in sitemap, param-only entry) was missed entirely",
+      "fix": "31 configs frozen from live into blocks/form/dcf-configs.json (both form pages); block personalizes headline + contact rail from the URL param, generic fallback otherwise; photos downloaded through the browser session (CDN referer-gated); careers contact-form page created",
+      "sweep": "all parameterized internal links enumerated: remaining ones are filter-state deep-links (jobs/products/experts/locations) — pages render, pre-filter lands with each facet integration",
+      "pluginPitfall": "documented in stardust/plugin-improvements/parameterized-page-states.md"
+    }
   }
 }

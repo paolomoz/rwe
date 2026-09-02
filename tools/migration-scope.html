@@ -82,7 +82,7 @@
 
 <h3>Contact form (dynamic-contact-form) <span class="pill cutover">activates at cutover</span></h3>
 <p>The site's central contact form (the engine behind ~200 per-recipient configurations) is rebuilt with the exact live field set, honeypot and Cloudflare Turnstile, posting to the <strong>existing RWE endpoint</strong> <code>/api/dcf</code> with the <code>?c=</code> config hash. Turnstile validates by domain, so real submissions activate once the site serves under rwe.com.</p>
-<div class="test"><strong>Test:</strong> open <a href="https://main--rwe--paolomoz.aem.live/en/contact-services/contact-form?c=8ce5ec31b0c644e2be4479736254db33">/en/contact-services/contact-form?c=…</a> — all fields render (Subject, message, contact-by radios, name, email). On this pilot origin the Turnstile widget reports a domain error — expected; it passes on the rwe.com domain.</div>
+<div class="test"><strong>Test:</strong> open <a href="https://main--rwe--paolomoz.aem.live/en/contact-services/contact-form?c=8ce5ec31b0c644e2be4479736254db33">/en/contact-services/contact-form?c=…</a> — the page personalizes exactly like live: "Vera Bücker will answer your questions", her photo/role/phone card on the right, Email preselected, privacy note. Try the careers variant: <a href="https://main--rwe--paolomoz.aem.live/en/rwe-careers-portal/contact-form?c=%7B1EB2C913-FD2C-4AD2-8F9F-0C72160DEFB1%7D">/en/rwe-careers-portal/contact-form?c={…}</a>. Without a <code>c</code> parameter the generic form renders. On this pilot origin the Turnstile widget reports a domain error — expected; it passes on the rwe.com domain.</div>
 
 <h3>Specialised forms (Sitecore Forms) <span class="pill followup">link-out</span></h3>
 <p>15 pages embed Sitecore Forms (newsletter, meeting request, RFPs…). Those use session-bound CSRF tokens that a static replica cannot mint, so they show a migration notice + button to the original form. Rebuilding them against a forms backend is a cutover decision.</p>
@@ -118,9 +118,9 @@
   <tr><th>Tier</th><th class="num">In pilot</th><th class="num">Site-wide</th><th>Pilot handling</th><th>At cutover</th></tr>
   <tr>
     <td><strong>Dynamic contact form</strong> (<code>dcf</code>) — one engine, configured per recipient/topic via <code>?c=</code> hash</td>
-    <td class="num">300 entry-point links<br>→ 20 distinct configs</td>
+    <td class="num">300+ entry-point links<br>→ 31 frozen configs<br>(2 form pages)</td>
     <td class="num">~200 configs<br>(partner estimate)</td>
-    <td><span class="ok">Rebuilt &amp; functional</span> — exact live field set, honeypot, Turnstile; posts to <code>/api/dcf</code>. The config hash is resolved server-side, so <em>all</em> configs are covered by the one block</td>
+    <td><span class="ok">Rebuilt &amp; functional</span> — exact live field set, honeypot, Turnstile; posts to <code>/api/dcf</code>. Per-config personalization (recipient headline, photo/role/phone card) is frozen from live for all 31 referenced configs on both form pages; unknown hashes fall back to the generic form</td>
     <td><span class="ok">Fully live</span> (Turnstile validates on the rwe.com domain)</td>
   </tr>
   <tr>
@@ -140,6 +140,9 @@
 </table>
 
 <p class="note">Reconciling the "200 forms" figure: it counts <em>configurations</em> of the single dcf engine, not distinct builds. The English pilot references 20 of them (300 "Send&nbsp;e-mail" entry points across the 618 pages all funnel into the one rebuilt form); the remainder sit on the German locale and the redirected archive pages. Implementation-wise the estate needs <strong>1 config-driven form + 15 specialised rebuilds</strong>, not 200.</p>
+
+<h3>Parameter-personalized pages — a migration class of its own</h3>
+<p class="note">Pages whose live rendering depends on a query parameter are invisible to sitemap-driven discovery: the two contact-form pages render per-recipient via <code>?c=</code> (the careers one wasn't in the sitemap at all — only reachable through parameterized links). Both are now covered by freezing all 31 referenced configs from live. The remaining parameterized links in the estate are <em>filter-state deep-links</em> (jobs <code>?ci=/?cm=</code>, products <code>?kundengruppe=</code>, experts <code>?expertise=</code>, locations <code>?locationType=</code>): those pages render fully, the parameter pre-filter is honoured when each listing's facet integration lands (jobs facets, products/experts listing wiring, map).</p>
 
 <h3>The 15 Sitecore-Forms pages (link-out pattern)</h3>
 <table>
