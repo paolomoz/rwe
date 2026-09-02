@@ -112,7 +112,57 @@
   <li><a href="https://main--rwe--paolomoz.aem.live/en/query-index.json">/en/query-index.json</a> — site-wide (616 pages), feeds search</li>
 </ul>
 
-<h2>4. Quality assurance run (P5)</h2>
+<h2>4. Forms coverage</h2>
+<p>The site's forms fall into <strong>two technical tiers</strong> with very different migration properties. Every form surface in the pilot has a defined behaviour — functional, cutover-armed, or an explicit link-out; none is dead UI. Submissions post to the <strong>existing RWE backend</strong> (agreed decision).</p>
+<table>
+  <tr><th>Tier</th><th class="num">In pilot</th><th class="num">Site-wide</th><th>Pilot handling</th><th>At cutover</th></tr>
+  <tr>
+    <td><strong>Dynamic contact form</strong> (<code>dcf</code>) — one engine, configured per recipient/topic via <code>?c=</code> hash</td>
+    <td class="num">300 entry-point links<br>→ 20 distinct configs</td>
+    <td class="num">~200 configs<br>(partner estimate)</td>
+    <td><span class="ok">Rebuilt &amp; functional</span> — exact live field set, honeypot, Turnstile; posts to <code>/api/dcf</code>. The config hash is resolved server-side, so <em>all</em> configs are covered by the one block</td>
+    <td><span class="ok">Fully live</span> (Turnstile validates on the rwe.com domain)</td>
+  </tr>
+  <tr>
+    <td><strong>Sitecore Forms</strong> (<code>fxb</code>) — dedicated per-page forms with session-bound CSRF tokens</td>
+    <td class="num">15 pages</td>
+    <td class="num">15 EN<br>(+ German locale)</td>
+    <td><span class="warn">Link-out</span> — migration notice + button to the original live form (tokens cannot be minted by a static site)</td>
+    <td><span class="warn">Backend decision needed</span> — rebuild against a forms service, or keep link-outs until Sitecore retires</td>
+  </tr>
+  <tr>
+    <td><strong>Download-centre filter form</strong> (<code>df01</code>)</td>
+    <td class="num">1 page</td>
+    <td class="num">1</td>
+    <td><span class="warn">Placeholder</span> — needs a documents data model (documents aren't pages)</td>
+    <td>Follow-up</td>
+  </tr>
+</table>
+
+<p class="note">Reconciling the "200 forms" figure: it counts <em>configurations</em> of the single dcf engine, not distinct builds. The English pilot references 20 of them (300 "Send&nbsp;e-mail" entry points across the 618 pages all funnel into the one rebuilt form); the remainder sit on the German locale and the redirected archive pages. Implementation-wise the estate needs <strong>1 config-driven form + 15 specialised rebuilds</strong>, not 200.</p>
+
+<h3>The 15 Sitecore-Forms pages (link-out pattern)</h3>
+<table>
+  <tr><th>Form</th><th>Page</th></tr>
+  <tr><td>IR newsletter subscription</td><td><a href="https://main--rwe--paolomoz.aem.live/en/investor-relations/contact-and-service/ir-newsletter">/en/investor-relations/contact-and-service/ir-newsletter</a></td></tr>
+  <tr><td>IR meeting request</td><td><a href="https://main--rwe--paolomoz.aem.live/en/investor-relations/contact-and-service/meeting-request">/en/investor-relations/contact-and-service/meeting-request</a></td></tr>
+  <tr><td>Community complaints channel</td><td><a href="https://main--rwe--paolomoz.aem.live/en/responsibility-and-sustainability/social-affairs-and-society/community-engagement/community-complaints-channel">/en/…/community-complaints-channel</a></td></tr>
+  <tr><td>Product contact form</td><td><a href="https://main--rwe--paolomoz.aem.live/en/contact-services/product-contact-form">/en/contact-services/product-contact-form</a></td></tr>
+  <tr><td>EEG direct marketing — contact</td><td><a href="https://main--rwe--paolomoz.aem.live/en/the-group/rwest/rwest-products-and-services/eeg-direct-marketing/contact">/en/…/eeg-direct-marketing/contact</a></td></tr>
+  <tr><td>EEG direct marketing — request for proposal</td><td><a href="https://main--rwe--paolomoz.aem.live/en/the-group/rwest/rwest-products-and-services/eeg-direct-marketing/request-for-proposal">/en/…/eeg-direct-marketing/request-for-proposal</a></td></tr>
+  <tr><td>D-Central — contact</td><td><a href="https://main--rwe--paolomoz.aem.live/en/the-group/rwest/rwest-products-and-services/d-central/contact">/en/…/d-central/contact</a></td></tr>
+  <tr><td>PPA contacts</td><td><a href="https://main--rwe--paolomoz.aem.live/en/the-group/rwest/rwest-products-and-services/power-purchase-agreement/rwe-contacts-for-ppa">/en/…/rwe-contacts-for-ppa</a></td></tr>
+  <tr><td>Energy solutions</td><td><a href="https://main--rwe--paolomoz.aem.live/en/the-group/rwest/energy-solutions">/en/the-group/rwest/energy-solutions</a></td></tr>
+  <tr><td>Emergency power generator</td><td><a href="https://main--rwe--paolomoz.aem.live/en/the-group/rwest/rwest-products-and-services/emergency-power-generator-as-source-of-revenue">/en/…/emergency-power-generator-as-source-of-revenue</a></td></tr>
+  <tr><td>RWE Technology — contact</td><td><a href="https://main--rwe--paolomoz.aem.live/en/the-group/rwe-ti/contact-form">/en/the-group/rwe-ti/contact-form</a></td></tr>
+  <tr><td>RWE Technology — media library login</td><td><a href="https://main--rwe--paolomoz.aem.live/en/the-group/rwe-ti/media-library-login-request">/en/the-group/rwe-ti/media-library-login-request</a></td></tr>
+  <tr><td>Hydrogen tenders</td><td><a href="https://main--rwe--paolomoz.aem.live/en/products-and-services/hydrogen-sales/hydrogen-tender">/en/…/hydrogen-tender</a></td></tr>
+  <tr><td>Become a solar partner</td><td><a href="https://main--rwe--paolomoz.aem.live/en/our-energy/discover-renewables/solar-energy/become-a-solar-partner">/en/…/become-a-solar-partner</a></td></tr>
+  <tr><td>Land for wind power (onshore partner)</td><td><a href="https://main--rwe--paolomoz.aem.live/en/our-energy/discover-renewables/onshore-wind/land-for-wind-power">/en/…/land-for-wind-power</a></td></tr>
+</table>
+<div class="test"><strong>Test the coverage:</strong> (1)&nbsp;dcf: click any "Send e-mail" link on a press-release contact card — every one of the 300 entry points opens the rebuilt form with its own <code>?c=</code> config. (2)&nbsp;fxb: open any page above — the form zone shows the migration notice + a working button to the original form. (3)&nbsp;Nothing renders as broken or empty form UI anywhere in the estate.</div>
+
+<h2>5. Quality assurance run (P5)</h2>
 <ul>
   <li><strong>Delivered contract, all 619 pages:</strong> 200, exactly one <code>h1</code>, zero pipeline errors, zero un-rehosted images — 606 clean, 13 justified exemptions (fragments, live-parity missing descriptions).</li>
   <li><strong>Layout gates:</strong> 10/10 page templates green in a real browser (blocks decorate, no JS errors, no broken content images).</li>
@@ -120,7 +170,7 @@
   <li><strong>1,674 images</strong> rehosted to the new content store; PDFs intentionally remain on origin.</li>
 </ul>
 
-<h2>5. Open items</h2>
+<h2>6. Open items</h2>
 <table>
   <tr><th>Item</th><th>Status</th></tr>
   <tr><td>Turnstile, jobs API, contact-form submissions, locations Google map</td><td><span class="warn">Cutover-activated</span> — same-origin under rwe.com makes them work unchanged (or RWE allowlists the pilot domain earlier)</td></tr>
