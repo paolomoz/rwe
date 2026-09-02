@@ -273,5 +273,136 @@
   "role": "Renewables",
   "tels": [],
   "photo": "/blocks/form/dcf/con01-sinje-vogelsang-57e1ca.jpg"
+ },
+ "{127D2EF7-A8D9-46AA-AAA5-61A1E5CCEC5D}": {
+  "headline": "Aruna Richard will answer your questions",
+  "brand": "RWE",
+  "name": "Aruna Richard",
+  "role": "Early Careers & Recruiting Partner | RWE Supply & Trading",
+  "tels": [
+   {
+    "href": "tel:+65 9880 0781",
+    "label": "+65 9880 0781"
+   }
+  ],
+  "photo": null
+ },
+ "{1EB2C913-FD2C-4AD2-8F9F-0C72160DEFB1}": {
+  "headline": "Carrie Jäger will answer your questions",
+  "brand": "RWE",
+  "name": "Carrie Jäger",
+  "role": "Diversity, Equity & Inclusion Project Manager",
+  "tels": [],
+  "photo": null
+ },
+ "{2C3EE7C8-335E-4F3C-BFDF-623395215D82}": {
+  "headline": "Aruna Richard will answer your questions",
+  "brand": "RWE",
+  "name": "Aruna Richard",
+  "role": "Singapore Graduate Programmes | RWE Supply & Trading",
+  "tels": [
+   {
+    "href": "tel:+65 9880 0781",
+    "label": "+65 9880 0781"
+   }
+  ],
+  "photo": null
+ },
+ "{42FEA945-9997-4AFC-AA4B-8CA10CC66EB7}": {
+  "headline": "Paul Roberts will answer your questions",
+  "brand": "RWE",
+  "name": "Paul Roberts",
+  "role": "UK Year in Industry Placement Programmes | RWE Supply & Trading",
+  "tels": [
+   {
+    "href": "tel:+44 (0) 7867 370986",
+    "label": "+44 (0) 7867 370986"
+   }
+  ],
+  "photo": null
+ },
+ "{45A67626-BD52-4108-AC92-523B6AC2B013}": {
+  "headline": "Offshore Early Careers Team will answer your questions",
+  "brand": "RWE",
+  "name": "Offshore Early Careers Team",
+  "role": "RWE Renewables Management UK Ltd.",
+  "tels": [],
+  "photo": null
+ },
+ "{61fd1e07-0b87-4c6b-bb63-4db1d5b42f2a}": {
+  "headline": "Regina Pfortje will answer your questions",
+  "brand": "RWE",
+  "name": "Regina Pfortje",
+  "role": "Employer Branding & HR Communication",
+  "tels": [
+   {
+    "href": "tel:+49 152 5791 4972",
+    "label": "+49 152 5791 4972"
+   }
+  ],
+  "photo": null
+ },
+ "{6BB8A760-093D-41B9-B566-4B339405DC4D}": {
+  "headline": "Lee Clark will answer your questions",
+  "brand": "RWE",
+  "name": "Lee Clark",
+  "role": "Graduate Programmes | RWE Generation",
+  "tels": [],
+  "photo": null
+ },
+ "{733EA7D4-A224-4BF8-86B4-0CA6F1C31BC1}": {
+  "headline": "Lee Clark will answer your questions",
+  "brand": "RWE",
+  "name": "Lee Clark",
+  "role": "HR Partner I Recruiting & Talent Acquisition I RWE Generation UK Plc",
+  "tels": [],
+  "photo": null
+ },
+ "{A4AE8CE5-D972-4D1A-90B7-4E6BAF48F10D}": {
+  "headline": "Lewis Lightbown will answer your questions",
+  "brand": "RWE",
+  "name": "Lewis Lightbown",
+  "role": "Commercial, IT & IT Developer Graduate Programmes, UK Apprenticeships | RWE Supply & Trading",
+  "tels": [
+   {
+    "href": "tel:+44 (0) 7584 159042",
+    "label": "+44 (0) 7584 159042"
+   }
+  ],
+  "photo": null
+ },
+ "{CC8EC73E-472E-4EA4-8238-D4F3E4D9FB0D}": {
+  "headline": "Janine Buljevic will answer your questions",
+  "brand": "RWE",
+  "name": "Janine Buljevic",
+  "role": "Renewables International Graduate Programme",
+  "tels": [],
+  "photo": null
+ },
+ "{F31AB766-DE73-447B-858F-4812C91C8A49}": {
+  "headline": "Julia Seelhöfer will answer your questions",
+  "brand": "RWE",
+  "name": "Julia Seelhöfer",
+  "role": "Business Transformation & Strategy, Finance & HR Graduate Programmes | RWE Supply & Trading",
+  "tels": [
+   {
+    "href": "tel:+49 152 54806399",
+    "label": "+49 152 54806399"
+   }
+  ],
+  "photo": null
+ },
+ "{FC682B88-6DC9-4857-A329-4AA51F312B21}": {
+  "headline": "Kate Greening-Poade will answer your questions",
+  "brand": "RWE",
+  "name": "Kate Greening-Poade",
+  "role": "Women in Trading Summer Placement Programme | RWE Supply & Trading",
+  "tels": [
+   {
+    "href": "tel:+44 (0) 207 8981 954",
+    "label": "+44 (0) 207 8981 954"
+   }
+  ],
+  "photo": null
  }
 }
