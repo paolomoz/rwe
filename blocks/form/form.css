@@ -88,3 +88,98 @@
 .form .form-external p {
   margin-bottom: 16px;
 }
+
+/* dcf: personalized stage + two-column layout (live parity) */
+.dcf-back a {
+  font-family: var(--medium-font-family);
+  font-size: 18px;
+  color: var(--teal);
+}
+
+.dcf-back a::before {
+  content: '\e913';
+  font-family: "RWE_Icon_Font", sans-serif;
+  font-size: 15px;
+  margin-right: 8px;
+}
+
+.dcf-brand {
+  font-family: var(--heading-font-family);
+  font-size: 18px;
+  color: var(--navy);
+  margin: -8px 0 24px;
+}
+
+.form .dcf-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) 1fr;
+  gap: 48px;
+  align-items: start;
+}
+
+.form .dcf-rail h3 {
+  font-size: 18px;
+  line-height: 27px;
+  margin-bottom: 12px;
+}
+
+.form .dcf-rail img {
+  width: 100%;
+  max-width: 240px;
+  display: block;
+  margin-bottom: 16px;
+}
+
+.form .dcf-rail h2 {
+  font-size: 24px;
+  line-height: 32px;
+  margin-bottom: 8px;
+}
+
+.form .dcf-rail .dcf-role {
+  font-family: var(--heading-font-family);
+  font-size: 15px;
+  line-height: 22px;
+  margin-bottom: 12px;
+}
+
+.form .dcf-rail .dcf-tel {
+  margin: 0 0 4px;
+}
+
+.form .dcf-rail .dcf-tel a {
+  font-family: var(--medium-font-family);
+  font-size: 16px;
+  color: var(--teal);
+}
+
+.form .form-radios .radio {
+  display: flex;
+  margin: 0 0 10px;
+}
+
+.form .form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.form .form-privacy {
+  font-size: 15px;
+  line-height: 22px;
+  margin-bottom: 16px;
+}
+
+@media (width <= 767px) {
+  .form .dcf-grid {
+    display: block;
+  }
+
+  .form .dcf-rail {
+    margin-top: 32px;
+  }
+
+  .form .form-row {
+    display: block;
+  }
+}

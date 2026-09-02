@@ -38,7 +38,41 @@ function field(labelText, name, type, required) {
   return wrap;
 }
 
-function buildContact(block) {
+async function loadConfig() {
+  const cHash = new URLSearchParams(window.location.search).get('c');
+  if (!cHash) return null;
+  try {
+    const resp = await fetch('/blocks/form/dcf-configs.json');
+    if (!resp.ok) return null;
+    const map = await resp.json();
+    return map[cHash] || null;
+  } catch (e) { return null; }
+}
+
+function buildContact(block, cfg) {
+  // personalize the page stage from the frozen config (live parity: the
+  // ?c= hash resolves to a recipient server-side on rwe.com)
+  if (cfg) {
+    const h1 = document.querySelector('main h1');
+    if (h1 && cfg.headline) {
+      const back = document.createElement('p');
+      back.className = 'dcf-back';
+      const backA = document.createElement('a');
+      backA.href = '#';
+      backA.textContent = 'Back';
+      backA.addEventListener('click', (e) => { e.preventDefault(); window.history.back(); });
+      back.append(backA);
+      h1.before(back);
+      h1.textContent = cfg.headline;
+      if (cfg.brand) {
+        const brand = document.createElement('p');
+        brand.className = 'dcf-brand';
+        brand.textContent = cfg.brand;
+        h1.after(brand);
+      }
+    }
+  }
+
   const form = document.createElement('form');
   form.className = 'dcf';
   form.noValidate = false;
@@ -49,22 +83,26 @@ function buildContact(block) {
   const fieldset = document.createElement('fieldset');
   fieldset.className = 'form-field form-radios';
   const legend = document.createElement('legend');
-  legend.textContent = 'I would like to be contacted by';
+  legend.textContent = 'I would like to be contacted by *';
   fieldset.append(legend);
-  [['email', 'Email'], ['post', 'Post'], ['phone', 'Telephone']].forEach(([value, label]) => {
+  [['email', 'Email', true], ['post', 'Post', false], ['phone', 'Telephone', false]].forEach(([value, label, checked]) => {
     const l = document.createElement('label');
     l.className = 'radio';
     const r = document.createElement('input');
     r.type = 'radio';
     r.name = 'informed-by';
     r.value = value;
+    r.required = true;
+    if (checked) r.checked = true; // live default: Email preselected
     l.append(r, document.createTextNode(` ${label}`));
     fieldset.append(l);
   });
   form.append(fieldset);
 
-  form.append(field('Name', 'firstname', 'text', true));
-  form.append(field('Surname', 'lastname', 'text', true));
+  const nameRow = document.createElement('div');
+  nameRow.className = 'form-row';
+  nameRow.append(field('Name', 'firstname', 'text', true), field('Surname', 'lastname', 'text', true));
+  form.append(nameRow);
   form.append(field('Company/institution', 'company-institution', 'text', false));
   form.append(field('Email address', 'email', 'email', true));
 
@@ -87,6 +125,16 @@ function buildContact(block) {
   note.className = 'form-note';
   note.textContent = '* Mandatory fields';
   form.append(note);
+
+  // privacy note (live verbatim)
+  const privacy = document.createElement('p');
+  privacy.className = 'form-privacy';
+  privacy.append(document.createTextNode('Further information on data protection can be found in our '));
+  const pa = document.createElement('a');
+  pa.href = '/en/data-protection/';
+  pa.textContent = 'data protection information';
+  privacy.append(pa, document.createTextNode('.'));
+  form.append(privacy);
 
   const btn = document.createElement('button');
   btn.type = 'submit';
@@ -119,7 +167,45 @@ function buildContact(block) {
     }
   });
 
-  block.replaceChildren(form);
+  // two-column layout: form + contact rail (live marginal column)
+  const grid = document.createElement('div');
+  grid.className = 'dcf-grid';
+  grid.append(form);
+  if (cfg && (cfg.name || cfg.photo)) {
+    const rail = document.createElement('aside');
+    rail.className = 'dcf-rail';
+    const railH = document.createElement('h3');
+    railH.textContent = 'Contact';
+    rail.append(railH);
+    if (cfg.photo) {
+      const img = document.createElement('img');
+      img.src = cfg.photo;
+      img.alt = cfg.name || '';
+      rail.append(img);
+    }
+    if (cfg.name) {
+      const nm = document.createElement('h2');
+      nm.textContent = cfg.name;
+      rail.append(nm);
+    }
+    if (cfg.role) {
+      const rl = document.createElement('p');
+      rl.className = 'dcf-role';
+      rl.textContent = cfg.role;
+      rail.append(rl);
+    }
+    (cfg.tels || []).forEach((t) => {
+      const tp = document.createElement('p');
+      tp.className = 'dcf-tel';
+      const ta = document.createElement('a');
+      ta.href = t.href;
+      ta.textContent = t.label;
+      tp.append(ta);
+      rail.append(tp);
+    });
+    grid.append(rail);
+  }
+  block.replaceChildren(grid);
 }
 
 function buildExternal(block) {
@@ -145,6 +231,6 @@ function buildExternal(block) {
 }
 
 export default async function decorate(block) {
-  if (block.classList.contains('contact')) buildContact(block);
+  if (block.classList.contains('contact')) buildContact(block, await loadConfig());
   else buildExternal(block);
 }
