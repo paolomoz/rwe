@@ -42,9 +42,10 @@ function linkItem(a) {
 /* ---- mega-menu tree parsing (nav section 4) ---- */
 function parseTree(ul) {
   return [...ul.children].filter((li) => li.matches('li')).map((li) => {
-    const a = li.querySelector(':scope > a');
+    // the pipeline wraps li anchors in <p> when the li has element children
+    const a = li.querySelector(':scope > a, :scope > p > a');
     const sub = li.querySelector(':scope > ul');
-    const picEl = li.querySelector(':scope > a picture, :scope > a img, :scope > picture');
+    const picEl = li.querySelector(':scope > a picture, :scope > p > a picture, :scope > a img, :scope > p > a img, :scope > picture, :scope > p > picture');
     let pic = null;
     if (picEl) pic = picEl.matches('picture') ? picEl : (picEl.closest('picture') || picEl);
     const item = {
