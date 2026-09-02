@@ -136,6 +136,26 @@
         "rule": "design-system-color",
         "value": "#c00",
         "createdAt": "2026-09-02T06:06:07.838Z"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "#0a7d3e",
+        "createdAt": "2026-09-02T07:31:47.834Z"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "#b06000",
+        "createdAt": "2026-09-02T07:31:47.866Z"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "#888",
+        "createdAt": "2026-09-02T07:31:47.893Z"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "#555",
+        "createdAt": "2026-09-02T07:31:47.920Z"
       }
     ]
   }

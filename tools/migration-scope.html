@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>RWE → AEM Edge Delivery — Migration Scope &amp; Capabilities</title>
+<style>
+  :root { --navy: #1d4477; --teal: #00a19f; --surface: #f4f4f2; --line: #c6d0dd; }
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: "Trebuchet MS", tahoma, sans-serif; color: var(--navy); background: #fff; line-height: 1.55; }
+  header.band { background: linear-gradient(45deg, #1d4477 22%, #00a19f); color: #fff; padding: 40px 24px; }
+  header.band h1 { margin: 0 0 8px; font-size: 30px; }
+  header.band p { margin: 0; opacity: 0.9; }
+  main { max-width: 980px; margin: 0 auto; padding: 32px 24px 64px; }
+  h2 { font-size: 24px; margin: 40px 0 12px; border-bottom: 2px solid var(--teal); padding-bottom: 6px; }
+  h3 { font-size: 18px; margin: 24px 0 6px; color: var(--teal); }
+  table { border-collapse: collapse; width: 100%; margin: 12px 0; font-size: 15px; }
+  th { text-align: left; background: var(--surface); }
+  th, td { padding: 8px 12px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  td.num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+  .ok { color: #0a7d3e; font-weight: bold; }
+  .warn { color: #b06000; font-weight: bold; }
+  .oos { color: #888; }
+  code { background: var(--surface); padding: 1px 6px; border-radius: 4px; font-size: 13px; }
+  .test { background: var(--surface); border-left: 4px solid var(--teal); padding: 10px 14px; margin: 8px 0 20px; font-size: 14px; }
+  .test strong { color: var(--teal); }
+  a { color: var(--teal); }
+  .pill { display: inline-block; font-size: 12px; padding: 2px 10px; border-radius: 10px; background: var(--teal); color: #fff; margin-left: 8px; vertical-align: middle; }
+  .pill.cutover { background: #b06000; }
+  .pill.followup { background: #888; }
+  .note { font-size: 14px; color: #555; }
+  ul { margin: 8px 0; }
+</style>
+</head>
+<body>
+<header class="band">
+  <h1>RWE → AEM Edge Delivery — Migration Pilot</h1>
+  <p>Scope, delivered capabilities and how to test them · status 2 September 2026 ·
+     origin: <a style="color:#fff" href="https://main--rwe--paolomoz.aem.live/">main--rwe--paolomoz.aem.live</a></p>
+</header>
+<main>
+
+<h2>1. Scope — migrated vs. full site</h2>
+<table>
+  <tr><th>Set</th><th class="num">Pages</th><th>Decision / status</th></tr>
+  <tr><td>Sitemap total (www.rwe.com)</td><td class="num">5,026</td><td>Full identified site</td></tr>
+  <tr><td class="oos">German locale (<code>/presse/…</code> etc.)</td><td class="num oos">2,697</td><td class="oos">Out of pilot scope — second-locale wave (needs <code>/de</code> routing decision); all blocks &amp; importers reusable as-is</td></tr>
+  <tr><td><strong>English <code>/en/</code> — pilot universe</strong></td><td class="num"><strong>2,329</strong></td><td>Every URL is either migrated or redirected — nothing 404s</td></tr>
+  <tr><td>→ <span class="ok">Migrated &amp; live</span></td><td class="num">618</td><td>7 gated archetypes + 100 newest articles (57 press, 43 IR) + all 510 other pages (content, IR, locations, legal, hubs, landings)</td></tr>
+  <tr><td>→ <span class="warn">Redirected (301)</span></td><td class="num">1,711</td><td>Agreed article cap: 833 older press releases → press hub · 790 older IR publications → IR hub · 74 #TeamRWE stories → careers · 10 statements → hub · job app pages, online-report, slug fixes</td></tr>
+  <tr><td class="oos">PDFs / documents (<code>/-/media/…</code>)</td><td class="num oos">~thousands</td><td class="oos">Stay on the original rwe.com origin during transition (agreed); pages link to them absolutely</td></tr>
+</table>
+<p class="note">Growth paths: the 1,707 redirected articles can be imported with the validated article importer (no new code, ~an afternoon of pipeline time). The German locale is a full second wave.</p>
+
+<h2>2. Fidelity — the 7 gated archetypes</h2>
+<p>Every archetype passed: pixel diff ≤ 10% and height |Δ| ≤ 8 px against the live site at 1440 <em>and</em> 360, content-diff with 0 unjustified findings, David's-Model lint 0 🔴, and a computed-layout gate on the published origin.</p>
+<table>
+  <tr><th>Archetype</th><th class="num">1440</th><th class="num">360</th><th>Compare</th></tr>
+  <tr><td>Home</td><td class="num">2.11%</td><td class="num">9.78%</td><td><a href="https://www.rwe.com/en/">original</a> · <a href="https://main--rwe--paolomoz.aem.live/">migrated</a></td></tr>
+  <tr><td>Press hub</td><td class="num">2.05%</td><td class="num">3.28%</td><td><a href="https://www.rwe.com/en/press/">original</a> · <a href="https://main--rwe--paolomoz.aem.live/en/press">migrated</a></td></tr>
+  <tr><td>Article detail</td><td class="num">9.17%</td><td class="num">7.02%</td><td><a href="https://www.rwe.com/en/press/rwe-ag/2026-08-13-rwe-delivers-strong-first-half-results/">original</a> · <a href="https://main--rwe--paolomoz.aem.live/en/press/rwe-ag/2026-08-13-rwe-delivers-strong-first-half-results">migrated</a></td></tr>
+  <tr><td>Section landing</td><td class="num">6.30%</td><td class="num">8.48%</td><td><a href="https://www.rwe.com/en/the-group/">original</a> · <a href="https://main--rwe--paolomoz.aem.live/en/the-group">migrated</a></td></tr>
+  <tr><td>Content page</td><td class="num">8.32%</td><td class="num">5.06%</td><td><a href="https://www.rwe.com/en/responsibility-and-sustainability/environmental-protection/climate/">original</a> · <a href="https://main--rwe--paolomoz.aem.live/en/responsibility-and-sustainability/environmental-protection/climate">migrated</a></td></tr>
+  <tr><td>Locations map</td><td class="num">5.76%</td><td class="num">8.47%</td><td><a href="https://www.rwe.com/en/the-group/countries-and-locations/">original</a> · <a href="https://main--rwe--paolomoz.aem.live/en/the-group/countries-and-locations">migrated</a></td></tr>
+  <tr><td>Job search</td><td class="num">1.02%</td><td class="num">3.78%</td><td><a href="https://www.rwe.com/en/rwe-careers-portal/job-offers/">original</a> · <a href="https://main--rwe--paolomoz.aem.live/en/rwe-careers-portal/job-offers">migrated</a></td></tr>
+</table>
+
+<h2>3. Capabilities &amp; how to test</h2>
+
+<h3>Dynamic press listings <span class="pill">live</span></h3>
+<p>The press hub and 9 brand hubs read the EDS <code>press</code> query index: live result counts, newest-first tiles, working company / topic / search / date filters and load-more. Brand hubs auto-scope to their company.</p>
+<div class="test"><strong>Test:</strong> open <a href="https://main--rwe--paolomoz.aem.live/en/press">/en/press</a> — the count ("64 results were found.") comes from the index. Pick a company in the <em>Company</em> filter, type a term in <em>Search Term</em>, click <em>Load more</em>. Then open <a href="https://main--rwe--paolomoz.aem.live/en/press/rwe-ag">/en/press/rwe-ag</a> — the same block pre-filtered to RWE AG.</div>
+
+<h3>Site search <span class="pill">live</span></h3>
+<p>Header magnifier opens a search overlay backed by a site-wide query index of all 616 pages.</p>
+<div class="test"><strong>Test:</strong> on any page, click the <em>Search</em> icon in the header and type <code>hydrogen</code> — up to 10 matching pages appear with descriptions; results are links.</div>
+
+<h3>Consent management — Usercentrics <span class="pill">live</span></h3>
+<p>The production RWE Usercentrics CMP (settings <code>lrfueDZgn</code>) loads in the delayed phase. GTM (<code>GTM-K6ZG5P5</code>) loads only after consent; etracker rides the CMP/GTM as on live. Bots/crawlers don't see the banner.</p>
+<div class="test"><strong>Test:</strong> open <a href="https://main--rwe--paolomoz.aem.live/">the home page</a> in a <em>private/incognito window</em> — the RWE-branded "Welcome to RWE" dialog appears. In DevTools → Network, confirm no <code>gtm.js</code> before consent; click <em>Accept All</em> and see <code>googletagmanager.com/gtm.js</code> load. The footer link <em>Cookies &amp; Services</em> reopens the settings layer.</div>
+
+<h3>Contact form (dynamic-contact-form) <span class="pill cutover">activates at cutover</span></h3>
+<p>The site's central contact form (the engine behind ~200 per-recipient configurations) is rebuilt with the exact live field set, honeypot and Cloudflare Turnstile, posting to the <strong>existing RWE endpoint</strong> <code>/api/dcf</code> with the <code>?c=</code> config hash. Turnstile validates by domain, so real submissions activate once the site serves under rwe.com.</p>
+<div class="test"><strong>Test:</strong> open <a href="https://main--rwe--paolomoz.aem.live/en/contact-services/contact-form?c=8ce5ec31b0c644e2be4479736254db33">/en/contact-services/contact-form?c=…</a> — all fields render (Subject, message, contact-by radios, name, email). On this pilot origin the Turnstile widget reports a domain error — expected; it passes on the rwe.com domain.</div>
+
+<h3>Specialised forms (Sitecore Forms) <span class="pill followup">link-out</span></h3>
+<p>15 pages embed Sitecore Forms (newsletter, meeting request, RFPs…). Those use session-bound CSRF tokens that a static replica cannot mint, so they show a migration notice + button to the original form. Rebuilding them against a forms backend is a cutover decision.</p>
+<div class="test"><strong>Test:</strong> open <a href="https://main--rwe--paolomoz.aem.live/en/investor-relations/contact-and-service/ir-newsletter">/en/…/ir-newsletter</a> — notice + "Open the form" linking to the live page.</div>
+
+<h3>Job search <span class="pill cutover">live API at cutover</span></h3>
+<p>The job list is wired to the live jobs API (<code>POST /api/jobborse/entities/v1</code>, verified: 208 jobs) with cards, total count, sort and load-more. The API sends no CORS headers, so on this pilot origin the block falls back to the frozen capture; at cutover (same origin) the live path activates unchanged.</p>
+<div class="test"><strong>Test:</strong> open <a href="https://main--rwe--paolomoz.aem.live/en/rwe-careers-portal/job-offers">/en/rwe-careers-portal/job-offers</a> — 9 job cards with Apply-now links into SuccessFactors. (Pilot shows the frozen snapshot; the wired sort/load-more activate with the API at cutover.)</div>
+
+<h3>Authorable blocks built for the long tail <span class="pill">live</span></h3>
+<p>Beyond the archetype blocks (hero, cards ×7 variants, banner ×4, press, quote, events, downloads, contacts, companies, icon-tiles, country-slider, locations-map, breadcrumb…), the bulk import added <strong>accordion</strong>, <strong>icon-list</strong> and <strong>table</strong>.</p>
+<div class="test"><strong>Test:</strong> accordions: <a href="https://main--rwe--paolomoz.aem.live/en/data-protection">/en/data-protection</a> (16 expandable legal sections). Tables: <a href="https://main--rwe--paolomoz.aem.live/en/investor-relations/debt-and-credit-ratings/bonds-and-sustainable-finance">bonds &amp; sustainable finance</a> (Senior Bonds tables). Icon list: <a href="https://main--rwe--paolomoz.aem.live/en/the-group/rwest/rwest-products-and-services/d-central">D-Central</a>.</div>
+
+<h3>Motion layer <span class="pill">live</span></h3>
+<p>All animation contracts were measured on the live site (never invented): card entrances, contact-icon "wobble" stagger, header scroll morph, hover scales, button hovers.</p>
+<div class="test"><strong>Test:</strong> on <a href="https://main--rwe--paolomoz.aem.live/">home</a>, scroll down — the six white cards fade up as they enter; the three contact icons pulse in live's stagger (2nd, 3rd, then 1st). Scroll down then slightly up — the compact gradient header bar slides in; back to top restores the full header.</div>
+
+<h3>Redirects <span class="pill">live</span></h3>
+<p>1,721 redirect rules cover every excluded URL, so no English URL 404s.</p>
+<div class="test"><strong>Test:</strong> open an archived 2022 release, e.g. <a href="https://main--rwe--paolomoz.aem.live/en/press/rwe-renewables/2022-12-08-rwe-joins-forces-with-leading-institutions-in-lithuania-to-drive-education">this one</a> → 301 to the press hub. <a href="https://main--rwe--paolomoz.aem.live/en">/en</a> → home.</div>
+
+<h3>Query indexes (headless data) <span class="pill">live</span></h3>
+<p>Three EDS indexes power the dynamic blocks and are open for any future consumer:</p>
+<ul>
+  <li><a href="https://main--rwe--paolomoz.aem.live/en/press/query-index.json">/en/press/query-index.json</a> — title, image, description, publishdate, company, topics, teaser</li>
+  <li><a href="https://main--rwe--paolomoz.aem.live/en/investor-relations/query-index.json">/en/investor-relations/query-index.json</a> — title, publishdate, category</li>
+  <li><a href="https://main--rwe--paolomoz.aem.live/en/query-index.json">/en/query-index.json</a> — site-wide (616 pages), feeds search</li>
+</ul>
+
+<h2>4. Quality assurance run (P5)</h2>
+<ul>
+  <li><strong>Delivered contract, all 619 pages:</strong> 200, exactly one <code>h1</code>, zero pipeline errors, zero un-rehosted images — 606 clean, 13 justified exemptions (fragments, live-parity missing descriptions).</li>
+  <li><strong>Layout gates:</strong> 10/10 page templates green in a real browser (blocks decorate, no JS errors, no broken content images).</li>
+  <li><strong>Link integrity:</strong> 978 unique internal targets — 610 resolve, 168 redirect; all 44 broken links verified <em>equally dead on live rwe.com</em> (inherited, not migration defects).</li>
+  <li><strong>1,674 images</strong> rehosted to the new content store; PDFs intentionally remain on origin.</li>
+</ul>
+
+<h2>5. Open items</h2>
+<table>
+  <tr><th>Item</th><th>Status</th></tr>
+  <tr><td>Turnstile, jobs API, contact-form submissions, locations Google map</td><td><span class="warn">Cutover-activated</span> — same-origin under rwe.com makes them work unchanged (or RWE allowlists the pilot domain earlier)</td></tr>
+  <tr><td>IR financial-calendar listing wiring (index is populated)</td><td>Follow-up</td></tr>
+  <tr><td>Euroland share-ticker embeds · CV-matcher embed · jobs facet filters</td><td>Follow-up</td></tr>
+  <tr><td>Sitecore-forms backend decision (15 forms currently link out)</td><td>Decision needed</td></tr>
+  <tr><td>Older articles beyond the 100 (1,707 redirected)</td><td>Optional — importer validated, rerun any time</td></tr>
+  <tr><td>German locale (2,697 pages)</td><td>Second wave — needs <code>/de</code> routing decision</td></tr>
+  <tr><td>RWE Sans font licensing confirmation before serving on a non-RWE domain</td><td>Decision needed</td></tr>
+</table>
+
+<p class="note" style="margin-top:40px">Working artefacts: gate evidence in <code>stardust/replica/gates/</code>, phase ledger in <code>stardust/replica/progress.json</code>, import ledgers in <code>stardust/migration/</code>. This page: <code>tools/migration-scope.html</code> (noindex).</p>
+
+</main>
+</body>
+</html>
