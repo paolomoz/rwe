@@ -46,18 +46,9 @@ async function ucHasAnalyticsConsent() {
   }
 }
 
-/* etracker runs cookie-less and is categorised ESSENTIAL on live —
-   it loads unconditionally (live parity); GTM stays consent-gated. */
-(function loadEtracker() {
-  if (document.getElementById('_etLoader')) return;
-  const s = document.createElement('script');
-  s.src = 'https://code.etracker.com/code/e.js';
-  s.async = true;
-  s.setAttribute('data-secure-code', 'e8K7Wx');
-  s.id = '_etLoader';
-  s.setAttribute('data-block-cookies', 'true');
-  document.head.append(s);
-}());
+/* etracker is fired by the GTM container on live (e.js right after
+   gtm.js in the recon trace) — it rides GTM here too; no direct load
+   (a second direct injection races e.js's own bootstrap: "loaded twice"). */
 
 const override = consentOverride();
 if (override !== null) {
