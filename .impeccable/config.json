@@ -131,6 +131,11 @@
         "rule": "design-system-color",
         "value": "#b5b7b8",
         "createdAt": "2026-08-31T06:10:02.329Z"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "#c00",
+        "createdAt": "2026-09-02T06:06:07.838Z"
       }
     ]
   }

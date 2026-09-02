@@ -1,0 +1,90 @@
+/* form — dcf contact form + external (fxb) link-out.
+   Field skin matches the live form-control spec (job-search lift). */
+
+.form .dcf {
+  max-width: 580px;
+}
+
+.form .form-field {
+  margin-bottom: 18px;
+}
+
+.form .form-field label,
+.form fieldset legend {
+  display: block;
+  font-family: var(--medium-font-family);
+  font-size: 16px;
+  line-height: 27px;
+  color: var(--teal);
+  margin: 0 0 4px;
+}
+
+.form .form-field input,
+.form .form-field textarea {
+  width: 100%;
+  border: 1px solid #e4e9f2;
+  background: #f9f9f9;
+  padding: 10px 12px;
+  font-family: var(--medium-font-family);
+  font-size: 15px;
+  color: var(--navy);
+  border-radius: 0;
+  outline: none;
+  appearance: none;
+}
+
+.form .form-field input:hover,
+.form .form-field textarea:hover {
+  background-color: #edf1f7;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.form fieldset {
+  border: 0;
+  padding: 0;
+  margin: 0 0 18px;
+}
+
+.form fieldset .radio {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 24px;
+  font-size: 16px;
+  line-height: 27px;
+  color: var(--navy);
+}
+
+.form fieldset .radio input {
+  margin-right: 8px;
+  accent-color: var(--teal);
+}
+
+.form .hp {
+  position: absolute;
+  left: -9999px;
+  height: 0;
+  overflow: hidden;
+}
+
+.form .form-note {
+  font-size: 14px;
+  color: var(--navy);
+  margin-bottom: 16px;
+}
+
+.form .form-status {
+  margin-top: 16px;
+  font-size: 16px;
+}
+
+.form .form-status.ok {
+  color: var(--teal);
+}
+
+.form .form-status.error {
+  color: #c00;
+}
+
+.form .form-external p {
+  margin-bottom: 16px;
+}

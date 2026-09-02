@@ -397,3 +397,17 @@ main .section.press-list-container .default-content-wrapper h2 {
   text-align: center;
   margin: 0 0 16px;
 }
+
+/* P4: functional select overlays the styled shell */
+.press-list .lf-select {
+  position: relative;
+}
+
+.press-list .lf-real-select {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}

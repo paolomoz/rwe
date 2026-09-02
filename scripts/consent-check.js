@@ -1,46 +1,68 @@
 let consentedLoaded = false;
 
 /**
- * Dummy consent implementation.
+ * Usercentrics CMP integration (live parity: app.usercentrics.eu browser-ui,
+ * settings id lrfueDZgn — recon 2026-09-02). The CMP loads in the delayed
+ * phase; consented scripts (GTM + etracker, see consented.js) load only after
+ * the user grants consent via the CMP.
  *
- * By default consent is declined, so consented scripts (analytics, martech, etc.)
- * are not loaded. This stands in for a real CMP (OneTrust, etc.) and can be
- * swapped out later.
- *
- * The default can be overridden with a query parameter for testing:
- *   ?consent=accept   grant consent (loads consented.js)
- *   ?consent=decline  decline consent (default behavior)
- *
- * @returns {boolean} true if the user has consented
+ * Testing override (pilot origin): ?consent=accept | ?consent=decline
  */
-function hasConsent() {
+
+const UC_SETTINGS_ID = 'lrfueDZgn';
+
+function consentOverride() {
   const consent = new URLSearchParams(window.location.search).get('consent');
-  if (consent !== null) {
-    return ['accept', 'true', '1', 'yes'].includes(consent.toLowerCase());
-  }
-  // default: decline
-  return false;
+  if (consent === null) return null;
+  return ['accept', 'true', '1', 'yes'].includes(consent.toLowerCase());
 }
 
-/**
- * Loads consented scripts once consent is available.
- */
 function loadConsented() {
   if (consentedLoaded) return;
   consentedLoaded = true;
   import('./consented.js');
 }
 
-/**
- * Notifies listeners of the current consent state and loads consented
- * scripts if consent has been granted.
- */
-function onConsentUpdate() {
-  const consented = hasConsent();
+function notify(consented) {
   window.dispatchEvent(new CustomEvent('consent.update', { detail: { consented } }));
-  if (consented) {
-    loadConsented();
+  if (consented) loadConsented();
+}
+
+/* UC_UI service-consent check: any explicit consent beyond essential */
+function ucHasAnalyticsConsent() {
+  try {
+    const services = window.UC_UI.getServicesBaseInfo();
+    return services.some((s) => s.consent && s.consent.status === true && !s.isEssential);
+  } catch (e) {
+    return false;
   }
 }
 
-onConsentUpdate();
+const override = consentOverride();
+if (override !== null) {
+  notify(override);
+} else {
+  // load the CMP exactly as live does
+  const s = document.createElement('script');
+  s.id = 'usercentrics-cmp';
+  s.src = 'https://app.usercentrics.eu/browser-ui/latest/loader.js';
+  s.setAttribute('data-settings-id', UC_SETTINGS_ID);
+  s.async = true;
+  document.head.append(s);
+
+  window.addEventListener('UC_UI_INITIALIZED', () => notify(ucHasAnalyticsConsent()));
+  // fires on accept/deny/save interactions
+  window.addEventListener('UC_UI_CMP_EVENT', (e) => {
+    const t = e.detail && e.detail.type;
+    if (['ACCEPT_ALL', 'DENY_ALL', 'SAVE'].includes(t)) notify(ucHasAnalyticsConsent());
+  });
+}
+
+/* footer "Cookies & Services" link opens the CMP second layer (live parity) */
+document.addEventListener('click', (e) => {
+  const a = e.target.closest('a');
+  if (a && /cookies\s*&\s*services/i.test(a.textContent) && !a.getAttribute('href')) {
+    e.preventDefault();
+    if (window.UC_UI) window.UC_UI.showSecondLayer();
+  }
+});
