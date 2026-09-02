@@ -1,7 +1,8 @@
 /**
  * Consent-gated martech (live parity, recon 2026-09-02):
  *   - Google Tag Manager container GTM-K6ZG5P5
- *   - etracker code.etracker.com (et=e8K7Wx)
+ * (etracker runs cookie-less as an essential service — loaded
+ * unconditionally by consent-check.js, live parity.)
  * Loaded only after consent (see consent-check.js).
  */
 
@@ -16,14 +17,3 @@
   j.src = `https://www.googletagmanager.com/gtm.js?id=${i}${dl}`;
   f.parentNode.insertBefore(j, f);
 }(window, document, 'script', 'dataLayer', 'GTM-K6ZG5P5'));
-
-/* etracker */
-(function loadEtracker() {
-  const s = document.createElement('script');
-  s.src = 'https://code.etracker.com/code/e.js';
-  s.async = true;
-  s.setAttribute('data-secure-code', 'e8K7Wx');
-  s.id = '_etLoader';
-  s.setAttribute('data-block-cookies', 'true');
-  document.head.append(s);
-}());
