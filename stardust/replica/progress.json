@@ -941,5 +941,28 @@
         "new block dirs must be git-added explicitly — content deploys via DA while blocks 404 on the code origin (silent: block status still says loaded)"
       ]
     }
+  },
+  "p4": {
+    "at": "2026-09-02",
+    "delivered": {
+      "consent": "Usercentrics CMP (v3 loader web.cmp.usercentrics.eu, settings lrfueDZgn) in delayed phase; RWE-branded banner auto-shows for real UAs, suppressed for headless (gates unaffected); GTM-K6ZG5P5 consent-gated via UC_CONSENT/UC_UI events (v3 consent.given shape); etracker e8K7Wx cookie-less loads unconditionally (categorised essential on live); footer Cookies&Services link opens second layer",
+      "forms": "decision: keep posting to existing RWE endpoint. blocks/form: contact variant = dcf standard field set (lifted live: request/text/informed-by/firstname/lastname/company/email + hp-name honeypot + Turnstile sitekey 0x4AAAAAABBk7C92w6CSJ5Sh) POST https://www.rwe.com/api/dcf with ?c= config; authored at /en/contact-services/contact-form. external variant = link-out for the 15 Sitecore-Forms (fxb) pages (session CSRF tokens not statically replicable)",
+      "pressList": "press-list wired to /en/press/query-index.json: tiles/count/load-more/company+topic+search+date filters; 9 brand hubs carry press-list blocks self-scoped by URL; hubs excluded from index by path-depth filter + query.yaml excludes",
+      "jobs": "job-list wired to POST /api/jobborse/entities/v1 (contract verified server-side, 208 jobs): cards/count/sort/load-more; API sends no CORS so pilot origin falls back to frozen fragment; live path activates at cutover unchanged",
+      "search": "site-wide index (/en/query-index.json, 616 pages) + header search overlay (input + top-10 results); bulk reindex via admin index API (202)"
+    },
+    "cutoverPrereqs": [
+      "Turnstile: rwe.com domain serves the sitekey — works at cutover; RWE could allowlist the pilot domain for earlier testing",
+      "jobs API + /api/dcf: same-origin at cutover; no CORS headers today",
+      "locations Google map: domain-restricted key — list state ships until cutover"
+    ],
+    "remaining": [
+      "IR financial-calendar listing wiring (ir-publications index, 43 entries live)",
+      "Euroland share-ticker embeds on IR pages",
+      "CV-matcher web-component embed (htm01 slot reserved)",
+      "jobs facet filters (values/v1 API recon done)",
+      "statements/stories hubs (excluded-redirect wave for now)"
+    ],
+    "regression": "home 1440 2.11% PASS post-P4; press-hub 13.14% vs 2026-08-27 frozen truth = tile-data drift (live rotated; live DOM height 7085 vs ours 7089 — layout parity ±4px); documented residual class"
   }
 }
