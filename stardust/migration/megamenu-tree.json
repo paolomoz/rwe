@@ -1,0 +1,1252 @@
+{
+ "tree": [
+  {
+   "label": "The Group",
+   "href": "/en/the-group/",
+   "hasSub": true,
+   "columns": null,
+   "overview": {
+    "label": "Overview",
+    "href": "/en/the-group/"
+   },
+   "children": [
+    {
+     "label": "Purpose & Strategy",
+     "href": "/en/the-group/purpose-and-strategy/",
+     "hasSub": true,
+     "columns": null,
+     "overview": null,
+     "children": [
+      {
+       "label": "Key Data",
+       "href": "/en/the-group/purpose-and-strategy/key-data/",
+       "hasSub": false
+      }
+     ]
+    },
+    {
+     "label": "Organisational Structure",
+     "href": "/en/the-group#organisational-structure",
+     "hasSub": true,
+     "columns": null,
+     "overview": null,
+     "children": [
+      {
+       "label": "RWE AG",
+       "href": "/en/the-group/rwe-ag/",
+       "hasSub": false
+      },
+      {
+       "label": "RWE Renewables Europe & Australia GmbH",
+       "href": "/en/the-group/rwe-renewables-europe-australia/",
+       "hasSub": false
+      },
+      {
+       "label": "RWE Offshore Wind GmbH",
+       "href": "/en/the-group/rwe-offshore-wind/",
+       "hasSub": false
+      },
+      {
+       "label": "RWE Americas, LLC",
+       "href": "/en/the-group/rwe-americas/",
+       "hasSub": false
+      },
+      {
+       "label": "RWE Supply & Trading GmbH",
+       "href": "/en/the-group/rwest/",
+       "hasSub": false
+      },
+      {
+       "label": "RWE Generation SE",
+       "href": "/en/the-group/rwe-generation/",
+       "hasSub": false
+      },
+      {
+       "label": "RWE Power AG",
+       "href": "/en/the-group/rwe-power/",
+       "hasSub": false
+      }
+     ]
+    },
+    {
+     "label": "RWE Locations",
+     "href": "/en/the-group/countries-and-locations/",
+     "hasSub": true,
+     "columns": null,
+     "overview": null,
+     "children": [
+      {
+       "label": "Video Tour",
+       "href": "/en/the-group/countries-and-locations/location-video-portraits/",
+       "hasSub": false
+      }
+     ]
+    },
+    {
+     "label": "History",
+     "href": "/en/the-group/history/",
+     "hasSub": false
+    },
+    {
+     "label": "RWE Foundation",
+     "href": "https://www.rwe-foundation.com/en",
+     "hasSub": false
+    },
+    {
+     "label": "Inclusive Culture at RWE",
+     "href": "/en/the-group/diversity-at-rwe/",
+     "hasSub": true,
+     "columns": null,
+     "overview": null,
+     "children": [
+      {
+       "label": "Inclusive Culture for All",
+       "href": "/en/the-group/diversity-at-rwe/inclusion-first-diversity-approach/",
+       "hasSub": false
+      },
+      {
+       "label": "Our Inclusive Community",
+       "href": "/en/the-group/diversity-at-rwe/building-our-inclusive-community/",
+       "hasSub": false
+      },
+      {
+       "label": "Inclusive Working Conditions",
+       "href": "/en/the-group/diversity-at-rwe/inclusive-working-conditions/",
+       "hasSub": false
+      }
+     ]
+    },
+    {
+     "label": "Compliance",
+     "href": "/en/the-group/compliance/",
+     "hasSub": false
+    },
+    {
+     "label": "Dates & Events",
+     "href": "/en/the-group/dates-and-events/",
+     "hasSub": false
+    }
+   ],
+   "newsbox": {
+    "img": null,
+    "headline": "Results for the first half of 2026",
+    "cta": "Read more",
+    "href": "/en/investor-relations/financial-calendar-and-publications/2026-H1/"
+   }
+  },
+  {
+   "label": "Our Energy",
+   "href": "/en/our-energy/",
+   "hasSub": true,
+   "columns": null,
+   "overview": {
+    "label": "Overview",
+    "href": "/en/our-energy/"
+   },
+   "children": [
+    {
+     "label": "Locations & Sites",
+     "href": "/en/the-group/countries-and-locations/?locationType=0b515186-8541-45fa-8de3-50a449c731cc#map",
+     "hasSub": true,
+     "columns": null,
+     "overview": null,
+     "children": [
+      {
+       "label": "Live Production Data",
+       "href": "https://www.rwe-production-data.com/en/map/",
+       "hasSub": false
+      }
+     ]
+    },
+    {
+     "label": "Discover Renewable Energies",
+     "href": "/en/our-energy/discover-renewables/",
+     "hasSub": true,
+     "columns": null,
+     "overview": null,
+     "children": [
+      {
+       "label": "Solar",
+       "href": "/en/our-energy/discover-renewables/solar-energy/",
+       "hasSub": false
+      },
+      {
+       "label": "Onshore Wind",
+       "href": "/en/our-energy/discover-renewables/onshore-wind/",
+       "hasSub": false
+      },
+      {
+       "label": "Offshore Wind",
+       "href": "/en/our-energy/discover-renewables/offshore-wind/",
+       "hasSub": false
+      },
+      {
+       "label": "Floating Offshore Wind",
+       "href": "/en/our-energy/discover-renewables/floating-offshore-wind/",
+       "hasSub": false
+      },
+      {
+       "label": "Hydrogen",
+       "href": "/en/our-energy/discover-renewables/hydrogen/",
+       "hasSub": false
+      },
+      {
+       "label": "Battery Storage",
+       "href": "/en/our-energy/discover-renewables/battery-storage/",
+       "hasSub": false
+      },
+      {
+       "label": "Bioenergy",
+       "href": "/en/our-energy/discover-renewables/bioenergy/",
+       "hasSub": false
+      },
+      {
+       "label": "Hydropower",
+       "href": "/en/our-energy/discover-renewables/hydropower/",
+       "hasSub": false
+      }
+     ]
+    },
+    {
+     "label": "Discover Conventional Energies",
+     "href": "/en/our-energy/discover-conventional-energy-sources/",
+     "hasSub": true,
+     "columns": null,
+     "overview": null,
+     "children": [
+      {
+       "label": "Lignite",
+       "href": "/en/our-energy/discover-conventional-energy-sources/lignite/",
+       "hasSub": false
+      },
+      {
+       "label": "Hard Coal",
+       "href": "/en/our-energy/discover-conventional-energy-sources/hard-coal/",
+       "hasSub": false
+      },
+      {
+       "label": "Nuclear Power",
+       "href": "/en/our-energy/discover-conventional-energy-sources/nuclear-power/",
+       "hasSub": false
+      },
+      {
+       "label": "Gas",
+       "href": "/en/our-energy/discover-conventional-energy-sources/gas/",
+       "hasSub": false
+      }
+     ]
+    },
+    {
+     "label": "Fact-Checking",
+     "href": "/en/our-energy/fact-checking/",
+     "hasSub": false
+    }
+   ]
+  },
+  {
+   "label": "Products & Services",
+   "href": "/en/products-and-services/",
+   "hasSub": true,
+   "columns": null,
+   "overview": {
+    "label": "Overview",
+    "href": "/en/products-and-services/"
+   },
+   "children": [
+    {
+     "label": "International References",
+     "href": "/en/products-and-services/project-references/",
+     "hasSub": true,
+     "columns": null,
+     "overview": null,
+     "children": [
+      {
+       "label": "Americas & Africa",
+       "href": "/en/products-and-services/project-references/americas-africa/",
+       "hasSub": false
+      },
+      {
+       "label": "Europe & Central Asia",
+       "href": "/en/products-and-services/project-references/europe-central-asia/",
+       "hasSub": false
+      },
+      {
+       "label": "Middle East & APAC",
+       "href": "/en/products-and-services/project-references/middle-east-apac/",
+       "hasSub": false
+      }
+     ]
+    },
+    {
+     "label": "Meet our Experts",
+     "href": "/en/the-group/rwe-ti/experts/",
+     "hasSub": false
+    },
+    {
+     "label": "Energy Transition Investments",
+     "href": "/en/products-and-services/energy-transition-investments/",
+     "hasSub": true,
+     "columns": null,
+     "overview": null,
+     "children": [
+      {
+       "label": "Portfolio",
+       "href": "/en/products-and-services/energy-transition-investments/#portfolio",
+       "hasSub": false
+      },
+      {
+       "label": "Team",
+       "href": "/en/products-and-services/energy-transition-investments/#team",
+       "hasSub": false
+      }
+     ]
+    },
+    {
+     "label": "Apps & Tools",
+     "href": "/en/contact-services/apps-and-tools/",
+     "hasSub": false
+    },
+    {
+     "label": "RWE Procurement",
+     "href": "/en/products-and-services/supplier-portal/",
+     "hasSub": true,
+     "columns": null,
+     "overview": null,
+     "children": [
+      {
+       "label": "General Conditions",
+       "href": "/en/products-and-services/supplier-portal/general-conditions/",
+       "hasSub": false
+      },
+      {
+       "label": "Tenders",
+       "href": "/en/products-and-services/supplier-portal/tenders/",
+       "hasSub": false
+      },
+      {
+       "label": "eSourcing",
+       "href": "/en/products-and-services/supplier-portal/esourcing/",
+       "hasSub": false
+      },
+      {
+       "label": "Health | Safety | Environment",
+       "href": "/en/products-and-services/supplier-portal/hse-health-safety-environment/",
+       "hasSub": false
+      },
+      {
+       "label": "Supplier Registration",
+       "href": "/en/products-and-services/supplier-portal/supplier-registration/",
+       "hasSub": false
+      },
+      {
+       "label": "Supplier Portal",
+       "href": "https://supplier-workzone.rwe.com/site#Shell-home",
+       "hasSub": false
+      },
+      {
+       "label": "Supplier Management",
+       "href": "/en/products-and-services/supplier-portal/supplier-management/",
+       "hasSub": false
+      },
+      {
+       "label": "Contacts in Procurement",
+       "href": "/en/products-and-services/supplier-portal/contacts-in-procurement/",
+       "hasSub": false
+      }
+     ]
+    },
+    {
+     "label": "Power Purchase Agreements",
+     "href": "/en/the-group/rwest/rwest-products-and-services/power-purchase-agreement/",
+     "hasSub": false
+    }
+   ]
+  },
+  {
+   "label": "Research & Development",
+   "href": "/en/research-and-development/",
+   "hasSub": true,
+   "columns": null,
+   "overview": {
+    "label": "Overview",
+    "href": "/en/research-and-development/"
+   },
+   "children": [
+    {
+     "label": "Current Projects",
+     "href": "/en/research-and-development/project-plans/",
+     "hasSub": true,
+     "columns": null,
+     "overview": null,
+     "children": [
+      {
+       "label": "Innovation Competition",
+       "href": "/en/research-and-development/project-plans/innovation-competition/",
+       "hasSub": false
+      }
+     ]
+    },
+    {
+     "label": "Hydrogen Projects",
+     "href": "/en/research-and-development/hydrogen-projects/",
+     "hasSub": true,
+     "columns": null,
+     "overview": null,
+     "children": [
+      {
+       "label": "Lingen Pilot H₂ Electrolysis Plant",
+       "href": "/en/research-and-development/hydrogen-projects/lingen-pilot-h2-electrolysis-plant/",
+       "hasSub": false
+      },
+      {
+       "label": "Get H2 Nukleus",
+       "href": "/en/research-and-development/hydrogen-projects/hydrogen-project-get-h2/",
+       "hasSub": false
+      },
+      {
+       "label": "HyTech Hafen Rostock",
+       "href": "/en/research-and-development/hydrogen-projects/hytech-hafen-rostock/",
+       "hasSub": false
+      },
+      {
+       "label": "NortH2",
+       "href": "/en/research-and-development/hydrogen-projects/north2/",
+       "hasSub": false
+      },
+      {
+       "label": "Eemshydrogen",
+       "href": "/en/research-and-development/hydrogen-projects/eemshydrogen/",
+       "hasSub": false
+      },
+      {
+       "label": "Pembroke Net Zero Centre",
+       "href": "https://uk-ireland.rwe.com/innovation/pembroke-net-zero-centre-pnzc",
+       "hasSub": false
+      },
+      {
+       "label": "South Wales Industrial Cluster",
+       "href": "/en/research-and-development/hydrogen-projects/south-wales-industrial-cluster/",
+       "hasSub": false
+      }
+     ]
+    },
+    {
+     "label": "Solar Energy Projects",
+     "href": "/en/research-and-development/solar-energy-projects/",
+     "hasSub": true,
+     "columns": null,
+     "overview": null,
+     "children": [
+      {
+       "label": "Floating Solar Systems",
+       "href": "/en/research-and-development/solar-energy-projects/floating-solar-systems/",
+       "hasSub": false
+      },
+      {
+       "label": "Solar Energy in Opencast Mines",
+       "href": "/en/research-and-development/solar-energy-projects/solar-energy-in-opencast-mines/",
+       "hasSub": false
+      },
+      {
+       "label": "Agrivoltaics",
+       "href": "/en/research-and-development/solar-energy-projects/agri-pv/",
+       "hasSub": false
+      }
+     ]
+    },
+    {
+     "label": "Wind Power",
+     "href": "/en/research-and-development/wind-power/",
+     "hasSub": true,
+     "columns": null,
+     "overview": null,
+     "children": [
+      {
+       "label": "Black Blade Study",
+       "href": "/en/research-and-development/wind-power/black-blade-study/",
+       "hasSub": false
+      },
+      {
+       "label": "Scour Protection",
+       "href": "/en/research-and-development/wind-power/reef-enhancement-for-scour-protection/",
+       "hasSub": false
+      },
+      {
+       "label": "Airborne Wind",
+       "href": "https://ie.rwe.com/projects-and-locations/airborne-wind-energy/",
+       "hasSub": false
+      },
+      {
+       "label": "Rotor Blade Recycling",
+       "href": "/en/research-and-development/wind-power/rotorblade-recycling/",
+       "hasSub": false
+      },
+      {
+       "label": "SeaMe Project",
+       "href": "https://seame.rwe.com",
+       "hasSub": false
+      }
+     ]
+    },
+    {
+     "label": "Data Centres",
+     "href": "/en/the-group/rwest/energised-land-energy-for-data-centres/",
+     "hasSub": false
+    },
+    {
+     "label": "Digitalisation @ RWE",
+     "href": "/en/research-and-development/digitalisation-at-rwe/",
+     "hasSub": true,
+     "columns": null,
+     "overview": null,
+     "children": [
+      {
+       "label": "Digital Guidelines",
+       "href": "/en/research-and-development/digitalisation-at-rwe/digital-guidelines/",
+       "hasSub": false
+      },
+      {
+       "label": "Visualisation & Virtual Representation",
+       "href": "/en/research-and-development/digitalisation-at-rwe/visualisation-and-virtual-reality/",
+       "hasSub": false
+      },
+      {
+       "label": "Digital HR",
+       "href": "/en/research-and-development/digitalisation-at-rwe/digital-hr/",
+       "hasSub": false
+      },
+      {
+       "label": "Digital Processes",
+       "href": "/en/research-and-development/digitalisation-at-rwe/digital-processes/",
+       "hasSub": false
+      },
+      {
+       "label": "Digital Energy Production",
+       "href": "/en/research-and-development/digitalisation-at-rwe/digital-energy-production/",
+       "hasSub": false
+      },
+      {
+       "label": "RWE AI Research Laboratory",
+       "href": "/en/research-and-development/digitalisation-at-rwe/rwe-ai-research-laboratory/",
+       "hasSub": false
+      }
+     ]
+    },
+    {
+     "label": "RWE Innovation Centre",
+     "href": "/en/research-and-development/rwe-innovation-centre/",
+     "hasSub": true,
+     "columns": null,
+     "overview": null,
+     "children": [
+      {
+       "label": "E-Fuels",
+       "href": "/en/research-and-development/rwe-innovation-centre/e-fuels/",
+       "hasSub": false
+      },
+      {
+       "label": "Energy Storage",
+       "href": "/en/research-and-development/rwe-innovation-centre/energy-storage/",
+       "hasSub": false
+      },
+      {
+       "label": "CO₂ Utilisation & Integrated Energy",
+       "href": "/en/research-and-development/rwe-innovation-centre/co2-utilisation-and-integrated-energy/",
+       "hasSub": false
+      },
+      {
+       "label": "Power-to-X",
+       "href": "/en/research-and-development/rwe-innovation-centre/power-to-x/",
+       "hasSub": false
+      },
+      {
+       "label": "Circular Economy",
+       "href": "/en/research-and-development/rwe-innovation-centre/circular-economy/",
+       "hasSub": false
+      },
+      {
+       "label": "Environmental Engineering & Emission Reduction",
+       "href": "/en/research-and-development/rwe-innovation-centre/environmental-engineering-and-emission-reduction/",
+       "hasSub": false
+      },
+      {
+       "label": "Geothermal Energy",
+       "href": "/en/research-and-development/rwe-innovation-centre/geothermal-energy/",
+       "hasSub": false
+      },
+      {
+       "label": "Materials Technology",
+       "href": "/en/research-and-development/rwe-innovation-centre/materials-technology/",
+       "hasSub": false
+      },
+      {
+       "label": "Patents",
+       "href": "/en/research-and-development/rwe-innovation-centre/patents/",
+       "hasSub": false
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "label": "Responsibility & Sustainability",
+   "href": "/en/responsibility-and-sustainability/",
+   "hasSub": true,
+   "columns": null,
+   "overview": {
+    "label": "Overview",
+    "href": "/en/responsibility-and-sustainability/"
+   },
+   "children": [
+    {
+     "label": "RWE Sustainability Report",
+     "href": "/en/responsibility-and-sustainability/sustainability-report/",
+     "hasSub": false
+    },
+    {
+     "label": "Environmental Protection",
+     "href": "/en/responsibility-and-sustainability/environmental-protection/",
+     "hasSub": true,
+     "columns": null,
+     "overview": null,
+     "children": [
+      {
+       "label": "Climate",
+       "href": "/en/responsibility-and-sustainability/environmental-protection/climate/",
+       "hasSub": false
+      },
+      {
+       "label": "Biodiversity",
+       "href": "/en/responsibility-and-sustainability/environmental-protection/biodiversity/",
+       "hasSub": false
+      }
+     ]
+    },
+    {
+     "label": "Governance & Ethics",
+     "href": "/en/responsibility-and-sustainability/governance-and-ethics/",
+     "hasSub": true,
+     "columns": null,
+     "overview": null,
+     "children": [
+      {
+       "label": "Compliance",
+       "href": "/en/the-group/compliance/",
+       "hasSub": false
+      },
+      {
+       "label": "Corporate Governance",
+       "href": "/en/investor-relations/corporate-governance/",
+       "hasSub": false
+      },
+      {
+       "label": "UN Global Compact",
+       "href": "/en/responsibility-and-sustainability/governance-and-ethics/un-global-compact/",
+       "hasSub": false
+      },
+      {
+       "label": "Ratings & Rankings",
+       "href": "/en/responsibility-and-sustainability/governance-and-ethics/ratings-and-rankings/",
+       "hasSub": false
+      },
+      {
+       "label": "Certifications & Guidelines",
+       "href": "/en/responsibility-and-sustainability/governance-and-ethics/certifications-and-guidelines/",
+       "hasSub": false
+      }
+     ]
+    },
+    {
+     "label": "Social Affairs & Society",
+     "href": "/en/responsibility-and-sustainability/social-affairs-and-society/",
+     "hasSub": true,
+     "columns": null,
+     "overview": null,
+     "children": [
+      {
+       "label": "Community Engagement",
+       "href": "/en/responsibility-and-sustainability/social-affairs-and-society/community-engagement/",
+       "hasSub": false
+      },
+      {
+       "label": "Inclusive Culture",
+       "href": "/en/the-group/diversity-at-rwe/",
+       "hasSub": false
+      },
+      {
+       "label": "Human Rights Due Diligence",
+       "href": "/en/responsibility-and-sustainability/social-affairs-and-society/human-rights-due-diligence/",
+       "hasSub": false
+      },
+      {
+       "label": "Sustainable Supply Chain",
+       "href": "/en/responsibility-and-sustainability/social-affairs-and-society/sustainable-supply-chain/",
+       "hasSub": false
+      },
+      {
+       "label": "Sponsoring & Cooperations",
+       "href": "/en/responsibility-and-sustainability/social-affairs-and-society/sponsoring-and-cooperations/",
+       "hasSub": false
+      },
+      {
+       "label": "Employees",
+       "href": "/en/responsibility-and-sustainability/social-affairs-and-society/employees/",
+       "hasSub": false
+      },
+      {
+       "label": "Safety",
+       "href": "/en/responsibility-and-sustainability/social-affairs-and-society/safety/",
+       "hasSub": false
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "label": "Career",
+   "href": "/en/rwe-careers-portal/",
+   "hasSub": true,
+   "columns": null,
+   "overview": {
+    "label": "Overview",
+    "href": "/en/rwe-careers-portal/"
+   },
+   "children": [
+    {
+     "label": "Find Job",
+     "href": "/en/rwe-careers-portal/job-offers/",
+     "hasSub": false
+    },
+    {
+     "label": "Why work here",
+     "href": "/en/rwe-careers-portal/why-work-here/",
+     "hasSub": true,
+     "columns": null,
+     "overview": null,
+     "children": [
+      {
+       "label": "About us",
+       "href": "/en/rwe-careers-portal/why-work-here/about-us/",
+       "hasSub": false
+      },
+      {
+       "label": "Our Inclusive Culture",
+       "href": "/en/rwe-careers-portal/why-work-here/our-inclusive-culture/",
+       "hasSub": false
+      },
+      {
+       "label": "Global Presence",
+       "href": "/en/rwe-careers-portal/why-work-here/global-presence/",
+       "hasSub": false
+      }
+     ]
+    },
+    {
+     "label": "What we offer",
+     "href": "/en/rwe-careers-portal/what-we-offer/",
+     "hasSub": true,
+     "columns": null,
+     "overview": null,
+     "children": [
+      {
+       "label": "Learning & Development",
+       "href": "/en/rwe-careers-portal/what-we-offer/learning-and-development/",
+       "hasSub": false
+      },
+      {
+       "label": "Onboarding",
+       "href": "/en/rwe-careers-portal/what-we-offer/onboarding/",
+       "hasSub": false
+      }
+     ]
+    },
+    {
+     "label": "#TeamRWE | Blog, Videos, Podcasts",
+     "href": "/en/rwe-careers-portal/teamrwe/",
+     "hasSub": false
+    },
+    {
+     "label": "Experienced Professionals",
+     "href": "/en/rwe-careers-portal/experienced-professionals/",
+     "hasSub": true,
+     "columns": null,
+     "overview": null,
+     "children": [
+      {
+       "label": "Consulting",
+       "href": "/en/rwe-careers-portal/experienced-professionals/consulting/",
+       "hasSub": false
+      },
+      {
+       "label": "Engineering & Technical Roles",
+       "href": "/en/rwe-careers-portal/experienced-professionals/engineering-and-technical-roles/",
+       "hasSub": false
+      },
+      {
+       "label": "IT & Digital",
+       "href": "/en/rwe-careers-portal/experienced-professionals/it-and-digital/",
+       "hasSub": false
+      },
+      {
+       "label": "Supply & Trading",
+       "href": "/en/rwe-careers-portal/experienced-professionals/supply-and-trading/",
+       "hasSub": false
+      },
+      {
+       "label": "Corporate Functions",
+       "href": "/en/rwe-careers-portal/experienced-professionals/corporate-functions/",
+       "hasSub": false
+      },
+      {
+       "label": "Project Development",
+       "href": "/en/rwe-careers-portal/experienced-professionals/project-development/",
+       "hasSub": false
+      }
+     ]
+    },
+    {
+     "label": "Early Careers",
+     "href": "/en/rwe-careers-portal/early-careers/",
+     "hasSub": true,
+     "columns": null,
+     "overview": null,
+     "children": [
+      {
+       "label": "Graduate Programmes",
+       "href": "/en/rwe-careers-portal/early-careers/graduate-programmes/",
+       "hasSub": false
+      },
+      {
+       "label": "Undergraduate & Student Opportunities",
+       "href": "/en/rwe-careers-portal/early-careers/undergraduate-and-student-opportunities/",
+       "hasSub": false
+      },
+      {
+       "label": "Apprenticeships & Training",
+       "href": "/en/rwe-careers-portal/early-careers/apprenticeships-and-training/",
+       "hasSub": false
+      }
+     ]
+    },
+    {
+     "label": "FAQ",
+     "href": "/en/rwe-careers-portal/faq/",
+     "hasSub": false
+    },
+    {
+     "label": "Dates & Events",
+     "href": "/en/rwe-careers-portal/dates-and-events/",
+     "hasSub": false
+    },
+    {
+     "label": "RWE Careers Worldwide",
+     "href": "https://www.rwe.com/en/rwe-careers-portal/#global-impact",
+     "hasSub": true,
+     "columns": null,
+     "overview": null,
+     "children": [
+      {
+       "label": "Americas",
+       "href": "https://americas.rwe.com/careers/",
+       "hasSub": false
+      },
+      {
+       "label": "Asia",
+       "href": "/en/rwe-careers-portal/careers-asia/",
+       "hasSub": false
+      },
+      {
+       "label": "Australia",
+       "href": "https://au.rwe.com/careers/",
+       "hasSub": false
+      },
+      {
+       "label": "Benelux",
+       "href": "https://benelux.rwe.com/en/careers/",
+       "hasSub": false
+      },
+      {
+       "label": "France",
+       "href": "https://fr.rwe.com/en/career/",
+       "hasSub": false
+      },
+      {
+       "label": "Italy",
+       "href": "https://it.rwe.com/en/careers/",
+       "hasSub": false
+      },
+      {
+       "label": "Poland",
+       "href": "https://pl.rwe.com/en/careers",
+       "hasSub": false
+      },
+      {
+       "label": "United Kingdom",
+       "href": "https://uk.rwe.com/careers/",
+       "hasSub": false
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "label": "Investor Relations",
+   "href": "/en/investor-relations/",
+   "hasSub": true,
+   "columns": null,
+   "overview": {
+    "label": "Overview",
+    "href": "/en/investor-relations/"
+   },
+   "children": [
+    {
+     "label": "Fiscal Year 2025",
+     "href": "/en/investor-relations/online-report/",
+     "hasSub": false
+    },
+    {
+     "label": "RWE Share",
+     "href": "/en/investor-relations/rwe-share/",
+     "hasSub": true,
+     "columns": null,
+     "overview": null,
+     "children": [
+      {
+       "label": "RWE Share at a Glance",
+       "href": "/en/investor-relations/rwe-share/share-at-a-glance/",
+       "hasSub": false
+      },
+      {
+       "label": "Key Data",
+       "href": "/en/investor-relations/rwe-share/key-data/",
+       "hasSub": false
+      },
+      {
+       "label": "Analyst Recommendations & Consensus",
+       "href": "/en/investor-relations/rwe-share/analysts-recommendations-and-consensus/",
+       "hasSub": false
+      }
+     ]
+    },
+    {
+     "label": "Financial Calendar & Publications",
+     "href": "/en/investor-relations/financial-calendar-and-publications/",
+     "hasSub": true,
+     "columns": null,
+     "overview": null,
+     "children": [
+      {
+       "label": "Reporting",
+       "href": "/en/investor-relations/financial-calendar-and-publications/reporting/",
+       "hasSub": false
+      },
+      {
+       "label": "Presentations",
+       "href": "/en/investor-relations/financial-calendar-and-publications/presentations/",
+       "hasSub": false
+      },
+      {
+       "label": "IR, Ad-hoc Announcements & Managers' Transactions",
+       "href": "/en/investor-relations/financial-calendar-and-publications/news-and-ad-hoc-announcements/",
+       "hasSub": false
+      },
+      {
+       "label": "Annual General Meeting",
+       "href": "/en/investor-relations/financial-calendar-and-publications/2026-annual-general-meeting/",
+       "hasSub": false
+      },
+      {
+       "label": "IR Newsletter",
+       "href": "/en/investor-relations/contact-and-service/ir-newsletter/",
+       "hasSub": false
+      }
+     ]
+    },
+    {
+     "label": "Debt & Credit Ratings",
+     "href": "/en/investor-relations/debt-and-credit-ratings/",
+     "hasSub": true,
+     "columns": null,
+     "overview": null,
+     "children": [
+      {
+       "label": "Bonds & Sustainable Finance",
+       "href": "/en/investor-relations/debt-and-credit-ratings/bonds-and-sustainable-finance/",
+       "hasSub": false
+      },
+      {
+       "label": "Bank Financing",
+       "href": "/en/investor-relations/debt-and-credit-ratings/bank-financing/",
+       "hasSub": false
+      },
+      {
+       "label": "Commercial Paper Programmes",
+       "href": "/en/investor-relations/debt-and-credit-ratings/commercial-paper-programmes/",
+       "hasSub": false
+      },
+      {
+       "label": "Credit Ratings",
+       "href": "/en/investor-relations/debt-and-credit-ratings/credit-ratings/",
+       "hasSub": false
+      }
+     ]
+    },
+    {
+     "label": "Corporate Governance",
+     "href": "/en/investor-relations/corporate-governance/",
+     "hasSub": true,
+     "columns": null,
+     "overview": null,
+     "children": [
+      {
+       "label": "Executive Board & Supervisory Board",
+       "href": "/en/investor-relations/corporate-governance/management-board-and-supervisory-board/",
+       "hasSub": false
+      },
+      {
+       "label": "Remuneration",
+       "href": "/en/investor-relations/corporate-governance/remuneration/",
+       "hasSub": false
+      },
+      {
+       "label": "RWE Code of Conduct",
+       "href": "/en/investor-relations/corporate-governance/code-of-conduct/",
+       "hasSub": false
+      },
+      {
+       "label": "Statement of Compliance & Reports",
+       "href": "/en/investor-relations/corporate-governance/statement-of-compliance-and-reports/",
+       "hasSub": false
+      },
+      {
+       "label": "Articles of Incorporation RWE AG & Rules of Procedure",
+       "href": "/en/investor-relations/corporate-governance/articles-of-association/",
+       "hasSub": false
+      },
+      {
+       "label": "Tax Management",
+       "href": "/en/investor-relations/corporate-governance/tax-management/",
+       "hasSub": false
+      },
+      {
+       "label": "Payment Reports",
+       "href": "/en/investor-relations/corporate-governance/payment-governance/",
+       "hasSub": false
+      }
+     ]
+    },
+    {
+     "label": "Responsibility & Sustainability",
+     "href": "/en/responsibility-and-sustainability/",
+     "hasSub": true,
+     "columns": null,
+     "overview": null,
+     "children": [
+      {
+       "label": "Ratings & Rankings",
+       "href": "/en/responsibility-and-sustainability/governance-and-ethics/ratings-and-rankings/",
+       "hasSub": false
+      }
+     ]
+    },
+    {
+     "label": "Contact & Service",
+     "href": "/en/investor-relations/contact-and-service/",
+     "hasSub": true,
+     "columns": null,
+     "overview": null,
+     "children": [
+      {
+       "label": "IR Newsletter",
+       "href": "/en/investor-relations/contact-and-service/ir-newsletter/",
+       "hasSub": false
+      }
+     ]
+    }
+   ],
+   "newsbox": {
+    "img": null,
+    "headline": "Results for the first half of 2026",
+    "cta": "Read more",
+    "href": "/en/investor-relations/financial-calendar-and-publications/2026-H1/"
+   }
+  },
+  {
+   "label": "Our Neighbourhood",
+   "href": "/en/our-neighbourhood/",
+   "hasSub": true,
+   "columns": null,
+   "overview": {
+    "label": "Overview",
+    "href": "/en/our-neighbourhood/"
+   },
+   "children": [
+    {
+     "label": "Visitor Centres",
+     "href": "/en/our-neighbourhood/rwe-erleben/visitor-centres/",
+     "hasSub": true,
+     "columns": null,
+     "overview": null,
+     "children": [
+      {
+       "label": "Spurn Discovery Centre",
+       "href": "https://uk-ireland.rwe.com/locations/yorkshire-wildlife-trust-centre",
+       "hasSub": false
+      }
+     ]
+    },
+    {
+     "label": "Sponsorings & Cooperations",
+     "href": "/en/responsibility-and-sustainability/social-affairs-and-society/sponsoring-and-cooperations/",
+     "hasSub": false
+    }
+   ]
+  },
+  {
+   "label": "Press & News",
+   "href": "/en/press/",
+   "hasSub": true,
+   "columns": null,
+   "overview": {
+    "label": "Overview",
+    "href": "/en/press/"
+   },
+   "children": [
+    {
+     "label": "Press Releases",
+     "href": "/en/press/#press-releases",
+     "hasSub": false
+    },
+    {
+     "label": "RWE @ Social Media",
+     "href": "/en/press/#rwe-at-social-media",
+     "hasSub": false
+    },
+    {
+     "label": "News Worldwide",
+     "href": "/en/press/#news-worldwide",
+     "hasSub": false
+    },
+    {
+     "label": "Interviews",
+     "href": "/en/press/interviews/",
+     "hasSub": false
+    },
+    {
+     "label": "Statements & Positions",
+     "href": "/en/press/statements-and-positions/",
+     "hasSub": false
+    },
+    {
+     "label": "Image & Video Database",
+     "href": "https://rwe.canto.global/v/RWEPressDatabase",
+     "hasSub": false
+    },
+    {
+     "label": "Press Contacts",
+     "href": "/en/press/contact/",
+     "hasSub": false
+    }
+   ],
+   "newsbox": {
+    "img": null,
+    "headline": "Find your media press contact here",
+    "cta": "Read more",
+    "href": "/en/press/contact/"
+   }
+  },
+  {
+   "label": "Contact & Services",
+   "href": "/en/contact-services/",
+   "hasSub": true,
+   "columns": null,
+   "overview": {
+    "label": "Overview",
+    "href": "/en/contact-services/"
+   },
+   "children": [
+    {
+     "label": "Download Centre",
+     "href": "/en/contact-services/download-centre/",
+     "hasSub": false
+    },
+    {
+     "label": "Apps & Tools",
+     "href": "/en/contact-services/apps-and-tools/",
+     "hasSub": false
+    }
+   ]
+  }
+ ],
+ "styles": {
+  "panel": {
+   "position": "relative",
+   "top": "0px",
+   "left": "0px",
+   "background": "rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box",
+   "backgroundColor": "rgb(255, 255, 255)",
+   "zIndex": "auto",
+   "transition": "transform 0.4s ease-in-out",
+   "boxShadow": "none",
+   "overflow": "hidden",
+   "rect": {
+    "y": 130,
+    "h": 770,
+    "w": 1170
+   }
+  },
+  "lvl0item": {
+   "fontFamily": "bold",
+   "fontSize": "18px",
+   "lineHeight": "27px",
+   "color": "rgb(0, 161, 159)",
+   "textAlign": "right",
+   "padding": "0px 24px",
+   "margin": "4px 3px 20px 24px"
+  },
+  "activeItem": {
+   "color": "rgb(0, 161, 159)",
+   "fontFamily": "bold"
+  },
+  "lvl1link": {
+   "fontFamily": "bold",
+   "fontSize": "18px",
+   "lineHeight": "27px",
+   "color": "rgb(0, 161, 159)",
+   "padding": "0px 16px",
+   "margin": "4px"
+  },
+  "overview": {
+   "fontFamily": "bold",
+   "fontSize": "18px",
+   "color": "rgb(0, 161, 159)"
+  },
+  "newsbox": {
+   "width": "298px",
+   "background": "rgba(0, 0, 0, 0) linear-gradient(45deg, rgb(29, 68, 119) 22%, rgb(0, 161, 159)) repeat scroll 0% 0% / auto padding-box border-box",
+   "backgroundColor": "rgba(0, 0, 0, 0)",
+   "position": "absolute",
+   "rect": {
+    "w": 298,
+    "h": 362.625,
+    "x": 983
+   }
+  },
+  "lvlWrapper": {
+   "position": "absolute",
+   "left": "225px",
+   "top": "0px",
+   "width": "945px",
+   "transition": "transform 0.4s ease-out, opacity 0.6s ease-in-out",
+   "transform": "matrix(1, 0, 0, 1, 0, 0)",
+   "opacity": "1",
+   "background": "rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box"
+  },
+  "lvl0rail": {
+   "x": 135,
+   "w": 250,
+   "padding": "0px",
+   "textAlign": "left"
+  }
+ }
+}
