@@ -160,7 +160,8 @@ export default async function decorate(block) {
   try {
     const resp = await fetch(INDEX_URL);
     if (resp.ok) {
-      entries = ((await resp.json()).data || []).filter((en) => en.publishdate); // hub pages carry no publishdate
+      // hubs are /en/press/<brand> (3 segments); articles nest one deeper
+      entries = ((await resp.json()).data || []).filter((en) => en.path.split('/').filter(Boolean).length >= 4);
       if (!entries.length) entries = null;
     }
   } catch (e) { /* index down → authored fallback */ }
