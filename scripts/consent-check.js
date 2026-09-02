@@ -28,9 +28,15 @@ function notify(consented) {
   if (consented) loadConsented();
 }
 
-/* UC_UI service-consent check: any explicit consent beyond essential */
-function ucHasAnalyticsConsent() {
+/* service-consent check: any explicit consent beyond essential.
+   Supports both the v2 UC_UI API and the v3 __ucCmp API. */
+async function ucHasAnalyticsConsent() {
   try {
+    if (window.__ucCmp && window.__ucCmp.getConsentDetails) {
+      const details = await window.__ucCmp.getConsentDetails();
+      const services = Object.values(details.services || {});
+      return services.some((s) => s.consent === true && !s.essential);
+    }
     const services = window.UC_UI.getServicesBaseInfo();
     return services.some((s) => s.consent && s.consent.status === true && !s.isEssential);
   } catch (e) {
@@ -50,12 +56,16 @@ if (override !== null) {
   s.async = true;
   document.head.append(s);
 
-  window.addEventListener('UC_UI_INITIALIZED', () => notify(ucHasAnalyticsConsent()));
-  // fires on accept/deny/save interactions
+  const recheck = async () => notify(await ucHasAnalyticsConsent());
+  window.addEventListener('UC_UI_INITIALIZED', recheck);
+  // v2 event: accept/deny/save interactions
   window.addEventListener('UC_UI_CMP_EVENT', (e) => {
     const t = e.detail && e.detail.type;
-    if (['ACCEPT_ALL', 'DENY_ALL', 'SAVE'].includes(t)) notify(ucHasAnalyticsConsent());
+    if (['ACCEPT_ALL', 'DENY_ALL', 'SAVE'].includes(t)) recheck();
   });
+  // v3 event: any consent update
+  window.addEventListener('UC_CONSENT', recheck);
+  window.addEventListener('ucEvent', recheck);
 }
 
 /* footer "Cookies & Services" link opens the CMP second layer (live parity) */
