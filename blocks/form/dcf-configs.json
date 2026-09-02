@@ -14,7 +14,7 @@
     "label": "+33 7 85 93 42 10"
    }
   ],
-  "photo": "https://content.da.live/paolomoz/rwe/media/rwe/dcf/con01-pierre-emanuelle-burg-192b08.jpg"
+  "photo": "/blocks/form/dcf/con01-pierre-emanuelle-burg-192b08.jpg"
  },
  "26746e23ec28414387fc5c6eecbfaff8": {
   "headline": "Olaf Winter will answer your questions",
@@ -31,7 +31,7 @@
     "label": "+49 152 09295 371"
    }
   ],
-  "photo": "https://content.da.live/paolomoz/rwe/media/rwe/dcf/olaf-winter-7f489e.jpg"
+  "photo": "/blocks/form/dcf/olaf-winter-7f489e.jpg"
  },
  "2c13110cb69747dda7c2d9d602d00eb5": {
   "headline": "Viola Baumann will answer your questions",
@@ -48,7 +48,7 @@
     "label": "+49 152 57909343"
    }
   ],
-  "photo": "https://content.da.live/paolomoz/rwe/media/rwe/dcf/con01-viola-baumann-4616a4.jpg"
+  "photo": "/blocks/form/dcf/con01-viola-baumann-4616a4.jpg"
  },
  "4fc1306e846a4976831a527942861b06": {
   "headline": "Regina Wolter will answer your questions",
@@ -65,7 +65,7 @@
     "label": "+49 152 0685 5300"
    }
   ],
-  "photo": "https://content.da.live/paolomoz/rwe/media/rwe/dcf/regina-wolter-281bc4.jpg"
+  "photo": "/blocks/form/dcf/regina-wolter-281bc4.jpg"
  },
  "58fd8217103048fd956318c12e8e7df7": {
   "headline": "Jan Peter Cirkel will answer your questions",
@@ -82,7 +82,7 @@
     "label": "+49 162 2524 051"
    }
   ],
-  "photo": "https://content.da.live/paolomoz/rwe/media/rwe/dcf/con01-cirkel-3d9dc7.jpg"
+  "photo": "/blocks/form/dcf/con01-cirkel-3d9dc7.jpg"
  },
  "5ba3bfc983aa4aa4b0d018efd9cc5633": {
   "headline": "RWE Sustainability will answer your questions",
@@ -90,7 +90,7 @@
   "name": "RWE Sustainability",
   "role": "",
   "tels": [],
-  "photo": "https://content.da.live/paolomoz/rwe/media/rwe/dcf/con01-sustainability-bf0a36.jpg"
+  "photo": "/blocks/form/dcf/con01-sustainability-bf0a36.jpg"
  },
  "6f258345a5ce446a816ddfb325e60a6a": {
   "headline": "Matthias Beigel will answer your questions",
@@ -107,7 +107,7 @@
     "label": "+49 152 54535 507"
    }
   ],
-  "photo": "https://content.da.live/paolomoz/rwe/media/rwe/dcf/con01-matthias-beigel-2022-cbe15c.jpg"
+  "photo": "/blocks/form/dcf/con01-matthias-beigel-2022-cbe15c.jpg"
  },
  "6f4987c5997a49afa53934861ba258ce": {
   "headline": "Commodity Solutions will answer your questions",
@@ -120,7 +120,7 @@
     "label": "+49 201 5179 1999"
    }
   ],
-  "photo": "https://content.da.live/paolomoz/rwe/media/rwe/dcf/con01-commodity-solutions-8e6f6c.jpg"
+  "photo": "/blocks/form/dcf/con01-commodity-solutions-8e6f6c.jpg"
  },
  "832a694807db4058a6635740bb6f226a": {
   "headline": "Mark Fleming will answer your questions",
@@ -137,7 +137,7 @@
     "label": "+44 7825 608096"
    }
   ],
-  "photo": "https://content.da.live/paolomoz/rwe/media/rwe/dcf/con01-mark-fleming-428612.jpg"
+  "photo": "/blocks/form/dcf/con01-mark-fleming-428612.jpg"
  },
  "8ce5ec31b0c644e2be4479736254db33": {
   "headline": "Vera Bücker will answer your questions",
@@ -154,7 +154,7 @@
     "label": "+49 162 2517 329"
    }
   ],
-  "photo": "https://content.da.live/paolomoz/rwe/media/rwe/dcf/con01-vera-bruecker-627b8a.jpg"
+  "photo": "/blocks/form/dcf/con01-vera-bruecker-627b8a.jpg"
  },
  "910d4fb2d3ca44caba2265e150f3888e": {
   "headline": "Stephanie Cathcart will answer your questions",
@@ -167,7 +167,7 @@
     "label": "+1-512-979-3190"
    }
   ],
-  "photo": "https://content.da.live/paolomoz/rwe/media/rwe/dcf/rwe-phone-6161e0.jpg"
+  "photo": "/blocks/form/dcf/rwe-phone-6161e0.jpg"
  },
  "a30cce28c55d44fd8554c59c6d8bc8e3": {
   "headline": "Simon Lorenz will answer your questions",
@@ -180,7 +180,7 @@
     "label": "+49 201 5179 8448"
    }
   ],
-  "photo": "https://content.da.live/paolomoz/rwe/media/rwe/dcf/con01-simon-lorenz-b287af.jpg"
+  "photo": "/blocks/form/dcf/con01-simon-lorenz-b287af.jpg"
  },
  "caae473e5b784c86b02c9b1d3de783c8": {
   "headline": "The Renewables team of RWE (Solar, Onshore) will answer your questions",
@@ -188,7 +188,7 @@
   "name": "The Renewables team of RWE (Solar, Onshore)",
   "role": "",
   "tels": [],
-  "photo": "https://content.da.live/paolomoz/rwe/media/rwe/dcf/con01-renewables-en-978a60.jpg"
+  "photo": "/blocks/form/dcf/con01-renewables-en-978a60.jpg"
  },
  "e21bce8fc8f041b28f99fb7563ff3ec3": {
   "headline": "RWE Aktiengesellschaft will answer your questions",
@@ -205,7 +205,7 @@
     "label": "+49 201 5179 5299"
    }
   ],
-  "photo": "https://content.da.live/paolomoz/rwe/media/rwe/dcf/con01-rwe-campus-a33812.jpg"
+  "photo": "/blocks/form/dcf/con01-rwe-campus-a33812.jpg"
  },
  "e44d7d3d655244968d07a9da904580d7": {
   "headline": "Kellie Woods will answer your questions",
@@ -213,7 +213,7 @@
   "name": "Kellie Woods",
   "role": "Onshore Wind",
   "tels": [],
-  "photo": "https://content.da.live/paolomoz/rwe/media/rwe/dcf/con01-kellie-woods-7dbb57.jpg"
+  "photo": "/blocks/form/dcf/con01-kellie-woods-7dbb57.jpg"
  },
  "e791c51c65204f09a8bb1064b8262af0": {
   "headline": "Birgit Hiller will answer your questions",
@@ -230,7 +230,7 @@
     "label": "+49 201 5179 8044"
    }
   ],
-  "photo": "https://content.da.live/paolomoz/rwe/media/rwe/dcf/con01-birgit-hiller-94eb6d.jpg"
+  "photo": "/blocks/form/dcf/con01-birgit-hiller-94eb6d.jpg"
  },
  "f39d035dc5e44f46b42c5b48c6bff430": {
   "headline": "Birgit Hiller will answer your questions",
@@ -247,7 +247,7 @@
     "label": "+49 201 5179 8044"
    }
   ],
-  "photo": "https://content.da.live/paolomoz/rwe/media/rwe/dcf/con01-birgit-hiller-94eb6d.jpg"
+  "photo": "/blocks/form/dcf/con01-birgit-hiller-94eb6d.jpg"
  },
  "f447f55320e74a22be7446f8d14f104e": {
   "headline": "Sarah Knauber will answer your questions",
@@ -264,7 +264,7 @@
     "label": "+49 162 25 444 89"
    }
   ],
-  "photo": "https://content.da.live/paolomoz/rwe/media/rwe/dcf/con01-sarah-knauber-197200.jpg"
+  "photo": "/blocks/form/dcf/con01-sarah-knauber-197200.jpg"
  },
  "f909bd3c09d64d65b17f6302640a9108": {
   "headline": "Sinje Vogelsang will answer your questions",
@@ -272,6 +272,6 @@
   "name": "Sinje Vogelsang",
   "role": "Renewables",
   "tels": [],
-  "photo": "https://content.da.live/paolomoz/rwe/media/rwe/dcf/con01-sinje-vogelsang-57e1ca.jpg"
+  "photo": "/blocks/form/dcf/con01-sinje-vogelsang-57e1ca.jpg"
  }
 }
