@@ -462,9 +462,9 @@ body.solid-header > header {
   margin: 0 0 24px;
 }
 
-/* menu button swaps to ✕ while open */
+/* menu button swaps burger → ✕ while open (live glyphs e997 → e999) */
 .header .menu-open .menu-button.icon-burgermenu::before {
-  content: '\e91c';
+  content: '\e999';
 }
 
 .header .meme-back {
