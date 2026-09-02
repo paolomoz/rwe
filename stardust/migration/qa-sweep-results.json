@@ -1,0 +1,85 @@
+{
+ "ok": 606,
+ "issues": [
+  {
+   "path": "/en/press/rwe-renewables-europe-australia/2026-04-01-rwe-sold-its-swedish-wind-activities-to-aneo",
+   "probs": [
+    "no-description"
+   ]
+  },
+  {
+   "path": "/nav",
+   "probs": [
+    "h1=0",
+    "no-description"
+   ]
+  },
+  {
+   "path": "/footer",
+   "probs": [
+    "h1=0",
+    "no-description"
+   ]
+  },
+  {
+   "path": "/index",
+   "probs": [
+    "page 404"
+   ]
+  },
+  {
+   "path": "/en/contact-services/newsletter/unsubscribe-succesful",
+   "probs": [
+    "no-description"
+   ]
+  },
+  {
+   "path": "/en/disclaimer-transparency-campaign",
+   "probs": [
+    "no-description"
+   ]
+  },
+  {
+   "path": "/en/investor-relations/contact-and-service/contact-form/form-feedback",
+   "probs": [
+    "no-description"
+   ]
+  },
+  {
+   "path": "/en/investor-relations/contact-and-service/contact-form",
+   "probs": [
+    "no-description"
+   ]
+  },
+  {
+   "path": "/en/investor-relations/rwe-share/share-at-a-glance/capital-increase/disclaimer-a/announcement",
+   "probs": [
+    "no-description"
+   ]
+  },
+  {
+   "path": "/en/investor-relations/rwe-share/share-at-a-glance/capital-increase/disclaimer-a",
+   "probs": [
+    "no-description"
+   ]
+  },
+  {
+   "path": "/en/investor-relations/rwe-share/share-at-a-glance/capital-increase/disclaimer-b/conclusion",
+   "probs": [
+    "no-description"
+   ]
+  },
+  {
+   "path": "/en/investor-relations/rwe-share/share-at-a-glance/capital-increase/disclaimer-b",
+   "probs": [
+    "no-description"
+   ]
+  },
+  {
+   "path": "/en/netiquette",
+   "probs": [
+    "no-description"
+   ]
+  }
+ ]
+}

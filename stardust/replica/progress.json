@@ -964,5 +964,22 @@
       "statements/stories hubs (excluded-redirect wave for now)"
     ],
     "regression": "home 1440 2.11% PASS post-P4; press-hub 13.14% vs 2026-08-27 frozen truth = tile-data drift (live rotated; live DOM height 7085 vs ours 7089 — layout parity ±4px); documented residual class"
+  },
+  "p5": {
+    "at": "2026-09-02",
+    "contractSweep": "619 pages: 606 clean; 13 exemptions all justified — /nav+/footer fragments (no h1 by design), /index ledger artifact (home serves /), 12 missing descriptions are live-parity (live lacks them too, verified)",
+    "layoutGates": "10/10 templates green (article-press, article-ir, content-page, content-accordion, ir-content, location-detail, legal, press-hub-sibling, section-landing, careers-hybrid): all blocks loaded, 0 pageerrors, 0 broken content images",
+    "bugsCaughtAndFixed": [
+      "etracker double-load (Uncaught: e.js loaded twice) on every page — my direct etracker injection raced the CMP-injected one (RWE UC settings inject it as essential service). Fix: etracker rides GTM/CMP only",
+      "tracking pixels (accountinsight chain) exempted from broken-image gate — not content"
+    ],
+    "linkIntegrity": "978 unique internal targets: 610 ok, 168 redirected, 44 broken — ALL 44 verified dead on live too (parity, not defects); 1 self-referencing legacy comma-slug link rewritten; /en -> / redirect added",
+    "redirects": "1721 rows live; verified per class: press archive->hub, IR archive->IR hub, statements->hub, stories->careers, job-app->job-offers, online-report->IR, /en->/",
+    "indexes": {
+      "press": 66,
+      "irPublications": 44,
+      "site": 616
+    },
+    "verdict": "P5 PASS — estate is delivery-clean, layout-clean, link-parity with live, redirects covering all excluded waves"
   }
 }
