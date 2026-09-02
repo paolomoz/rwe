@@ -72,9 +72,13 @@
 <p>The press hub and 9 brand hubs read the EDS <code>press</code> query index: live result counts, newest-first tiles, working company / topic / search / date filters and load-more. Brand hubs auto-scope to their company.</p>
 <div class="test"><strong>Test:</strong> open <a href="https://main--rwe--paolomoz.aem.live/en/press">/en/press</a> — the count ("64 results were found.") comes from the index. Pick a company in the <em>Company</em> filter, type a term in <em>Search Term</em>, click <em>Load more</em>. Then open <a href="https://main--rwe--paolomoz.aem.live/en/press/rwe-ag">/en/press/rwe-ag</a> — the same block pre-filtered to RWE AG.</div>
 
+<h3>Mega menu <span class="pill">live</span></h3>
+<p>The full live mega menu, cloned from measured recon: 10 sections with 193 links across 3 levels, hover-switching flyout panels (slide + fade, live timings), "Overview →" links, gradient newsbox teasers with images (The Group, Investor Relations, Press &amp; News), body scroll-lock, burger→✕ swap. On mobile it becomes the live tap-through drawer with Back navigation. The whole tree is authored content in the <code>/nav</code> document (209 links) — editable without code changes.</p>
+<div class="test"><strong>Test:</strong> click <em>Menu</em> in the header — the white panel slides down with The Group open. Hover the left rail (e.g. <em>Investor Relations</em>) — the panel slides/fades to that section and the newsbox swaps. Click any link to navigate; press <em>Esc</em> or ✕ to close. At mobile width, tap a section to slide its panel in, then <em>← Back</em>.</div>
+
 <h3>Site search <span class="pill">live</span></h3>
-<p>Header magnifier opens a search overlay backed by a site-wide query index of all 616 pages.</p>
-<div class="test"><strong>Test:</strong> on any page, click the <em>Search</em> icon in the header and type <code>hydrogen</code> — up to 10 matching pages appear with descriptions; results are links.</div>
+<p>Header magnifier opens the live-design search overlay: gradient gauze over the page, centered white rounded input with magnifier, ✕ in the header row — backed by the site-wide query index of all 616 pages.</p>
+<div class="test"><strong>Test:</strong> on any page, click <em>Search</em> and type <code>hydrogen</code> — up to 10 matching pages appear as a white results panel under the input; <em>Esc</em> or ✕ closes.</div>
 
 <h3>Consent management — Usercentrics <span class="pill">live</span></h3>
 <p>The production RWE Usercentrics CMP (settings <code>lrfueDZgn</code>) loads in the delayed phase. GTM (<code>GTM-K6ZG5P5</code>) loads only after consent; etracker rides the CMP/GTM as on live. Bots/crawlers don't see the banner.</p>

@@ -987,6 +987,15 @@
       "fix": "31 configs frozen from live into blocks/form/dcf-configs.json (both form pages); block personalizes headline + contact rail from the URL param, generic fallback otherwise; photos downloaded through the browser session (CDN referer-gated); careers contact-form page created",
       "sweep": "all parameterized internal links enumerated: remaining ones are filter-state deep-links (jobs/products/experts/locations) — pages render, pre-filter lands with each facet integration",
       "pluginPitfall": "documented in stardust/plugin-improvements/parameterized-page-states.md"
+    },
+    "megaMenu": {
+      "at": "2026-09-02",
+      "scope": "full mega menu + search overlay redesign + mobile drawer (partner feedback)",
+      "recon": "live meme contract measured via Playwright: 10 sections / 56 L2 / 127 L3 (193 links + 10 Overview + 3 newsboxes); panel white below header, rail 250px right-aligned bold18 navy (active teal), flyouts abs left 225 w945 switching on HOVER (transform .4s ease-out + opacity .6s), 3 CSS columns (teal bold heads, navy regular leaves), newsbox 298px gradient card (The Group/IR/Press), body scroll lock, burger→X glyph e997→e999",
+      "contentModel": "nav.html section 4 = authored nested-UL tree (209 links); newsbox = li with picture; pipeline wraps li anchors in <p> (parser handles li>p>a)",
+      "searchOverlay": "live app-drawer design: gradient gauze 45deg rgba(29,68,119,.75)/rgba(0,161,159,.75), white input group radius6/4px border/h55/magnifier, white X in header row; results read site index",
+      "mobile": "full-screen drawer, tap-through section panels with Back, slide .4s",
+      "verification": "10 rail items, 205 links, hover switch (IR newsbox swaps), newsbox img renders, scroll lock, search 10 results for hydrogen, mobile back-nav; home 1440 gate unchanged 2.11% PASS"
     }
   }
 }
