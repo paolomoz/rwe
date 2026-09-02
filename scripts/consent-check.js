@@ -1,7 +1,7 @@
 let consentedLoaded = false;
 
 /**
- * Usercentrics CMP integration (live parity: app.usercentrics.eu browser-ui,
+ * Usercentrics CMP integration (live parity: Usercentrics CMP,
  * settings id lrfueDZgn — recon 2026-09-02). The CMP loads in the delayed
  * phase; consented scripts (GTM + etracker, see consented.js) load only after
  * the user grants consent via the CMP.
@@ -45,7 +45,7 @@ if (override !== null) {
   // load the CMP exactly as live does
   const s = document.createElement('script');
   s.id = 'usercentrics-cmp';
-  s.src = 'https://app.usercentrics.eu/browser-ui/latest/loader.js';
+  s.src = 'https://web.cmp.usercentrics.eu/ui/loader.js';
   s.setAttribute('data-settings-id', UC_SETTINGS_ID);
   s.async = true;
   document.head.append(s);

@@ -9,6 +9,17 @@ indices:
     exclude:
       - '/en/press/'
       - '/en/press/statements-and-positions/'
+      - '/en/press/rwe-ag/'
+      - '/en/press/rwe-generation/'
+      - '/en/press/rwe-power/'
+      - '/en/press/rwe-renewables/'
+      - '/en/press/rwe-clean-energy/'
+      - '/en/press/rwe-americas/'
+      - '/en/press/rwe-offshore-wind-gmbh/'
+      - '/en/press/rwe-renewables-europe-australia/'
+      - '/en/press/rwe-supply-and-trading/'
+      - '/en/press/interviews/'
+      - '/en/press/contact/'
     target: /en/press/query-index.json
     properties:
       title:

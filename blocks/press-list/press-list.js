@@ -159,7 +159,10 @@ export default async function decorate(block) {
   let entries = null;
   try {
     const resp = await fetch(INDEX_URL);
-    if (resp.ok) entries = (await resp.json()).data || null;
+    if (resp.ok) {
+      entries = ((await resp.json()).data || []).filter((en) => en.publishdate); // hub pages carry no publishdate
+      if (!entries.length) entries = null;
+    }
   } catch (e) { /* index down → authored fallback */ }
 
   const results = document.createElement('div');
