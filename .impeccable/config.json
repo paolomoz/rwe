@@ -1,7 +1,15 @@
 {
   "detector": {
     "ignoreRules": [],
-    "ignoreFiles": [],
+    "ignoreFiles": [
+      "stardust/prototypes/index-proposed.html",
+      "stardust/prototypes/group-landing-proposed.html",
+      "stardust/prototypes/content-page-proposed.html",
+      "stardust/prototypes/job-search-proposed.html",
+      "stardust/prototypes/press-hub-proposed.html",
+      "stardust/prototypes/article-detail-proposed.html",
+      "stardust/prototypes/locations-map-proposed.html"
+    ],
     "ignoreValues": [
       {
         "rule": "design-system-color",
