@@ -57,7 +57,7 @@ main .banner-container > div:has(.banner.trading) {
   color: #fff;
 }
 
-.banner .caption h3.headline {
+.banner .caption .headline :is(h2, h3) {
   color: #fff;
 }
 
@@ -65,6 +65,18 @@ main .banner-container > div:has(.banner.trading) {
   color: #fff;
   margin-bottom: 24px;
 }
+
+/* Experience Workspace: authored elements moved into wrappers inherit the wrapper's type */
+.banner :is(.banner-cta, .on-media-cta) p {
+  margin: 0;
+  font: inherit;
+  color: inherit;
+}
+
+.banner.cvm .cta-reverse p {
+  margin: 0;
+}
+
 
 .banner .banner-cta {
   display: inline-block;
@@ -231,8 +243,8 @@ main .banner-container > div:has(.banner.trading) {
   align-items: flex-start;
 }
 
-.banner.locations .lm-video-teaser h3.headline { color: #fff; margin: 0 0 24px; font-size: 24px; line-height: 32px; }
-.banner.locations .lm-video-teaser p { color: #fff; margin: 0 0 24px; width: 378px; }
+.banner.locations .lm-video-teaser .headline :is(h2, h3) { color: #fff; margin: 0 0 24px; font-size: 24px; line-height: 32px; }
+.banner.locations .lm-video-teaser header p:where(:not(.button p)) { color: #fff; margin: 0 0 24px; width: 378px; }
 
 .banner.locations .lm-video-teaser .button {
   display: inline-block;
@@ -263,8 +275,8 @@ main .banner-container > div:has(.banner.trading) {
     padding: 16px;
   }
 
-  .banner.locations .lm-video-teaser h3.headline { margin-bottom: 16px; font-size: 18px; line-height: 24px; }
-  .banner.locations .lm-video-teaser p { margin-bottom: 16px; width: auto; }
+  .banner.locations .lm-video-teaser .headline :is(h2, h3) { margin-bottom: 16px; font-size: 18px; line-height: 24px; }
+  .banner.locations .lm-video-teaser header p:where(:not(.button p)) { margin-bottom: 16px; width: auto; }
   .banner.locations .lm-video-teaser .button { font-size: 15px; line-height: 18px; padding: 8px 16px; }
 }
 
@@ -304,7 +316,7 @@ main .banner-container > div:has(.banner.trading) {
   overflow: hidden;
 }
 
-.banner.cvm .cvm-caption .content h3.headline {
+.banner.cvm .cvm-caption .content .headline :is(h2, h3) {
   color: #fff;
   margin: 0 0 24px;
 }
@@ -327,7 +339,7 @@ main .banner-container > div:has(.banner.trading) {
   z-index: 1;
 }
 
-.banner.cvm .cta-reverse span {
+.banner.cvm .cta-reverse :is(span, p) {
   color: #fff;
 }
 
@@ -366,7 +378,7 @@ main .banner-container > div:has(.banner.trading) {
     width: 85%;
   }
 
-  .banner.cvm .cvm-caption .content h3.headline {
+  .banner.cvm .cvm-caption .content .headline :is(h2, h3) {
     margin: 0 0 16px;
   }
 

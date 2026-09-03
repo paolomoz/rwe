@@ -13,6 +13,31 @@
  *   jobs    → /media/tea01r-jobs-webm.webm
  */
 
+// Experience Workspace contract: MOVE authored nodes into wrappers that carry
+// the classes; the teaser is the link, so the CTA anchor is unwrapped after use.
+function wrapNode(node, className) {
+  const w = document.createElement('div');
+  w.className = className;
+  w.append(node);
+  return w;
+}
+
+function labelWrap(link, className) {
+  const w = document.createElement('div');
+  w.className = className;
+  const par = link.closest('p');
+  if (par) {
+    w.append(par);
+    link.replaceWith(...link.childNodes);
+  } else {
+    const span = document.createElement('span');
+    span.append(...link.childNodes);
+    w.append(span);
+    link.remove();
+  }
+  return w;
+}
+
 const VIDEOS = {
   trading: '/media/trading-floor-webm.webm',
   jobs: '/media/tea01r-jobs-webm.webm',
@@ -49,18 +74,14 @@ export default async function decorate(block) {
     cap.className = 'cvm-caption';
     const content0 = document.createElement('div');
     content0.className = 'content';
-    if (heading0) {
-      const h3 = document.createElement('h3');
-      h3.className = 'headline';
-      h3.textContent = heading0.textContent.trim();
-      content0.append(h3);
-    }
+    if (heading0) content0.append(wrapNode(heading0, 'headline'));
     content0.append(document.createElement('p'));
     const ctaBox = document.createElement('div');
     ctaBox.className = 'cta-reverse';
-    const sp0 = document.createElement('span');
-    sp0.textContent = cta0 ? cta0.textContent.trim() : '';
-    ctaBox.append(sp0);
+    if (cta0) {
+      ctaBox.append(cta0);
+      cta0.querySelectorAll('a').forEach((a) => a.replaceWith(...a.childNodes));
+    }
     const imprintWrap = document.createElement('div');
     imprintWrap.className = 'imprint-wrapper';
     const imprint = document.createElement('img');
@@ -90,24 +111,12 @@ export default async function decorate(block) {
     if (pic) {
       const img = pic.matches('img') ? pic : pic.querySelector('img');
       if (img) img.setAttribute('loading', 'lazy');
-      mediaEl.append(pic.cloneNode(true));
+      mediaEl.append(pic);
     }
     const header0 = document.createElement('header');
-    if (heading) {
-      const h3 = document.createElement('h3');
-      h3.className = 'headline';
-      h3.textContent = heading.textContent.trim();
-      header0.append(h3);
-    }
-    if (p0) { const pp = document.createElement('p'); pp.textContent = p0.textContent.trim(); header0.append(pp); }
-    if (link0) {
-      const btn = document.createElement('div');
-      btn.className = 'button secondary on-media-cta';
-      const sp = document.createElement('span');
-      sp.textContent = link0.textContent.trim();
-      btn.append(sp);
-      header0.append(btn);
-    }
+    if (heading) header0.append(wrapNode(heading, 'headline'));
+    if (p0) header0.append(p0);
+    if (link0) header0.append(labelWrap(link0, 'button secondary on-media-cta'));
     a0.append(mediaEl, header0);
     block.replaceChildren(a0);
     return;
@@ -143,26 +152,10 @@ export default async function decorate(block) {
   caption.className = 'caption';
   const content = document.createElement('div');
   content.className = 'content';
-  if (heading) {
-    const h3 = document.createElement('h3');
-    h3.className = 'headline';
-    h3.textContent = heading.textContent.trim();
-    content.append(h3);
-  }
-  if (p) {
-    const pp = document.createElement('p');
-    pp.textContent = p.textContent.trim();
-    content.append(pp);
-  }
+  if (heading) content.append(wrapNode(heading, 'headline'));
+  if (p) content.append(p);
   caption.append(content);
-  if (link) {
-    const btn = document.createElement('div');
-    btn.className = 'button secondary banner-cta';
-    const s = document.createElement('span');
-    s.textContent = link.textContent.trim();
-    btn.append(s);
-    caption.append(btn);
-  }
+  if (link) caption.append(labelWrap(link, 'button secondary banner-cta'));
   if (variant === 'jobs') {
     const imprint = document.createElement('img');
     imprint.className = 'imprint';

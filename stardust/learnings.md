@@ -161,4 +161,40 @@ diff-key change, needs its own validation protocol).
     `stardust/scripts/ew-editability-probe.mjs` (instrument → decorate →
     count; `--simulate-editor` measures edit-mode style drift). Plugin spec:
     `stardust/plugin-improvements/experience-workspace-editability.md`.
+16. **Round 2 of the Experience Workspace conversion (17 more blocks) —
+    what the first pass got wrong, now rules.** (a) The workspace's
+    instrumented HTML keeps a `<p>` inside EVERY block cell (prose2aem copies
+    cell innerHTML), while the published pipeline unwraps single-paragraph
+    cells to bare text — decode sees a `<p>` in both cases (runtime
+    `wrapTextNodes`), but any gate must stamp bare-text cells too or it
+    under-counts (accordion titles, icon-tile labels, quote were invisible
+    to the first probe). (b) Do NOT `font: inherit` the moved heading by
+    default — it relied on the global `h3` type; rewrite the old
+    element-class rule `h3.headline {…}` as `.headline :is(h2, h3, h4) {…}`
+    (same specificity, same cascade, and it still matches the editor's
+    re-rendered `<h3>`). Only when the old rule itself set the type (hero)
+    does the wrapper carry it. (c) The editor inserts two wrapper divs above
+    the authored element, so NO child combinators or positional
+    pseudo-classes on the path to it (`.affordance > p`, `header > p`,
+    `:first-child`); exclude a moved CTA paragraph from a lede rule with
+    `p:where(:not(.affordance p))`, never with `>`. (d) Classes a block adds
+    to authored elements (`ul.icon-list-items`, `a.link-download`,
+    `a.button.primary`) vanish while editing — style by element/attribute
+    (`.icon-list ul`, `a[href*=".pdf"]`) and repaint buttons from the
+    `<strong>/<em>` marks. (e) A `<button>` cannot host the inline editor:
+    accordion titles move into a sibling div, the row takes the click
+    handler, the button becomes chevron-only. (f) When moving nodes while
+    walking siblings, capture `nextElementSibling` BEFORE `append()`
+    (companies subsidiaries silently dropped otherwise). (g) Two exempt
+    categories exist and must be declared: index/API-driven blocks whose
+    authored rows are fallback/config (press-list, job-list, form,
+    locations-map) and derived text (dates split into day/month); a third —
+    one paragraph rendered as N list items (breadcrumb) — needs an ENCODE
+    change (author a `<ul>`). (h) Pixel-gating tall blocks: hide
+    `body > header` in the harness (sticky header lands in the element
+    screenshot) and expect live-widget iframes (share ticker) to differ.
+    Result on the 29-page covering sample: 841 → 1416 of 1452 authored texts
+    editable; the 36 left are all declared exemptions; every converted
+    block is pixel-identical at 1440 and shows no edit-mode style drift
+    except the hero's 8px per-line span gap.
 

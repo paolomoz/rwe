@@ -43,7 +43,7 @@
   flex-direction: column;
 }
 
-.cards.color h3.headline {
+.cards.color .headline :is(h2, h3, h4) {
   color: var(--navy);
   margin-bottom: 24px;
 }
@@ -93,7 +93,7 @@
   background: var(--surface);
 }
 
-.cards.media h3.headline {
+.cards.media .headline :is(h2, h3, h4) {
   color: var(--navy);
 }
 
@@ -141,7 +141,7 @@
   object-fit: contain;
 }
 
-.cards.contact h2.headline {
+.cards.contact .headline :is(h2, h3, h4) {
   color: var(--navy);
 }
 
@@ -179,7 +179,7 @@
     padding: 16px;
   }
 
-  .cards.color h3.headline {
+  .cards.color .headline :is(h2, h3, h4) {
     margin-bottom: 16px;
   }
 
@@ -293,7 +293,7 @@
   flex-direction: column;
 }
 
-.cards.topics .card h3.headline {
+.cards.topics .card .headline :is(h2, h3, h4) {
   color: var(--navy);
   margin: 0 0 24px;
   text-align: left;
@@ -301,14 +301,14 @@
   line-height: 32px;
 }
 
-.cards.topics .card p {
+.cards.topics .card header p:where(:not(.affordance p)) {
   margin: 0 0 16px;
   text-align: left;
   overflow: hidden;
 }
 
-.cards.topics .cell:nth-child(odd) .card h3.headline,
-.cards.topics .cell:nth-child(odd) .card p { color: #fff; }
+.cards.topics .cell:nth-child(odd) .card .headline :is(h2, h3, h4),
+.cards.topics .cell:nth-child(odd) .card header p:where(:not(.affordance p)) { color: #fff; }
 .cards.topics .card .affordance { margin: 0 24px 24px; }
 .cards.topics .cell:nth-child(odd) .card .affordance { color: #fff; }
 
@@ -326,7 +326,7 @@
   }
   .cards.topics .card header { padding: 16px; }
 
-  .cards.topics .card h3.headline {
+  .cards.topics .card .headline :is(h2, h3, h4) {
     margin-bottom: 16px;
     font-size: 18px;
     line-height: 24px;
@@ -399,20 +399,20 @@
 }
 .cards.interest .card-body .content { flex: 1; }
 
-.cards.interest .card h3.headline {
+.cards.interest .card .headline :is(h2, h3, h4) {
   color: #fff;
   margin: 0 0 24px;
   font-size: 24px;
   line-height: 32px;
 }
 
-.cards.interest .card-body p {
+.cards.interest .card-body .content p {
   margin: 0 0 24px;
   color: #fff;
 }
 
-.cards.interest .cell:nth-child(2) .card h3.headline,
-.cards.interest .cell:nth-child(2) .card-body p { color: var(--navy); }
+.cards.interest .cell:nth-child(2) .card .headline :is(h2, h3, h4),
+.cards.interest .cell:nth-child(2) .card-body .content p { color: var(--navy); }
 
 .cards.interest .card-cta {
   border-color: #fff;
@@ -444,12 +444,12 @@
     padding: 16px;
   }
 
-  .cards.interest .card h3.headline {
+  .cards.interest .card .headline :is(h2, h3, h4) {
     margin-bottom: 16px;
     font-size: 18px;
     line-height: 24px;
   }
-  .cards.interest .card-body p { margin-bottom: 16px; }
+  .cards.interest .card-body .content p { margin-bottom: 16px; }
 }
 
 /* ---- variant: related — article related-press cards (gated A1 values) ---- */
@@ -496,7 +496,7 @@
   min-height: 222px;
 }
 
-.cards.related .card h3.headline {
+.cards.related .card .headline :is(h2, h3, h4) {
   font-size: 24px;
   line-height: 32px;
   color: var(--navy);
@@ -524,7 +524,7 @@
   }
   .cards.related .card header { min-height: 0; }
 
-  .cards.related .card h3.headline {
+  .cards.related .card .headline :is(h2, h3, h4) {
     font-size: 18px;
     line-height: 24px;
     margin-bottom: 16px;
@@ -600,14 +600,14 @@
   color: #fff;
 }
 
-.cards.group .card h3.headline {
+.cards.group .card .headline :is(h2, h3, h4) {
   color: inherit;
   font-size: 24px;
   line-height: 32px;
   margin: 0 0 24px;
 }
 
-.cards.group .card-body p {
+.cards.group .card-body .content p {
   color: inherit;
   margin: 0 0 24px;
 }
@@ -638,13 +638,13 @@
   .cards.group .cell:nth-child(n+4) { margin-top: 0; }
   .cards.group .cell:last-child { margin-bottom: 0; }
 
-  .cards.group .card h3.headline {
+  .cards.group .card .headline :is(h2, h3, h4) {
     font-size: 18px;
     line-height: 24px;
     margin-bottom: 16px;
   }
   .cards.group .card-body { padding: 16px; }
-  .cards.group .card-body p { margin-bottom: 16px; }
+  .cards.group .card-body .content p { margin-bottom: 16px; }
 }
 
 /* ---- variant: contact single — tea02r contact teaser (gated A3 values) ---- */
@@ -677,13 +677,13 @@
   color: var(--navy);
 }
 
-.cards.contact.single h2.headline {
+.cards.contact.single .headline :is(h2, h3, h4) {
   font-size: 32px;
   line-height: 38px;
   margin: 0 0 24px;
 }
 
-.cards.contact.single header p {
+.cards.contact.single header p:where(:not(.affordance p)) {
   margin: 0 0 24px;
   font-size: 18px;
   line-height: 27px;
@@ -705,13 +705,13 @@
     margin-bottom: 16px;
   }
 
-  .cards.contact.single h2.headline {
+  .cards.contact.single .headline :is(h2, h3, h4) {
     font-size: 24px;
     line-height: 28px;
     margin-bottom: 16px;
   }
 
-  .cards.contact.single header p {
+  .cards.contact.single header p:where(:not(.affordance p)) {
     font-size: 15px;
     line-height: 22px;
     margin-bottom: 16px;
@@ -766,7 +766,7 @@
   color: #fff;
 }
 
-.cards.cp .card h3.headline { color: inherit; font-size: 24px; line-height: 32px; margin: 0 0 24px; }
+.cards.cp .card .headline :is(h2, h3, h4) { color: inherit; font-size: 24px; line-height: 32px; margin: 0 0 24px; }
 .cards.cp .card-body p { color: inherit; margin: 0 0 24px; }
 .cards.cp .card-cta { border-color: currentcolor; color: var(--teal); background: transparent; align-self: flex-start; }
 .cards.cp .cell:nth-child(odd) .card-cta { color: #fff; border-color: #fff; }
@@ -781,7 +781,7 @@
     padding: 0;
     margin: 0 0 16px;
   }
-  .cards.cp .card h3.headline { font-size: 18px; line-height: 24px; margin-bottom: 16px; }
+  .cards.cp .card .headline :is(h2, h3, h4) { font-size: 18px; line-height: 24px; margin-bottom: 16px; }
   .cards.cp .card-body { padding: 16px; }
   .cards.cp .card-body p { margin-bottom: 16px; }
 }
@@ -834,7 +834,7 @@
   color: #fff;
 }
 
-.cards.media.explore .cell:nth-child(odd) .card-body h3.headline,
+.cards.media.explore .cell:nth-child(odd) .card-body .headline :is(h2, h3, h4),
 .cards.media.explore .cell:nth-child(odd) .card-body p {
   color: #fff;
 }
@@ -851,7 +851,7 @@
   pointer-events: none;
 }
 
-.cards.media.explore h3.headline {
+.cards.media.explore .headline :is(h2, h3, h4) {
   margin: 0 0 24px;
 }
 
@@ -890,7 +890,7 @@
     width: 85%;
   }
 
-  .cards.media.explore h3.headline {
+  .cards.media.explore .headline :is(h2, h3, h4) {
     margin: 0 0 16px;
   }
 
@@ -903,4 +903,19 @@
     font-size: 15px;
     line-height: 18px;
   }
+}
+
+/* Experience Workspace: authored elements moved into wrappers inherit the wrapper's type */
+.cards .card .date p,
+.cards .card .affordance p,
+.cards .card .card-cta p {
+  margin: 0;
+  font: inherit;
+  color: inherit;
+}
+
+/* contact cards: the block used to retag the authored heading to <h2>; keep that size */
+.cards.contact .card .headline :is(h3, h4) {
+  font-size: var(--heading-font-size-xl);
+  line-height: var(--heading-line-height-xl);
 }

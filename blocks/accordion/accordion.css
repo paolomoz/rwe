@@ -15,24 +15,34 @@
 }
 
 .accordion .accordion-headline {
-  margin: 0;
-  font-size: 18px;
-  line-height: 27px;
-}
-
-.accordion .accordion-headline button {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 100%;
+  margin: 0;
   padding: 16px 16px 16px 0;
-  border: 0;
-  background: transparent;
   color: var(--teal);
   font-family: var(--medium-font-family);
   font-size: 18px;
   line-height: 27px;
   text-align: left;
+  cursor: pointer;
+}
+
+/* authored title paragraph (or its editor) inherits the headline's type */
+.accordion .accordion-title p {
+  margin: 0;
+  font: inherit;
+  color: inherit;
+}
+
+.accordion .accordion-headline button {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: var(--teal);
+  font: inherit;
   cursor: pointer;
 }
 

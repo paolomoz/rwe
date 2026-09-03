@@ -23,11 +23,12 @@
   margin-bottom: 24px;
 }
 
-.press .press-header .subheadline {
+.press .press-header .subheadline :is(h2, h3) {
   margin: 0;
 }
 
-.press .press-header .affordance::after {
+.press .press-header .affordance::after,
+.press .press-header .affordance-wrap :where(a)::after {
   content: '\e93f';
 }
 
@@ -97,7 +98,7 @@
   flex: 1;
 }
 
-.press .press-item h4 {
+.press .press-item header :is(h3, h4) {
   font-family: var(--body-font-family);
   font-size: 18px;
   font-weight: 700;
@@ -191,7 +192,7 @@
     padding: 7px 12px;
   }
 
-  .press .press-item h4 {
+  .press .press-item header :is(h3, h4) {
     font-size: 15px;
     line-height: 19px;
   }
@@ -218,4 +219,12 @@
   .press .share-box {
     height: 340px;
   }
+}
+
+/* Experience Workspace: authored elements moved into wrappers inherit the wrapper's type */
+.press .affordance-wrap p,
+.press .read-more .button p {
+  margin: 0;
+  font: inherit;
+  color: inherit;
 }

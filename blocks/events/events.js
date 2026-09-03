@@ -29,17 +29,18 @@ function buildEvent(row) {
   ev.innerHTML = `
     <div class="le-date"><time><span class="le-day"></span><span class="le-month"></span></time></div>
     <div class="le-content">
-      <h3 class="le-title"></h3>
-      <p class="le-desc"></p>
+      <div class="le-title"></div>
+      <div class="le-desc"></div>
       <div class="le-additional"><button class="le-show-more">Show more</button><div class="le-information" hidden></div></div>
       <div class="le-buttons le-buttons--mobile">${BTNS}</div>
     </div>
     <div class="le-buttons-desktop"><div class="le-buttons">${BTNS}</div></div>`;
   ev.querySelector('.le-day').textContent = day || '';
   ev.querySelector('.le-month').textContent = monthBits.join(' ');
-  ev.querySelector('.le-title').textContent = title ? title.textContent.trim() : '';
-  if (desc) ev.querySelector('.le-desc').textContent = desc.textContent.trim();
-  if (extra) ev.querySelector('.le-information').append(extra.cloneNode(true));
+  // Experience Workspace contract: MOVE authored nodes into the template's slot wrappers
+  if (title) ev.querySelector('.le-title').append(title);
+  if (desc) ev.querySelector('.le-desc').append(desc);
+  if (extra) ev.querySelector('.le-information').append(extra);
   const toggle = ev.querySelector('.le-show-more');
   const info = ev.querySelector('.le-information');
   toggle.addEventListener('click', () => {
@@ -67,8 +68,16 @@ export default async function decorate(block) {
     const a = document.createElement('a');
     a.className = 'le-all';
     a.href = allLink.href;
-    a.innerHTML = '<span></span><span class="le-all-icon"></span>';
-    a.querySelector('span').textContent = allLink.textContent.trim();
+    const par = allLink.closest('p');
+    if (par) {
+      a.append(par); // the <p> holds the prose index; the header link wraps it
+      allLink.replaceWith(...allLink.childNodes);
+    } else {
+      const s = document.createElement('span');
+      s.textContent = allLink.textContent.trim();
+      a.append(s);
+    }
+    a.insertAdjacentHTML('beforeend', '<span class="le-all-icon"></span>');
     head.append(a);
   }
   list.append(head);

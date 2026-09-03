@@ -43,24 +43,26 @@ export default async function decorate(block) {
   }
   const caption = document.createElement('div');
   caption.className = 'teaser-caption';
+  // Experience Workspace contract: MOVE authored nodes; wrappers carry the classes.
   const h = teaserRow ? teaserRow.querySelector('h3, h2') : null;
   if (h) {
-    const h3 = document.createElement('h3');
-    h3.className = 'headline';
-    h3.textContent = h.textContent.trim();
-    caption.append(h3);
+    const hw = document.createElement('div');
+    hw.className = 'headline';
+    hw.append(h);
+    caption.append(hw);
   }
   const p = teaserRow ? [...teaserRow.querySelectorAll('p')].find((x) => !x.querySelector('a') && x.textContent.trim()) : null;
-  if (p) {
-    const pp = document.createElement('p');
-    pp.textContent = p.textContent.trim();
-    caption.append(pp);
-  }
+  if (p) caption.append(p);
   const more = document.createElement('div');
   more.className = 'affordance white';
-  const span = document.createElement('span');
-  span.textContent = link ? link.textContent.trim() : 'Read more';
-  more.append(span);
+  if (link && link.closest('p')) {
+    more.append(link.closest('p')); // the <p> holds the prose index; the teaser is the link
+    link.replaceWith(...link.childNodes);
+  } else {
+    const span = document.createElement('span');
+    span.textContent = link ? link.textContent.trim() : 'Read more';
+    more.append(span);
+  }
   caption.append(more);
   a.append(video, caption);
   colMain.append(a);
@@ -74,25 +76,14 @@ export default async function decorate(block) {
     const sh = sideRow.querySelector('h3, h2');
     if (sh) {
       const header = document.createElement('header');
-      const h3 = document.createElement('h3');
-      h3.className = 'headline';
-      h3.textContent = sh.textContent.trim();
-      header.append(h3);
+      const hw = document.createElement('div');
+      hw.className = 'headline';
+      hw.append(sh);
+      header.append(hw);
       box.append(header);
     }
     const list = sideRow.querySelector('ul');
-    if (list) {
-      const ul = document.createElement('ul');
-      [...list.querySelectorAll('a')].forEach((la) => {
-        const li = document.createElement('li');
-        const na = document.createElement('a');
-        na.href = la.href;
-        na.textContent = la.textContent.trim();
-        li.append(na);
-        ul.append(li);
-      });
-      box.append(ul);
-    }
+    if (list) box.append(list); // the authored <ul> IS the editable unit
   }
   colSide.append(box);
 

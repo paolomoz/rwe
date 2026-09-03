@@ -20,20 +20,18 @@ export default async function decorate(block) {
     const textCell = cells[cells.length - 1];
     const col = document.createElement('div');
     col.className = 'cs-col';
-    const h3 = document.createElement('h3');
-    h3.className = 'subheadline';
-    h3.textContent = heading ? heading.textContent.trim() : '';
+    // Experience Workspace contract: MOVE authored nodes; the wrapper carries the class
+    const sub = document.createElement('div');
+    sub.className = 'subheadline';
+    if (heading) sub.append(heading);
     const content = document.createElement('div');
     content.className = 'content';
     [...textCell.querySelectorAll('p')].forEach((p) => {
       const cta = p.querySelector('a.button, a');
-      if (cta && p.textContent.trim() === cta.textContent.trim()) {
-        content.append(cta.cloneNode(true));
-      } else {
-        content.append(p.cloneNode(true));
-      }
+      if (cta && p.textContent.trim() === cta.textContent.trim()) p.classList.add('cs-cta');
+      content.append(p);
     });
-    col.append(h3, content);
+    col.append(sub, content);
     return col;
   });
 

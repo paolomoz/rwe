@@ -24,6 +24,42 @@ function collectCard(row) {
   };
 }
 
+/**
+ * Experience Workspace contract (see stardust/plugin-improvements/
+ * experience-workspace-editability.md): authored elements are MOVED into
+ * generated wrappers that carry the layout classes; the card is the link, so
+ * the authored CTA anchor is unwrapped in the live DOM after its href is read.
+ */
+function wrapNode(node, className) {
+  const w = document.createElement('div');
+  w.className = className;
+  w.append(node);
+  return w;
+}
+
+// CTA label: move the authored <p> (it holds the prose index), drop the inner <a>.
+function labelWrap(link, className) {
+  const w = document.createElement('div');
+  w.className = className;
+  const par = link.closest('p');
+  if (par) {
+    w.append(par);
+    link.replaceWith(...link.childNodes);
+  } else {
+    const span = document.createElement('span');
+    span.append(...link.childNodes);
+    w.append(span);
+    link.remove();
+  }
+  return w;
+}
+
+function lazy(pic) {
+  const img = pic.matches('img') ? pic : pic.querySelector('img');
+  if (img) img.setAttribute('loading', 'lazy');
+  return pic;
+}
+
 export default async function decorate(block) {
   const isMedia = block.classList.contains('media');
   const isContact = block.classList.contains('contact');
@@ -46,9 +82,7 @@ export default async function decorate(block) {
       plain.className = 'card card--plain';
       const media = document.createElement('div');
       media.className = 'card-media';
-      const img0 = pic.matches('img') ? pic : pic.querySelector('img');
-      if (img0) img0.setAttribute('loading', 'lazy');
-      media.append(pic.cloneNode(true));
+      media.append(lazy(pic));
       plain.append(media);
       li.append(plain);
       grid.append(li);
@@ -63,25 +97,11 @@ export default async function decorate(block) {
       // related press cards: media + [h3 + date] header + fixed affordance
       const media = document.createElement('div');
       media.className = 'card-media';
-      if (pic) {
-        const img = pic.matches('img') ? pic : pic.querySelector('img');
-        if (img) img.setAttribute('loading', 'lazy');
-        media.append(pic.cloneNode(true));
-      }
+      if (pic) media.append(lazy(pic));
       a.append(media);
       const header = document.createElement('header');
-      if (heading) {
-        const h3 = document.createElement('h3');
-        h3.className = 'headline';
-        h3.textContent = heading.textContent.trim();
-        header.append(h3);
-      }
-      if (p) {
-        const date = document.createElement('p');
-        date.className = 'date';
-        date.textContent = p.textContent.trim();
-        header.append(date);
-      }
+      if (heading) header.append(wrapNode(heading, 'headline'));
+      if (p) header.append(wrapNode(p, 'date'));
       const aff = document.createElement('div');
       aff.className = 'affordance';
       const sp = document.createElement('span');
@@ -92,74 +112,34 @@ export default async function decorate(block) {
     } else if (isContact) {
       const iconWrap = document.createElement('div');
       iconWrap.className = 'icon-img';
-      if (pic) iconWrap.append(pic.cloneNode(true));
+      if (pic) iconWrap.append(pic);
       a.append(iconWrap);
       const header = document.createElement('header');
-      if (heading) {
-        const h2 = document.createElement('h2');
-        h2.className = 'headline';
-        h2.textContent = heading.textContent.trim();
-        header.append(h2);
-      }
-      if (p) { const pp = document.createElement('p'); pp.textContent = p.textContent.trim(); header.append(pp); }
-      if (link) {
-        const aff = document.createElement('div');
-        aff.className = 'affordance';
-        const s = document.createElement('span');
-        s.textContent = link.textContent.trim();
-        aff.append(s);
-        header.append(aff);
-      }
+      if (heading) header.append(wrapNode(heading, 'headline'));
+      if (p) header.append(p);
+      if (link) header.append(labelWrap(link, 'affordance'));
       a.append(header);
     } else if (isMedia) {
       const media = document.createElement('div');
       media.className = 'card-media';
-      if (pic) {
-        const img = pic.matches('img') ? pic : pic.querySelector('img');
-        if (img) img.setAttribute('loading', 'lazy');
-        media.append(pic.cloneNode(true));
-      }
+      if (pic) media.append(lazy(pic));
       a.append(media);
       const body = document.createElement('div');
       body.className = 'card-body';
       const content = document.createElement('div');
       content.className = 'content';
-      if (heading) {
-        const h3 = document.createElement('h3');
-        h3.className = 'headline';
-        h3.textContent = heading.textContent.trim();
-        content.append(h3);
-      }
-      if (p) { const pp = document.createElement('p'); pp.textContent = p.textContent.trim(); content.append(pp); }
+      if (heading) content.append(wrapNode(heading, 'headline'));
+      if (p) content.append(p);
       body.append(content);
-      if (link) {
-        const btn = document.createElement('div');
-        btn.className = 'button secondary card-cta';
-        const s = document.createElement('span');
-        s.textContent = link.textContent.trim();
-        btn.append(s);
-        body.append(btn);
-      }
+      if (link) body.append(labelWrap(link, 'button secondary card-cta'));
       a.append(body);
     } else {
       // color cards: text on white, affordance pinned bottom
       const header = document.createElement('header');
-      if (heading) {
-        const h3 = document.createElement('h3');
-        h3.className = 'headline';
-        h3.textContent = heading.textContent.trim();
-        header.append(h3);
-      }
-      if (p) { const pp = document.createElement('p'); pp.textContent = p.textContent.trim(); header.append(pp); }
+      if (heading) header.append(wrapNode(heading, 'headline'));
+      if (p) header.append(p);
       a.append(header);
-      if (link) {
-        const aff = document.createElement('div');
-        aff.className = 'affordance';
-        const s = document.createElement('span');
-        s.textContent = link.textContent.trim();
-        aff.append(s);
-        a.append(aff);
-      }
+      if (link) a.append(labelWrap(link, 'affordance'));
     }
 
     article.append(a);

@@ -251,6 +251,14 @@ a.button.secondary:focus-visible {
    gone while editing. Repaint the button look from the marks, only inside an
    editor — no `.prosemirror-editor` exists on published pages. */
 /* stylelint-disable no-descending-specificity */
+
+/* a CTA paragraph moved into a card-as-link re-renders its inner link while
+   editing; it must read like the card text */
+a .prosemirror-editor a:any-link {
+  color: inherit;
+  text-decoration: none;
+}
+
 .prosemirror-editor p > :is(strong, em) > a:any-link,
 .prosemirror-editor p > a:any-link:has(> :is(strong, em):only-child) {
   box-sizing: border-box;

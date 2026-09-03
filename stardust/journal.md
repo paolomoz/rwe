@@ -96,3 +96,9 @@ round, instrument now resets ALL slick sliders (was first-only).
 - Edit-mode simulation: only residual drift is the 8px per-line gap of multi-line hero headlines (presentational spans re-rendered away while editing).
 - Remaining dead texts on home: responsibility 5, cards 45, banner 6, press 4 — same fix pattern, not yet applied. Plugin-level spec written: `stardust/plugin-improvements/experience-workspace-editability.md`.
 
+## 2026-09-03 (later) — Experience Workspace editability, full block round
+- Converted 17 more blocks to the move-not-rebuild contract: cards (8 variants), responsibility, banner (4 variants), press, companies, contacts, country-slider, events, downloads, quote, accordion, icon-tiles, icon-list; table already passed. Probe gained prose2aem-faithful cell wrapping, `--exempt`, and a more faithful editor simulation (marks, hard breaks, image paragraphs).
+- 29-page covering sample (one/two pages per block): 841 → 1416 / 1452 authored texts editable. Remaining 36 = declared exemptions: press-list 19 (index-driven), press dates 5 + events dates 3 (derived), form/job-list/job-side/locations-map 6 (integration placeholders), breadcrumb 1 (paragraph split into list items), columns 2 (video source, picture wrapper).
+- Pixel parity at 1440 on 11 pages/27 block instances: all 0 px (companies needed the sticky header hidden in the shot; home press differs only in the live share-price iframe). Edit-mode simulation: 0 drift in every converted block; default content drifts where section CSS uses child combinators/positional selectors (foundation follow-up, not blocks).
+- Findings ledgered in learnings #16 and folded into `stardust/plugin-improvements/experience-workspace-editability.md` (execution brief for the plugin session at the top).
+

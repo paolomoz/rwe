@@ -32,17 +32,18 @@ export default async function decorate(block) {
   colPress.className = 'col-press';
   const header = document.createElement('header');
   header.className = 'press-header';
+  // Experience Workspace contract: MOVE authored nodes; wrappers carry the classes.
   const ht = headRow.querySelector('h2, h3');
-  const h3 = document.createElement('h3');
-  h3.className = 'subheadline';
-  h3.textContent = ht ? ht.textContent.trim() : 'Press releases';
-  header.append(h3);
+  const sub = document.createElement('div');
+  sub.className = 'subheadline';
+  if (ht) sub.append(ht);
+  else sub.textContent = 'Press releases';
+  header.append(sub);
   const viewAll = headRow.querySelector('a');
   if (viewAll) {
-    const va = document.createElement('a');
-    va.className = 'affordance';
-    va.href = viewAll.href;
-    va.textContent = viewAll.textContent.trim();
+    const va = document.createElement('div');
+    va.className = 'affordance-wrap';
+    va.append(viewAll.closest('p') || viewAll);
     header.append(va);
   }
   colPress.append(header);
@@ -77,16 +78,19 @@ export default async function decorate(block) {
     a.append(time);
 
     const head = document.createElement('header');
-    const h4 = document.createElement('h4');
-    h4.textContent = title ? title.textContent.trim() : '';
-    head.append(h4);
+    if (title) head.append(title);
     a.append(head);
 
     const more = document.createElement('div');
     more.className = 'read-more';
-    const btn = document.createElement('span');
+    const btn = document.createElement('div');
     btn.className = 'button secondary';
-    btn.textContent = link ? link.textContent.trim() : 'Continue';
+    if (link && link.closest('p')) {
+      btn.append(link.closest('p')); // the <p> holds the prose index; the item is the link
+      link.replaceWith(...link.childNodes);
+    } else {
+      btn.textContent = link ? link.textContent.trim() : 'Continue';
+    }
     more.append(btn);
     a.append(more);
 

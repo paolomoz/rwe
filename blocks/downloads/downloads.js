@@ -11,18 +11,16 @@ export default async function decorate(block) {
   const heading = block.querySelector('h2, h3, h4');
   const list = block.querySelector('ul');
   const out = document.createElement('div');
-  if (heading) {
-    const h3 = document.createElement('h3');
-    h3.textContent = heading.textContent.trim();
-    out.append(h3);
-  }
+  // Experience Workspace contract: MOVE the authored heading and list (the <ul> is
+  // the editable unit). Icon classes are a published-page hint only; the CSS also
+  // matches by href so the icon survives the editor's re-render.
+  if (heading) out.append(heading);
   if (list) {
-    const ul = list.cloneNode(true);
-    ul.querySelectorAll('a').forEach((a) => {
+    list.querySelectorAll('a').forEach((a) => {
       const doc = /\.pdf(\?|$)/i.test(a.href) || a.href.includes('/-/media/');
       a.className = doc ? 'link-download' : 'link-plain';
     });
-    out.append(ul);
+    out.append(list);
   }
   block.replaceChildren(out);
 }

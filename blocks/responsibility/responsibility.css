@@ -40,7 +40,7 @@
   color: #fff;
 }
 
-.responsibility .teaser-caption h3.headline {
+.responsibility .teaser-caption .headline :is(h2, h3) {
   color: #fff;
   margin-bottom: 24px;
   max-width: 650px;
@@ -62,7 +62,7 @@
   height: 581px;
 }
 
-.responsibility .info-for h3.headline {
+.responsibility .info-for .headline :is(h2, h3) {
   color: #fff;
   margin-bottom: 24px;
 }
@@ -136,4 +136,11 @@
   .responsibility .info-for ul li a {
     font-size: 15px;
   }
+}
+
+/* Experience Workspace: authored elements moved into wrappers inherit the wrapper's type */
+.responsibility .affordance p {
+  margin: 0;
+  font: inherit;
+  color: inherit;
 }

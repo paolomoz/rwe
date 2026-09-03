@@ -23,7 +23,7 @@
 .companies .col-4 { width: 33.3333%; }
 .companies .gl-tick { position: relative; }
 
-.companies .gl-tick h2.headline {
+.companies .gl-tick .headline :is(h1, h2) {
   color: var(--navy);
   font-size: 32px;
   line-height: 38px;
@@ -118,7 +118,7 @@
   .companies .company { padding: 16px 0 0; }
   .companies .company--first { padding: 0; }
 
-  .companies .gl-tick h2.headline {
+  .companies .gl-tick .headline :is(h1, h2) {
     font-size: 24px;
     line-height: 28px;
     margin-bottom: 16px;
@@ -140,4 +140,9 @@
     line-height: 22px;
     margin-bottom: 16px;
   }
+}
+
+/* Experience Workspace: CTA paragraph moved whole into the wrapper */
+.companies .gl-cta p {
+  margin: 0;
 }

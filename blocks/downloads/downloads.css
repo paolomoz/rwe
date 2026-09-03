@@ -1,6 +1,6 @@
 /* downloads — article download links (values from the gated A1 prototype) */
 
-.downloads h3 {
+.downloads :is(h2, h3, h4) {
   font-family: var(--heading-font-family);
   font-weight: 700;
   font-size: 24px;
@@ -29,7 +29,8 @@
 .downloads li:first-child a { padding-top: 0; }
 .downloads li:last-child a { padding-bottom: 0; }
 
-.downloads li a.link-download::after {
+.downloads li a.link-download::after,
+.downloads li a:is([href*=".pdf"], [href*="/-/media/"])::after {
   content: '\e93d';
   transition: transform 0.2s ease-in-out;
   font-family: "RWE_Icon_Font", sans-serif;
@@ -39,10 +40,11 @@
   margin-left: 10px;
 }
 
-.downloads li a.link-download:hover::after { transform: translateY(2px); }
+.downloads li a.link-download:hover::after,
+.downloads li a:is([href*=".pdf"], [href*="/-/media/"]):hover::after { transform: translateY(2px); }
 
 @media (width <= 767px) {
-  .downloads h3 {
+  .downloads :is(h2, h3, h4) {
     font-size: 18px;
     line-height: 24px;
     margin-bottom: 16px;

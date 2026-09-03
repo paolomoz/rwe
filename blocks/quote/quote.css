@@ -10,7 +10,7 @@
   padding: 0;
 }
 
-.quote h2.content {
+.quote .content {
   font-family: light, rwe-fallback, sans-serif;
   font-weight: 700;
   font-size: 32px;
@@ -20,13 +20,20 @@
   text-align: center;
 }
 
-.quote h2.content::before { content: '"'; }
-.quote h2.content::after { content: '"'; }
+/* the authored paragraph (or its editor) inherits the wrapper's type */
+.quote .content p {
+  font: inherit;
+  color: inherit;
+  margin: 0;
+}
+
+.quote .content p::before { content: '"'; }
+.quote .content p::after { content: '"'; }
 
 @media (width <= 767px) {
   .quote .quo01 { margin-bottom: 16px; }
 
-  .quote h2.content {
+  .quote .content {
     font-size: 24px;
     line-height: 28px;
   }

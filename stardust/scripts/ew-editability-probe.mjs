@@ -24,6 +24,8 @@
  *
  * Usage:
  *   node stardust/scripts/ew-editability-probe.mjs <url> [<url> ...] [--json] [--verbose] [--simulate-editor]
+ *       [--exempt block-a,block-b]   blocks whose authored rows are config / index fallback
+ *                                    (still reported, excluded from the exit code)
  *   e.g. node stardust/scripts/ew-editability-probe.mjs http://localhost:3005/ --verbose --simulate-editor
  *
  * Exit code 0 = every authored text editable, 1 = some dead, 2 = probe error.
@@ -35,7 +37,9 @@ const json = args.includes('--json');
 const verbose = args.includes('--verbose');
 const simulate = args.includes('--simulate-editor');
 const QE_CSS = 'https://raw.githubusercontent.com/adobe/da-nx/main/nx/public/plugins/quick-edit/quick-edit.css';
-const urls = args.filter((a) => !a.startsWith('--'));
+const exemptIdx = args.indexOf('--exempt');
+const exempt = new Set(exemptIdx > -1 ? args[exemptIdx + 1].split(',') : []);
+const urls = args.filter((a, i) => !a.startsWith('--') && !(exemptIdx > -1 && i === exemptIdx + 1));
 if (!urls.length) { console.error('usage: ew-editability-probe.mjs <url> [--json] [--verbose]'); process.exit(2); }
 
 const EDITABLE = 'h1, h2, h3, h4, h5, h6, p, ol, ul, pre, blockquote';
@@ -46,6 +50,17 @@ function instrument(EDITABLE_SEL) {
   if (!main) return { html: document.documentElement.outerHTML, texts: [] };
   const texts = [];
   let n = 1;
+  // prose2aem keeps the <p> inside every block cell; the published pipeline unwraps a
+  // single-paragraph cell to bare text. Restore the <p> so the cell looks like the
+  // workspace's instrumented HTML (decorate() sees it either way: the runtime's
+  // wrapTextNodes wraps bare text into a fresh <p> on published pages).
+  main.querySelectorAll(':scope > div > div[class] > div > div').forEach((cell) => {
+    if (cell.children.length === 0 && cell.textContent.trim()) {
+      const p = document.createElement('p');
+      p.append(...cell.childNodes);
+      cell.append(p);
+    }
+  });
   const blockOf = (el) => {
     const section = el.closest('main > div');
     const block = [...(section?.children ?? [])].find((c) => c.contains(el));
@@ -89,7 +104,7 @@ function simulateEditor(texts) {
   texts.forEach((t) => { const el = document.querySelector(`[data-prose-index="${t.index}"]`); if (el) before[t.index] = rec(el); });
   texts.forEach((t) => {
     const el = document.querySelector(`[data-prose-index="${t.index}"]`);
-    if (!el) return;
+    if (!el || el.querySelector('img, picture')) return; // images are edited via data-image-index, not a text editor
     const parent = document.createElement('div');
     parent.className = 'prosemirror-editor';
     parent.setAttribute('data-prose-index', t.index);
@@ -106,7 +121,12 @@ function simulateEditor(texts) {
       let outer = a;
       mark.forEach((m) => { const w = document.createElement(m); outer.replaceWith(w); w.append(outer); outer = w; });
     });
-    node.querySelectorAll('span').forEach((sp) => sp.replaceWith(...sp.childNodes));
+    // presentational block spans stand for authored hard breaks: restore the <br>
+    node.querySelectorAll('span').forEach((sp) => {
+      const src = el.querySelectorAll('span')[[...node.querySelectorAll('span')].indexOf(sp)];
+      const block = src && getComputedStyle(src).display === 'block' && sp.nextElementSibling?.tagName === 'SPAN';
+      sp.replaceWith(...sp.childNodes, ...(block ? [document.createElement('br')] : []));
+    });
     node.querySelectorAll('*').forEach((n) => { [...n.attributes].forEach((a) => { if (!(n.tagName === 'A' && a.name === 'href')) n.removeAttribute(a.name); }); });
     pm.append(node);
     parent.append(pm);
@@ -166,7 +186,7 @@ try {
     }
     const blocks = Object.values(byBlock);
     const totals = blocks.reduce((a, b) => ({ authored: a.authored + b.authored, editable: a.editable + b.editable, dead: a.dead + b.dead, duplicated: a.duplicated + b.duplicated }), { authored: 0, editable: 0, dead: 0, duplicated: 0 });
-    if (totals.dead) anyDead = true;
+    if (blocks.some((b) => b.dead && !exempt.has(b.block))) anyDead = true;
     results.push({ url, totals, blocks, rows, sim });
     if (!json) {
       console.log(`\n${url}  authored=${totals.authored} editable=${totals.editable} dead=${totals.dead} duplicated=${totals.duplicated}`);

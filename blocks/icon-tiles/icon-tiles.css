@@ -167,3 +167,10 @@
     pointer-events: auto;
   }
 }
+
+/* Experience Workspace: the authored cover label paragraph inherits the cover type */
+.icon-tiles .tile-cover-text p {
+  margin: 0;
+  font: inherit;
+  color: inherit;
+}

@@ -6,6 +6,7 @@
 
 export default async function decorate(block) {
   const cell = block.querySelector(':scope > div > div');
+  // Experience Workspace contract: authored nodes move as-is; the <ul> is styled by
+  // element (a class added to an authored element dies in the editor swap).
   if (cell) block.replaceChildren(...cell.childNodes);
-  block.querySelectorAll('ul').forEach((ul) => ul.classList.add('icon-list-items'));
 }

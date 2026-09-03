@@ -11,13 +11,13 @@
   margin-bottom: 16px;
 }
 
-.icon-list .icon-list-items {
+.icon-list ul {
   list-style: none;
   margin: 24px 0 0;
   padding: 0;
 }
 
-.icon-list .icon-list-items li {
+.icon-list ul li {
   display: flex;
   align-items: center;
   font-size: 18px;
@@ -26,7 +26,7 @@
   margin-bottom: 16px;
 }
 
-.icon-list .icon-list-items li::before {
+.icon-list ul li::before {
   content: '\e92a';
   font-family: "RWE_Icon_Font", sans-serif;
   font-size: 28px;

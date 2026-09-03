@@ -11,14 +11,14 @@
   display: block;
 }
 
-.contacts .contact-card h2.headline {
+.contacts .contact-card .headline :is(h2, h3, h4) {
   font-size: 32px;
   line-height: 38px;
   color: var(--navy);
   margin: 0 0 9px;
 }
 
-.contacts .contact-card h3.subheadline {
+.contacts .contact-card .subheadline :is(h2, h3, h4) {
   font-family: var(--heading-font-family);
   font-weight: 700;
   font-size: 18px;
@@ -62,15 +62,22 @@
     aspect-ratio: 1;
   }
 
-  .contacts .contact-card h2.headline {
+  .contacts .contact-card .headline :is(h2, h3, h4) {
     font-size: 24px;
     line-height: 28px;
   }
 
-  .contacts .contact-card h3.subheadline,
+  .contacts .contact-card .subheadline :is(h2, h3, h4),
   .contacts .phone a,
   .contacts .social-placeholder .content {
     font-size: 15px;
     line-height: 22px;
   }
+}
+
+/* Experience Workspace: authored paragraphs moved whole into wrappers */
+.contacts .phone p,
+.contacts .cta p,
+.contacts .social-placeholder .content p {
+  margin: 0;
 }

@@ -18,6 +18,11 @@ function buildCompany(row, isFirst, isLast) {
   const cta = [...textCell.querySelectorAll('a.button, p strong a')].pop()
     || [...textCell.querySelectorAll('a')].filter((a) => a.textContent.trim().startsWith('More about')).pop();
 
+  // Experience Workspace contract: MOVE authored nodes (they carry the editor's
+  // data-prose-index); capture sibling traversal starts BEFORE moving anything.
+  const contentStart = name ? name.nextElementSibling : textCell.firstElementChild;
+  const subsStart = subsHead ? subsHead.nextElementSibling : null;
+
   const sec = document.createElement('section');
   sec.className = `company${isFirst ? ' company--first' : ''}${isLast ? ' company--last' : ''}`;
   const rowEl = document.createElement('div');
@@ -28,42 +33,34 @@ function buildCompany(row, isFirst, isLast) {
   tick.className = 'gl-tick';
 
   if (name) {
-    const h2 = document.createElement('h2');
-    h2.className = 'headline';
-    const span = document.createElement('span');
-    span.textContent = name.textContent.trim();
-    h2.append(span);
-    tick.append(h2);
+    const hw = document.createElement('div');
+    hw.className = 'headline';
+    hw.append(name);
+    tick.append(hw);
   }
 
   const content = document.createElement('div');
   content.className = 'content';
-  let node = name ? name.nextElementSibling : textCell.firstElementChild;
+  let node = contentStart;
   while (node && node !== subsHead) {
-    if (node.tagName === 'P' && !node.contains(cta)) content.append(node.cloneNode(true));
-    node = node.nextElementSibling;
+    const next = node.nextElementSibling;
+    if (node.tagName === 'P' && !node.contains(cta)) content.append(node);
+    node = next;
   }
   tick.append(content);
 
   if (subsHead) {
     const ext = document.createElement('div');
     ext.className = 'content-extended';
-    const h3 = document.createElement('h3');
-    h3.textContent = subsHead.textContent.trim();
-    ext.append(h3);
-    let n = subsHead.nextElementSibling;
+    ext.append(subsHead);
+    let n = subsStart;
     while (n) {
+      const next = n.nextElementSibling;
       const a = n.querySelector ? n.querySelector('a') : null;
       if (a && a !== cta && !a.textContent.trim().startsWith('More about')) {
-        const p = document.createElement('p');
-        p.className = 'll01';
-        const link = document.createElement('a');
-        link.href = a.href;
-        link.textContent = a.textContent.trim();
-        p.append(link);
-        ext.append(p);
+        ext.append(a.closest('p') || n);
       }
-      n = n.nextElementSibling;
+      n = next;
     }
     tick.append(ext);
     const toggle = document.createElement('button');
@@ -82,9 +79,8 @@ function buildCompany(row, isFirst, isLast) {
   if (cta) {
     const ctaWrap = document.createElement('div');
     ctaWrap.className = 'gl-cta';
-    const a = cta.cloneNode(true);
-    a.className = 'button primary';
-    ctaWrap.append(a);
+    cta.className = 'button primary';
+    ctaWrap.append(cta.closest('p') || cta); // the <p> holds the prose index
     tick.append(ctaWrap);
   }
   colText.append(tick);
@@ -96,7 +92,7 @@ function buildCompany(row, isFirst, isLast) {
     fig.className = 'gl-zoomable';
     const img = pic.matches('img') ? pic : pic.querySelector('img');
     if (img) img.setAttribute('loading', 'lazy');
-    fig.append(pic.cloneNode(true));
+    fig.append(pic);
     colImg.append(fig);
   }
   rowEl.append(colText, colImg);

@@ -11,7 +11,7 @@ export default async function decorate(block) {
   grid.className = 'icon-tiles-grid';
   rows.forEach((row) => {
     const cells = [...row.children];
-    const label = cells[0] ? cells[0].textContent.trim() : '';
+    const labelCell = cells[0];
     const content = cells[1];
 
     const container = document.createElement('div');
@@ -32,11 +32,9 @@ export default async function decorate(block) {
           <div class="tile-closer-mobile"><span class="icon icon-close"></span></div>
         </div>
       </div>`;
-    item.querySelector('.tile-cover-text').textContent = label;
-    if (content) {
-      const target = item.querySelector('.tile-content-text');
-      [...content.children].forEach((el) => target.append(el.cloneNode(true)));
-    }
+    // Experience Workspace contract: MOVE authored nodes into the template's slots
+    if (labelCell) item.querySelector('.tile-cover-text').append(...labelCell.childNodes);
+    if (content) item.querySelector('.tile-content-text').append(...content.childNodes);
     const cover = item.querySelector('.tile-cover');
     const closer = item.querySelector('.tile-content');
     cover.addEventListener('click', () => item.classList.add('open'));
