@@ -84,12 +84,25 @@ main .hero-container > div {
   background-image: linear-gradient(45deg, rgb(29 68 119 / 90%) 22%, rgb(0 161 159 / 75%));
 }
 
-.hero h1.headline,
-.hero h2.headline {
+.hero .headline {
   font-size: var(--heading-font-size-xxl);
   line-height: var(--heading-line-height-xxl);
+  font-family: var(--heading-font-family);
+  font-weight: 700;
   color: #fff;
   margin: 0;
+}
+
+/* light box: navy headline — on the wrapper too, so edit mode (spans re-rendered away) keeps it */
+.hero .stage-box--light .headline {
+  color: var(--navy);
+}
+
+/* authored heading moved into the wrapper (EW-editable): inherit the wrapper's type */
+.hero .headline :is(h1, h2, h3) {
+  margin: 0;
+  font: inherit;
+  color: inherit;
 }
 
 .hero .headline .hl-navy {
@@ -115,6 +128,16 @@ main .hero-container > div {
 
 .hero .subheadline--navy {
   color: var(--navy);
+}
+
+.hero .subheadline :is(h2, h3, h4) {
+  margin: 0;
+  font: inherit;
+  color: inherit;
+}
+
+.hero .buttons-container p {
+  margin: 0;
 }
 
 .hero .buttons-container {
@@ -232,7 +255,8 @@ main .hero-container > div {
     justify-content: flex-start;
   }
 
-  .hero .headline .hl-navy {
+  .hero .headline .hl-navy,
+  .hero .stage-box--light .headline {
     color: #fff;
   }
 
@@ -257,7 +281,7 @@ main .hero-container > div {
 /* ---- variant: hub — sub-hub stage (770px vs home 900; gated A2 values) ---- */
 .hero.hub { height: 770px; }
 .hero.hub .teaser-width { padding: 0 0 110px; }
-.hero.hub h3.subheadline { max-width: 1122px; }
+.hero.hub .subheadline { max-width: 1122px; }
 
 @media (width <= 767px) {
   .hero.hub { height: 575px; }
@@ -301,7 +325,7 @@ main .hero-container > div {
     width: 100%;
   }
 
-  .hero.hub.group .stage-box h3.subheadline {
+  .hero.hub.group .stage-box .subheadline {
     font-size: 15px;
     line-height: 22px;
     margin: 0 0 16px;

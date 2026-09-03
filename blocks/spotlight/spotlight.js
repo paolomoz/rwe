@@ -4,12 +4,22 @@
  *
  * Authoring rows:
  *   row 1 (head): cell 1 icon <picture>, cell 2 <h2> title
- *   rows 2..N (items): cell 1 <h3> title + <p> teaser + <a> read-more,
+ *   rows 2..N (items): cell 1 <h3> title (kept as authored) + <p> teaser + <p><a> read-more,
  *                      cell 2 item <picture>
  *
  * Renders the live site's vertical slick ticker (window shows one 205px
  * slide; clone slides mirror slick's DOM). Autoplay 6s.
  */
+
+// Presentational copies must not carry the editor's instrumentation, or the
+// editor attaches to the (hidden) clone instead of the authored element.
+function stripInstrumentation(el) {
+  el.querySelectorAll('[data-prose-index], [data-image-index]').forEach((n) => {
+    n.removeAttribute('data-prose-index');
+    n.removeAttribute('data-image-index');
+  });
+  return el;
+}
 
 function buildItem(row) {
   const cells = [...row.children];
@@ -25,28 +35,27 @@ function buildItem(row) {
   const vert = document.createElement('div');
   vert.className = 'slider-element__content--vertical';
 
+  // Experience Workspace contract: MOVE authored elements into generated wrappers.
   const h = textCell.querySelector('h3, h4');
   if (h) {
-    const h4 = document.createElement('h4');
-    h4.textContent = h.textContent.trim();
-    vert.append(h4);
+    const hw = document.createElement('div');
+    hw.className = 'item-headline';
+    hw.append(h);
+    vert.append(hw);
   }
   const p = [...textCell.querySelectorAll('p')].find((x) => !x.querySelector('a') && x.textContent.trim());
   if (p) {
     const tw = document.createElement('div');
     tw.className = 'text-wrapper';
-    const pp = document.createElement('p');
-    pp.textContent = p.textContent.trim();
-    tw.append(pp);
+    tw.append(p);
     vert.append(tw);
   }
   const a = textCell.querySelector('a');
   if (a) {
-    const link = document.createElement('a');
-    link.className = 'affordance';
-    link.href = a.href;
-    link.textContent = a.textContent.trim();
-    vert.append(link);
+    const aw = document.createElement('div');
+    aw.className = 'affordance-wrap';
+    aw.append(a.closest('p') || a);
+    vert.append(aw);
   }
   horiz.append(vert);
 
@@ -54,7 +63,7 @@ function buildItem(row) {
   imgWrap.className = 'slider-element__image';
   const inner = document.createElement('div');
   inner.className = 'short-news-image';
-  if (pic) inner.append(pic.cloneNode(true));
+  if (pic) inner.append(pic);
   imgWrap.append(inner);
   horiz.append(imgWrap);
   content.append(horiz);
@@ -73,13 +82,13 @@ export default async function decorate(block) {
   const iconWrap = document.createElement('div');
   iconWrap.className = 'short-news-icon';
   const icon = headRow.querySelector('picture, img');
-  if (icon) iconWrap.append(icon.cloneNode(true));
+  if (icon) iconWrap.append(icon);
   head.append(iconWrap);
+  const hw = document.createElement('div');
+  hw.className = 'headline';
   const h2src = headRow.querySelector('h2');
-  const h2 = document.createElement('h2');
-  h2.className = 'headline';
-  h2.textContent = h2src ? h2src.textContent.trim() : '';
-  head.append(h2);
+  if (h2src) hw.append(h2src);
+  head.append(hw);
 
   // slider nav (arrows + vertical dots)
   const nav = document.createElement('div');
@@ -99,17 +108,16 @@ export default async function decorate(block) {
 
   // track: clone(last) + items + clones(all) — mirrors slick's live DOM
   const trackItems = itemRows.map(buildItem);
+  const cloneOf = (it) => {
+    const c = stripInstrumentation(it.cloneNode(true));
+    c.setAttribute('aria-hidden', 'true');
+    return c;
+  };
   const track = document.createElement('div');
   track.className = 'sn-track';
-  const cloneLast = buildItem(itemRows[itemRows.length - 1]);
-  cloneLast.setAttribute('aria-hidden', 'true');
-  track.append(cloneLast);
+  if (trackItems.length) track.append(cloneOf(trackItems[trackItems.length - 1]));
   trackItems.forEach((it) => track.append(it));
-  itemRows.forEach((r) => {
-    const c = buildItem(r);
-    c.setAttribute('aria-hidden', 'true');
-    track.append(c);
-  });
+  trackItems.forEach((it) => track.append(cloneOf(it)));
 
   const window_ = document.createElement('div');
   window_.className = 'slider-content';

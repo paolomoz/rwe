@@ -4,7 +4,7 @@
  *
  * Authoring rows — one per slide:
  *   cell 1: slide background <picture>
- *   cell 2: headline (first slide <h1>, others <h2>) + <h3> subheadline +
+ *   cell 2: headline (first slide <h1>, others <h2> — authored tags are kept) + <h3> subheadline +
  *           CTA paragraph (<strong><a> primary → light box slide,
  *           <em><a> secondary → gradient box slide — mirrors the live site)
  *
@@ -12,7 +12,7 @@
  * arrows + dots. Static t=0 state = slide 1 (replica freeze policy).
  */
 
-function slideBox(cell, isFirst) {
+function slideBox(cell) {
   const heading = cell.querySelector('h1, h2, h3:first-child') || cell.querySelector('h1, h2');
   const sub = cell.querySelector('h3:not(:first-child), h4') || [...cell.querySelectorAll('h3')].pop();
   const cta = cell.querySelector('a.button, a');
@@ -22,26 +22,30 @@ function slideBox(cell, isFirst) {
   const box = document.createElement('header');
   box.className = `stage-box ${light ? 'stage-box--light light' : 'stage-box--gradient gradient'}`;
 
-  const h = document.createElement(isFirst ? 'h1' : 'h2');
-  h.className = 'headline';
+  // Experience Workspace contract: MOVE the authored elements (they carry the
+  // editor's data-prose-index); generated wrappers carry the layout classes.
+  const hWrap = document.createElement('div');
+  hWrap.className = 'headline';
   if (heading) {
-    // live wraps each headline line in a block span (granularity parity)
+    // live wraps each headline line in a block span (granularity parity) —
+    // restructure INSIDE the authored heading; its identity and text stay intact
     const lines = heading.innerHTML.split(/<br\s*\/?>/i);
-    h.innerHTML = lines.map((l) => `<span class="${light ? 'hl-navy' : 'hl-white'}">${l}</span>`).join('');
+    heading.innerHTML = lines.map((l) => `<span class="${light ? 'hl-navy' : 'hl-white'}">${l}</span>`).join('');
+    hWrap.append(heading);
   }
-  box.append(h);
+  box.append(hWrap);
 
   if (sub && sub !== heading) {
-    const s = document.createElement('h3');
-    s.className = `subheadline${light ? ' subheadline--navy' : ''}`;
-    s.textContent = sub.textContent.trim();
-    box.append(s);
+    const sWrap = document.createElement('div');
+    sWrap.className = `subheadline${light ? ' subheadline--navy' : ''}`;
+    sWrap.append(sub);
+    box.append(sWrap);
   }
 
   if (cta) {
     const actions = document.createElement('div');
     actions.className = 'buttons-container';
-    actions.append(cta.cloneNode(true));
+    actions.append(cta.closest('p') || cta); // the <p> holds the prose index
     box.append(actions);
   }
   return box;
@@ -66,11 +70,11 @@ export default async function decorate(block) {
     if (pic) {
       const img = pic.matches('img') ? pic : pic.querySelector('img');
       if (img && i === 0) { img.setAttribute('loading', 'eager'); img.setAttribute('fetchpriority', 'high'); }
-      media.append(pic.cloneNode(true));
+      media.append(pic);
     }
     const wrap = document.createElement('div');
     wrap.className = 'teaser-width';
-    wrap.append(slideBox(textCell, i === 0));
+    wrap.append(slideBox(textCell));
     stage.append(media, wrap);
     slide.append(stage);
     track.append(slide);

@@ -135,3 +135,30 @@ diff-key change, needs its own validation protocol).
     runtime trace decides WHAT runs and WHERE. Verified: after replacing
     inference with observation, press-hub returned to its exact gated
     pixel number (1.01%).
+15. **Experience Workspace (da.live) inline editing is a DECODE contract, and
+    stardust's decode guidance violates it.** Verified against da.live
+    `blocks/canvas/editor-utils/editor-utils.js` and da-nx
+    `nx/public/plugins/quick-edit/*`: the workspace stamps `data-prose-index`
+    on every outermost `h1-h6/p/ol/ul/pre/blockquote` of the source, swaps
+    the instrumented HTML into `document.body`, re-runs the page's own
+    `loadPage()`, then `querySelector('[data-prose-index="N"]').replaceWith(
+    editor)` for each index. A text is editable iff exactly one element still
+    carries its index after `decorate()` — nothing else is repaired (only
+    `data-block-index`, by class name). So `textContent`/`innerHTML` copies,
+    retagging, and synthesized `<p>`s are dead; `cloneNode(true)` happens to
+    work (the clone keeps the attribute — that is why `columns` worked while
+    `hero`/`spotlight` did not), and duplicated clones attach the editor to
+    the first copy in DOM order (hidden carousel loop slides). Home page
+    measured 14/102 editable texts before, 40/102 after converting only
+    hero+spotlight+columns (25/25 for those three, 0 px visual diff at 1440).
+    Pattern that passes AND survives the editor swap: MOVE the authored
+    element into a generated wrapper that carries the layout class; style it
+    with wrapper-descendant selectors (`.headline :is(h1,h2)`), because the
+    editor re-renders the same TAG without classes/spans; move the CTA `<p>`
+    (the index is on the paragraph) and repaint the button look in edit mode
+    from the `<strong>/<em>` marks under `.prosemirror-editor`; strip
+    instrumentation from presentational clones. Probe:
+    `stardust/scripts/ew-editability-probe.mjs` (instrument → decorate →
+    count; `--simulate-editor` measures edit-mode style drift). Plugin spec:
+    `stardust/plugin-improvements/experience-workspace-editability.md`.
+

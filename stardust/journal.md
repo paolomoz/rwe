@@ -88,3 +88,11 @@ classes; visual-diff 4 intentional cover-crop flags. Field lessons: teaser
 border-box centering, header margin-collapse (flow-root), invalid
 --bold-font-family var wiped bold, stale CDN edge produced a phantom no-op
 round, instrument now resets ALL slick sliders (was first-only).
+
+## 2026-09-03 — Experience Workspace editability (hero / spotlight / columns)
+- Symptom (user, da.live canvas): hero carousel and spotlight text not selectable; columns body paragraphs editable but its CTA not. Two external analyses reviewed (`~/Desktop/da-wysiwyg-playbook.md`, `~/Desktop/Untitled`); mechanism re-verified against da.live + da-nx sources — see learnings #15.
+- Reproduced offline with `stardust/scripts/ew-editability-probe.mjs` against `aem up` on :3005 — home page 14/102 authored texts editable (hero 0/12, spotlight 0/13, columns 2/5).
+- Fixed hero/spotlight/columns to the move-not-rebuild contract (+ wrapper-descendant CSS, edit-mode CTA repaint in styles.css, clone stripping in spotlight). After: hero 12/12, spotlight 13/13, columns 3/5 (2 remaining = video source link + picture wrapper, not displayed text). Pixel diff vs before at 1440: hero 0 / spotlight 0 / columns 0; hero variants on /en/press and /en/the-group 0.
+- Edit-mode simulation: only residual drift is the 8px per-line gap of multi-line hero headlines (presentational spans re-rendered away while editing).
+- Remaining dead texts on home: responsibility 5, cards 45, banner 6, press 4 — same fix pattern, not yet applied. Plugin-level spec written: `stardust/plugin-improvements/experience-workspace-editability.md`.
+

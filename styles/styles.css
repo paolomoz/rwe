@@ -246,6 +246,46 @@ a.button.secondary:focus-visible {
   transition: background-color 0.2s ease;
 }
 
+/* Experience Workspace edit mode (da.live quick-edit): the inline editor re-renders
+   a CTA from its authored <strong>/<em> marks, so decorateButtons()' classes are
+   gone while editing. Repaint the button look from the marks, only inside an
+   editor — no `.prosemirror-editor` exists on published pages. */
+/* stylelint-disable no-descending-specificity */
+.prosemirror-editor p > :is(strong, em) > a:any-link,
+.prosemirror-editor p > a:any-link:has(> :is(strong, em):only-child) {
+  box-sizing: border-box;
+  display: inline-block;
+  max-width: 100%;
+  margin: 0;
+  border: 2px solid var(--teal);
+  border-radius: 5px;
+  padding: 8px 24px;
+  font-family: var(--medium-font-family);
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 400;
+  text-align: center;
+  text-decoration: none;
+}
+
+.prosemirror-editor p > a:any-link > :is(strong, em) {
+  font-weight: inherit;
+  font-style: inherit;
+}
+
+.prosemirror-editor p > strong > a:any-link,
+.prosemirror-editor p > a:any-link:has(> strong:only-child) {
+  background-color: var(--teal);
+  color: #fff;
+}
+
+.prosemirror-editor p > em > a:any-link,
+.prosemirror-editor p > a:any-link:has(> em:only-child) {
+  background-color: transparent;
+  color: var(--teal);
+}
+/* stylelint-enable no-descending-specificity */
+
 /* on-media secondary buttons read white (block context sets the class) */
 main .on-media a.button.secondary,
 main .banner a.button.secondary,
@@ -253,8 +293,12 @@ main .hero .gradient a.button.secondary {
   color: #fff;
 }
 
-/* text affordance links (medium teal + arrow) — applied by block JS/CSS */
-.affordance {
+/* text affordance links (medium teal + arrow) — applied by block JS/CSS.
+   `.affordance-wrap :where(a)` styles an AUTHORED link moved into a wrapper (the
+   Experience Workspace editor re-renders the anchor, so a class on it would die);
+   :where() keeps the same specificity as `.affordance` so the cascade is unchanged. */
+.affordance,
+.affordance-wrap :where(a) {
   font-family: var(--medium-font-family);
   font-size: 18px;
   line-height: 27px;
@@ -263,7 +307,8 @@ main .hero .gradient a.button.secondary {
   align-items: center;
 }
 
-.affordance::after {
+.affordance::after,
+.affordance-wrap :where(a)::after {
   content: '\e914';
   font-family: "RWE_Icon_Font", sans-serif;
   font-weight: 700;
@@ -273,16 +318,19 @@ main .hero .gradient a.button.secondary {
   transition: transform 0.2s ease-in-out;
 }
 
-.affordance:hover::after {
+.affordance:hover::after,
+.affordance-wrap :where(a):hover::after {
   transform: translate3d(10px, 0, 0);
 }
 
-.affordance.white {
+.affordance.white,
+.affordance-wrap.white :where(a) {
   color: #fff;
 }
 
 @media (width <= 767px) {
-  .affordance {
+  .affordance,
+  .affordance-wrap :where(a) {
     font-size: 15px;
     line-height: 22px;
   }
@@ -1168,4 +1216,11 @@ main .section.footnote p {
     font-size: 15px;
     line-height: 22px;
   }
+}
+
+/* Experience Workspace edit mode — on-media secondary CTAs read white (see the
+   `.prosemirror-editor` button repaint above). Kept last: nothing may follow it. */
+main :is(.on-media, .banner, .hero .gradient) .prosemirror-editor p > em > a:any-link,
+main :is(.on-media, .banner, .hero .gradient) .prosemirror-editor p > a:any-link:has(> em:only-child) {
+  color: #fff;
 }

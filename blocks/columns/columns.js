@@ -22,15 +22,17 @@ export default async function decorate(block) {
   colText.className = 'col col-text';
   const content = document.createElement('div');
   content.className = 'content';
+  // Experience Workspace contract: MOVE the authored paragraphs (they carry the
+  // editor's data-prose-index); the CTA moves as its whole <p>, not the anchor.
   [...textCell.querySelectorAll('p')].forEach((p) => {
     if (p.querySelector('a.button')) return;
-    content.append(p.cloneNode(true));
+    content.append(p);
   });
   colText.append(content);
   const cta = textCell.querySelector('a.button');
   if (cta) {
     const actions = document.createElement('div');
-    actions.append(cta.cloneNode(true));
+    actions.append(cta.closest('p') || cta);
     colText.append(actions);
   }
 

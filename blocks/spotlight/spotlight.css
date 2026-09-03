@@ -21,7 +21,7 @@
   display: block;
 }
 
-.spotlight h2.headline {
+.spotlight .headline h2 {
   color: var(--teal);
   margin-bottom: 0;
 }
@@ -114,7 +114,7 @@
   flex: 0 0 auto;
 }
 
-.spotlight h4 {
+.spotlight .item-headline :is(h3, h4) {
   font-family: var(--body-font-family);
   font-size: 18px;
   font-weight: 700;
@@ -128,6 +128,10 @@
 
 .spotlight .text-wrapper p {
   padding-right: 4px;
+}
+
+.spotlight .affordance-wrap p {
+  margin: 0;
 }
 
 .spotlight .slider-element__image {
@@ -167,7 +171,7 @@
     display: none;
   }
 
-  .spotlight h4 {
+  .spotlight .item-headline :is(h3, h4) {
     font-size: 15px;
     line-height: 22px;
   }
